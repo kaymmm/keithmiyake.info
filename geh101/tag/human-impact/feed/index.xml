@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>human impact &#8211; Intro to Geography</title>
+	<atom:link href="/geh101/tag/human-impact/feed/" rel="self" type="application/rss+xml" />
+	<link>/geh101</link>
+	<description>Lehman College</description>
+	<lastBuildDate>Sat, 29 Nov 2014 17:03:44 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	
+<site xmlns="com-wordpress:feed-additions:1">52642319</site>	<item>
+		<title>Week 6 Class Notes &#8211; Human Impacts on the Environment</title>
+		<link>/geh101/2011/03/07/week-13-class-notes-human-impacts-on-the-environment/</link>
+		<comments>/geh101/2011/03/07/week-13-class-notes-human-impacts-on-the-environment/#comments</comments>
+		<pubDate>Mon, 07 Mar 2011 11:32:03 +0000</pubDate>
+		<dc:creator><![CDATA[Keith Miyake]]></dc:creator>
+				<category><![CDATA[Lectures and Notes]]></category>
+		<category><![CDATA[climate change]]></category>
+		<category><![CDATA[human impact]]></category>
+		<category><![CDATA[human-environment interactions]]></category>
+		<category><![CDATA[landforms]]></category>
+		<category><![CDATA[lecture notes]]></category>
+		<category><![CDATA[physical geography]]></category>
+		<category><![CDATA[waste]]></category>
+		<category><![CDATA[weather and climate]]></category>
+
+		<guid isPermaLink="false">http://geh101.wordpress.com/?p=247</guid>
+		<description><![CDATA[Lecture notes from Chapters 12 of the Getis textbook are available here: <a href="http://geh101.files.wordpress.com/2011/09/ch12-human_impact.pdf">Chapter 12 - Human Impacts on the Environment</a>]]></description>
+				<content:encoded><![CDATA[<p>Lecture notes from Chapters 12 of the Getis textbook are available here:&nbsp;<a href="/geh101/wp-content/uploads/sites/3/2011/09/ch12-human_impact.pdf">Chapter 12 &#8211; Human Impacts on the Environment</a></p>
+]]></content:encoded>
+			<wfw:commentRss>/geh101/2011/03/07/week-13-class-notes-human-impacts-on-the-environment/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">247</post-id>	</item>
+		<item>
+		<title>[Video] Manufactured Landscapes &#8211; Human impacts on landscapes</title>
+		<link>/geh101/2010/10/26/video-manufactured-landscapes-human-impacts-on-landscapes/</link>
+		<comments>/geh101/2010/10/26/video-manufactured-landscapes-human-impacts-on-landscapes/#respond</comments>
+		<pubDate>Tue, 26 Oct 2010 08:32:23 +0000</pubDate>
+		<dc:creator><![CDATA[Keith Miyake]]></dc:creator>
+				<category><![CDATA[Resources]]></category>
+		<category><![CDATA[china]]></category>
+		<category><![CDATA[human impact]]></category>
+		<category><![CDATA[human-environment interactions]]></category>
+		<category><![CDATA[landforms]]></category>
+		<category><![CDATA[resources]]></category>
+		<category><![CDATA[video]]></category>
+
+		<guid isPermaLink="false">http://geh101.wordpress.com/?p=182</guid>
+		<description><![CDATA[This is a clip from the film Manufactured Landscapes, which looks at the ways in which people have transformed the physical landscape of China through industrial growth as part of the expansion of capitalism.]]></description>
+				<content:encoded><![CDATA[<p>This is a clip from the film Manufactured Landscapes, which looks at the ways in which people have transformed the physical landscape of China through industrial growth as part of the expansion of capitalism.</p>
+<iframe class='youtube-player' type='text/html' width='640' height='390' src='https://www.youtube.com/embed/o97azFDkB58?version=3&#038;rel=1&#038;fs=1&#038;autohide=2&#038;showsearch=0&#038;showinfo=1&#038;iv_load_policy=1&#038;wmode=transparent' allowfullscreen='true' style='border:0;'></iframe>
+]]></content:encoded>
+			<wfw:commentRss>/geh101/2010/10/26/video-manufactured-landscapes-human-impacts-on-landscapes/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">182</post-id>	</item>
+	</channel>
+</rss>

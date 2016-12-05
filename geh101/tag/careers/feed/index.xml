@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>careers &#8211; Intro to Geography</title>
+	<atom:link href="/geh101/tag/careers/feed/" rel="self" type="application/rss+xml" />
+	<link>/geh101</link>
+	<description>Lehman College</description>
+	<lastBuildDate>Sat, 29 Nov 2014 17:03:44 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	
+<site xmlns="com-wordpress:feed-additions:1">52642319</site>	<item>
+		<title>Careers in Geography</title>
+		<link>/geh101/2010/08/29/careers-in-geography/</link>
+		<comments>/geh101/2010/08/29/careers-in-geography/#respond</comments>
+		<pubDate>Sun, 29 Aug 2010 00:20:11 +0000</pubDate>
+		<dc:creator><![CDATA[Keith Miyake]]></dc:creator>
+				<category><![CDATA[Resources]]></category>
+		<category><![CDATA[careers]]></category>
+
+		<guid isPermaLink="false">http://geh101.wordpress.com/?p=61</guid>
+		<description><![CDATA[Here are a few resources containing information about careers in geography and how geographic analysis is used in other fields to help you see the richness and breadth of the discipline and why it is a relevant field of study.]]></description>
+				<content:encoded><![CDATA[<p>Here are a few resources containing information about careers in geography and how geographic analysis is used in other fields to help you see the richness and breadth of the discipline and why it is a relevant field of study.</p>
+<ul>
+<li><a href="http://geography.about.com/od/careersingeography/a/jobsgeography.htm" target="_blank">Geography Jobs</a> describes several fields in which geographers are frequently employed (via <a href="http://about.com/" target="_blank">About.com</a>)</li>
+<li><a href="http://www.aag.org/cs/what_geographers_do" target="_blank">What Geographers Do</a> and lots more! (via <a href="http://www.aag.org/" target="_blank">Association of American Geographers [AAG]</a>)</li>
+<li><a href="http://www.geography.org.uk/resources/careers" target="_blank">Careers in Geography</a> great resource with information about what professional geographers do and how geography is applied in non-geography careers (via the UK-based <a href="http://www.geography.org.uk/" target="_blank">Geographical Association [GA]</a>)</li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/geh101/2010/08/29/careers-in-geography/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">61</post-id>	</item>
+	</channel>
+</rss>

@@ -1,0 +1,93 @@
+.cv {
+  .page {
+    // @include breakpoint($large) {
+      @include span(full);
+      @include prefix(0 of 12);
+      @include suffix(0 of 12);
+    // }
+
+    .page__inner-wrap {
+      @include full();
+
+      .page__content,
+      .page__meta,
+      .page__share {
+        @include full();
+      }
+    }
+  }
+  
+  .body-toc {
+    @include span(9 of 12 first);
+  }
+
+  .sidebar__right {
+    @include span(3 of 12 last);
+    @include clearfix;
+  }
+}
+
+.cv {
+  @include clearfix;
+  animation: intro .3s both;
+  animation-delay: .25s;
+  margin-bottom: 2em;
+  position: relative;
+  text-indent: none;
+
+
+  &-body,
+  &-date,
+  &-title {
+    font-size: $type-size-2;
+
+    &+p+p {
+      margin-top: 0;
+      text-indent: 0;
+    }
+
+    @include breakpoint($small) {
+      font-size: $type-size-1;
+    }
+  }
+
+  &-body {
+    @include span(full);
+    @include clearfix;
+  }
+
+  &-date {
+    @include span(2 of 12 last);
+    clear: right;
+    text-align: right;
+  }
+
+  &-heading {
+    @include span(full);
+    @include clearfix;
+  }
+
+  &-title {
+    @include span(10 of 12 first);
+  }
+
+}
+
+p,
+p+p {
+  &.cv {
+    &-body {
+      margin-top: -$indent-var;
+      padding-left: $indent-var;
+      text-indent: 0;
+    }
+
+    &-date,
+    &-heading,
+    &-intro,
+    &-title {
+      margin-top: 0;
+      text-indent: 0;
+    }
+  }
+}

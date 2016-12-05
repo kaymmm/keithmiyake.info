@@ -1,0 +1,37 @@
+language: ruby
+rvm:
+- 2.2.5
+branches:
+  only:
+  - master
+cache:
+  bundler: true
+  directories:
+  - node_modules
+before_install:
+- openssl aes-256-cbc -K $encrypted_dea0dca55b07_key -iv $encrypted_dea0dca55b07_iv
+  -in sshkey.enc -out sshkey -d
+script:
+- bundle exec jekyll build --destination ${OUTDIR}${BASEURL}
+- bundle exec htmlproofer _site/ --allow-hash-href --check-html --url-ignore scholar.google.com --file-ignore /asam210/,/geh101/ --disable-external
+after_success:
+- git clone https://github.com/${GITHUB_REPO}
+- cd $(basename ${GITHUB_REPO})
+- git config user.name "Travis CI"
+- git config user.email ${EMAIL}
+- rsync -az --delete --exclude '.git*' ../${OUTDIR}${BASEURL} .
+- touch .nojekyll
+- git add -A .
+- git commit -m "Generated Jekyll site by Travis CI - ${TRAVIS_BUILD_NUMBER}"
+- chmod 600 sshkey
+- eval $(ssh-agent -s)
+- ssh-add sshkey
+- git push --force "git@github.com:${GITHUB_REPO}" HEAD:${REPO_TARGET_BRANCH}
+env:
+  global:
+  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+  - GITHUB_REPO: kaymmm/keithmiyake.info
+  - BASEURL: /keithmiyake.info
+  - OUTDIR: _site
+  - REPO_TARGET_BRANCH: gh-pages
+  - secure: DKQRXtBiSai7OYeebhL/0NM861hiz886e/7qU9/BI7i9vPZV2WBJFxx55Fea9ET1xW90479ycuRbetzqTKR46bosyDj2C1NkFwr6Lb4lpe9YXIOb3fZEE7JhMg/6fSEIixyqAqLqtmthN0dWfQztYGuesa/dfZwbEWE/BDBghEyzYkaCZtMDNXin2wW46XgTzeACxHFkEXFr2P20hZqqfKfvagEEMg0oac4agPkDZM6FSZ16A1WqkaCVRm+44qcB4DMinijZ0BFlswa0jSALCEY9/RaaoTJy2+vtlmqUKGbGnxQ7vgFiRYF4PiyMEeOW5aMJST0QHdIjVkzFufkZH5u+vDlwzGm/QoW02ttCpRSVZS8Am+U75pz/CQOzJIlnufuzwE2QNH+zDqEUz/mWFPI8l4rlYP/mHbzaSJCtQcBoKpfIXKqBPl9Oe6O2k+gGndUjSMS0ytF2nKvM5Uy647zHieGKx2WruonC0feUBwNeug6FV6rLpHzMiwEWsYC5u0ID1Y38430R4ibUSwj/+XEiRPbNXaDO9aI0Q89A0uNm1rIu2btPIA95vISHRCYnnvTQgCjDPIDPDTXhg7/30Q3D15m4AaGcm5AFnZ6O+apBfGxZkZgiprROc7NcUfHn4YoVlYhRLgUkQFgkMra6oLmvsEbf2LLPXkY8OPajciw=

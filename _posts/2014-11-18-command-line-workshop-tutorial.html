@@ -1,0 +1,113 @@
+---
+layout: single
+title: Command Line Workshop (tutorial)
+date: 2014-11-18 15:45:50.000000000 -08:00
+type: post
+published: true
+status: publish
+categories:
+- Digital Humanities
+tags:
+- command line
+- digital humanities
+- tutorial
+- workshop
+meta:
+  _edit_last: '1'
+  _thumbnail_id: '395'
+  _wpas_done_all: '1'
+  slide_template: default
+  _wp_old_slug: '394'
+author:
+  login: kmiyake
+  email: keith.miyake@gmail.com
+  display_name: Keith Miyake
+  first_name: Keith
+  last_name: Miyake
+---
+<h3>Intro</h3>
+<p>I recently gave a workshop on using the command line (a.k.a., terminal, command prompt, shell, etc.) at the Graduate Center as part of my Digital Fellow responsibilities. For the sake of sharing, I'm reposting the tutorial/walkthrough that guided the workshop. It's really basic and pretty sparse, but the resources linked at the bottom provide lots of additional content to help you or your students get started using the *NIX/BSD/CygWin/busybox command line. Note: everything listed should work with most shells, although iirc, the "apropos" command isn't included in busybox and "man" probably won't have much useful documentation.</p>
+<h3>Command Line Walkthrough</h3>
+<p>1. Setup<br />
+<code>./setup.sh</code><br />
+<code>cd ~</code></p>
+<p>2. structure of a command<br />
+<code>grep -r capital etext/*</code><br />
+command, flags/options, arguments</p>
+<p>3. White spaces in commands: white spaces separate arguments and options, use quotes to include spaces in things like filenames<br />
+<code>grep -r "they were" etext/*</code></p>
+<p>4. The file system, files, folders, user folder<br />
+<code>pwd<br />
+ls<br />
+ls -l<br />
+cd mydir<br />
+cd ~<br />
+mkdir mynewdir<br />
+mkdir -p mynewdir/mysubdir/mysubsub/subx3<br />
+touch goodbye.txt<br />
+rmdir mynewdir/mysubdir/mysubsub/subx3<br />
+rm goodbye.txt<br />
+rm -r mynewdir<br />
+cp hello.txt mydir/hello_copy.txt<br />
+mv mydir/hello_copy.txt ./</code></p>
+<p>5. Working with files: cat, less<br />
+<code>cat hello.txt<br />
+cat aesopa10.txt<br />
+less aesopa10.txt</code></p>
+<p>6. Pipes and redirection<br />
+| pipes take the output from one command and sends it as an argument of the second one<br />
+&gt;, &gt; pipe output as input to the file/stream<br />
+<code>echo "hello world." &gt; hello.txt<br />
+cat aesopa10.txt | less<br />
+grep -r they etext/* &gt; them.txt<br />
+cat &gt; dummy.txt</code><br />
+*Use ctrl-d to finish entering text</p>
+<p>7. Finding stuff: grep, find<br />
+files:<br />
+<code>find . -name "*.txt" -print</code><br />
+text:<br />
+<code>grep -r race ./*<br />
+grep -r " race" ./*</code><br />
+case insensitive:<br />
+<code>grep -ir german ./*</code><br />
+wildcards:<br />
+<code>grep -ir "fr.nc[eh]" ./*</code></p>
+<p>8. Getting help: man, apropos, --help<br />
+<code>man grep<br />
+apropos find<br />
+grep --help</code></p>
+<p>9. Autocompletion, bash history</p>
+<p>10. Exit<br />
+<code>exit</code></p>
+<h3>Additional Stuff</h3>
+<p>A. keyboard shortcuts: <a href="http://en.wikipedia.org/wiki/Bash_%28Unix_shell%29#Keyboard_shortcuts">http://en.wikipedia.org/wiki/Bash_%28Unix_shell%29#Keyboard_shortcuts</a><br />
+ctrl-c: kill the command<br />
+ctrl-d: exit<br />
+ctrl-z: pause and return to the command line (%<i>n</i> to resume)<br />
+ctrl-a: jump to the beginning of a line<br />
+ctrl-e: jump to the end of a line<br />
+up/down: previous/next command<br />
+tab: autocomplete<br />
+ctrl-l: clear the display</p>
+<p>B. Installing stuff:<br />
+Debian Linux (Mint, Ubuntu, etc.): <a href="https://help.ubuntu.com/community/AptGet/Howto">apt</a> (apt-get)<br />
+OS X: <a href="http://brew.sh/">brew</a> (recommended) or <a href="https://www.macports.org/">macports</a><br />
+Windows: <a href="https://www.cygwin.com/">cygwin</a> + <a href="https://code.google.com/p/apt-cyg/">cyg-apt</a></p>
+<p>C. Other topics to look into: users, groups, permissions, linking, processes, shell scripts, loops...</p>
+<p>D. Google is your friend!!!</p>
+<h3>Additional Resources</h3>
+<ol>
+<li><a href="http://cli.learncodethehardway.org/book/">http://cli.learncodethehardway.org/book/</a></li>
+<li><a href="http://www.davidbaumgold.com/tutorials/command-line/">http://www.davidbaumgold.com/tutorials/command-line/</a></li>
+<li><a href="http://learnpythonthehardway.org/book/appendixa.html">http://learnpythonthehardway.org/book/appendixa.html</a>
+</li>
+<li><a href="http://ryanstutorials.net/linuxtutorial/commandline.php">http://ryanstutorials.net/linuxtutorial/commandline.php</a>
+</li>
+</ol>
+<h3>Advanced Resources</h3>
+<ol>
+<li><a href="http://ohmyz.sh/">http://ohmyz.sh/</a></li>
+<li><a href="https://github.com/revans/bash-it">https://github.com/revans/bash-it</a></li>
+<li><a href="http://zachholman.com/2010/08/dotfiles-are-meant-to-be-forked/">http://zachholman.com/2010/08/dotfiles-are-meant-to-be-forked/</a></li>
+<li><a href="http://dotfiles.github.io/">http://dotfiles.github.io/</a></li>
+</ol>

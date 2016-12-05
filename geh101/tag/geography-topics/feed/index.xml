@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Geography Topics &#8211; Intro to Geography</title>
+	<atom:link href="/geh101/tag/geography-topics/feed/" rel="self" type="application/rss+xml" />
+	<link>/geh101</link>
+	<description>Lehman College</description>
+	<lastBuildDate>Sat, 29 Nov 2014 17:03:44 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	
+<site xmlns="com-wordpress:feed-additions:1">52642319</site>	<item>
+		<title>Term Paper Topics</title>
+		<link>/geh101/2011/02/07/term-paper-topics/</link>
+		<comments>/geh101/2011/02/07/term-paper-topics/#comments</comments>
+		<pubDate>Mon, 07 Feb 2011 17:59:42 +0000</pubDate>
+		<dc:creator><![CDATA[Keith Miyake]]></dc:creator>
+				<category><![CDATA[Assignments]]></category>
+		<category><![CDATA[Lectures and Notes]]></category>
+		<category><![CDATA[Geography Topics]]></category>
+		<category><![CDATA[Term Paper]]></category>
+
+		<guid isPermaLink="false">http://geh101.wordpress.com/?p=112</guid>
+		<description><![CDATA[Here is just a small sampling of topics that interest me and might hold interest for you as well. Be creative and choose something about which you would like to think and become more of an expert.]]></description>
+				<content:encoded><![CDATA[<p>A couple of examples of term paper topics were discussed in class (environmental justice in New York and the role of race, space, and place in the development of jazz music). While this paper should reflect your own interests, academic or otherwise, here are some ideas to help get you thinking about how different topics might be considered from a geographical perspective:</p>
+<ul>
+<li>The journey of a shoe (like the video in class on globalization)</li>
+<li>Climate change and shifting coastlines</li>
+<li>Human trafficking</li>
+<li>Public transportation</li>
+<li>Post-Katrina NOLA</li>
+<li>The Gulf of Mexico oil spill</li>
+<li>Public housing and the collapse of the housing industry</li>
+<li>Climate change and glacial melt</li>
+<li>Saharan desertification</li>
+<li>Invasive biological species</li>
+<li>Public spaces and parks</li>
+<li>Public art, grafs, and tags</li>
+<li>Food, agriculture, livestock, aquaculture</li>
+<li>Gender nonconformity</li>
+<li>Waste/garbage</li>
+<li>Dating and the Internet</li>
+<li>Professional sports and their host cities</li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/geh101/2011/02/07/term-paper-topics/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">112</post-id>	</item>
+	</channel>
+</rss>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>final exam &#8211; Intro to Geography</title>
+	<atom:link href="/geh101/tag/final-exam/feed/" rel="self" type="application/rss+xml" />
+	<link>/geh101</link>
+	<description>Lehman College</description>
+	<lastBuildDate>Sat, 29 Nov 2014 17:03:44 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	
+<site xmlns="com-wordpress:feed-additions:1">52642319</site>	<item>
+		<title>Final Exam Take-Home Questions</title>
+		<link>/geh101/2011/05/16/final-exam-take-home-questions/</link>
+		<comments>/geh101/2011/05/16/final-exam-take-home-questions/#respond</comments>
+		<pubDate>Mon, 16 May 2011 23:51:54 +0000</pubDate>
+		<dc:creator><![CDATA[Keith Miyake]]></dc:creator>
+				<category><![CDATA[Assignments]]></category>
+		<category><![CDATA[final exam]]></category>
+
+		<guid isPermaLink="false">http://geh101.wordpress.com/?p=367</guid>
+		<description><![CDATA[Choose one of the following questions and write a 300–600 word response. Your response should be typed and can be submitted by email or hard copy on the day of the final exam, May 23. 1)       Discuss the causes and effects of the global economic recession of the past few years in terms of geopolitics [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>Choose one of the following questions and write a 300–600 word response. Your response should be typed and can be submitted by email or hard copy on the day of the final exam, May 23.</p>
+<p><strong>1)       </strong>Discuss the causes and effects of the global economic recession of the past few years in terms of geopolitics and economic geography.</p>
+<p><strong>2)       </strong>Describe the impact of colonialism on contemporary societies. Use at least one example each from economic, political, and cultural geography.</p>
+<p><strong>3)       </strong>Using concepts from urban and population geography, describe some causes and effects of the global phenomenon of urbanization.</p>
+]]></content:encoded>
+			<wfw:commentRss>/geh101/2011/05/16/final-exam-take-home-questions/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">367</post-id>	</item>
+		<item>
+		<title>Class Notes &#8211; Urban Geography (Ch. 11), Regional Geography (Ch. 13) and Final Exam Notes</title>
+		<link>/geh101/2011/05/09/urban-regional-geography-final-exam-study-guide/</link>
+		<comments>/geh101/2011/05/09/urban-regional-geography-final-exam-study-guide/#respond</comments>
+		<pubDate>Mon, 09 May 2011 16:01:55 +0000</pubDate>
+		<dc:creator><![CDATA[Keith Miyake]]></dc:creator>
+				<category><![CDATA[Assignments]]></category>
+		<category><![CDATA[Lectures and Notes]]></category>
+		<category><![CDATA[final exam]]></category>
+		<category><![CDATA[gentrification]]></category>
+		<category><![CDATA[lecture notes]]></category>
+		<category><![CDATA[regional geography]]></category>
+		<category><![CDATA[urban geography]]></category>
+		<category><![CDATA[urbanization]]></category>
+
+		<guid isPermaLink="false">http://geh101.wordpress.com/?p=232</guid>
+		<description><![CDATA[This week's lecture notes cover Chapters 11 and 13 of the Getis textbook and are available as two separate PDFs [...]]]></description>
+				<content:encoded><![CDATA[<p>This week&#8217;s lecture notes cover Chapters 11 and 13 of the Getis textbook and are available as two separate PDFs here:</p>
+<ul>
+<li><a href="/geh101/wp-content/uploads/sites/3/2011/09/ch11-urban_geography.pdf">Ch. 11 &#8211; Urban Geography</a></li>
+<li><a href="/geh101/wp-content/uploads/sites/3/2011/09/ch13-regional_concept.pdf">Ch. 13 &#8211; The Regional Concept</a></li>
+</ul>
+<p><span class="Apple-style-span" style="line-height:46px;font-size:31px;color:#000000">FINAL EXAM INFO</span></p>
+<p><span style="font-size:medium"><span style="font-size:16px;line-height:24px">The in-class portion of the final will be administered at the <strong>normally-scheduled class time on May 23rd</strong>. Next week, I will hold a review and Q&amp;A session for the final exam in class. Please come prepared with questions or topics that you would like to review.</span></span></p>
+<p><span style="font-size:medium"><span style="font-size:16px;line-height:24px">A review guide with topics from each of the chapters since the Midterm Exam can be downloaded here: <a href="/geh101/wp-content/uploads/sites/3/2011/05/Final-Exam-Study-Guide.pdf">Final Exam Study Guide</a></span></span></p>
+]]></content:encoded>
+			<wfw:commentRss>/geh101/2011/05/09/urban-regional-geography-final-exam-study-guide/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">232</post-id>	</item>
+	</channel>
+</rss>

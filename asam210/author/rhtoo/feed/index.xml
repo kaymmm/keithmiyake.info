@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>rhtoo &#8211; Asians in the U.S.</title>
+	<atom:link href="/asam210/author/rhtoo/feed/" rel="self" type="application/rss+xml" />
+	<link>/asam210</link>
+	<description>Hunter College, Summer 2013</description>
+	<lastBuildDate>Wed, 26 Feb 2014 13:59:43 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	
+<site xmlns="com-wordpress:feed-additions:1">53277463</site>	<item>
+		<title>Further Research</title>
+		<link>/asam210/2013/06/09/further-research/</link>
+		<comments>/asam210/2013/06/09/further-research/#respond</comments>
+		<pubDate>Mon, 10 Jun 2013 00:36:59 +0000</pubDate>
+		<dc:creator><![CDATA[rhtoo]]></dc:creator>
+				<category><![CDATA[Announcements]]></category>
+
+		<guid isPermaLink="false">/asam210/?p=248</guid>
+		<description><![CDATA[]]></description>
+				<content:encoded><![CDATA[<a href="https://i0.wp.com/keithmiyake.info/asam210/wp-content/uploads/sites/2/2013/06/b195145036.jpg"><img class="alignnone size-medium wp-image-249" alt="Political cartoon related to first reading" src="https://i0.wp.com/keithmiyake.info/asam210/wp-content/uploads/sites/2/2013/06/b195145036.jpg?fit=300%2C300" srcset="https://i0.wp.com/keithmiyake.info/asam210/wp-content/uploads/sites/2/2013/06/b195145036.jpg?resize=300%2C186 300w, https://i0.wp.com/keithmiyake.info/asam210/wp-content/uploads/sites/2/2013/06/b195145036.jpg?w=369 369w" sizes="(max-width: 300px) 100vw, 300px" data-recalc-dims="1" /></a>
+]]></content:encoded>
+			<wfw:commentRss>/asam210/2013/06/09/further-research/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">248</post-id>	</item>
+	</channel>
+</rss>

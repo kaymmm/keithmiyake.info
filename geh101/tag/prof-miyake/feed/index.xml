@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Prof Miyake &#8211; Intro to Geography</title>
+	<atom:link href="/geh101/tag/prof-miyake/feed/" rel="self" type="application/rss+xml" />
+	<link>/geh101</link>
+	<description>Lehman College</description>
+	<lastBuildDate>Sat, 29 Nov 2014 17:03:44 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	
+<site xmlns="com-wordpress:feed-additions:1">52642319</site>	<item>
+		<title>Office Hours</title>
+		<link>/geh101/2010/08/31/office-hours/</link>
+		<comments>/geh101/2010/08/31/office-hours/#respond</comments>
+		<pubDate>Tue, 31 Aug 2010 15:15:57 +0000</pubDate>
+		<dc:creator><![CDATA[Keith Miyake]]></dc:creator>
+				<category><![CDATA[Resources]]></category>
+		<category><![CDATA[office hours]]></category>
+		<category><![CDATA[Prof Miyake]]></category>
+
+		<guid isPermaLink="false">http://geh101.wordpress.com/?p=93</guid>
+		<description><![CDATA[I will hold office hours weekly on Mondays from 5-6 in Gillet Hall room 325. If the door is locked and nobody answers when you knock and I&#8217;m not back in 5 minutes, please try calling me.]]></description>
+				<content:encoded><![CDATA[<p>I will hold office hours weekly on Mondays from 5-6 in Gillet Hall room 325.</p>
+<p>If the door is locked and nobody answers when you knock and I&#8217;m not back in 5 minutes, please try <a title="Instructor" href="http://geh101.wordpress.com/instructor/">calling me</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/geh101/2010/08/31/office-hours/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">93</post-id>	</item>
+	</channel>
+</rss>

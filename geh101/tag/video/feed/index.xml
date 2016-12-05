@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>video &#8211; Intro to Geography</title>
+	<atom:link href="/geh101/tag/video/feed/" rel="self" type="application/rss+xml" />
+	<link>/geh101</link>
+	<description>Lehman College</description>
+	<lastBuildDate>Sat, 29 Nov 2014 17:03:44 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	
+<site xmlns="com-wordpress:feed-additions:1">52642319</site>	<item>
+		<title>[video] National Geographic Plate Tectonics (Chapter 3)</title>
+		<link>/geh101/2011/02/27/video-national-geographic-plate-tectonics-chapter-3/</link>
+		<pubDate>Sun, 27 Feb 2011 22:34:53 +0000</pubDate>
+		<dc:creator><![CDATA[Keith Miyake]]></dc:creator>
+				<category><![CDATA[Lectures and Notes]]></category>
+		<category><![CDATA[Resources]]></category>
+		<category><![CDATA[earthquakes]]></category>
+		<category><![CDATA[landforms]]></category>
+		<category><![CDATA[lecture notes]]></category>
+		<category><![CDATA[physical geography]]></category>
+		<category><![CDATA[plate tectonics]]></category>
+		<category><![CDATA[video]]></category>
+		<category><![CDATA[volcanoes]]></category>
+
+		<guid isPermaLink="false">http://geh101.wordpress.com/?p=163</guid>
+		<description><![CDATA[Here is the video that was shown in class on the formation of the Earth and the mechanics of plate tectonics. It shows up in the lecture notes from Chapter 3 as a still image of the first scene, so I&#8217;m including it here because it contains some useful information not covered very thoroughly by [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>Here is the video that was shown in class on the formation of the Earth and the mechanics of plate tectonics. It shows up in the lecture notes from Chapter 3 as a still image of the first scene, so I&#8217;m including it here because it contains some useful information not covered very thoroughly by the Getis textbook.<br />
+<iframe class='youtube-player' type='text/html' width='640' height='390' src='https://www.youtube.com/embed/QDqskltCixA?version=3&#038;rel=1&#038;fs=1&#038;autohide=2&#038;showsearch=0&#038;showinfo=1&#038;iv_load_policy=1&#038;wmode=transparent' allowfullscreen='true' style='border:0;'></iframe></p>
+]]></content:encoded>
+		<post-id xmlns="com-wordpress:feed-additions:1">163</post-id>	</item>
+		<item>
+		<title>[Video] Manufactured Landscapes &#8211; Human impacts on landscapes</title>
+		<link>/geh101/2010/10/26/video-manufactured-landscapes-human-impacts-on-landscapes/</link>
+		<comments>/geh101/2010/10/26/video-manufactured-landscapes-human-impacts-on-landscapes/#respond</comments>
+		<pubDate>Tue, 26 Oct 2010 08:32:23 +0000</pubDate>
+		<dc:creator><![CDATA[Keith Miyake]]></dc:creator>
+				<category><![CDATA[Resources]]></category>
+		<category><![CDATA[china]]></category>
+		<category><![CDATA[human impact]]></category>
+		<category><![CDATA[human-environment interactions]]></category>
+		<category><![CDATA[landforms]]></category>
+		<category><![CDATA[resources]]></category>
+		<category><![CDATA[video]]></category>
+
+		<guid isPermaLink="false">http://geh101.wordpress.com/?p=182</guid>
+		<description><![CDATA[This is a clip from the film Manufactured Landscapes, which looks at the ways in which people have transformed the physical landscape of China through industrial growth as part of the expansion of capitalism.]]></description>
+				<content:encoded><![CDATA[<p>This is a clip from the film Manufactured Landscapes, which looks at the ways in which people have transformed the physical landscape of China through industrial growth as part of the expansion of capitalism.</p>
+<iframe class='youtube-player' type='text/html' width='640' height='390' src='https://www.youtube.com/embed/o97azFDkB58?version=3&#038;rel=1&#038;fs=1&#038;autohide=2&#038;showsearch=0&#038;showinfo=1&#038;iv_load_policy=1&#038;wmode=transparent' allowfullscreen='true' style='border:0;'></iframe>
+]]></content:encoded>
+			<wfw:commentRss>/geh101/2010/10/26/video-manufactured-landscapes-human-impacts-on-landscapes/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">182</post-id>	</item>
+	</channel>
+</rss>

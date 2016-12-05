@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>reading &#8211; Intro to Geography</title>
+	<atom:link href="/geh101/tag/reading/feed/" rel="self" type="application/rss+xml" />
+	<link>/geh101</link>
+	<description>Lehman College</description>
+	<lastBuildDate>Sat, 29 Nov 2014 17:03:44 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	
+<site xmlns="com-wordpress:feed-additions:1">52642319</site>	<item>
+		<title>Basic Reading, Writing, and Peer-Editing Guide</title>
+		<link>/geh101/2010/09/27/basic-reading-writing-and-peer-editing-guide/</link>
+		<comments>/geh101/2010/09/27/basic-reading-writing-and-peer-editing-guide/#respond</comments>
+		<pubDate>Mon, 27 Sep 2010 17:48:42 +0000</pubDate>
+		<dc:creator><![CDATA[Keith Miyake]]></dc:creator>
+				<category><![CDATA[Resources]]></category>
+		<category><![CDATA[reading]]></category>
+		<category><![CDATA[Term Paper]]></category>
+		<category><![CDATA[writing]]></category>
+
+		<guid isPermaLink="false">http://geh101.wordpress.com/?p=171</guid>
+		<description><![CDATA[Celina Su, an Urban Studies professor at Brooklyn College, has a great guide to help students with critical reading, writing, and peer-editing. I highly recommend students check out the guide. Even if some of the ideas seem really basic and obvious, it never hurts to be reminded that we should be doing these things on [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>Celina Su, an Urban Studies professor at Brooklyn College, has a great guide to help students with critical reading, writing, and peer-editing. I highly recommend students check out the guide. Even if some of the ideas seem really basic and obvious, it never hurts to be reminded that we should be doing these things on a regular basis.</p>
+<p>Check out Celina Su&#8217;s <a href="http://www.burmeserefugeeproject.org/celinasu/reading.html">Reading</a>, <a href="http://www.burmeserefugeeproject.org/celinasu/writing.html">Writing</a>, and <a href="http://www.burmeserefugeeproject.org/celinasu/editing.html">Peer-Editing</a> guides.</p>
+<p>Paisley Currah, another Brooklyn College professor, also has a more in-depth <a href="http://academic.brooklyn.cuny.edu/polisci/pcurrah/writing.htm">guide for writing</a> that covers topics such as style, mechanics, using references, as well as developing your arguments.</p>
+<p>And per usual, you can always discuss these things with me in person or via email if you find yourself needing additional assistance.</p>
+]]></content:encoded>
+			<wfw:commentRss>/geh101/2010/09/27/basic-reading-writing-and-peer-editing-guide/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">171</post-id>	</item>
+	</channel>
+</rss>

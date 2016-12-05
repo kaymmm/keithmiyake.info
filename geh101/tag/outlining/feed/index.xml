@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>outlining &#8211; Intro to Geography</title>
+	<atom:link href="/geh101/tag/outlining/feed/" rel="self" type="application/rss+xml" />
+	<link>/geh101</link>
+	<description>Lehman College</description>
+	<lastBuildDate>Sat, 29 Nov 2014 17:03:44 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	
+<site xmlns="com-wordpress:feed-additions:1">52642319</site>	<item>
+		<title>Outlining and Prewriting Resources</title>
+		<link>/geh101/2010/10/06/outlining-and-prewriting-resources/</link>
+		<comments>/geh101/2010/10/06/outlining-and-prewriting-resources/#respond</comments>
+		<pubDate>Wed, 06 Oct 2010 16:52:24 +0000</pubDate>
+		<dc:creator><![CDATA[Keith Miyake]]></dc:creator>
+				<category><![CDATA[Assignments]]></category>
+		<category><![CDATA[Resources]]></category>
+		<category><![CDATA[outlining]]></category>
+		<category><![CDATA[prewriting]]></category>
+		<category><![CDATA[resources]]></category>
+		<category><![CDATA[Term Paper]]></category>
+		<category><![CDATA[writing]]></category>
+
+		<guid isPermaLink="false">http://geh101.wordpress.com/?p=195</guid>
+		<description><![CDATA[In a previous post, I provided some resources to help students with the writing process. However, I realized that those resources didn&#8217;t sufficiently cover pre-writing and outlining, and since an outline is due before the next class, I decided to provide some additional resources to help you get started with your outlines. The Purdue University [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>In a <a href="http://geh101.wordpress.com/2010/09/27/basic-reading-writing-and-peer-editing-guide/">previous post</a>, I provided some resources to help students with the writing process. However, I realized that those resources didn&#8217;t sufficiently cover pre-writing and outlining, and since an outline is due before the next class, I decided to provide some additional resources to help you get started with your outlines.</p>
+<p>The Purdue University Online Writing Lab is a wonderful resource for all stages of the writing process for students of all levels. Their sections on outlining and prewriting are particularly useful:</p>
+<ul>
+<li><a href="http://owl.english.purdue.edu/owl/resource/673/01/">Prewriting I</a></li>
+<li><a href="http://owl.english.purdue.edu/owl/resource/673/02/">Prewriting II</a></li>
+<li><a href="http://owl.english.purdue.edu/owl/resource/673/03/">Prewriting III</a></li>
+<li><a href="http://owl.english.purdue.edu/owl/resource/544/02/">Why and How to Outline</a></li>
+<li><a href="http://owl.english.purdue.edu/owl/resource/544/03/">Types of Outlines</a></li>
+<li><a href="http://owl.english.purdue.edu/owl/resource/544/01/">Outline Content</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>/geh101/2010/10/06/outlining-and-prewriting-resources/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">195</post-id>	</item>
+	</channel>
+</rss>

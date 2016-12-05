@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>geopolitics &#8211; Intro to Geography</title>
+	<atom:link href="/geh101/tag/geopolitics/feed/" rel="self" type="application/rss+xml" />
+	<link>/geh101</link>
+	<description>Lehman College</description>
+	<lastBuildDate>Sat, 29 Nov 2014 17:03:44 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	
+<site xmlns="com-wordpress:feed-additions:1">52642319</site>	<item>
+		<title>Chapter 10 Class Notes &#8211; Economic Geography</title>
+		<link>/geh101/2011/05/02/chapter-10-economic-geography/</link>
+		<comments>/geh101/2011/05/02/chapter-10-economic-geography/#respond</comments>
+		<pubDate>Mon, 02 May 2011 17:05:43 +0000</pubDate>
+		<dc:creator><![CDATA[Keith Miyake]]></dc:creator>
+				<category><![CDATA[Lectures and Notes]]></category>
+		<category><![CDATA[capitalism]]></category>
+		<category><![CDATA[economic geography]]></category>
+		<category><![CDATA[geopolitics]]></category>
+		<category><![CDATA[historical materialism]]></category>
+		<category><![CDATA[lecture notes]]></category>
+		<category><![CDATA[political economy]]></category>
+		<category><![CDATA[socialism]]></category>
+
+		<guid isPermaLink="false">http://geh101.wordpress.com/?p=228</guid>
+		<description><![CDATA[The PDF of the lecture notes for Chapter 10 in the Getis textbook, is available here: <a href="http://geh101.files.wordpress.com/2011/09/ch10-economic_geography.pdf">Chapter 10 - economic geography</a>]]></description>
+				<content:encoded><![CDATA[<p>The PDF of the lecture notes for Chapter 10 in the Getis textbook, is available here: <a href="/geh101/wp-content/uploads/sites/3/2011/09/ch10-economic_geography.pdf">Chapter 10 &#8211; economic geography</a></p>
+]]></content:encoded>
+			<wfw:commentRss>/geh101/2011/05/02/chapter-10-economic-geography/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">228</post-id>	</item>
+		<item>
+		<title>Geopolitics through Maps</title>
+		<link>/geh101/2010/09/08/geopolitics-through-maps/</link>
+		<comments>/geh101/2010/09/08/geopolitics-through-maps/#respond</comments>
+		<pubDate>Wed, 08 Sep 2010 17:39:37 +0000</pubDate>
+		<dc:creator><![CDATA[Keith Miyake]]></dc:creator>
+				<category><![CDATA[Maps]]></category>
+		<category><![CDATA[Resources]]></category>
+		<category><![CDATA[geopolitics]]></category>
+		<category><![CDATA[maps]]></category>
+		<category><![CDATA[physical geography]]></category>
+		<category><![CDATA[political geography]]></category>
+
+		<guid isPermaLink="false">http://geh101.wordpress.com/?p=96</guid>
+		<description><![CDATA[Geopolitics is the politics of international relations, particularly those influenced by geographical factors. A quick look at a map might lead to questions about the relationships between nations in terms of their proximity and possible trade. But maps can also provide much deeper insights into the geopolitical histories of nation states if the establishment of [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>Geopolitics is the politics of international relations, particularly those influenced by geographical factors. A quick look at a map might lead to questions about the relationships between nations in terms of their proximity and possible trade. But maps can also provide much deeper insights into the geopolitical histories of nation states if the establishment of borders is considered.</p>
+<div style="width: 291px" class="wp-caption alignright"><a href="https://i1.wp.com/commons.wikimedia.org/wiki/File:Spain_topo.png"><img class=" " title="Spain Topo Map" src="https://i1.wp.com/upload.wikimedia.org/wikipedia/commons/thumb/d/de/Spain_topo.png/696px-Spain_topo.png?resize=281%2C241" alt="Topo map of Spain" data-recalc-dims="1" /></a><p class="wp-caption-text">Source: wikimedia commons http://commons.wikimedia.org/wiki/File:Spain_topo.png</p></div>
+<p>For example, consider the border between France and Spain:</p>
+<p>The jagged shape of the border implies that it was likely established along a naturally occurring physical geologic feature, in this case, the border follows the crest of the <a href="http://en.wikipedia.org/wiki/Pyrenees" target="_blank">Pyrenees Mountains</a>.</p>
+<p>What sorts of implications might other types of borders indicate? Straight borders? Borders with a hitch (like that between Spain and Portugal)? Borders that create long sections of land jutting between other countries? Borders that place one nation partially or entirely inside of another country? etc&#8230;</p>
+<p>These and other geopolitical border situations are explored in greater detail <a href="http://www.pagef30.com/2009/08/understanding-countries-through-maps.html" target="_blank">here</a>, with some great explanatory maps.</p>
+]]></content:encoded>
+			<wfw:commentRss>/geh101/2010/09/08/geopolitics-through-maps/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">96</post-id>	</item>
+	</channel>
+</rss>
