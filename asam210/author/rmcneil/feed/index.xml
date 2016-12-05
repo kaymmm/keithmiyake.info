@@ -1,67 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
-	xmlns:content="http://purl.org/rss/1.0/modules/content/"
-	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
-	xmlns:dc="http://purl.org/dc/elements/1.1/"
-	xmlns:atom="http://www.w3.org/2005/Atom"
-	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
-	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
-	>
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+  xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+  >
 
 <channel>
-	<title>Ryan McNeil &#8211; Asians in the U.S.</title>
-	<atom:link href="/asam210/author/rmcneil/feed/" rel="self" type="application/rss+xml" />
-	<link>/asam210</link>
-	<description>Hunter College, Summer 2013</description>
-	<lastBuildDate>Wed, 26 Feb 2014 13:59:43 +0000</lastBuildDate>
-	<language>en-US</language>
-	<sy:updatePeriod>hourly</sy:updatePeriod>
-	<sy:updateFrequency>1</sy:updateFrequency>
-	
-<site xmlns="com-wordpress:feed-additions:1">53277463</site>	<item>
-		<title>Researcher for 7/10</title>
-		<link>/asam210/2013/07/10/researcher-for-710/</link>
-		<comments>/asam210/2013/07/10/researcher-for-710/#comments</comments>
-		<pubDate>Wed, 10 Jul 2013 07:56:49 +0000</pubDate>
-		<dc:creator><![CDATA[Ryan McNeil]]></dc:creator>
-				<category><![CDATA[Announcements]]></category>
+  <title>Ryan McNeil &#8211; Asians in the U.S.</title>
+  <atom:link href="{{site.baseurl}}/asam210/author/rmcneil/feed/" rel="self" type="application/rss+xml" />
+  <link>/asam210</link>
+  <description>Hunter College, Summer 2013</description>
+  <lastBuildDate>Wed, 26 Feb 2014 13:59:43 +0000</lastBuildDate>
+  <language>en-US</language>
+  <sy:updatePeriod>hourly</sy:updatePeriod>
+  <sy:updateFrequency>1</sy:updateFrequency>
 
-		<guid isPermaLink="false">/asam210/?p=592</guid>
-		<description><![CDATA[http://encyclopedia.jrank.org/articles/pages/5968/THE-SHIFT-TOWARD-RACIALIZATION.html The above article elaborates on the racialization of Arab women in America both currently and 30+years back.  It makes an interesting point about the relation between religion and race (namely racism&#8217;s conflation of &#8216;Arab&#8217; and &#8216;Muslim&#8217;), saying that Arab Americans have faced plenty of racism since before the majority of Arab American immigrants were [&#8230;]]]></description>
-				<content:encoded><![CDATA[<p>http://encyclopedia.jrank.org/articles/pages/5968/THE-SHIFT-TOWARD-RACIALIZATION.html<br />
+<site xmlns="com-wordpress:feed-additions:1">53277463</site>  <item>
+    <title>Researcher for 7/10</title>
+    <link>/asam210/2013/07/10/researcher-for-710/</link>
+    <comments>/asam210/2013/07/10/researcher-for-710/#comments</comments>
+    <pubDate>Wed, 10 Jul 2013 07:56:49 +0000</pubDate>
+    <dc:creator><![CDATA[Ryan McNeil]]></dc:creator>
+        <category><![CDATA[Announcements]]></category>
+
+    <guid isPermaLink="false">/asam210/?p=592</guid>
+    <description><![CDATA[http://encyclopedia.jrank.org/articles/pages/5968/THE-SHIFT-TOWARD-RACIALIZATION.html The above article elaborates on the racialization of Arab women in America both currently and 30+years back.  It makes an interesting point about the relation between religion and race (namely racism&#8217;s conflation of &#8216;Arab&#8217; and &#8216;Muslim&#8217;), saying that Arab Americans have faced plenty of racism since before the majority of Arab American immigrants were [&#8230;]]]></description>
+        <content:encoded><![CDATA[<p>http://encyclopedia.jrank.org/articles/pages/5968/THE-SHIFT-TOWARD-RACIALIZATION.html<br />
 The above article elaborates on the racialization of Arab women in America both currently and 30+years back.  It makes an interesting point about the relation between religion and race (namely racism&#8217;s conflation of &#8216;Arab&#8217; and &#8216;Muslim&#8217;), saying that Arab Americans have faced plenty of racism since before the majority of Arab American immigrants were even muslim.  This article cleanly sweeps aside any argument that Arab Americans are simply considered &#8216;white&#8217; in America, reminds readers that Arab Americans can be discriminated against for their race <em>and </em>their stereotyped [imagined] connection to Islam, not to mention the racism against Arab Americans is so strong (and, of course, not kept distinct enough) as to spill over onto virtually all middle-easterners as well as Indian Americans and some other Asian peoples in America.  This article is relevant to the Andrea Smith reading, particularly the bit about the &#8220;whiteness&#8221; of Arab Americans, plus it references Omi and Winant&#8217;s famous Racial Formation paper.</p>
 <p>http://www.huffingtonpost.com/daniel-little/where-is-student-activism_b_1654460.html<br />
 While the above doesn&#8217;t really focus on <em>Asian American</em> student activism, I feel that it does speak to the Umemoto and Yamashita readings by investigating changes in student activism (specifically racial activism) since the 1960s. The article makes reference to the birth of Asian-American studies (amongst other race and identity studies) from the success of the African American civil rights movement in popularizing race &amp; identity studies, starting with African American studies.  This goes to show that the decision for Asian American and African American activist groups to cooperate as in &#8220;On Strike!&#8221; did, at least in some way, pay off in the long run.  It also takes a few jabs at figuring out why such fervent student activism has since died down, stating that it isn&#8217;t a matter of the amount of support for a cause, but a slew of other factors that allow for large-scale activist movements to take hold as they did in the &#8217;60s.</p>
 ]]></content:encoded>
-			<wfw:commentRss>/asam210/2013/07/10/researcher-for-710/feed/</wfw:commentRss>
-		<slash:comments>2</slash:comments>
-	<post-id xmlns="com-wordpress:feed-additions:1">592</post-id>	</item>
-		<item>
-		<title>Primary Reader 7/3</title>
-		<link>/asam210/2013/07/02/primary-reader-73/</link>
-		<comments>/asam210/2013/07/02/primary-reader-73/#comments</comments>
-		<pubDate>Wed, 03 Jul 2013 03:59:27 +0000</pubDate>
-		<dc:creator><![CDATA[Ryan McNeil]]></dc:creator>
-				<category><![CDATA[Primary Reader]]></category>
+      <wfw:commentRss>/asam210/2013/07/10/researcher-for-710/feed/</wfw:commentRss>
+    <slash:comments>2</slash:comments>
+  <post-id xmlns="com-wordpress:feed-additions:1">592</post-id> </item>
+    <item>
+    <title>Primary Reader 7/3</title>
+    <link>/asam210/2013/07/02/primary-reader-73/</link>
+    <comments>/asam210/2013/07/02/primary-reader-73/#comments</comments>
+    <pubDate>Wed, 03 Jul 2013 03:59:27 +0000</pubDate>
+    <dc:creator><![CDATA[Ryan McNeil]]></dc:creator>
+        <category><![CDATA[Primary Reader]]></category>
 
-		<guid isPermaLink="false">/asam210/?p=532</guid>
-		<description><![CDATA[The Parrenas article discusses female Filipino-American immigrants in domestic labor (as the name implies) and examines their place in American society based mostly on interviews that the Author had with female Filipino domestic workers.  The paper spends a bit examining their common place in domestic labor, and how their handling of reproductive labor for richer [&#8230;]]]></description>
-				<content:encoded><![CDATA[<p>The Parrenas article discusses female Filipino-American immigrants in domestic labor (as the name implies) and examines their place in American society based mostly on interviews that the Author had with female Filipino domestic workers.  The paper spends a bit examining their common place in domestic labor, and how their handling of reproductive labor for richer families (specifically for richer mothers) has been under-credited by society.  She mentions that this issue has had a long history in America and in doing so brings up an interesting point that when reproductive labor is performed by a mother, the labor is seen as noble, proper and respectable, while when the same work is done by these immigrant workers, it is simply &#8220;unskilled labor;&#8221; a lowly job.  The Author also states that &#8220;globalization has sparked the feminization of migrant labor.&#8221;  That is to say that the global industrial system has called for plenty of labor from female immigrants and females in their home countries, though it&#8217;s worth mentioning that this has kept them from escaping strenuous low-paying jobs in many places and has allowed the devaluing of reproductive labor in society.  The silver lining to this decrease in social standing in America is an increase of social and material status in their home country (The Philippines).</p>
+    <guid isPermaLink="false">/asam210/?p=532</guid>
+    <description><![CDATA[The Parrenas article discusses female Filipino-American immigrants in domestic labor (as the name implies) and examines their place in American society based mostly on interviews that the Author had with female Filipino domestic workers.  The paper spends a bit examining their common place in domestic labor, and how their handling of reproductive labor for richer [&#8230;]]]></description>
+        <content:encoded><![CDATA[<p>The Parrenas article discusses female Filipino-American immigrants in domestic labor (as the name implies) and examines their place in American society based mostly on interviews that the Author had with female Filipino domestic workers.  The paper spends a bit examining their common place in domestic labor, and how their handling of reproductive labor for richer families (specifically for richer mothers) has been under-credited by society.  She mentions that this issue has had a long history in America and in doing so brings up an interesting point that when reproductive labor is performed by a mother, the labor is seen as noble, proper and respectable, while when the same work is done by these immigrant workers, it is simply &#8220;unskilled labor;&#8221; a lowly job.  The Author also states that &#8220;globalization has sparked the feminization of migrant labor.&#8221;  That is to say that the global industrial system has called for plenty of labor from female immigrants and females in their home countries, though it&#8217;s worth mentioning that this has kept them from escaping strenuous low-paying jobs in many places and has allowed the devaluing of reproductive labor in society.  The silver lining to this decrease in social standing in America is an increase of social and material status in their home country (The Philippines).</p>
 <p>In &#8220;So Our History Doesn&#8217;t Become Your Future,&#8221; Naber discusses changes in American public policy following 9/11.  She states her opinion that despite fears or reservations, US foreign policy is progressing and cultural unity is growing.  I found this to be a refreshing perspective given all the pessimism that naturally comes along with investigating the inequalities in society to begin with.  She did mention that post-9/11 US policy did see an increase in the government&#8217;s (specifically the executive branch) ability to label an entire group as a threat to national security, a label that those of us living here now can vouch is easily recognizable in American society.  She  also makes reference to the post 9/11 world order, linked to the idea that the US essentially controlled global politics after 9/11 and attempted to make its interest the ways of the world as in Israel-Palestine conflict.  After reading this article, I&#8217;d pose the simple question of where the author may see the US in 10 and 50 years given these shifts in policy, and I&#8217;m curious to see how our actions effect our global standing in the very long run.</p>
 ]]></content:encoded>
-			<wfw:commentRss>/asam210/2013/07/02/primary-reader-73/feed/</wfw:commentRss>
-		<slash:comments>3</slash:comments>
-	<post-id xmlns="com-wordpress:feed-additions:1">532</post-id>	</item>
-		<item>
-		<title>Researcher for 7/1</title>
-		<link>/asam210/2013/07/01/researcher-for-71/</link>
-		<comments>/asam210/2013/07/01/researcher-for-71/#respond</comments>
-		<pubDate>Mon, 01 Jul 2013 09:34:42 +0000</pubDate>
-		<dc:creator><![CDATA[Ryan McNeil]]></dc:creator>
-				<category><![CDATA[Further Research]]></category>
+      <wfw:commentRss>/asam210/2013/07/02/primary-reader-73/feed/</wfw:commentRss>
+    <slash:comments>3</slash:comments>
+  <post-id xmlns="com-wordpress:feed-additions:1">532</post-id> </item>
+    <item>
+    <title>Researcher for 7/1</title>
+    <link>/asam210/2013/07/01/researcher-for-71/</link>
+    <comments>/asam210/2013/07/01/researcher-for-71/#respond</comments>
+    <pubDate>Mon, 01 Jul 2013 09:34:42 +0000</pubDate>
+    <dc:creator><![CDATA[Ryan McNeil]]></dc:creator>
+        <category><![CDATA[Further Research]]></category>
 
-		<guid isPermaLink="false">/asam210/?p=514</guid>
-		<description><![CDATA[http://www.justice.gov/crt/legalinfo/discrimupdate.php The above link seemed relevant to Junaid Rana&#8217;s paper. It doesn&#8217;t present any surprising ideas, and doesn&#8217;t even necessarily focus on Asians, but I chose this article because it seemed relevant to the paper by giving accounts of the sort of hate crimes and discrimination that American muslims were subjected to post 9-11.  By [&#8230;]]]></description>
-				<content:encoded><![CDATA[<ol>
+    <guid isPermaLink="false">/asam210/?p=514</guid>
+    <description><![CDATA[http://www.justice.gov/crt/legalinfo/discrimupdate.php The above link seemed relevant to Junaid Rana&#8217;s paper. It doesn&#8217;t present any surprising ideas, and doesn&#8217;t even necessarily focus on Asians, but I chose this article because it seemed relevant to the paper by giving accounts of the sort of hate crimes and discrimination that American muslims were subjected to post 9-11.  By [&#8230;]]]></description>
+        <content:encoded><![CDATA[<ol>
 <li>http://www.justice.gov/crt/legalinfo/discrimupdate.php</li>
 </ol>
 <p>The above link seemed relevant to Junaid Rana&#8217;s paper. It doesn&#8217;t present any surprising ideas, and doesn&#8217;t even necessarily focus on Asians, but I chose this article because it seemed relevant to the paper by giving accounts of the sort of hate crimes and discrimination that American muslims were subjected to post 9-11.  By giving a more vivid face to the matter, it became all the more real and I felt I better understood the issue of &#8220;moral panic&#8221; at a social level.</p>
@@ -70,73 +70,73 @@ While the above doesn&#8217;t really focus on <em>Asian American</em> student a
 <p>In relation to &#8220;Youth, Culture, Citizenship, and Globalization&#8221; the above link Better defines cultural citizenship.  It brings up the interesting case of 19th century San Francisco, where many chinese immigrants never became full &#8220;citizens&#8221; because the did not need to interact outside their own communities.  They instead remained in immigrant towns where customs would be accepted and they wouldn&#8217;t have to Americanize.  I found this interesting because it defied the idea in &#8220;Youth, Culture, Citizenship, and Globalization&#8221; that cultural citizenship necessarily &#8220;becomes an important construct&#8221; for immigrants.  Even today, we see conclaves of nearly isolated subcultures in America, and so long as those cultures are not already part of American culture or so much as trying to be, they are retaining their own cultural citizenship, even within foreign borders.</p>
 <p>&nbsp;</p>
 ]]></content:encoded>
-			<wfw:commentRss>/asam210/2013/07/01/researcher-for-71/feed/</wfw:commentRss>
-		<slash:comments>0</slash:comments>
-	<post-id xmlns="com-wordpress:feed-additions:1">514</post-id>	</item>
-		<item>
-		<title>Primary Reader 6/24</title>
-		<link>/asam210/2013/06/23/primary-reader-624/</link>
-		<comments>/asam210/2013/06/23/primary-reader-624/#comments</comments>
-		<pubDate>Mon, 24 Jun 2013 02:41:24 +0000</pubDate>
-		<dc:creator><![CDATA[Ryan McNeil]]></dc:creator>
-				<category><![CDATA[Primary Reader]]></category>
-		<category><![CDATA[Cold War]]></category>
-		<category><![CDATA[Lisa Lowe]]></category>
-		<category><![CDATA[Robert G Lee]]></category>
-		<category><![CDATA[Robert Lee]]></category>
+      <wfw:commentRss>/asam210/2013/07/01/researcher-for-71/feed/</wfw:commentRss>
+    <slash:comments>0</slash:comments>
+  <post-id xmlns="com-wordpress:feed-additions:1">514</post-id> </item>
+    <item>
+    <title>Primary Reader 6/24</title>
+    <link>/asam210/2013/06/23/primary-reader-624/</link>
+    <comments>/asam210/2013/06/23/primary-reader-624/#comments</comments>
+    <pubDate>Mon, 24 Jun 2013 02:41:24 +0000</pubDate>
+    <dc:creator><![CDATA[Ryan McNeil]]></dc:creator>
+        <category><![CDATA[Primary Reader]]></category>
+    <category><![CDATA[Cold War]]></category>
+    <category><![CDATA[Lisa Lowe]]></category>
+    <category><![CDATA[Robert G Lee]]></category>
+    <category><![CDATA[Robert Lee]]></category>
 
-		<guid isPermaLink="false">/asam210/?p=452</guid>
-		<description><![CDATA[In the Robert G. Lee piece, Lee tackles the stereotype that Asians embodied a &#8220;model minority;&#8221; a group that assimilated well and fell in line well with established societal norms.  He spends a good portion of the paper on the history of this stereotype.  In my opinion, it was somewhat surprising to read about the [&#8230;]]]></description>
-				<content:encoded><![CDATA[<p>In the Robert G. Lee piece, Lee tackles the stereotype that Asians embodied a &#8220;model minority;&#8221; a group that assimilated well and fell in line well with established societal norms.  He spends a good portion of the paper on the history of this stereotype.  In my opinion, it was somewhat surprising to read about the excerpt from <i>Life </i>magazine.  Though racism was still so socially acceptable in America at the time, I was a little surprised to see a respected magazine publish such a pseudoscientific piece on racial anthropology as late as 1941.  The main idea I got from this paper was that straight, working-class Asians were seen as an acceptable out-group in relation to other minorities (racial minorities and homosexuals), despite the very negative light cast on Asians in America by the prevalence of communism in a few asian nations.  I believe that the model minority myth must have been incredibly well entrenched in American culture, given that it had to overcome even the extreme anti-communist sentiment central to Cold War America.</p>
+    <guid isPermaLink="false">/asam210/?p=452</guid>
+    <description><![CDATA[In the Robert G. Lee piece, Lee tackles the stereotype that Asians embodied a &#8220;model minority;&#8221; a group that assimilated well and fell in line well with established societal norms.  He spends a good portion of the paper on the history of this stereotype.  In my opinion, it was somewhat surprising to read about the [&#8230;]]]></description>
+        <content:encoded><![CDATA[<p>In the Robert G. Lee piece, Lee tackles the stereotype that Asians embodied a &#8220;model minority;&#8221; a group that assimilated well and fell in line well with established societal norms.  He spends a good portion of the paper on the history of this stereotype.  In my opinion, it was somewhat surprising to read about the excerpt from <i>Life </i>magazine.  Though racism was still so socially acceptable in America at the time, I was a little surprised to see a respected magazine publish such a pseudoscientific piece on racial anthropology as late as 1941.  The main idea I got from this paper was that straight, working-class Asians were seen as an acceptable out-group in relation to other minorities (racial minorities and homosexuals), despite the very negative light cast on Asians in America by the prevalence of communism in a few asian nations.  I believe that the model minority myth must have been incredibly well entrenched in American culture, given that it had to overcome even the extreme anti-communist sentiment central to Cold War America.</p>
 <p>The David Palumbo-Liu paper delves more technically into the politics of being Asian in America, and relative stereotypes.  The paper talks about some differences in the treatment of Asian Americans by location (particularly California). It goes on to examine a few films, in my opinion, illustrating popular perception of Asians in the US and the contradictory nature of some Asian stereotypes.  The paper works its way from these perceptions themselves to their implications, like the mistreatment of Asian Americans like that of the banking system.  One interesting point that this paper brings up is that Asians were forced to integrate (page 241), evidencing that the model minority myth was not just created in white Americans&#8217; minds, but in their actions.  For further research, I would be curious how racist perceptions of Asian Americans, and their treatment because of those perceptions may have fed back and forth in a circular fashion. ie. Asians being perceived as unsanitary or unhealthy, thus not being afforded the same health care as white Americans causing them to actually have poorer health than white Americans.</p>
 ]]></content:encoded>
-			<wfw:commentRss>/asam210/2013/06/23/primary-reader-624/feed/</wfw:commentRss>
-		<slash:comments>3</slash:comments>
-	<post-id xmlns="com-wordpress:feed-additions:1">452</post-id>	</item>
-		<item>
-		<title>Researcher for 6/19</title>
-		<link>/asam210/2013/06/19/409/</link>
-		<comments>/asam210/2013/06/19/409/#respond</comments>
-		<pubDate>Wed, 19 Jun 2013 04:17:45 +0000</pubDate>
-		<dc:creator><![CDATA[Ryan McNeil]]></dc:creator>
-				<category><![CDATA[Further Research]]></category>
-		<category><![CDATA[Citizenship]]></category>
-		<category><![CDATA[Leti Volpp]]></category>
-		<category><![CDATA[Lisa Lowe]]></category>
+      <wfw:commentRss>/asam210/2013/06/23/primary-reader-624/feed/</wfw:commentRss>
+    <slash:comments>3</slash:comments>
+  <post-id xmlns="com-wordpress:feed-additions:1">452</post-id> </item>
+    <item>
+    <title>Researcher for 6/19</title>
+    <link>/asam210/2013/06/19/409/</link>
+    <comments>/asam210/2013/06/19/409/#respond</comments>
+    <pubDate>Wed, 19 Jun 2013 04:17:45 +0000</pubDate>
+    <dc:creator><![CDATA[Ryan McNeil]]></dc:creator>
+        <category><![CDATA[Further Research]]></category>
+    <category><![CDATA[Citizenship]]></category>
+    <category><![CDATA[Leti Volpp]]></category>
+    <category><![CDATA[Lisa Lowe]]></category>
 
-		<guid isPermaLink="false">/asam210/?p=409</guid>
-		<description><![CDATA[http://www.cis.org/1965ImmigrationAct-MassImmigration Like many of the analyses I could find online, the above defends the Immigration Act of 1965, discussed extensively in the Lowe piece.  I thought this one was worth posting because it contains several quotes from American politicians, illustrating the controversy that surrounded the bill.  While the Lowe piece gives the opinion of one [&#8230;]]]></description>
-				<content:encoded><![CDATA[<p><a href="http://www.cis.org/1965ImmigrationAct-MassImmigration">http://www.cis.org/1965ImmigrationAct-MassImmigration</a><br />
+    <guid isPermaLink="false">/asam210/?p=409</guid>
+    <description><![CDATA[http://www.cis.org/1965ImmigrationAct-MassImmigration Like many of the analyses I could find online, the above defends the Immigration Act of 1965, discussed extensively in the Lowe piece.  I thought this one was worth posting because it contains several quotes from American politicians, illustrating the controversy that surrounded the bill.  While the Lowe piece gives the opinion of one [&#8230;]]]></description>
+        <content:encoded><![CDATA[<p><a href="http://www.cis.org/1965ImmigrationAct-MassImmigration">http://www.cis.org/1965ImmigrationAct-MassImmigration</a><br />
 Like many of the analyses I could find online, the above defends the Immigration Act of 1965, discussed extensively in the Lowe piece.  I thought this one was worth posting because it contains several quotes from American politicians, illustrating the controversy that surrounded the bill.  While the Lowe piece gives the opinion of one (very informed) writer, the above link allows us to see how many people within the setting of the bill&#8217;s passing reacted to it, and gives us some statistics to back up Lowe&#8217;s information. It&#8217;s worth pointing out that this bill was considered the result of immigration policy related to the general liberalization of American politics during the 60s.</p>
 <p><a href="http://plato.stanford.edu/entries/citizenship/#1.1">http://plato.stanford.edu/entries/citizenship/#1.1</a><br />
 The above is a little lengthy, I only mean use section 1.1. I searched around for an interesting definition of citizenship and managed to find one that did so in more than terms of birthplace and naturalization.  This excerpt seemed relevant to the Volpp paper because it offers (to some extent) a scholarly and philosophical answer to the question of citizenship discussed in &#8220;&#8216;Obnoxious To Their Very Nature&#8217;: Asian Americans and Constitutional Citizenship.&#8221; This section is honest about the debate over how to define citizenship,  is straight forward in doing so, and doesn&#8217;t try to offer its own definition as absolute.  The psychological aspect of citizenship mentioned in the section reminds the reader that immigrants are not homogenous in their perceived &#8220;foreignness&#8221; and that citizenship does not necessarily have to involve complete identification with a new culture.</p>
 ]]></content:encoded>
-			<wfw:commentRss>/asam210/2013/06/19/409/feed/</wfw:commentRss>
-		<slash:comments>0</slash:comments>
-	<post-id xmlns="com-wordpress:feed-additions:1">409</post-id>	</item>
-		<item>
-		<title>Primary Reader for 6/12</title>
-		<link>/asam210/2013/06/12/primary-reader-for-612/</link>
-		<comments>/asam210/2013/06/12/primary-reader-for-612/#comments</comments>
-		<pubDate>Wed, 12 Jun 2013 05:02:53 +0000</pubDate>
-		<dc:creator><![CDATA[Ryan McNeil]]></dc:creator>
-				<category><![CDATA[Primary Reader]]></category>
-		<category><![CDATA[Asian Exclusion]]></category>
-		<category><![CDATA[Black Orientalism]]></category>
-		<category><![CDATA[Erika Lee]]></category>
-		<category><![CDATA[Helen Jun]]></category>
-		<category><![CDATA[Kent Ono]]></category>
-		<category><![CDATA[Racism]]></category>
-		<category><![CDATA[Yellow Peril]]></category>
+      <wfw:commentRss>/asam210/2013/06/19/409/feed/</wfw:commentRss>
+    <slash:comments>0</slash:comments>
+  <post-id xmlns="com-wordpress:feed-additions:1">409</post-id> </item>
+    <item>
+    <title>Primary Reader for 6/12</title>
+    <link>/asam210/2013/06/12/primary-reader-for-612/</link>
+    <comments>/asam210/2013/06/12/primary-reader-for-612/#comments</comments>
+    <pubDate>Wed, 12 Jun 2013 05:02:53 +0000</pubDate>
+    <dc:creator><![CDATA[Ryan McNeil]]></dc:creator>
+        <category><![CDATA[Primary Reader]]></category>
+    <category><![CDATA[Asian Exclusion]]></category>
+    <category><![CDATA[Black Orientalism]]></category>
+    <category><![CDATA[Erika Lee]]></category>
+    <category><![CDATA[Helen Jun]]></category>
+    <category><![CDATA[Kent Ono]]></category>
+    <category><![CDATA[Racism]]></category>
+    <category><![CDATA[Yellow Peril]]></category>
 
-		<guid isPermaLink="false">/asam210/?p=289</guid>
-		<description><![CDATA[In &#8220;The &#8216;Yellow Peril&#8217; and Asian Exclusion in the Americas,&#8221; author Erika Lee investigates the way Asian peoples have immigrated to the Americas since the 19th century and explores anti-Asian sentiment in the Americas, particularly the labeling of South/East Asians, and specifically Japanese people as the &#8220;Yellow Peril&#8221; in the early 1900s.  What I found [&#8230;]]]></description>
-				<content:encoded><![CDATA[<p>In &#8220;The &#8216;Yellow Peril&#8217; and Asian Exclusion in the Americas,&#8221; author Erika Lee investigates the way Asian peoples have immigrated to the Americas since the 19th century and explores anti-Asian sentiment in the Americas, particularly the labeling of South/East Asians, and specifically Japanese people as the &#8220;Yellow Peril&#8221; in the early 1900s.  What I found most interesting about this article was the discussion of the &#8220;Asiatic Exclusion League&#8221; and the massive race riots in 1907.  One can&#8217;t study North American history without learning about the countless accounts of racial inequality and outright violence that have plagued the US, Canada, and Mexico to varying extents since their earliest days. However, these accounts usually involve inequality directed towards African Americans, Latin Americans, Native Americans and other groups, while anti-Asian sentiment is often overlooked.  It was also interesting to see how president Theodore Roosevelt responded to expanding Japanese power (limiting immigration, advocating &#8220;White Supremacy&#8221;) in comparison to way we handle the rising of foreign powers like China now, just over a century later.  No American politician could get very far advocating something blatantly as &#8220;White Supremacy&#8221; in the modern age, but couldn&#8217;t we say that many of our politicians still advocate similar policies, just in more nuanced ways?</p>
+    <guid isPermaLink="false">/asam210/?p=289</guid>
+    <description><![CDATA[In &#8220;The &#8216;Yellow Peril&#8217; and Asian Exclusion in the Americas,&#8221; author Erika Lee investigates the way Asian peoples have immigrated to the Americas since the 19th century and explores anti-Asian sentiment in the Americas, particularly the labeling of South/East Asians, and specifically Japanese people as the &#8220;Yellow Peril&#8221; in the early 1900s.  What I found [&#8230;]]]></description>
+        <content:encoded><![CDATA[<p>In &#8220;The &#8216;Yellow Peril&#8217; and Asian Exclusion in the Americas,&#8221; author Erika Lee investigates the way Asian peoples have immigrated to the Americas since the 19th century and explores anti-Asian sentiment in the Americas, particularly the labeling of South/East Asians, and specifically Japanese people as the &#8220;Yellow Peril&#8221; in the early 1900s.  What I found most interesting about this article was the discussion of the &#8220;Asiatic Exclusion League&#8221; and the massive race riots in 1907.  One can&#8217;t study North American history without learning about the countless accounts of racial inequality and outright violence that have plagued the US, Canada, and Mexico to varying extents since their earliest days. However, these accounts usually involve inequality directed towards African Americans, Latin Americans, Native Americans and other groups, while anti-Asian sentiment is often overlooked.  It was also interesting to see how president Theodore Roosevelt responded to expanding Japanese power (limiting immigration, advocating &#8220;White Supremacy&#8221;) in comparison to way we handle the rising of foreign powers like China now, just over a century later.  No American politician could get very far advocating something blatantly as &#8220;White Supremacy&#8221; in the modern age, but couldn&#8217;t we say that many of our politicians still advocate similar policies, just in more nuanced ways?</p>
 <p>Kent Ono and Vincent Pham follow this concept into the modern age, discussing the persistence of racism against Asians.  In my opinion, the two most pervasive themes he brings up are (1) the fear of Asians as &#8220;coming to take over&#8221; western society and (2) stereotypical depictions of Asians in media.  It would seem that every year the competition between America (as an existing superpower) and China (potentially rising to become another) is the source of more and more anxiety and xenophobia aimed loosely at all Asians in the United States, but this idea has existed for about a century. As for  media portrayal: from commercials to full length movies, stereotypical Asian characters are still a staple in media. [See: The Fast and The Furious, Sixteen Candles, South Park].  Which begs the question: won&#8217;t these depictions seem just as archaic and distasteful in 50 years as &#8220;The Little Rascals'&#8221; character, Buckwheat does today? And what does that say about how far we&#8217;ve come as opposed to how far we still have to go?</p>
 <p>Finally, &#8220;Black Orientalism&#8221; covers the Americanization of African <em>Americans</em> and the facilitation of which by growing racism towards East Asians in the 19th century.  Author, Helen Jun, explains that new xenophobia towards Asians gave African Americans an odd new chance to become more American by identifying as &#8220;not Asian.&#8221;  It was interesting to learn about this competition for American-ness and the way white conflicts with minorities translated into conflicts between minority groups.  It would be interesting to learn about how this process played out with other groups throughout American history and elsewhere.  It also seems worth pointing out the modern parallel to the use of Christianity to appear more American, since today many Americans still identify followers of non-christian religions as being less American.</p>
 ]]></content:encoded>
-			<wfw:commentRss>/asam210/2013/06/12/primary-reader-for-612/feed/</wfw:commentRss>
-		<slash:comments>1</slash:comments>
-	<post-id xmlns="com-wordpress:feed-additions:1">289</post-id>	</item>
-	</channel>
+      <wfw:commentRss>/asam210/2013/06/12/primary-reader-for-612/feed/</wfw:commentRss>
+    <slash:comments>1</slash:comments>
+  <post-id xmlns="com-wordpress:feed-additions:1">289</post-id> </item>
+  </channel>
 </rss>

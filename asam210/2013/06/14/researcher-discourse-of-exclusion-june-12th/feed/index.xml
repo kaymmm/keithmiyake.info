@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
-	xmlns:content="http://purl.org/rss/1.0/modules/content/"
-	xmlns:dc="http://purl.org/dc/elements/1.1/"
-	xmlns:atom="http://www.w3.org/2005/Atom"
-	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
-	
-	>
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+
+  >
 <channel>
-	<title>Comments on: Researcher &#8211; Discourse of Exclusion (June 12th)</title>
-	<atom:link href="/asam210/2013/06/14/researcher-discourse-of-exclusion-june-12th/feed/" rel="self" type="application/rss+xml" />
-	<link>/asam210/2013/06/14/researcher-discourse-of-exclusion-june-12th/</link>
-	<description>Hunter College, Summer 2013</description>
-	<lastBuildDate>Wed, 17 Sep 2014 07:41:32 +0000</lastBuildDate>
-	<sy:updatePeriod>hourly</sy:updatePeriod>
-	<sy:updateFrequency>1</sy:updateFrequency>
-	
-	<item>
-		<title>By: Mallika Basnet</title>
-		<link>/asam210/2013/06/14/researcher-discourse-of-exclusion-june-12th/#comment-14</link>
-		<dc:creator><![CDATA[Mallika Basnet]]></dc:creator>
-		<pubDate>Sat, 15 Jun 2013 15:34:10 +0000</pubDate>
-		<guid isPermaLink="false">/asam210/?p=333#comment-14</guid>
-		<description><![CDATA[i loved reading this research work, very interesting how you interpreted the whole article with the pictures. I can see how it can relate to the article as well. This thought about Asian American being very violent and dangerous is very stereotypical. The pictures where kind of disturbing and it got me thinking. Were these picture only trying to state the anger and violence of the Asians or was it trying to state the Asians interest in marital arts or their bravery to fight for their country or territory??? more questions could be asked is this behavior prevalent only among Asian or was there similar war scene in any war period throughout the world history?? i dont think that they wanted asian to be completely discarded from the american society. Americans clearly needed them for labor purpose but somehow they thought that the Asians could never assimilate due to their cultural pride. after reading you second source i did little search and i found a very interesting piece on how Japanese people were put in a small fenced area..
+  <title>Comments on: Researcher &#8211; Discourse of Exclusion (June 12th)</title>
+  <atom:link href="{{site.baseurl}}/asam210/2013/06/14/researcher-discourse-of-exclusion-june-12th/feed/" rel="self" type="application/rss+xml" />
+  <link>/asam210/2013/06/14/researcher-discourse-of-exclusion-june-12th/</link>
+  <description>Hunter College, Summer 2013</description>
+  <lastBuildDate>Wed, 17 Sep 2014 07:41:32 +0000</lastBuildDate>
+  <sy:updatePeriod>hourly</sy:updatePeriod>
+  <sy:updateFrequency>1</sy:updateFrequency>
+
+  <item>
+    <title>By: Mallika Basnet</title>
+    <link>/asam210/2013/06/14/researcher-discourse-of-exclusion-june-12th/#comment-14</link>
+    <dc:creator><![CDATA[Mallika Basnet]]></dc:creator>
+    <pubDate>Sat, 15 Jun 2013 15:34:10 +0000</pubDate>
+    <guid isPermaLink="false">/asam210/?p=333#comment-14</guid>
+    <description><![CDATA[i loved reading this research work, very interesting how you interpreted the whole article with the pictures. I can see how it can relate to the article as well. This thought about Asian American being very violent and dangerous is very stereotypical. The pictures where kind of disturbing and it got me thinking. Were these picture only trying to state the anger and violence of the Asians or was it trying to state the Asians interest in marital arts or their bravery to fight for their country or territory??? more questions could be asked is this behavior prevalent only among Asian or was there similar war scene in any war period throughout the world history?? i dont think that they wanted asian to be completely discarded from the american society. Americans clearly needed them for labor purpose but somehow they thought that the Asians could never assimilate due to their cultural pride. after reading you second source i did little search and i found a very interesting piece on how Japanese people were put in a small fenced area..
 http://www.lanternreview.com/blog/2010/05/15/poetry-in-history-japanese-american-internment/
 
 Mallika Basnet]]></description>
-		<content:encoded><![CDATA[<p>i loved reading this research work, very interesting how you interpreted the whole article with the pictures. I can see how it can relate to the article as well. This thought about Asian American being very violent and dangerous is very stereotypical. The pictures where kind of disturbing and it got me thinking. Were these picture only trying to state the anger and violence of the Asians or was it trying to state the Asians interest in marital arts or their bravery to fight for their country or territory??? more questions could be asked is this behavior prevalent only among Asian or was there similar war scene in any war period throughout the world history?? i dont think that they wanted asian to be completely discarded from the american society. Americans clearly needed them for labor purpose but somehow they thought that the Asians could never assimilate due to their cultural pride. after reading you second source i did little search and i found a very interesting piece on how Japanese people were put in a small fenced area..<br />
+    <content:encoded><![CDATA[<p>i loved reading this research work, very interesting how you interpreted the whole article with the pictures. I can see how it can relate to the article as well. This thought about Asian American being very violent and dangerous is very stereotypical. The pictures where kind of disturbing and it got me thinking. Were these picture only trying to state the anger and violence of the Asians or was it trying to state the Asians interest in marital arts or their bravery to fight for their country or territory??? more questions could be asked is this behavior prevalent only among Asian or was there similar war scene in any war period throughout the world history?? i dont think that they wanted asian to be completely discarded from the american society. Americans clearly needed them for labor purpose but somehow they thought that the Asians could never assimilate due to their cultural pride. after reading you second source i did little search and i found a very interesting piece on how Japanese people were put in a small fenced area..<br />
 <a href="http://www.lanternreview.com/blog/2010/05/15/poetry-in-history-japanese-american-internment/" rel="nofollow">http://www.lanternreview.com/blog/2010/05/15/poetry-in-history-japanese-american-internment/</a></p>
 <p>Mallika Basnet</p>
 ]]></content:encoded>
-	</item>
+  </item>
 </channel>
 </rss>

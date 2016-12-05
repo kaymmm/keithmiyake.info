@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
-	xmlns:content="http://purl.org/rss/1.0/modules/content/"
-	xmlns:dc="http://purl.org/dc/elements/1.1/"
-	xmlns:atom="http://www.w3.org/2005/Atom"
-	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
-	
-	>
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+
+  >
 <channel>
-	<title>Comments on: Primary Reader &#8211; June 5th Readings</title>
-	<atom:link href="/asam210/2013/06/05/primary-reader-june-5th-readings/feed/" rel="self" type="application/rss+xml" />
-	<link>/asam210/2013/06/05/primary-reader-june-5th-readings/</link>
-	<description>Hunter College, Summer 2013</description>
-	<lastBuildDate>Wed, 17 Sep 2014 07:41:32 +0000</lastBuildDate>
-	<sy:updatePeriod>hourly</sy:updatePeriod>
-	<sy:updateFrequency>1</sy:updateFrequency>
-	
-	<item>
-		<title>By: Trevor O'Mara</title>
-		<link>/asam210/2013/06/05/primary-reader-june-5th-readings/#comment-5</link>
-		<dc:creator><![CDATA[Trevor O'Mara]]></dc:creator>
-		<pubDate>Sun, 09 Jun 2013 05:00:36 +0000</pubDate>
-		<guid isPermaLink="false">/asam210/?p=227#comment-5</guid>
-		<description><![CDATA[I think it&#039;s probably wrong to say that the Chinatown which we&#039;ve studied and the Chinatowns of today would be described in the same way. There are large degrees of severity here to grapple with. Generally &quot;living standards&quot; have improved since then. 
+  <title>Comments on: Primary Reader &#8211; June 5th Readings</title>
+  <atom:link href="{{site.baseurl}}/asam210/2013/06/05/primary-reader-june-5th-readings/feed/" rel="self" type="application/rss+xml" />
+  <link>/asam210/2013/06/05/primary-reader-june-5th-readings/</link>
+  <description>Hunter College, Summer 2013</description>
+  <lastBuildDate>Wed, 17 Sep 2014 07:41:32 +0000</lastBuildDate>
+  <sy:updatePeriod>hourly</sy:updatePeriod>
+  <sy:updateFrequency>1</sy:updateFrequency>
+
+  <item>
+    <title>By: Trevor O'Mara</title>
+    <link>/asam210/2013/06/05/primary-reader-june-5th-readings/#comment-5</link>
+    <dc:creator><![CDATA[Trevor O'Mara]]></dc:creator>
+    <pubDate>Sun, 09 Jun 2013 05:00:36 +0000</pubDate>
+    <guid isPermaLink="false">/asam210/?p=227#comment-5</guid>
+    <description><![CDATA[I think it&#039;s probably wrong to say that the Chinatown which we&#039;ve studied and the Chinatowns of today would be described in the same way. There are large degrees of severity here to grapple with. Generally &quot;living standards&quot; have improved since then.
 
 In regard to this notion of &quot;unlearning&quot; this dichotomous relationship between Occident and Orient, was it ever learned in the first place? The notion that parts as disparate as say Pakistan and Japan could be considered of an entity is utterly preposterous to me. Perhaps we&#039;re just of different times, Said and I.]]></description>
-		<content:encoded><![CDATA[<p>I think it&#8217;s probably wrong to say that the Chinatown which we&#8217;ve studied and the Chinatowns of today would be described in the same way. There are large degrees of severity here to grapple with. Generally &#8220;living standards&#8221; have improved since then. </p>
+    <content:encoded><![CDATA[<p>I think it&#8217;s probably wrong to say that the Chinatown which we&#8217;ve studied and the Chinatowns of today would be described in the same way. There are large degrees of severity here to grapple with. Generally &#8220;living standards&#8221; have improved since then. </p>
 <p>In regard to this notion of &#8220;unlearning&#8221; this dichotomous relationship between Occident and Orient, was it ever learned in the first place? The notion that parts as disparate as say Pakistan and Japan could be considered of an entity is utterly preposterous to me. Perhaps we&#8217;re just of different times, Said and I.</p>
 ]]></content:encoded>
-	</item>
+  </item>
 </channel>
 </rss>

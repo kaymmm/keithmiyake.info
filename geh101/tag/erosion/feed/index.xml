@@ -1,43 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
-	xmlns:content="http://purl.org/rss/1.0/modules/content/"
-	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
-	xmlns:dc="http://purl.org/dc/elements/1.1/"
-	xmlns:atom="http://www.w3.org/2005/Atom"
-	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
-	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
-	>
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+  xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+  >
 
 <channel>
-	<title>erosion &#8211; Intro to Geography</title>
-	<atom:link href="/geh101/tag/erosion/feed/" rel="self" type="application/rss+xml" />
-	<link>/geh101</link>
-	<description>Lehman College</description>
-	<lastBuildDate>Sat, 29 Nov 2014 17:03:44 +0000</lastBuildDate>
-	<language>en-US</language>
-	<sy:updatePeriod>hourly</sy:updatePeriod>
-	<sy:updateFrequency>1</sy:updateFrequency>
-	
-<site xmlns="com-wordpress:feed-additions:1">52642319</site>	<item>
-		<title>Week 3 Class Notes – Landforms</title>
-		<link>/geh101/2011/02/23/week-3-class-notes-landforms/</link>
-		<comments>/geh101/2011/02/23/week-3-class-notes-landforms/#respond</comments>
-		<pubDate>Wed, 23 Feb 2011 21:22:09 +0000</pubDate>
-		<dc:creator><![CDATA[Keith Miyake]]></dc:creator>
-				<category><![CDATA[Lectures and Notes]]></category>
-		<category><![CDATA[earthquakes]]></category>
-		<category><![CDATA[erosion]]></category>
-		<category><![CDATA[landforms]]></category>
-		<category><![CDATA[lecture notes]]></category>
-		<category><![CDATA[plate tectonics]]></category>
-		<category><![CDATA[rocks]]></category>
-		<category><![CDATA[volcanoes]]></category>
+  <title>erosion &#8211; Intro to Geography</title>
+  <atom:link href="{{ site.baseurl }}/geh101/tag/erosion/feed/" rel="self" type="application/rss+xml" />
+  <link>/geh101</link>
+  <description>Lehman College</description>
+  <lastBuildDate>Sat, 29 Nov 2014 17:03:44 +0000</lastBuildDate>
+  <language>en-US</language>
+  <sy:updatePeriod>hourly</sy:updatePeriod>
+  <sy:updateFrequency>1</sy:updateFrequency>
 
-		<guid isPermaLink="false">http://geh101.wordpress.com/?p=158</guid>
-		<description><![CDATA[Notes from week 3, Chapter 3 of the Getis textbook on landforms, are available here: <a href='http://geh101.files.wordpress.com/2011/02/week3-landforms.pdf'>week3-landforms</a>]]></description>
-				<content:encoded><![CDATA[<p>Notes from week 3, Chapter 3 of the Getis textbook on landforms, are <a href="/geh101/wp-content/uploads/sites/3/2011/09/ch3-landforms.pdf">available here</a>.</p>
+<site xmlns="com-wordpress:feed-additions:1">52642319</site>  <item>
+    <title>Week 3 Class Notes – Landforms</title>
+    <link>{{ site.baseurl }}/geh101/2011/02/23/week-3-class-notes-landforms/</link>
+    <comments>{{ site.baseurl }}/geh101/2011/02/23/week-3-class-notes-landforms/#respond</comments>
+    <pubDate>Wed, 23 Feb 2011 21:22:09 +0000</pubDate>
+    <dc:creator><![CDATA[Keith Miyake]]></dc:creator>
+        <category><![CDATA[Lectures and Notes]]></category>
+    <category><![CDATA[earthquakes]]></category>
+    <category><![CDATA[erosion]]></category>
+    <category><![CDATA[landforms]]></category>
+    <category><![CDATA[lecture notes]]></category>
+    <category><![CDATA[plate tectonics]]></category>
+    <category><![CDATA[rocks]]></category>
+    <category><![CDATA[volcanoes]]></category>
+
+    <guid isPermaLink="false">http://geh101.wordpress.com/?p=158</guid>
+    <description><![CDATA[Notes from week 3, Chapter 3 of the Getis textbook on landforms, are available here: <a href='http://geh101.files.wordpress.com/2011/02/week3-landforms.pdf'>week3-landforms</a>]]></description>
+        <content:encoded><![CDATA[<p>Notes from week 3, Chapter 3 of the Getis textbook on landforms, are <a href="{{ site.baseurl }}/geh101/wp-content/uploads/sites/3/2011/09/ch3-landforms.pdf">available here</a>.</p>
 ]]></content:encoded>
-			<wfw:commentRss>/geh101/2011/02/23/week-3-class-notes-landforms/feed/</wfw:commentRss>
-		<slash:comments>0</slash:comments>
-	<post-id xmlns="com-wordpress:feed-additions:1">158</post-id>	</item>
-	</channel>
+      <wfw:commentRss>{{ site.baseurl }}/geh101/2011/02/23/week-3-class-notes-landforms/feed/</wfw:commentRss>
+    <slash:comments>0</slash:comments>
+  <post-id xmlns="com-wordpress:feed-additions:1">158</post-id> </item>
+  </channel>
 </rss>

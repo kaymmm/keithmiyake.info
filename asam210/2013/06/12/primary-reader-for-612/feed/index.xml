@@ -1,37 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
-	xmlns:content="http://purl.org/rss/1.0/modules/content/"
-	xmlns:dc="http://purl.org/dc/elements/1.1/"
-	xmlns:atom="http://www.w3.org/2005/Atom"
-	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
-	
-	>
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+
+  >
 <channel>
-	<title>Comments on: Primary Reader for 6/12</title>
-	<atom:link href="/asam210/2013/06/12/primary-reader-for-612/feed/" rel="self" type="application/rss+xml" />
-	<link>/asam210/2013/06/12/primary-reader-for-612/</link>
-	<description>Hunter College, Summer 2013</description>
-	<lastBuildDate>Wed, 17 Sep 2014 07:41:32 +0000</lastBuildDate>
-	<sy:updatePeriod>hourly</sy:updatePeriod>
-	<sy:updateFrequency>1</sy:updateFrequency>
-	
-	<item>
-		<title>By: Kristina Szeto</title>
-		<link>/asam210/2013/06/12/primary-reader-for-612/#comment-17</link>
-		<dc:creator><![CDATA[Kristina Szeto]]></dc:creator>
-		<pubDate>Mon, 17 Jun 2013 15:31:28 +0000</pubDate>
-		<guid isPermaLink="false">/asam210/?p=289#comment-17</guid>
-		<description><![CDATA[One of the things that struck me from Ono and Pham&#039;s piece about Asian Americans in media was how stereotyped and underrepresented Asians and Asian Americans are in the media.
+  <title>Comments on: Primary Reader for 6/12</title>
+  <atom:link href="{{site.baseurl}}/asam210/2013/06/12/primary-reader-for-612/feed/" rel="self" type="application/rss+xml" />
+  <link>/asam210/2013/06/12/primary-reader-for-612/</link>
+  <description>Hunter College, Summer 2013</description>
+  <lastBuildDate>Wed, 17 Sep 2014 07:41:32 +0000</lastBuildDate>
+  <sy:updatePeriod>hourly</sy:updatePeriod>
+  <sy:updateFrequency>1</sy:updateFrequency>
+
+  <item>
+    <title>By: Kristina Szeto</title>
+    <link>/asam210/2013/06/12/primary-reader-for-612/#comment-17</link>
+    <dc:creator><![CDATA[Kristina Szeto]]></dc:creator>
+    <pubDate>Mon, 17 Jun 2013 15:31:28 +0000</pubDate>
+    <guid isPermaLink="false">/asam210/?p=289#comment-17</guid>
+    <description><![CDATA[One of the things that struck me from Ono and Pham&#039;s piece about Asian Americans in media was how stereotyped and underrepresented Asians and Asian Americans are in the media.
 
 To take the example from the piece, &#039;Fast and Furious&#039;, not only is the villain an Asian American (a subtle nod to Yellow Peril and maybe a representation of the rivalry in the auto industry between American made cars and foreign cars) but the villain is a gangster. Again in &#039;Fast ad Furious: Tokyo Drift&#039; the villain is an Asian American mobster.
 
 Since the advent of media in the United States, Asians and Asian Americans have been underrepresented both in roles and in casting. One such example is M. Night Shyamalan&#039;s &#039;The Last Airbender&#039;: a movie based off a popular children&#039;s cartoon series. The series was based off many Asian influences and the casting drew criticism for the dichotomous depiction between the &#039;good guys&#039; and the &#039;bad guys&#039; (notably because most of the &#039;good guys&#039; were Caucasian and the &#039;bad guys&#039; were a mix of darker-skinned ethnicities that could be construed as Arab or Indian, which may have been influenced by Sept. 11) and also because the casting specifically looked for Caucasians rather than Asians or Asian Americans.
 
 Ono and Pham took historical examples of Yellow Peril and Asian Americans in the media which have evolved and still impact the media industry today.]]></description>
-		<content:encoded><![CDATA[<p>One of the things that struck me from Ono and Pham&#8217;s piece about Asian Americans in media was how stereotyped and underrepresented Asians and Asian Americans are in the media.</p>
+    <content:encoded><![CDATA[<p>One of the things that struck me from Ono and Pham&#8217;s piece about Asian Americans in media was how stereotyped and underrepresented Asians and Asian Americans are in the media.</p>
 <p>To take the example from the piece, &#8216;Fast and Furious&#8217;, not only is the villain an Asian American (a subtle nod to Yellow Peril and maybe a representation of the rivalry in the auto industry between American made cars and foreign cars) but the villain is a gangster. Again in &#8216;Fast ad Furious: Tokyo Drift&#8217; the villain is an Asian American mobster.</p>
 <p>Since the advent of media in the United States, Asians and Asian Americans have been underrepresented both in roles and in casting. One such example is M. Night Shyamalan&#8217;s &#8216;The Last Airbender&#8217;: a movie based off a popular children&#8217;s cartoon series. The series was based off many Asian influences and the casting drew criticism for the dichotomous depiction between the &#8216;good guys&#8217; and the &#8216;bad guys&#8217; (notably because most of the &#8216;good guys&#8217; were Caucasian and the &#8216;bad guys&#8217; were a mix of darker-skinned ethnicities that could be construed as Arab or Indian, which may have been influenced by Sept. 11) and also because the casting specifically looked for Caucasians rather than Asians or Asian Americans.</p>
 <p>Ono and Pham took historical examples of Yellow Peril and Asian Americans in the media which have evolved and still impact the media industry today.</p>
 ]]></content:encoded>
-	</item>
+  </item>
 </channel>
 </rss>

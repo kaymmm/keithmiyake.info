@@ -1,51 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
-	xmlns:content="http://purl.org/rss/1.0/modules/content/"
-	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
-	xmlns:dc="http://purl.org/dc/elements/1.1/"
-	xmlns:atom="http://www.w3.org/2005/Atom"
-	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
-	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
-	>
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+  xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+  >
 
 <channel>
-	<title>Dhurba Adhikari &#8211; Asians in the U.S.</title>
-	<atom:link href="/asam210/author/dadhikari/feed/" rel="self" type="application/rss+xml" />
-	<link>/asam210</link>
-	<description>Hunter College, Summer 2013</description>
-	<lastBuildDate>Wed, 26 Feb 2014 13:59:43 +0000</lastBuildDate>
-	<language>en-US</language>
-	<sy:updatePeriod>hourly</sy:updatePeriod>
-	<sy:updateFrequency>1</sy:updateFrequency>
-	
-<site xmlns="com-wordpress:feed-additions:1">53277463</site>	<item>
-		<title>Primary reader (Racial Triangulation)</title>
-		<link>/asam210/2013/06/17/primary-reader-racial-triangulation/</link>
-		<comments>/asam210/2013/06/17/primary-reader-racial-triangulation/#comments</comments>
-		<pubDate>Mon, 17 Jun 2013 04:44:26 +0000</pubDate>
-		<dc:creator><![CDATA[Dhurba Adhikari]]></dc:creator>
-				<category><![CDATA[Primary Reader]]></category>
+  <title>Dhurba Adhikari &#8211; Asians in the U.S.</title>
+  <atom:link href="{{site.baseurl}}/asam210/author/dadhikari/feed/" rel="self" type="application/rss+xml" />
+  <link>/asam210</link>
+  <description>Hunter College, Summer 2013</description>
+  <lastBuildDate>Wed, 26 Feb 2014 13:59:43 +0000</lastBuildDate>
+  <language>en-US</language>
+  <sy:updatePeriod>hourly</sy:updatePeriod>
+  <sy:updateFrequency>1</sy:updateFrequency>
 
-		<guid isPermaLink="false">/asam210/?p=386</guid>
-		<description><![CDATA[Chaire Jean Kim&#8217;s article is based on racialize minorities in America since 1850s. She states that white majorities are responsible for ordering the racial group which means white considered the racial position of minorities in the society. Both Blacks and Asians were &#8220;degenerated&#8221; as inferiority and foreigners respectively. Some cases Blacks and Asian were treated equally lower such as [&#8230;]]]></description>
-				<content:encoded><![CDATA[<p>Chaire Jean Kim&#8217;s article is based on racialize minorities in America since 1850s. She states that white majorities are responsible for ordering the racial group which means white considered the racial position of minorities in the society. Both Blacks and Asians were &#8220;degenerated&#8221; as inferiority and foreigners respectively. Some cases Blacks and Asian were treated equally lower such as some laws for black civic were same for Chinese and Chinese labor were also treated as slave; otherwise; Black were consider more inferior than Asians. Still, Asians also went through miserable condition in white dominated society. Overtime, Asian success in the American society economically, culturally and education achievements which increased there social valorization in comparison to Black race.</p>
-]]></content:encoded>
-			<wfw:commentRss>/asam210/2013/06/17/primary-reader-racial-triangulation/feed/</wfw:commentRss>
-		<slash:comments>1</slash:comments>
-	<post-id xmlns="com-wordpress:feed-additions:1">386</post-id>	</item>
-		<item>
-		<title>South Asians and Race formation (Research #2)</title>
-		<link>/asam210/2013/06/11/south-asians-and-race-formation-research-2/</link>
-		<comments>/asam210/2013/06/11/south-asians-and-race-formation-research-2/#respond</comments>
-		<pubDate>Wed, 12 Jun 2013 03:57:00 +0000</pubDate>
-		<dc:creator><![CDATA[Dhurba Adhikari]]></dc:creator>
-				<category><![CDATA[Further Research]]></category>
+<site xmlns="com-wordpress:feed-additions:1">53277463</site>  <item>
+    <title>Primary reader (Racial Triangulation)</title>
+    <link>/asam210/2013/06/17/primary-reader-racial-triangulation/</link>
+    <comments>/asam210/2013/06/17/primary-reader-racial-triangulation/#comments</comments>
+    <pubDate>Mon, 17 Jun 2013 04:44:26 +0000</pubDate>
+    <dc:creator><![CDATA[Dhurba Adhikari]]></dc:creator>
+        <category><![CDATA[Primary Reader]]></category>
 
-		<guid isPermaLink="false">/asam210/?p=298</guid>
-		<description><![CDATA[This link below is a Journal which is related to Omi and Winant&#8217;s work and even there research is included in this writing. I think to understand the racial formation in the United State this article is helpful. In general this writing deals with the  racial self- identification of South Asian.    http://as.nyu.edu/docs/IO/1043/S.Asian.Race.ID.JEMS.January.2001.pdf]]></description>
-				<content:encoded><![CDATA[<p>This link below is a Journal which is related to Omi and Winant&#8217;s work and even there research is included in this writing. I think to understand the racial formation in the United State this article is helpful. In general this writing deals with the  racial self- identification of South Asian.    http://as.nyu.edu/docs/IO/1043/S.Asian.Race.ID.JEMS.January.2001.pdf</p>
+    <guid isPermaLink="false">/asam210/?p=386</guid>
+    <description><![CDATA[Chaire Jean Kim&#8217;s article is based on racialize minorities in America since 1850s. She states that white majorities are responsible for ordering the racial group which means white considered the racial position of minorities in the society. Both Blacks and Asians were &#8220;degenerated&#8221; as inferiority and foreigners respectively. Some cases Blacks and Asian were treated equally lower such as [&#8230;]]]></description>
+        <content:encoded><![CDATA[<p>Chaire Jean Kim&#8217;s article is based on racialize minorities in America since 1850s. She states that white majorities are responsible for ordering the racial group which means white considered the racial position of minorities in the society. Both Blacks and Asians were &#8220;degenerated&#8221; as inferiority and foreigners respectively. Some cases Blacks and Asian were treated equally lower such as some laws for black civic were same for Chinese and Chinese labor were also treated as slave; otherwise; Black were consider more inferior than Asians. Still, Asians also went through miserable condition in white dominated society. Overtime, Asian success in the American society economically, culturally and education achievements which increased there social valorization in comparison to Black race.</p>
 ]]></content:encoded>
-			<wfw:commentRss>/asam210/2013/06/11/south-asians-and-race-formation-research-2/feed/</wfw:commentRss>
-		<slash:comments>0</slash:comments>
-	<post-id xmlns="com-wordpress:feed-additions:1">298</post-id>	</item>
-	</channel>
+      <wfw:commentRss>/asam210/2013/06/17/primary-reader-racial-triangulation/feed/</wfw:commentRss>
+    <slash:comments>1</slash:comments>
+  <post-id xmlns="com-wordpress:feed-additions:1">386</post-id> </item>
+    <item>
+    <title>South Asians and Race formation (Research #2)</title>
+    <link>/asam210/2013/06/11/south-asians-and-race-formation-research-2/</link>
+    <comments>/asam210/2013/06/11/south-asians-and-race-formation-research-2/#respond</comments>
+    <pubDate>Wed, 12 Jun 2013 03:57:00 +0000</pubDate>
+    <dc:creator><![CDATA[Dhurba Adhikari]]></dc:creator>
+        <category><![CDATA[Further Research]]></category>
+
+    <guid isPermaLink="false">/asam210/?p=298</guid>
+    <description><![CDATA[This link below is a Journal which is related to Omi and Winant&#8217;s work and even there research is included in this writing. I think to understand the racial formation in the United State this article is helpful. In general this writing deals with the  racial self- identification of South Asian.    http://as.nyu.edu/docs/IO/1043/S.Asian.Race.ID.JEMS.January.2001.pdf]]></description>
+        <content:encoded><![CDATA[<p>This link below is a Journal which is related to Omi and Winant&#8217;s work and even there research is included in this writing. I think to understand the racial formation in the United State this article is helpful. In general this writing deals with the  racial self- identification of South Asian.    http://as.nyu.edu/docs/IO/1043/S.Asian.Race.ID.JEMS.January.2001.pdf</p>
+]]></content:encoded>
+      <wfw:commentRss>/asam210/2013/06/11/south-asians-and-race-formation-research-2/feed/</wfw:commentRss>
+    <slash:comments>0</slash:comments>
+  <post-id xmlns="com-wordpress:feed-additions:1">298</post-id> </item>
+  </channel>
 </rss>

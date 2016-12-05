@@ -1,39 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
-	xmlns:content="http://purl.org/rss/1.0/modules/content/"
-	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
-	xmlns:dc="http://purl.org/dc/elements/1.1/"
-	xmlns:atom="http://www.w3.org/2005/Atom"
-	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
-	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
-	>
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+  xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+  >
 
 <channel>
-	<title>writing &#8211; Intro to Geography</title>
-	<atom:link href="/geh101/tag/writing/feed/" rel="self" type="application/rss+xml" />
-	<link>/geh101</link>
-	<description>Lehman College</description>
-	<lastBuildDate>Sat, 29 Nov 2014 17:03:44 +0000</lastBuildDate>
-	<language>en-US</language>
-	<sy:updatePeriod>hourly</sy:updatePeriod>
-	<sy:updateFrequency>1</sy:updateFrequency>
-	
-<site xmlns="com-wordpress:feed-additions:1">52642319</site>	<item>
-		<title>Outlining and Prewriting Resources</title>
-		<link>/geh101/2010/10/06/outlining-and-prewriting-resources/</link>
-		<comments>/geh101/2010/10/06/outlining-and-prewriting-resources/#respond</comments>
-		<pubDate>Wed, 06 Oct 2010 16:52:24 +0000</pubDate>
-		<dc:creator><![CDATA[Keith Miyake]]></dc:creator>
-				<category><![CDATA[Assignments]]></category>
-		<category><![CDATA[Resources]]></category>
-		<category><![CDATA[outlining]]></category>
-		<category><![CDATA[prewriting]]></category>
-		<category><![CDATA[resources]]></category>
-		<category><![CDATA[Term Paper]]></category>
-		<category><![CDATA[writing]]></category>
+  <title>writing &#8211; Intro to Geography</title>
+  <atom:link href="{{ site.baseurl }}/geh101/tag/writing/feed/" rel="self" type="application/rss+xml" />
+  <link>/geh101</link>
+  <description>Lehman College</description>
+  <lastBuildDate>Sat, 29 Nov 2014 17:03:44 +0000</lastBuildDate>
+  <language>en-US</language>
+  <sy:updatePeriod>hourly</sy:updatePeriod>
+  <sy:updateFrequency>1</sy:updateFrequency>
 
-		<guid isPermaLink="false">http://geh101.wordpress.com/?p=195</guid>
-		<description><![CDATA[In a previous post, I provided some resources to help students with the writing process. However, I realized that those resources didn&#8217;t sufficiently cover pre-writing and outlining, and since an outline is due before the next class, I decided to provide some additional resources to help you get started with your outlines. The Purdue University [&#8230;]]]></description>
-				<content:encoded><![CDATA[<p>In a <a href="http://geh101.wordpress.com/2010/09/27/basic-reading-writing-and-peer-editing-guide/">previous post</a>, I provided some resources to help students with the writing process. However, I realized that those resources didn&#8217;t sufficiently cover pre-writing and outlining, and since an outline is due before the next class, I decided to provide some additional resources to help you get started with your outlines.</p>
+<site xmlns="com-wordpress:feed-additions:1">52642319</site>  <item>
+    <title>Outlining and Prewriting Resources</title>
+    <link>{{ site.baseurl }}/geh101/2010/10/06/outlining-and-prewriting-resources/</link>
+    <comments>{{ site.baseurl }}/geh101/2010/10/06/outlining-and-prewriting-resources/#respond</comments>
+    <pubDate>Wed, 06 Oct 2010 16:52:24 +0000</pubDate>
+    <dc:creator><![CDATA[Keith Miyake]]></dc:creator>
+        <category><![CDATA[Assignments]]></category>
+    <category><![CDATA[Resources]]></category>
+    <category><![CDATA[outlining]]></category>
+    <category><![CDATA[prewriting]]></category>
+    <category><![CDATA[resources]]></category>
+    <category><![CDATA[Term Paper]]></category>
+    <category><![CDATA[writing]]></category>
+
+    <guid isPermaLink="false">http://geh101.wordpress.com/?p=195</guid>
+    <description><![CDATA[In a previous post, I provided some resources to help students with the writing process. However, I realized that those resources didn&#8217;t sufficiently cover pre-writing and outlining, and since an outline is due before the next class, I decided to provide some additional resources to help you get started with your outlines. The Purdue University [&#8230;]]]></description>
+        <content:encoded><![CDATA[<p>In a <a href="http://geh101.wordpress.com/2010/09/27/basic-reading-writing-and-peer-editing-guide/">previous post</a>, I provided some resources to help students with the writing process. However, I realized that those resources didn&#8217;t sufficiently cover pre-writing and outlining, and since an outline is due before the next class, I decided to provide some additional resources to help you get started with your outlines.</p>
 <p>The Purdue University Online Writing Lab is a wonderful resource for all stages of the writing process for students of all levels. Their sections on outlining and prewriting are particularly useful:</p>
 <ul>
 <li><a href="http://owl.english.purdue.edu/owl/resource/673/01/">Prewriting I</a></li>
@@ -44,50 +44,50 @@
 <li><a href="http://owl.english.purdue.edu/owl/resource/544/01/">Outline Content</a></li>
 </ul>
 ]]></content:encoded>
-			<wfw:commentRss>/geh101/2010/10/06/outlining-and-prewriting-resources/feed/</wfw:commentRss>
-		<slash:comments>0</slash:comments>
-	<post-id xmlns="com-wordpress:feed-additions:1">195</post-id>	</item>
-		<item>
-		<title>Term Paper Sources</title>
-		<link>/geh101/2010/10/04/term-paper-sources/</link>
-		<comments>/geh101/2010/10/04/term-paper-sources/#respond</comments>
-		<pubDate>Mon, 04 Oct 2010 18:46:10 +0000</pubDate>
-		<dc:creator><![CDATA[Keith Miyake]]></dc:creator>
-				<category><![CDATA[Assignments]]></category>
-		<category><![CDATA[Lectures and Notes]]></category>
-		<category><![CDATA[Resources]]></category>
-		<category><![CDATA[Term Paper]]></category>
-		<category><![CDATA[writing]]></category>
+      <wfw:commentRss>{{ site.baseurl }}/geh101/2010/10/06/outlining-and-prewriting-resources/feed/</wfw:commentRss>
+    <slash:comments>0</slash:comments>
+  <post-id xmlns="com-wordpress:feed-additions:1">195</post-id> </item>
+    <item>
+    <title>Term Paper Sources</title>
+    <link>{{ site.baseurl }}/geh101/2010/10/04/term-paper-sources/</link>
+    <comments>{{ site.baseurl }}/geh101/2010/10/04/term-paper-sources/#respond</comments>
+    <pubDate>Mon, 04 Oct 2010 18:46:10 +0000</pubDate>
+    <dc:creator><![CDATA[Keith Miyake]]></dc:creator>
+        <category><![CDATA[Assignments]]></category>
+    <category><![CDATA[Lectures and Notes]]></category>
+    <category><![CDATA[Resources]]></category>
+    <category><![CDATA[Term Paper]]></category>
+    <category><![CDATA[writing]]></category>
 
-		<guid isPermaLink="false">http://geh101.wordpress.com/?p=191</guid>
-		<description><![CDATA[One of the objectives of the term papers is to think beyond the information found in Wikipedia or the New York Times. This means engaging with current research about the topic to see how other scholars and researchers are thinking about the topic and the types of questions they&#8217;re trying to understand. To this end, [&#8230;]]]></description>
-				<content:encoded><![CDATA[<p>One of the objectives of the term papers is to think beyond the information found in Wikipedia or the New York Times. This means engaging with current research about the topic to see how other scholars and researchers are thinking about the topic and the types of questions they&#8217;re trying to understand.</p>
+    <guid isPermaLink="false">http://geh101.wordpress.com/?p=191</guid>
+    <description><![CDATA[One of the objectives of the term papers is to think beyond the information found in Wikipedia or the New York Times. This means engaging with current research about the topic to see how other scholars and researchers are thinking about the topic and the types of questions they&#8217;re trying to understand. To this end, [&#8230;]]]></description>
+        <content:encoded><![CDATA[<p>One of the objectives of the term papers is to think beyond the information found in Wikipedia or the New York Times. This means engaging with current research about the topic to see how other scholars and researchers are thinking about the topic and the types of questions they&#8217;re trying to understand.</p>
 <p>To this end, you are required to use at least 1-2 sources from scholarly journal articles, such as those in the Annals of the American Association of Geographers. You can search for articles using <a href="http://scholar.google.com/">Google Scholar</a> or the <a href="http://www.lehman.edu/library/">Lehman College library</a>. If you search Google Scholar from an on-campus computer, you should be able to download a PDF of the article since CUNY provides access to many journal archives. Similarly, if you search from within the Lehman College library website, you should be able to access the articles directly as PDFs.</p>
 <p>As usual, if you have questions, please send me an email or speak with me outside of class.</p>
 ]]></content:encoded>
-			<wfw:commentRss>/geh101/2010/10/04/term-paper-sources/feed/</wfw:commentRss>
-		<slash:comments>0</slash:comments>
-	<post-id xmlns="com-wordpress:feed-additions:1">191</post-id>	</item>
-		<item>
-		<title>Basic Reading, Writing, and Peer-Editing Guide</title>
-		<link>/geh101/2010/09/27/basic-reading-writing-and-peer-editing-guide/</link>
-		<comments>/geh101/2010/09/27/basic-reading-writing-and-peer-editing-guide/#respond</comments>
-		<pubDate>Mon, 27 Sep 2010 17:48:42 +0000</pubDate>
-		<dc:creator><![CDATA[Keith Miyake]]></dc:creator>
-				<category><![CDATA[Resources]]></category>
-		<category><![CDATA[reading]]></category>
-		<category><![CDATA[Term Paper]]></category>
-		<category><![CDATA[writing]]></category>
+      <wfw:commentRss>{{ site.baseurl }}/geh101/2010/10/04/term-paper-sources/feed/</wfw:commentRss>
+    <slash:comments>0</slash:comments>
+  <post-id xmlns="com-wordpress:feed-additions:1">191</post-id> </item>
+    <item>
+    <title>Basic Reading, Writing, and Peer-Editing Guide</title>
+    <link>{{ site.baseurl }}/geh101/2010/09/27/basic-reading-writing-and-peer-editing-guide/</link>
+    <comments>{{ site.baseurl }}/geh101/2010/09/27/basic-reading-writing-and-peer-editing-guide/#respond</comments>
+    <pubDate>Mon, 27 Sep 2010 17:48:42 +0000</pubDate>
+    <dc:creator><![CDATA[Keith Miyake]]></dc:creator>
+        <category><![CDATA[Resources]]></category>
+    <category><![CDATA[reading]]></category>
+    <category><![CDATA[Term Paper]]></category>
+    <category><![CDATA[writing]]></category>
 
-		<guid isPermaLink="false">http://geh101.wordpress.com/?p=171</guid>
-		<description><![CDATA[Celina Su, an Urban Studies professor at Brooklyn College, has a great guide to help students with critical reading, writing, and peer-editing. I highly recommend students check out the guide. Even if some of the ideas seem really basic and obvious, it never hurts to be reminded that we should be doing these things on [&#8230;]]]></description>
-				<content:encoded><![CDATA[<p>Celina Su, an Urban Studies professor at Brooklyn College, has a great guide to help students with critical reading, writing, and peer-editing. I highly recommend students check out the guide. Even if some of the ideas seem really basic and obvious, it never hurts to be reminded that we should be doing these things on a regular basis.</p>
+    <guid isPermaLink="false">http://geh101.wordpress.com/?p=171</guid>
+    <description><![CDATA[Celina Su, an Urban Studies professor at Brooklyn College, has a great guide to help students with critical reading, writing, and peer-editing. I highly recommend students check out the guide. Even if some of the ideas seem really basic and obvious, it never hurts to be reminded that we should be doing these things on [&#8230;]]]></description>
+        <content:encoded><![CDATA[<p>Celina Su, an Urban Studies professor at Brooklyn College, has a great guide to help students with critical reading, writing, and peer-editing. I highly recommend students check out the guide. Even if some of the ideas seem really basic and obvious, it never hurts to be reminded that we should be doing these things on a regular basis.</p>
 <p>Check out Celina Su&#8217;s <a href="http://www.burmeserefugeeproject.org/celinasu/reading.html">Reading</a>, <a href="http://www.burmeserefugeeproject.org/celinasu/writing.html">Writing</a>, and <a href="http://www.burmeserefugeeproject.org/celinasu/editing.html">Peer-Editing</a> guides.</p>
 <p>Paisley Currah, another Brooklyn College professor, also has a more in-depth <a href="http://academic.brooklyn.cuny.edu/polisci/pcurrah/writing.htm">guide for writing</a> that covers topics such as style, mechanics, using references, as well as developing your arguments.</p>
 <p>And per usual, you can always discuss these things with me in person or via email if you find yourself needing additional assistance.</p>
 ]]></content:encoded>
-			<wfw:commentRss>/geh101/2010/09/27/basic-reading-writing-and-peer-editing-guide/feed/</wfw:commentRss>
-		<slash:comments>0</slash:comments>
-	<post-id xmlns="com-wordpress:feed-additions:1">171</post-id>	</item>
-	</channel>
+      <wfw:commentRss>{{ site.baseurl }}/geh101/2010/09/27/basic-reading-writing-and-peer-editing-guide/feed/</wfw:commentRss>
+    <slash:comments>0</slash:comments>
+  <post-id xmlns="com-wordpress:feed-additions:1">171</post-id> </item>
+  </channel>
 </rss>

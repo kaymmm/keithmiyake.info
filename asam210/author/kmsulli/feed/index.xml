@@ -1,75 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
-	xmlns:content="http://purl.org/rss/1.0/modules/content/"
-	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
-	xmlns:dc="http://purl.org/dc/elements/1.1/"
-	xmlns:atom="http://www.w3.org/2005/Atom"
-	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
-	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
-	>
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+  xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+  >
 
 <channel>
-	<title>Katherine Sullivan &#8211; Asians in the U.S.</title>
-	<atom:link href="/asam210/author/kmsulli/feed/" rel="self" type="application/rss+xml" />
-	<link>/asam210</link>
-	<description>Hunter College, Summer 2013</description>
-	<lastBuildDate>Wed, 26 Feb 2014 13:59:43 +0000</lastBuildDate>
-	<language>en-US</language>
-	<sy:updatePeriod>hourly</sy:updatePeriod>
-	<sy:updateFrequency>1</sy:updateFrequency>
-	
-<site xmlns="com-wordpress:feed-additions:1">53277463</site>	<item>
-		<title>7/10 Research</title>
-		<link>/asam210/2013/07/13/710-research/</link>
-		<comments>/asam210/2013/07/13/710-research/#respond</comments>
-		<pubDate>Sat, 13 Jul 2013 06:40:36 +0000</pubDate>
-		<dc:creator><![CDATA[Katherine Sullivan]]></dc:creator>
-				<category><![CDATA[Further Research]]></category>
+  <title>Katherine Sullivan &#8211; Asians in the U.S.</title>
+  <atom:link href="{{site.baseurl}}/asam210/author/kmsulli/feed/" rel="self" type="application/rss+xml" />
+  <link>/asam210</link>
+  <description>Hunter College, Summer 2013</description>
+  <lastBuildDate>Wed, 26 Feb 2014 13:59:43 +0000</lastBuildDate>
+  <language>en-US</language>
+  <sy:updatePeriod>hourly</sy:updatePeriod>
+  <sy:updateFrequency>1</sy:updateFrequency>
 
-		<guid isPermaLink="false">/asam210/?p=624</guid>
-		<description><![CDATA[http://www.sfgate.com/bayarea/article/S-F-State-to-mark-40th-anniversary-of-strike-3264418.php This article reflects on the 40th anniversary of the student strike at SF State. It talks about the political climate of the time and the lead-up to the strike, as well as explaining the gains/changes made as a result of the strike. One thing I really liked was that it provides multiple viewpoints on the strike itself, from participating students to policemen. [&#8230;]]]></description>
-				<content:encoded><![CDATA[<p><a href="http://www.sfgate.com/bayarea/article/S-F-State-to-mark-40th-anniversary-of-strike-3264418.php">http://www.sfgate.com/bayarea/article/S-F-State-to-mark-40th-anniversary-of-strike-3264418.php</a></p>
+<site xmlns="com-wordpress:feed-additions:1">53277463</site>  <item>
+    <title>7/10 Research</title>
+    <link>/asam210/2013/07/13/710-research/</link>
+    <comments>/asam210/2013/07/13/710-research/#respond</comments>
+    <pubDate>Sat, 13 Jul 2013 06:40:36 +0000</pubDate>
+    <dc:creator><![CDATA[Katherine Sullivan]]></dc:creator>
+        <category><![CDATA[Further Research]]></category>
+
+    <guid isPermaLink="false">/asam210/?p=624</guid>
+    <description><![CDATA[http://www.sfgate.com/bayarea/article/S-F-State-to-mark-40th-anniversary-of-strike-3264418.php This article reflects on the 40th anniversary of the student strike at SF State. It talks about the political climate of the time and the lead-up to the strike, as well as explaining the gains/changes made as a result of the strike. One thing I really liked was that it provides multiple viewpoints on the strike itself, from participating students to policemen. [&#8230;]]]></description>
+        <content:encoded><![CDATA[<p><a href="http://www.sfgate.com/bayarea/article/S-F-State-to-mark-40th-anniversary-of-strike-3264418.php">http://www.sfgate.com/bayarea/article/S-F-State-to-mark-40th-anniversary-of-strike-3264418.php</a></p>
 <p>This article reflects on the 40th anniversary of the student strike at SF State. It talks about the political climate of the time and the lead-up to the strike, as well as explaining the gains/changes made as a result of the strike. One thing I really liked was that it provides multiple viewpoints on the strike itself, from participating students to policemen.</p>
 <p><a href="http://thefeministwire.com/2012/03/why-ethnic-studies-matters/">http://thefeministwire.com/2012/03/why-ethnic-studies-matters/</a></p>
 <p>This is an article about ethnic studies today, and why they are (still) important. They promote new and different ways of thinking and looking at history, and benefit not just members of the ethnicity being taught but other students as well.</p>
 ]]></content:encoded>
-			<wfw:commentRss>/asam210/2013/07/13/710-research/feed/</wfw:commentRss>
-		<slash:comments>0</slash:comments>
-	<post-id xmlns="com-wordpress:feed-additions:1">624</post-id>	</item>
-		<item>
-		<title>7/1 Research</title>
-		<link>/asam210/2013/07/13/71-research/</link>
-		<comments>/asam210/2013/07/13/71-research/#respond</comments>
-		<pubDate>Sat, 13 Jul 2013 05:26:52 +0000</pubDate>
-		<dc:creator><![CDATA[Katherine Sullivan]]></dc:creator>
-				<category><![CDATA[Further Research]]></category>
+      <wfw:commentRss>/asam210/2013/07/13/710-research/feed/</wfw:commentRss>
+    <slash:comments>0</slash:comments>
+  <post-id xmlns="com-wordpress:feed-additions:1">624</post-id> </item>
+    <item>
+    <title>7/1 Research</title>
+    <link>/asam210/2013/07/13/71-research/</link>
+    <comments>/asam210/2013/07/13/71-research/#respond</comments>
+    <pubDate>Sat, 13 Jul 2013 05:26:52 +0000</pubDate>
+    <dc:creator><![CDATA[Katherine Sullivan]]></dc:creator>
+        <category><![CDATA[Further Research]]></category>
 
-		<guid isPermaLink="false">/asam210/?p=618</guid>
-		<description><![CDATA[This political cartoon from World War II depicts Japanese lining up along the west coast en masse, with one in a hut with the sign &#8220;Honorable Fifth Column&#8221; distributing explosives to the rest, so they can take down the United States from within. A fifth column is a group of people who infiltrate and undermine a larger group, in this case [&#8230;]]]></description>
-				<content:encoded><![CDATA[<a href="https://i1.wp.com/keithmiyake.info/asam210/wp-content/uploads/sites/2/2013/07/dr-seuss-fifth-column-1943.jpg"><img class="alignnone size-medium wp-image-625" alt="Dr. Seuss: cartoon from 13 February 1942" src="https://i1.wp.com/keithmiyake.info/asam210/wp-content/uploads/sites/2/2013/07/dr-seuss-fifth-column-1943.jpg?fit=300%2C300" srcset="https://i1.wp.com/keithmiyake.info/asam210/wp-content/uploads/sites/2/2013/07/dr-seuss-fifth-column-1943.jpg?resize=300%2C252 300w, https://i1.wp.com/keithmiyake.info/asam210/wp-content/uploads/sites/2/2013/07/dr-seuss-fifth-column-1943.jpg?w=550 550w" sizes="(max-width: 300px) 100vw, 300px" data-recalc-dims="1" /></a>
+    <guid isPermaLink="false">/asam210/?p=618</guid>
+    <description><![CDATA[This political cartoon from World War II depicts Japanese lining up along the west coast en masse, with one in a hut with the sign &#8220;Honorable Fifth Column&#8221; distributing explosives to the rest, so they can take down the United States from within. A fifth column is a group of people who infiltrate and undermine a larger group, in this case [&#8230;]]]></description>
+        <content:encoded><![CDATA[<a href="https://i1.wp.com/keithmiyake.info/asam210/wp-content/uploads/sites/2/2013/07/dr-seuss-fifth-column-1943.jpg"><img class="alignnone size-medium wp-image-625" alt="Dr. Seuss: cartoon from 13 February 1942" src="https://i1.wp.com/keithmiyake.info/asam210/wp-content/uploads/sites/2/2013/07/dr-seuss-fifth-column-1943.jpg?fit=300%2C300" srcset="https://i1.wp.com/keithmiyake.info/asam210/wp-content/uploads/sites/2/2013/07/dr-seuss-fifth-column-1943.jpg?resize=300%2C252 300w, https://i1.wp.com/keithmiyake.info/asam210/wp-content/uploads/sites/2/2013/07/dr-seuss-fifth-column-1943.jpg?w=550 550w" sizes="(max-width: 300px) 100vw, 300px" data-recalc-dims="1" /></a>
 <p>This political cartoon from World War II depicts Japanese lining up along the west coast en masse, with one in a hut with the sign &#8220;Honorable Fifth Column&#8221; distributing explosives to the rest, so they can take down the United States from within. A fifth column is a group of people who infiltrate and undermine a larger group, in this case Japanese Americans and the United States. The line &#8220;Waiting for the signal from home&#8230;&#8221; suggests that this was their plan along, that the only reason  It shows how people generally felt about their presence in America at the time, and easily summarizes what some people think about Muslim Americans today.</p>
 <p><a href="http://www.asian-nation.org/korematsu.shtml">http://www.asian-nation.org/korematsu.shtml</a></p>
 <p>This article draws parallels between the decisions in Korematsu v. United States, which justified Japanese internment, and Dasrath v. Continental Airlines, Inc., a 2002 Supreme Court case regarding racial profiling with removing potential terrorists from commercial flights. It explains how both decisions use similar justifications and reasoning, insisting it&#8217;s not based on race, that national security is more important, and that since inaction could get people killed, there&#8217;s no time to thouroughly consider everything.</p>
 ]]></content:encoded>
-			<wfw:commentRss>/asam210/2013/07/13/71-research/feed/</wfw:commentRss>
-		<slash:comments>0</slash:comments>
-	<post-id xmlns="com-wordpress:feed-additions:1">618</post-id>	</item>
-		<item>
-		<title>Primary Reader &#8211; Ono &#038; Pham, Lee, Jun</title>
-		<link>/asam210/2013/06/12/primary-reader-ono-pham-lee-jun/</link>
-		<comments>/asam210/2013/06/12/primary-reader-ono-pham-lee-jun/#comments</comments>
-		<pubDate>Wed, 12 Jun 2013 04:39:18 +0000</pubDate>
-		<dc:creator><![CDATA[Katherine Sullivan]]></dc:creator>
-				<category><![CDATA[Primary Reader]]></category>
+      <wfw:commentRss>/asam210/2013/07/13/71-research/feed/</wfw:commentRss>
+    <slash:comments>0</slash:comments>
+  <post-id xmlns="com-wordpress:feed-additions:1">618</post-id> </item>
+    <item>
+    <title>Primary Reader &#8211; Ono &#038; Pham, Lee, Jun</title>
+    <link>/asam210/2013/06/12/primary-reader-ono-pham-lee-jun/</link>
+    <comments>/asam210/2013/06/12/primary-reader-ono-pham-lee-jun/#comments</comments>
+    <pubDate>Wed, 12 Jun 2013 04:39:18 +0000</pubDate>
+    <dc:creator><![CDATA[Katherine Sullivan]]></dc:creator>
+        <category><![CDATA[Primary Reader]]></category>
 
-		<guid isPermaLink="false">/asam210/?p=286</guid>
-		<description><![CDATA[In &#8220;The Persistence of Yellow Peril Discourse,&#8221; Ono and Pham discuss the history of how Asians and Asian Americans have been portrayed by the media as a threat at various points in US history: as predators of white women, as foreigners polluting the gene pool with the potential to effectively supplant whites (which mean they [&#8230;]]]></description>
-				<content:encoded><![CDATA[<p>In &#8220;The Persistence of Yellow Peril Discourse,&#8221; Ono and Pham discuss the history of how Asians and Asian Americans have been portrayed by the media as a threat at various points in US history: as predators of white women, as foreigners polluting the gene pool with the potential to effectively supplant whites (which mean they couldn&#8217;t murder ALL the white women they raped), as economic competition, as spies and traitors, and as untrustworthy and cruel criminals. The reading also talked about the political contexts that created/influenced these different caricatures. I had trouble following how exactly <em>Broken Blossoms</em> portrays Asians as a threat, though. It&#8217;s certainly racist, but it sounded relatively progressive compared to other portrayals of the time.</p>
+    <guid isPermaLink="false">/asam210/?p=286</guid>
+    <description><![CDATA[In &#8220;The Persistence of Yellow Peril Discourse,&#8221; Ono and Pham discuss the history of how Asians and Asian Americans have been portrayed by the media as a threat at various points in US history: as predators of white women, as foreigners polluting the gene pool with the potential to effectively supplant whites (which mean they [&#8230;]]]></description>
+        <content:encoded><![CDATA[<p>In &#8220;The Persistence of Yellow Peril Discourse,&#8221; Ono and Pham discuss the history of how Asians and Asian Americans have been portrayed by the media as a threat at various points in US history: as predators of white women, as foreigners polluting the gene pool with the potential to effectively supplant whites (which mean they couldn&#8217;t murder ALL the white women they raped), as economic competition, as spies and traitors, and as untrustworthy and cruel criminals. The reading also talked about the political contexts that created/influenced these different caricatures. I had trouble following how exactly <em>Broken Blossoms</em> portrays Asians as a threat, though. It&#8217;s certainly racist, but it sounded relatively progressive compared to other portrayals of the time.</p>
 <p>Erika Lee&#8217;s &#8220;The &#8216;Yellow Peril&#8217; and Asian Exclusion in the Americas&#8221; analyzes Asian exclusion throughout the Americas, and how these instances were interconnected. Immigration was restricted/outlawed in many countries besides the United States, often for similar reasons. Additionally, the US didn&#8217;t intern just Japanese-Americans living on the West Coast, but also Japanese living in South America, mostly Peru.</p>
 <p>&#8220;Black Orientalism&#8221; by Helen Jun is about how black people saw Asians. Often they argued for more rights for themselves based on their cultural superiority as assimilated Americans, compared to Asians. And even a black newspaper that empathized with Asians because of how poorly they were treated, and considered themselves to be the closest thing the Asian immigrant community had to a friend, described Asians as ugly and inhuman. It just goes to show how deep prejudice against Asians was.</p>
 <p>These three essays all discuss prejudice against Asians in the US from different angles. Ono and Pham look at media portrayals and how those relate to politics, Lee explains how Asian exclusion occurred throughout the Americas and it was all politically related, and Jun looks at the interaction between two oppressed and marginalized races.</p>
 ]]></content:encoded>
-			<wfw:commentRss>/asam210/2013/06/12/primary-reader-ono-pham-lee-jun/feed/</wfw:commentRss>
-		<slash:comments>1</slash:comments>
-	<post-id xmlns="com-wordpress:feed-additions:1">286</post-id>	</item>
-	</channel>
+      <wfw:commentRss>/asam210/2013/06/12/primary-reader-ono-pham-lee-jun/feed/</wfw:commentRss>
+    <slash:comments>1</slash:comments>
+  <post-id xmlns="com-wordpress:feed-additions:1">286</post-id> </item>
+  </channel>
 </rss>

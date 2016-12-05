@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
-	xmlns:content="http://purl.org/rss/1.0/modules/content/"
-	xmlns:dc="http://purl.org/dc/elements/1.1/"
-	xmlns:atom="http://www.w3.org/2005/Atom"
-	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
-	
-	>
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+
+  >
 <channel>
-	<title>Comments on: Primary Reader &#124; Law and Citizenship</title>
-	<atom:link href="/asam210/2013/06/18/primary-reader-law-and-citizenship/feed/" rel="self" type="application/rss+xml" />
-	<link>/asam210/2013/06/18/primary-reader-law-and-citizenship/</link>
-	<description>Hunter College, Summer 2013</description>
-	<lastBuildDate>Wed, 17 Sep 2014 07:41:32 +0000</lastBuildDate>
-	<sy:updatePeriod>hourly</sy:updatePeriod>
-	<sy:updateFrequency>1</sy:updateFrequency>
-	
-	<item>
-		<title>By: mbasnet</title>
-		<link>/asam210/2013/06/18/primary-reader-law-and-citizenship/#comment-23</link>
-		<dc:creator><![CDATA[mbasnet]]></dc:creator>
-		<pubDate>Sun, 23 Jun 2013 22:48:40 +0000</pubDate>
-		<guid isPermaLink="false">/asam210/?p=405#comment-23</guid>
-		<description><![CDATA[I like the fact that you have mentioned the role of media. Media  traces or puts an imprints on the history and lives of so many individuals  and it is ridiculous. throughout our classes i have come to recognize the positive and negative affects of media in the livelihood of the people in each and every society. With the help of media Asians in one hand got to raise their voice to get their rights, privilege and liberty and on the other hand media has constantly portrayed Asian American as horrendous,  unassailable, unfit for political activity and so on...]]></description>
-		<content:encoded><![CDATA[<p>I like the fact that you have mentioned the role of media. Media  traces or puts an imprints on the history and lives of so many individuals  and it is ridiculous. throughout our classes i have come to recognize the positive and negative affects of media in the livelihood of the people in each and every society. With the help of media Asians in one hand got to raise their voice to get their rights, privilege and liberty and on the other hand media has constantly portrayed Asian American as horrendous,  unassailable, unfit for political activity and so on&#8230;</p>
+  <title>Comments on: Primary Reader &#124; Law and Citizenship</title>
+  <atom:link href="{{site.baseurl}}/asam210/2013/06/18/primary-reader-law-and-citizenship/feed/" rel="self" type="application/rss+xml" />
+  <link>/asam210/2013/06/18/primary-reader-law-and-citizenship/</link>
+  <description>Hunter College, Summer 2013</description>
+  <lastBuildDate>Wed, 17 Sep 2014 07:41:32 +0000</lastBuildDate>
+  <sy:updatePeriod>hourly</sy:updatePeriod>
+  <sy:updateFrequency>1</sy:updateFrequency>
+
+  <item>
+    <title>By: mbasnet</title>
+    <link>/asam210/2013/06/18/primary-reader-law-and-citizenship/#comment-23</link>
+    <dc:creator><![CDATA[mbasnet]]></dc:creator>
+    <pubDate>Sun, 23 Jun 2013 22:48:40 +0000</pubDate>
+    <guid isPermaLink="false">/asam210/?p=405#comment-23</guid>
+    <description><![CDATA[I like the fact that you have mentioned the role of media. Media  traces or puts an imprints on the history and lives of so many individuals  and it is ridiculous. throughout our classes i have come to recognize the positive and negative affects of media in the livelihood of the people in each and every society. With the help of media Asians in one hand got to raise their voice to get their rights, privilege and liberty and on the other hand media has constantly portrayed Asian American as horrendous,  unassailable, unfit for political activity and so on...]]></description>
+    <content:encoded><![CDATA[<p>I like the fact that you have mentioned the role of media. Media  traces or puts an imprints on the history and lives of so many individuals  and it is ridiculous. throughout our classes i have come to recognize the positive and negative affects of media in the livelihood of the people in each and every society. With the help of media Asians in one hand got to raise their voice to get their rights, privilege and liberty and on the other hand media has constantly portrayed Asian American as horrendous,  unassailable, unfit for political activity and so on&#8230;</p>
 ]]></content:encoded>
-	</item>
+  </item>
 </channel>
 </rss>

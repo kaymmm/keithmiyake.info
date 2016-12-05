@@ -1,36 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
-	xmlns:content="http://purl.org/rss/1.0/modules/content/"
-	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
-	xmlns:dc="http://purl.org/dc/elements/1.1/"
-	xmlns:atom="http://www.w3.org/2005/Atom"
-	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
-	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
-	>
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+  xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+  >
 
 <channel>
-	<title>Further Research &#8211; Asians in the U.S.</title>
-	<atom:link href="/asam210/tag/further-research/feed/" rel="self" type="application/rss+xml" />
-	<link>/asam210</link>
-	<description>Hunter College, Summer 2013</description>
-	<lastBuildDate>Wed, 26 Feb 2014 13:59:43 +0000</lastBuildDate>
-	<language>en-US</language>
-	<sy:updatePeriod>hourly</sy:updatePeriod>
-	<sy:updateFrequency>1</sy:updateFrequency>
-	
-<site xmlns="com-wordpress:feed-additions:1">53277463</site>	<item>
-		<title>Researcher#01</title>
-		<link>/asam210/2013/06/04/researcher01/</link>
-		<comments>/asam210/2013/06/04/researcher01/#respond</comments>
-		<pubDate>Wed, 05 Jun 2013 02:47:38 +0000</pubDate>
-		<dc:creator><![CDATA[Kevin Han]]></dc:creator>
-				<category><![CDATA[Further Research]]></category>
-		<category><![CDATA[Edward Said]]></category>
-		<category><![CDATA[Nayan Shah]]></category>
-		<category><![CDATA[orientalism]]></category>
+  <title>Further Research &#8211; Asians in the U.S.</title>
+  <atom:link href="{{site.baseurl}}/asam210/tag/further-research/feed/" rel="self" type="application/rss+xml" />
+  <link>/asam210</link>
+  <description>Hunter College, Summer 2013</description>
+  <lastBuildDate>Wed, 26 Feb 2014 13:59:43 +0000</lastBuildDate>
+  <language>en-US</language>
+  <sy:updatePeriod>hourly</sy:updatePeriod>
+  <sy:updateFrequency>1</sy:updateFrequency>
 
-		<guid isPermaLink="false">/asam210/?p=172</guid>
-		<description><![CDATA[&#160; Claude Monet &#8211; &#8220;La Japonaise&#8221; &#160; Edward Said&#8217;s &#8216;Orientalism&#8217; is the article that explains how the west(Europe, North America) understand the east(Asia) and analyzes the stereotypes about Asian people. According to the article, the west have many stereotypes about the east such as &#8216;All asian people have black hair and slit eyes&#8217;. and those [&#8230;]]]></description>
-				<content:encoded><![CDATA[<a href="https://i1.wp.com/keithmiyake.info/asam210/wp-content/uploads/sites/2/2013/06/mimg0001.jpg"><img class="size-full wp-image-173 alignleft" alt="mimg0001" src="https://i1.wp.com/keithmiyake.info/asam210/wp-content/uploads/sites/2/2013/06/mimg0001.jpg?resize=610%2C1000" srcset="https://i1.wp.com/keithmiyake.info/asam210/wp-content/uploads/sites/2/2013/06/mimg0001.jpg?w=610 610w, https://i1.wp.com/keithmiyake.info/asam210/wp-content/uploads/sites/2/2013/06/mimg0001.jpg?resize=183%2C300 183w" sizes="(max-width: 610px) 100vw, 610px" data-recalc-dims="1" /></a>
+<site xmlns="com-wordpress:feed-additions:1">53277463</site>  <item>
+    <title>Researcher#01</title>
+    <link>/asam210/2013/06/04/researcher01/</link>
+    <comments>/asam210/2013/06/04/researcher01/#respond</comments>
+    <pubDate>Wed, 05 Jun 2013 02:47:38 +0000</pubDate>
+    <dc:creator><![CDATA[Kevin Han]]></dc:creator>
+        <category><![CDATA[Further Research]]></category>
+    <category><![CDATA[Edward Said]]></category>
+    <category><![CDATA[Nayan Shah]]></category>
+    <category><![CDATA[orientalism]]></category>
+
+    <guid isPermaLink="false">/asam210/?p=172</guid>
+    <description><![CDATA[&#160; Claude Monet &#8211; &#8220;La Japonaise&#8221; &#160; Edward Said&#8217;s &#8216;Orientalism&#8217; is the article that explains how the west(Europe, North America) understand the east(Asia) and analyzes the stereotypes about Asian people. According to the article, the west have many stereotypes about the east such as &#8216;All asian people have black hair and slit eyes&#8217;. and those [&#8230;]]]></description>
+        <content:encoded><![CDATA[<a href="https://i1.wp.com/keithmiyake.info/asam210/wp-content/uploads/sites/2/2013/06/mimg0001.jpg"><img class="size-full wp-image-173 alignleft" alt="mimg0001" src="https://i1.wp.com/keithmiyake.info/asam210/wp-content/uploads/sites/2/2013/06/mimg0001.jpg?resize=610%2C1000" srcset="https://i1.wp.com/keithmiyake.info/asam210/wp-content/uploads/sites/2/2013/06/mimg0001.jpg?w=610 610w, https://i1.wp.com/keithmiyake.info/asam210/wp-content/uploads/sites/2/2013/06/mimg0001.jpg?resize=183%2C300 183w" sizes="(max-width: 610px) 100vw, 610px" data-recalc-dims="1" /></a>
 <p>&nbsp;</p>
 <p>Claude Monet &#8211; &#8220;La Japonaise&#8221;</p>
 <p>&nbsp;</p>
@@ -49,28 +49,28 @@
 <p>The link above goes to the article that explains Japonism which is the Japanese cultural influence among the European culture.</p>
 <p>On the contrary, This shows &#8216;the good side of Orientalism&#8217; which is more like a fantasy about Asian people and/or culture.</p>
 ]]></content:encoded>
-			<wfw:commentRss>/asam210/2013/06/04/researcher01/feed/</wfw:commentRss>
-		<slash:comments>0</slash:comments>
-	<post-id xmlns="com-wordpress:feed-additions:1">172</post-id>	</item>
-		<item>
-		<title>Researcher (Said and Shah)</title>
-		<link>/asam210/2013/06/04/researcher-said-and-shah/</link>
-		<comments>/asam210/2013/06/04/researcher-said-and-shah/#respond</comments>
-		<pubDate>Wed, 05 Jun 2013 01:59:22 +0000</pubDate>
-		<dc:creator><![CDATA[Akash Sharma]]></dc:creator>
-				<category><![CDATA[Further Research]]></category>
-		<category><![CDATA[Edward Said]]></category>
-		<category><![CDATA[Nayan Shah]]></category>
-		<category><![CDATA[orientalism]]></category>
-		<category><![CDATA[Primary Reader]]></category>
+      <wfw:commentRss>/asam210/2013/06/04/researcher01/feed/</wfw:commentRss>
+    <slash:comments>0</slash:comments>
+  <post-id xmlns="com-wordpress:feed-additions:1">172</post-id> </item>
+    <item>
+    <title>Researcher (Said and Shah)</title>
+    <link>/asam210/2013/06/04/researcher-said-and-shah/</link>
+    <comments>/asam210/2013/06/04/researcher-said-and-shah/#respond</comments>
+    <pubDate>Wed, 05 Jun 2013 01:59:22 +0000</pubDate>
+    <dc:creator><![CDATA[Akash Sharma]]></dc:creator>
+        <category><![CDATA[Further Research]]></category>
+    <category><![CDATA[Edward Said]]></category>
+    <category><![CDATA[Nayan Shah]]></category>
+    <category><![CDATA[orientalism]]></category>
+    <category><![CDATA[Primary Reader]]></category>
 
-		<guid isPermaLink="false">/asam210/?p=138</guid>
-		<description><![CDATA[Edward Said on Orientalism (YouTube Video)]]></description>
-				<content:encoded><![CDATA[<p><iframe class='youtube-player' type='text/html' width='640' height='390' src='https://www.youtube.com/embed/xwCOSkXR_Cw?version=3&#038;rel=1&#038;fs=1&#038;autohide=2&#038;showsearch=0&#038;showinfo=1&#038;iv_load_policy=1&#038;wmode=transparent' allowfullscreen='true' style='border:0;'></iframe><br />
+    <guid isPermaLink="false">/asam210/?p=138</guid>
+    <description><![CDATA[Edward Said on Orientalism (YouTube Video)]]></description>
+        <content:encoded><![CDATA[<p><iframe class='youtube-player' type='text/html' width='640' height='390' src='https://www.youtube.com/embed/xwCOSkXR_Cw?version=3&#038;rel=1&#038;fs=1&#038;autohide=2&#038;showsearch=0&#038;showinfo=1&#038;iv_load_policy=1&#038;wmode=transparent' allowfullscreen='true' style='border:0;'></iframe><br />
 Edward Said on Orientalism (YouTube Video)</p>
 ]]></content:encoded>
-			<wfw:commentRss>/asam210/2013/06/04/researcher-said-and-shah/feed/</wfw:commentRss>
-		<slash:comments>0</slash:comments>
-	<post-id xmlns="com-wordpress:feed-additions:1">138</post-id>	</item>
-	</channel>
+      <wfw:commentRss>/asam210/2013/06/04/researcher-said-and-shah/feed/</wfw:commentRss>
+    <slash:comments>0</slash:comments>
+  <post-id xmlns="com-wordpress:feed-additions:1">138</post-id> </item>
+  </channel>
 </rss>

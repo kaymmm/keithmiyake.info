@@ -1,36 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
-	xmlns:content="http://purl.org/rss/1.0/modules/content/"
-	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
-	xmlns:dc="http://purl.org/dc/elements/1.1/"
-	xmlns:atom="http://www.w3.org/2005/Atom"
-	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
-	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
-	>
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+  xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+  >
 
 <channel>
-	<title>meta &#8211; Asians in the U.S.</title>
-	<atom:link href="/asam210/tag/meta/feed/" rel="self" type="application/rss+xml" />
-	<link>/asam210</link>
-	<description>Hunter College, Summer 2013</description>
-	<lastBuildDate>Wed, 26 Feb 2014 13:59:43 +0000</lastBuildDate>
-	<language>en-US</language>
-	<sy:updatePeriod>hourly</sy:updatePeriod>
-	<sy:updateFrequency>1</sy:updateFrequency>
-	
-<site xmlns="com-wordpress:feed-additions:1">53277463</site>	<item>
-		<title>How to use the course blog</title>
-		<link>/asam210/2013/04/28/how-to-use-the-course-blog/</link>
-		<comments>/asam210/2013/04/28/how-to-use-the-course-blog/#respond</comments>
-		<pubDate>Sun, 28 Apr 2013 21:00:53 +0000</pubDate>
-		<dc:creator><![CDATA[Keith Miyake]]></dc:creator>
-				<category><![CDATA[Announcements]]></category>
-		<category><![CDATA[Resources]]></category>
-		<category><![CDATA[how-to]]></category>
-		<category><![CDATA[meta]]></category>
+  <title>meta &#8211; Asians in the U.S.</title>
+  <atom:link href="{{site.baseurl}}/asam210/tag/meta/feed/" rel="self" type="application/rss+xml" />
+  <link>/asam210</link>
+  <description>Hunter College, Summer 2013</description>
+  <lastBuildDate>Wed, 26 Feb 2014 13:59:43 +0000</lastBuildDate>
+  <language>en-US</language>
+  <sy:updatePeriod>hourly</sy:updatePeriod>
+  <sy:updateFrequency>1</sy:updateFrequency>
 
-		<guid isPermaLink="false">http://asam210summer2013.commons.gc.cuny.edu/?p=4</guid>
-		<description><![CDATA[This post will be updated with more details later, but for some basics, check out these two links: How-to guide on creating new posts in wordpress: http://codex.wordpress.org/Writing_Posts A short video covering the same topic: http://wordpress.tv/2009/01/15/writing-and-publishing-a-post/ To insert media files into your post: http://en.support.wordpress.com/category/media/ To insert a gallery of images: http://en.support.wordpress.com/images/gallery/ &#160; Super simple example: To embed a youtube [&#8230;]]]></description>
-				<content:encoded><![CDATA[<p>This post will be updated with more details later, but for some basics, check out these two links:</p>
+<site xmlns="com-wordpress:feed-additions:1">53277463</site>  <item>
+    <title>How to use the course blog</title>
+    <link>/asam210/2013/04/28/how-to-use-the-course-blog/</link>
+    <comments>/asam210/2013/04/28/how-to-use-the-course-blog/#respond</comments>
+    <pubDate>Sun, 28 Apr 2013 21:00:53 +0000</pubDate>
+    <dc:creator><![CDATA[Keith Miyake]]></dc:creator>
+        <category><![CDATA[Announcements]]></category>
+    <category><![CDATA[Resources]]></category>
+    <category><![CDATA[how-to]]></category>
+    <category><![CDATA[meta]]></category>
+
+    <guid isPermaLink="false">http://asam210summer2013.commons.gc.cuny.edu/?p=4</guid>
+    <description><![CDATA[This post will be updated with more details later, but for some basics, check out these two links: How-to guide on creating new posts in wordpress: http://codex.wordpress.org/Writing_Posts A short video covering the same topic: http://wordpress.tv/2009/01/15/writing-and-publishing-a-post/ To insert media files into your post: http://en.support.wordpress.com/category/media/ To insert a gallery of images: http://en.support.wordpress.com/images/gallery/ &#160; Super simple example: To embed a youtube [&#8230;]]]></description>
+        <content:encoded><![CDATA[<p>This post will be updated with more details later, but for some basics, check out these two links:</p>
 <p>How-to guide on creating new posts in wordpress: <a href="http://codex.wordpress.org/Writing_Posts" target="_blank">http://codex.wordpress.org/Writing_Posts</a></p>
 <p>A short video covering the same topic: <a href="http://wordpress.tv/2009/01/15/writing-and-publishing-a-post/" target="_blank">http://wordpress.tv/2009/01/15/writing-and-publishing-a-post/</a></p>
 <p>To insert media files into your post: <a href="http://en.support.wordpress.com/category/media/" target="_blank">http://en.support.wordpress.com/category/media/</a></p>
@@ -39,8 +39,8 @@
 <p>Super simple example: To embed a youtube video, just insert the link to the youtube page, e.g. <code>http://www.youtube.com/watch?v=hWUV9fyc4Rc</code> and your video will magically appear:</p>
 <p><iframe class='youtube-player' type='text/html' width='640' height='390' src='https://www.youtube.com/embed/hWUV9fyc4Rc?version=3&#038;rel=1&#038;fs=1&#038;autohide=2&#038;showsearch=0&#038;showinfo=1&#038;iv_load_policy=1&#038;wmode=transparent' allowfullscreen='true' style='border:0;'></iframe></p>
 ]]></content:encoded>
-			<wfw:commentRss>/asam210/2013/04/28/how-to-use-the-course-blog/feed/</wfw:commentRss>
-		<slash:comments>0</slash:comments>
-	<post-id xmlns="com-wordpress:feed-additions:1">12</post-id>	</item>
-	</channel>
+      <wfw:commentRss>/asam210/2013/04/28/how-to-use-the-course-blog/feed/</wfw:commentRss>
+    <slash:comments>0</slash:comments>
+  <post-id xmlns="com-wordpress:feed-additions:1">12</post-id>  </item>
+  </channel>
 </rss>

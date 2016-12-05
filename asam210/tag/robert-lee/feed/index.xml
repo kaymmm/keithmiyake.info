@@ -1,41 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
-	xmlns:content="http://purl.org/rss/1.0/modules/content/"
-	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
-	xmlns:dc="http://purl.org/dc/elements/1.1/"
-	xmlns:atom="http://www.w3.org/2005/Atom"
-	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
-	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
-	>
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+  xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+  >
 
 <channel>
-	<title>Robert Lee &#8211; Asians in the U.S.</title>
-	<atom:link href="/asam210/tag/robert-lee/feed/" rel="self" type="application/rss+xml" />
-	<link>/asam210</link>
-	<description>Hunter College, Summer 2013</description>
-	<lastBuildDate>Wed, 26 Feb 2014 13:59:43 +0000</lastBuildDate>
-	<language>en-US</language>
-	<sy:updatePeriod>hourly</sy:updatePeriod>
-	<sy:updateFrequency>1</sy:updateFrequency>
-	
-<site xmlns="com-wordpress:feed-additions:1">53277463</site>	<item>
-		<title>Primary Reader 6/24</title>
-		<link>/asam210/2013/06/23/primary-reader-624/</link>
-		<comments>/asam210/2013/06/23/primary-reader-624/#comments</comments>
-		<pubDate>Mon, 24 Jun 2013 02:41:24 +0000</pubDate>
-		<dc:creator><![CDATA[Ryan McNeil]]></dc:creator>
-				<category><![CDATA[Primary Reader]]></category>
-		<category><![CDATA[Cold War]]></category>
-		<category><![CDATA[Lisa Lowe]]></category>
-		<category><![CDATA[Robert G Lee]]></category>
-		<category><![CDATA[Robert Lee]]></category>
+  <title>Robert Lee &#8211; Asians in the U.S.</title>
+  <atom:link href="{{site.baseurl}}/asam210/tag/robert-lee/feed/" rel="self" type="application/rss+xml" />
+  <link>/asam210</link>
+  <description>Hunter College, Summer 2013</description>
+  <lastBuildDate>Wed, 26 Feb 2014 13:59:43 +0000</lastBuildDate>
+  <language>en-US</language>
+  <sy:updatePeriod>hourly</sy:updatePeriod>
+  <sy:updateFrequency>1</sy:updateFrequency>
 
-		<guid isPermaLink="false">/asam210/?p=452</guid>
-		<description><![CDATA[In the Robert G. Lee piece, Lee tackles the stereotype that Asians embodied a &#8220;model minority;&#8221; a group that assimilated well and fell in line well with established societal norms.  He spends a good portion of the paper on the history of this stereotype.  In my opinion, it was somewhat surprising to read about the [&#8230;]]]></description>
-				<content:encoded><![CDATA[<p>In the Robert G. Lee piece, Lee tackles the stereotype that Asians embodied a &#8220;model minority;&#8221; a group that assimilated well and fell in line well with established societal norms.  He spends a good portion of the paper on the history of this stereotype.  In my opinion, it was somewhat surprising to read about the excerpt from <i>Life </i>magazine.  Though racism was still so socially acceptable in America at the time, I was a little surprised to see a respected magazine publish such a pseudoscientific piece on racial anthropology as late as 1941.  The main idea I got from this paper was that straight, working-class Asians were seen as an acceptable out-group in relation to other minorities (racial minorities and homosexuals), despite the very negative light cast on Asians in America by the prevalence of communism in a few asian nations.  I believe that the model minority myth must have been incredibly well entrenched in American culture, given that it had to overcome even the extreme anti-communist sentiment central to Cold War America.</p>
+<site xmlns="com-wordpress:feed-additions:1">53277463</site>  <item>
+    <title>Primary Reader 6/24</title>
+    <link>/asam210/2013/06/23/primary-reader-624/</link>
+    <comments>/asam210/2013/06/23/primary-reader-624/#comments</comments>
+    <pubDate>Mon, 24 Jun 2013 02:41:24 +0000</pubDate>
+    <dc:creator><![CDATA[Ryan McNeil]]></dc:creator>
+        <category><![CDATA[Primary Reader]]></category>
+    <category><![CDATA[Cold War]]></category>
+    <category><![CDATA[Lisa Lowe]]></category>
+    <category><![CDATA[Robert G Lee]]></category>
+    <category><![CDATA[Robert Lee]]></category>
+
+    <guid isPermaLink="false">/asam210/?p=452</guid>
+    <description><![CDATA[In the Robert G. Lee piece, Lee tackles the stereotype that Asians embodied a &#8220;model minority;&#8221; a group that assimilated well and fell in line well with established societal norms.  He spends a good portion of the paper on the history of this stereotype.  In my opinion, it was somewhat surprising to read about the [&#8230;]]]></description>
+        <content:encoded><![CDATA[<p>In the Robert G. Lee piece, Lee tackles the stereotype that Asians embodied a &#8220;model minority;&#8221; a group that assimilated well and fell in line well with established societal norms.  He spends a good portion of the paper on the history of this stereotype.  In my opinion, it was somewhat surprising to read about the excerpt from <i>Life </i>magazine.  Though racism was still so socially acceptable in America at the time, I was a little surprised to see a respected magazine publish such a pseudoscientific piece on racial anthropology as late as 1941.  The main idea I got from this paper was that straight, working-class Asians were seen as an acceptable out-group in relation to other minorities (racial minorities and homosexuals), despite the very negative light cast on Asians in America by the prevalence of communism in a few asian nations.  I believe that the model minority myth must have been incredibly well entrenched in American culture, given that it had to overcome even the extreme anti-communist sentiment central to Cold War America.</p>
 <p>The David Palumbo-Liu paper delves more technically into the politics of being Asian in America, and relative stereotypes.  The paper talks about some differences in the treatment of Asian Americans by location (particularly California). It goes on to examine a few films, in my opinion, illustrating popular perception of Asians in the US and the contradictory nature of some Asian stereotypes.  The paper works its way from these perceptions themselves to their implications, like the mistreatment of Asian Americans like that of the banking system.  One interesting point that this paper brings up is that Asians were forced to integrate (page 241), evidencing that the model minority myth was not just created in white Americans&#8217; minds, but in their actions.  For further research, I would be curious how racist perceptions of Asian Americans, and their treatment because of those perceptions may have fed back and forth in a circular fashion. ie. Asians being perceived as unsanitary or unhealthy, thus not being afforded the same health care as white Americans causing them to actually have poorer health than white Americans.</p>
 ]]></content:encoded>
-			<wfw:commentRss>/asam210/2013/06/23/primary-reader-624/feed/</wfw:commentRss>
-		<slash:comments>3</slash:comments>
-	<post-id xmlns="com-wordpress:feed-additions:1">452</post-id>	</item>
-	</channel>
+      <wfw:commentRss>/asam210/2013/06/23/primary-reader-624/feed/</wfw:commentRss>
+    <slash:comments>3</slash:comments>
+  <post-id xmlns="com-wordpress:feed-additions:1">452</post-id> </item>
+  </channel>
 </rss>

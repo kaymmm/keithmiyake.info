@@ -1,61 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
-	xmlns:content="http://purl.org/rss/1.0/modules/content/"
-	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
-	xmlns:dc="http://purl.org/dc/elements/1.1/"
-	xmlns:atom="http://www.w3.org/2005/Atom"
-	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
-	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
-	>
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+  xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+  >
 
 <channel>
-	<title>resources &#8211; Intro to Geography</title>
-	<atom:link href="/geh101/tag/resources-2/feed/" rel="self" type="application/rss+xml" />
-	<link>/geh101</link>
-	<description>Lehman College</description>
-	<lastBuildDate>Sat, 29 Nov 2014 17:03:44 +0000</lastBuildDate>
-	<language>en-US</language>
-	<sy:updatePeriod>hourly</sy:updatePeriod>
-	<sy:updateFrequency>1</sy:updateFrequency>
-	
-<site xmlns="com-wordpress:feed-additions:1">52642319</site>	<item>
-		<title>[Video] Manufactured Landscapes &#8211; Human impacts on landscapes</title>
-		<link>/geh101/2010/10/26/video-manufactured-landscapes-human-impacts-on-landscapes/</link>
-		<comments>/geh101/2010/10/26/video-manufactured-landscapes-human-impacts-on-landscapes/#respond</comments>
-		<pubDate>Tue, 26 Oct 2010 08:32:23 +0000</pubDate>
-		<dc:creator><![CDATA[Keith Miyake]]></dc:creator>
-				<category><![CDATA[Resources]]></category>
-		<category><![CDATA[china]]></category>
-		<category><![CDATA[human impact]]></category>
-		<category><![CDATA[human-environment interactions]]></category>
-		<category><![CDATA[landforms]]></category>
-		<category><![CDATA[resources]]></category>
-		<category><![CDATA[video]]></category>
+  <title>resources &#8211; Intro to Geography</title>
+  <atom:link href="{{ site.baseurl }}/geh101/tag/resources-2/feed/" rel="self" type="application/rss+xml" />
+  <link>/geh101</link>
+  <description>Lehman College</description>
+  <lastBuildDate>Sat, 29 Nov 2014 17:03:44 +0000</lastBuildDate>
+  <language>en-US</language>
+  <sy:updatePeriod>hourly</sy:updatePeriod>
+  <sy:updateFrequency>1</sy:updateFrequency>
 
-		<guid isPermaLink="false">http://geh101.wordpress.com/?p=182</guid>
-		<description><![CDATA[This is a clip from the film Manufactured Landscapes, which looks at the ways in which people have transformed the physical landscape of China through industrial growth as part of the expansion of capitalism.]]></description>
-				<content:encoded><![CDATA[<p>This is a clip from the film Manufactured Landscapes, which looks at the ways in which people have transformed the physical landscape of China through industrial growth as part of the expansion of capitalism.</p>
+<site xmlns="com-wordpress:feed-additions:1">52642319</site>  <item>
+    <title>[Video] Manufactured Landscapes &#8211; Human impacts on landscapes</title>
+    <link>{{ site.baseurl }}/geh101/2010/10/26/video-manufactured-landscapes-human-impacts-on-landscapes/</link>
+    <comments>{{ site.baseurl }}/geh101/2010/10/26/video-manufactured-landscapes-human-impacts-on-landscapes/#respond</comments>
+    <pubDate>Tue, 26 Oct 2010 08:32:23 +0000</pubDate>
+    <dc:creator><![CDATA[Keith Miyake]]></dc:creator>
+        <category><![CDATA[Resources]]></category>
+    <category><![CDATA[china]]></category>
+    <category><![CDATA[human impact]]></category>
+    <category><![CDATA[human-environment interactions]]></category>
+    <category><![CDATA[landforms]]></category>
+    <category><![CDATA[resources]]></category>
+    <category><![CDATA[video]]></category>
+
+    <guid isPermaLink="false">http://geh101.wordpress.com/?p=182</guid>
+    <description><![CDATA[This is a clip from the film Manufactured Landscapes, which looks at the ways in which people have transformed the physical landscape of China through industrial growth as part of the expansion of capitalism.]]></description>
+        <content:encoded><![CDATA[<p>This is a clip from the film Manufactured Landscapes, which looks at the ways in which people have transformed the physical landscape of China through industrial growth as part of the expansion of capitalism.</p>
 <iframe class='youtube-player' type='text/html' width='640' height='390' src='https://www.youtube.com/embed/o97azFDkB58?version=3&#038;rel=1&#038;fs=1&#038;autohide=2&#038;showsearch=0&#038;showinfo=1&#038;iv_load_policy=1&#038;wmode=transparent' allowfullscreen='true' style='border:0;'></iframe>
 ]]></content:encoded>
-			<wfw:commentRss>/geh101/2010/10/26/video-manufactured-landscapes-human-impacts-on-landscapes/feed/</wfw:commentRss>
-		<slash:comments>0</slash:comments>
-	<post-id xmlns="com-wordpress:feed-additions:1">182</post-id>	</item>
-		<item>
-		<title>Outlining and Prewriting Resources</title>
-		<link>/geh101/2010/10/06/outlining-and-prewriting-resources/</link>
-		<comments>/geh101/2010/10/06/outlining-and-prewriting-resources/#respond</comments>
-		<pubDate>Wed, 06 Oct 2010 16:52:24 +0000</pubDate>
-		<dc:creator><![CDATA[Keith Miyake]]></dc:creator>
-				<category><![CDATA[Assignments]]></category>
-		<category><![CDATA[Resources]]></category>
-		<category><![CDATA[outlining]]></category>
-		<category><![CDATA[prewriting]]></category>
-		<category><![CDATA[resources]]></category>
-		<category><![CDATA[Term Paper]]></category>
-		<category><![CDATA[writing]]></category>
+      <wfw:commentRss>{{ site.baseurl }}/geh101/2010/10/26/video-manufactured-landscapes-human-impacts-on-landscapes/feed/</wfw:commentRss>
+    <slash:comments>0</slash:comments>
+  <post-id xmlns="com-wordpress:feed-additions:1">182</post-id> </item>
+    <item>
+    <title>Outlining and Prewriting Resources</title>
+    <link>{{ site.baseurl }}/geh101/2010/10/06/outlining-and-prewriting-resources/</link>
+    <comments>{{ site.baseurl }}/geh101/2010/10/06/outlining-and-prewriting-resources/#respond</comments>
+    <pubDate>Wed, 06 Oct 2010 16:52:24 +0000</pubDate>
+    <dc:creator><![CDATA[Keith Miyake]]></dc:creator>
+        <category><![CDATA[Assignments]]></category>
+    <category><![CDATA[Resources]]></category>
+    <category><![CDATA[outlining]]></category>
+    <category><![CDATA[prewriting]]></category>
+    <category><![CDATA[resources]]></category>
+    <category><![CDATA[Term Paper]]></category>
+    <category><![CDATA[writing]]></category>
 
-		<guid isPermaLink="false">http://geh101.wordpress.com/?p=195</guid>
-		<description><![CDATA[In a previous post, I provided some resources to help students with the writing process. However, I realized that those resources didn&#8217;t sufficiently cover pre-writing and outlining, and since an outline is due before the next class, I decided to provide some additional resources to help you get started with your outlines. The Purdue University [&#8230;]]]></description>
-				<content:encoded><![CDATA[<p>In a <a href="http://geh101.wordpress.com/2010/09/27/basic-reading-writing-and-peer-editing-guide/">previous post</a>, I provided some resources to help students with the writing process. However, I realized that those resources didn&#8217;t sufficiently cover pre-writing and outlining, and since an outline is due before the next class, I decided to provide some additional resources to help you get started with your outlines.</p>
+    <guid isPermaLink="false">http://geh101.wordpress.com/?p=195</guid>
+    <description><![CDATA[In a previous post, I provided some resources to help students with the writing process. However, I realized that those resources didn&#8217;t sufficiently cover pre-writing and outlining, and since an outline is due before the next class, I decided to provide some additional resources to help you get started with your outlines. The Purdue University [&#8230;]]]></description>
+        <content:encoded><![CDATA[<p>In a <a href="http://geh101.wordpress.com/2010/09/27/basic-reading-writing-and-peer-editing-guide/">previous post</a>, I provided some resources to help students with the writing process. However, I realized that those resources didn&#8217;t sufficiently cover pre-writing and outlining, and since an outline is due before the next class, I decided to provide some additional resources to help you get started with your outlines.</p>
 <p>The Purdue University Online Writing Lab is a wonderful resource for all stages of the writing process for students of all levels. Their sections on outlining and prewriting are particularly useful:</p>
 <ul>
 <li><a href="http://owl.english.purdue.edu/owl/resource/673/01/">Prewriting I</a></li>
@@ -66,8 +66,8 @@
 <li><a href="http://owl.english.purdue.edu/owl/resource/544/01/">Outline Content</a></li>
 </ul>
 ]]></content:encoded>
-			<wfw:commentRss>/geh101/2010/10/06/outlining-and-prewriting-resources/feed/</wfw:commentRss>
-		<slash:comments>0</slash:comments>
-	<post-id xmlns="com-wordpress:feed-additions:1">195</post-id>	</item>
-	</channel>
+      <wfw:commentRss>{{ site.baseurl }}/geh101/2010/10/06/outlining-and-prewriting-resources/feed/</wfw:commentRss>
+    <slash:comments>0</slash:comments>
+  <post-id xmlns="com-wordpress:feed-additions:1">195</post-id> </item>
+  </channel>
 </rss>

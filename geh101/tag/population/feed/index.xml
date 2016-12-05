@@ -1,36 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
-	xmlns:content="http://purl.org/rss/1.0/modules/content/"
-	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
-	xmlns:dc="http://purl.org/dc/elements/1.1/"
-	xmlns:atom="http://www.w3.org/2005/Atom"
-	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
-	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
-	>
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+  xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+  >
 
 <channel>
-	<title>population &#8211; Intro to Geography</title>
-	<atom:link href="/geh101/tag/population/feed/" rel="self" type="application/rss+xml" />
-	<link>/geh101</link>
-	<description>Lehman College</description>
-	<lastBuildDate>Sat, 29 Nov 2014 17:03:44 +0000</lastBuildDate>
-	<language>en-US</language>
-	<sy:updatePeriod>hourly</sy:updatePeriod>
-	<sy:updateFrequency>1</sy:updateFrequency>
-	
-<site xmlns="com-wordpress:feed-additions:1">52642319</site>	<item>
-		<title>Week 9 Class Notes and Term Paper Questions &#8211; Population Geography</title>
-		<link>/geh101/2011/03/28/ch-6-population-geography/</link>
-		<comments>/geh101/2011/03/28/ch-6-population-geography/#respond</comments>
-		<pubDate>Mon, 28 Mar 2011 17:18:41 +0000</pubDate>
-		<dc:creator><![CDATA[Keith Miyake]]></dc:creator>
-				<category><![CDATA[Lectures and Notes]]></category>
-		<category><![CDATA[lecture notes]]></category>
-		<category><![CDATA[population]]></category>
-		<category><![CDATA[Term Paper]]></category>
+  <title>population &#8211; Intro to Geography</title>
+  <atom:link href="{{ site.baseurl }}/geh101/tag/population/feed/" rel="self" type="application/rss+xml" />
+  <link>/geh101</link>
+  <description>Lehman College</description>
+  <lastBuildDate>Sat, 29 Nov 2014 17:03:44 +0000</lastBuildDate>
+  <language>en-US</language>
+  <sy:updatePeriod>hourly</sy:updatePeriod>
+  <sy:updateFrequency>1</sy:updateFrequency>
 
-		<guid isPermaLink="false">http://geh101.wordpress.com/?p=200</guid>
-		<description><![CDATA[Class notes from Getis Chapter 6 on Population Geography can be downloaded here: <a href='http://geh101.files.wordpress.com/2011/09/ch6-population.pdf'>Chapter 6 - Population Geography</a>]]></description>
-				<content:encoded><![CDATA[<p>Class notes from Week 9 on Getis Chapter 6 on Population Geography can be downloaded here: <a href="/geh101/wp-content/uploads/sites/3/2011/09/ch6-population.pdf">Chapter 6 &#8211; Population Geography</a></p>
+<site xmlns="com-wordpress:feed-additions:1">52642319</site>  <item>
+    <title>Week 9 Class Notes and Term Paper Questions &#8211; Population Geography</title>
+    <link>{{ site.baseurl }}/geh101/2011/03/28/ch-6-population-geography/</link>
+    <comments>{{ site.baseurl }}/geh101/2011/03/28/ch-6-population-geography/#respond</comments>
+    <pubDate>Mon, 28 Mar 2011 17:18:41 +0000</pubDate>
+    <dc:creator><![CDATA[Keith Miyake]]></dc:creator>
+        <category><![CDATA[Lectures and Notes]]></category>
+    <category><![CDATA[lecture notes]]></category>
+    <category><![CDATA[population]]></category>
+    <category><![CDATA[Term Paper]]></category>
+
+    <guid isPermaLink="false">http://geh101.wordpress.com/?p=200</guid>
+    <description><![CDATA[Class notes from Getis Chapter 6 on Population Geography can be downloaded here: <a href='http://geh101.files.wordpress.com/2011/09/ch6-population.pdf'>Chapter 6 - Population Geography</a>]]></description>
+        <content:encoded><![CDATA[<p>Class notes from Week 9 on Getis Chapter 6 on Population Geography can be downloaded here: <a href="{{ site.baseurl }}/geh101/wp-content/uploads/sites/3/2011/09/ch6-population.pdf">Chapter 6 &#8211; Population Geography</a></p>
 <p><span style="font-family:Georgia, 'Bitstream Charter', serif;line-height:24px;font-size:16px">And here are the Term Paper Discussion Questions for this week:</span></p>
 <ul>
 <li>How does the uneven allocation and use of natural resources factor into the processes (political, economic, and socio-cultural)that shape your topic?</li>
@@ -40,40 +40,40 @@
 <li>What is the relationship to human migration?</li>
 </ul>
 ]]></content:encoded>
-			<wfw:commentRss>/geh101/2011/03/28/ch-6-population-geography/feed/</wfw:commentRss>
-		<slash:comments>0</slash:comments>
-	<post-id xmlns="com-wordpress:feed-additions:1">200</post-id>	</item>
-		<item>
-		<title>WorldMapper: The world as you&#8217;ve never seen it before</title>
-		<link>/geh101/2010/08/29/worldmapper-the-world-as-youve-never-seen-it-before/</link>
-		<comments>/geh101/2010/08/29/worldmapper-the-world-as-youve-never-seen-it-before/#respond</comments>
-		<pubDate>Sun, 29 Aug 2010 04:37:27 +0000</pubDate>
-		<dc:creator><![CDATA[Keith Miyake]]></dc:creator>
-				<category><![CDATA[Maps]]></category>
-		<category><![CDATA[Resources]]></category>
-		<category><![CDATA[cartography]]></category>
-		<category><![CDATA[environment]]></category>
-		<category><![CDATA[health]]></category>
-		<category><![CDATA[maps]]></category>
-		<category><![CDATA[military]]></category>
-		<category><![CDATA[oil]]></category>
-		<category><![CDATA[population]]></category>
+      <wfw:commentRss>{{ site.baseurl }}/geh101/2011/03/28/ch-6-population-geography/feed/</wfw:commentRss>
+    <slash:comments>0</slash:comments>
+  <post-id xmlns="com-wordpress:feed-additions:1">200</post-id> </item>
+    <item>
+    <title>WorldMapper: The world as you&#8217;ve never seen it before</title>
+    <link>{{ site.baseurl }}/geh101/2010/08/29/worldmapper-the-world-as-youve-never-seen-it-before/</link>
+    <comments>{{ site.baseurl }}/geh101/2010/08/29/worldmapper-the-world-as-youve-never-seen-it-before/#respond</comments>
+    <pubDate>Sun, 29 Aug 2010 04:37:27 +0000</pubDate>
+    <dc:creator><![CDATA[Keith Miyake]]></dc:creator>
+        <category><![CDATA[Maps]]></category>
+    <category><![CDATA[Resources]]></category>
+    <category><![CDATA[cartography]]></category>
+    <category><![CDATA[environment]]></category>
+    <category><![CDATA[health]]></category>
+    <category><![CDATA[maps]]></category>
+    <category><![CDATA[military]]></category>
+    <category><![CDATA[oil]]></category>
+    <category><![CDATA[population]]></category>
 
-		<guid isPermaLink="false">/geh101/?p=79</guid>
-		<description><![CDATA[Many of you have probably seen one or more of the maps created by WorldMapper before. Their website contains hundreds of cartograms&#8211;maps that display land area proportional to some independent variable&#8211;to help people better grasp disproportionate distributions of just about any easily quantifiable information. From the cartograms above, can you match each with the variable [&#8230;]]]></description>
-				<content:encoded><![CDATA[<table>
+    <guid isPermaLink="false">{{ site.baseurl }}/geh101/?p=79</guid>
+    <description><![CDATA[Many of you have probably seen one or more of the maps created by WorldMapper before. Their website contains hundreds of cartograms&#8211;maps that display land area proportional to some independent variable&#8211;to help people better grasp disproportionate distributions of just about any easily quantifiable information. From the cartograms above, can you match each with the variable [&#8230;]]]></description>
+        <content:encoded><![CDATA[<table>
 <tbody>
 <tr>
-<td><a href="https://i2.wp.com/keithmiyake.info/geh101/wp-content/uploads/sites/3/2010/08/worldmapper-pop.png"><img class="alignnone size-medium wp-image-78" title="worldmapper-pop" src="https://i2.wp.com/keithmiyake.info/geh101/wp-content/uploads/sites/3/2010/08/worldmapper-pop.png?resize=300%2C147" alt="Population" data-recalc-dims="1" /></a></td>
-<td><a href="https://i1.wp.com/keithmiyake.info/geh101/wp-content/uploads/sites/3/2010/08/worldmapper-undernourishment.png"><img class="alignnone size-medium wp-image-77" title="worldmapper-undernourishment" src="https://i1.wp.com/keithmiyake.info/geh101/wp-content/uploads/sites/3/2010/08/worldmapper-undernourishment.png?resize=300%2C147" alt="Undernourishment" srcset="https://i1.wp.com/keithmiyake.info/geh101/wp-content/uploads/sites/3/2010/08/worldmapper-undernourishment.png?w=1024 1024w, https://i1.wp.com/keithmiyake.info/geh101/wp-content/uploads/sites/3/2010/08/worldmapper-undernourishment.png?resize=300%2C147 300w, https://i1.wp.com/keithmiyake.info/geh101/wp-content/uploads/sites/3/2010/08/worldmapper-undernourishment.png?resize=624%2C307 624w" sizes="(max-width: 300px) 100vw, 300px" data-recalc-dims="1" /></a></td>
+<td><a href="https://i2.wp.com/keithmiyake.info{{ site.baseurl }}/geh101/wp-content/uploads/sites/3/2010/08/worldmapper-pop.png"><img class="alignnone size-medium wp-image-78" title="worldmapper-pop" src="https://i2.wp.com/keithmiyake.info{{ site.baseurl }}/geh101/wp-content/uploads/sites/3/2010/08/worldmapper-pop.png?resize=300%2C147" alt="Population" data-recalc-dims="1" /></a></td>
+<td><a href="https://i1.wp.com/keithmiyake.info{{ site.baseurl }}/geh101/wp-content/uploads/sites/3/2010/08/worldmapper-undernourishment.png"><img class="alignnone size-medium wp-image-77" title="worldmapper-undernourishment" src="https://i1.wp.com/keithmiyake.info{{ site.baseurl }}/geh101/wp-content/uploads/sites/3/2010/08/worldmapper-undernourishment.png?resize=300%2C147" alt="Undernourishment" srcset="https://i1.wp.com/keithmiyake.info{{ site.baseurl }}/geh101/wp-content/uploads/sites/3/2010/08/worldmapper-undernourishment.png?w=1024 1024w, https://i1.wp.com/keithmiyake.info{{ site.baseurl }}/geh101/wp-content/uploads/sites/3/2010/08/worldmapper-undernourishment.png?resize=300%2C147 300w, https://i1.wp.com/keithmiyake.info{{ site.baseurl }}/geh101/wp-content/uploads/sites/3/2010/08/worldmapper-undernourishment.png?resize=624%2C307 624w" sizes="(max-width: 300px) 100vw, 300px" data-recalc-dims="1" /></a></td>
 </tr>
 <tr>
-<td><a href="https://i0.wp.com/keithmiyake.info/geh101/wp-content/uploads/sites/3/2010/08/worldmapper-carbonemissions.png"><img class="alignnone size-medium wp-image-76" title="worldmapper-carbonemissions" src="https://i0.wp.com/keithmiyake.info/geh101/wp-content/uploads/sites/3/2010/08/worldmapper-carbonemissions.png?resize=300%2C147" alt="Carbon Emissions" data-recalc-dims="1" /></a></td>
-<td><a href="https://i2.wp.com/keithmiyake.info/geh101/wp-content/uploads/sites/3/2010/08/worldmapper-petrolexports.png"><img class="alignnone size-medium wp-image-75" title="worldmapper-petrolexports" src="https://i2.wp.com/keithmiyake.info/geh101/wp-content/uploads/sites/3/2010/08/worldmapper-petrolexports.png?resize=300%2C147" alt="Net Crude Petroleum Exports" srcset="https://i2.wp.com/keithmiyake.info/geh101/wp-content/uploads/sites/3/2010/08/worldmapper-petrolexports.png?w=1024 1024w, https://i2.wp.com/keithmiyake.info/geh101/wp-content/uploads/sites/3/2010/08/worldmapper-petrolexports.png?resize=300%2C147 300w, https://i2.wp.com/keithmiyake.info/geh101/wp-content/uploads/sites/3/2010/08/worldmapper-petrolexports.png?resize=624%2C307 624w" sizes="(max-width: 300px) 100vw, 300px" data-recalc-dims="1" /></a></td>
+<td><a href="https://i0.wp.com/keithmiyake.info{{ site.baseurl }}/geh101/wp-content/uploads/sites/3/2010/08/worldmapper-carbonemissions.png"><img class="alignnone size-medium wp-image-76" title="worldmapper-carbonemissions" src="https://i0.wp.com/keithmiyake.info{{ site.baseurl }}/geh101/wp-content/uploads/sites/3/2010/08/worldmapper-carbonemissions.png?resize=300%2C147" alt="Carbon Emissions" data-recalc-dims="1" /></a></td>
+<td><a href="https://i2.wp.com/keithmiyake.info{{ site.baseurl }}/geh101/wp-content/uploads/sites/3/2010/08/worldmapper-petrolexports.png"><img class="alignnone size-medium wp-image-75" title="worldmapper-petrolexports" src="https://i2.wp.com/keithmiyake.info{{ site.baseurl }}/geh101/wp-content/uploads/sites/3/2010/08/worldmapper-petrolexports.png?resize=300%2C147" alt="Net Crude Petroleum Exports" srcset="https://i2.wp.com/keithmiyake.info{{ site.baseurl }}/geh101/wp-content/uploads/sites/3/2010/08/worldmapper-petrolexports.png?w=1024 1024w, https://i2.wp.com/keithmiyake.info{{ site.baseurl }}/geh101/wp-content/uploads/sites/3/2010/08/worldmapper-petrolexports.png?resize=300%2C147 300w, https://i2.wp.com/keithmiyake.info{{ site.baseurl }}/geh101/wp-content/uploads/sites/3/2010/08/worldmapper-petrolexports.png?resize=624%2C307 624w" sizes="(max-width: 300px) 100vw, 300px" data-recalc-dims="1" /></a></td>
 </tr>
 <tr>
-<td><a href="https://i1.wp.com/keithmiyake.info/geh101/wp-content/uploads/sites/3/2010/08/worldmapper-hiv.png"><img class="alignnone size-medium wp-image-73" title="worldmapper-hiv" src="https://i1.wp.com/keithmiyake.info/geh101/wp-content/uploads/sites/3/2010/08/worldmapper-hiv.png?resize=300%2C147" alt="HIV Infections" srcset="https://i1.wp.com/keithmiyake.info/geh101/wp-content/uploads/sites/3/2010/08/worldmapper-hiv.png?w=1024 1024w, https://i1.wp.com/keithmiyake.info/geh101/wp-content/uploads/sites/3/2010/08/worldmapper-hiv.png?resize=300%2C147 300w, https://i1.wp.com/keithmiyake.info/geh101/wp-content/uploads/sites/3/2010/08/worldmapper-hiv.png?resize=624%2C307 624w" sizes="(max-width: 300px) 100vw, 300px" data-recalc-dims="1" /></a></td>
-<td><a href="https://i2.wp.com/keithmiyake.info/geh101/wp-content/uploads/sites/3/2010/08/worldmapper-milspend.png"><img class="alignnone size-medium wp-image-74" title="worldmapper-milspend" src="https://i2.wp.com/keithmiyake.info/geh101/wp-content/uploads/sites/3/2010/08/worldmapper-milspend.png?resize=300%2C147" alt="Military Spending" srcset="https://i2.wp.com/keithmiyake.info/geh101/wp-content/uploads/sites/3/2010/08/worldmapper-milspend.png?w=1024 1024w, https://i2.wp.com/keithmiyake.info/geh101/wp-content/uploads/sites/3/2010/08/worldmapper-milspend.png?resize=300%2C147 300w, https://i2.wp.com/keithmiyake.info/geh101/wp-content/uploads/sites/3/2010/08/worldmapper-milspend.png?resize=624%2C307 624w" sizes="(max-width: 300px) 100vw, 300px" data-recalc-dims="1" /></a></td>
+<td><a href="https://i1.wp.com/keithmiyake.info{{ site.baseurl }}/geh101/wp-content/uploads/sites/3/2010/08/worldmapper-hiv.png"><img class="alignnone size-medium wp-image-73" title="worldmapper-hiv" src="https://i1.wp.com/keithmiyake.info{{ site.baseurl }}/geh101/wp-content/uploads/sites/3/2010/08/worldmapper-hiv.png?resize=300%2C147" alt="HIV Infections" srcset="https://i1.wp.com/keithmiyake.info{{ site.baseurl }}/geh101/wp-content/uploads/sites/3/2010/08/worldmapper-hiv.png?w=1024 1024w, https://i1.wp.com/keithmiyake.info{{ site.baseurl }}/geh101/wp-content/uploads/sites/3/2010/08/worldmapper-hiv.png?resize=300%2C147 300w, https://i1.wp.com/keithmiyake.info{{ site.baseurl }}/geh101/wp-content/uploads/sites/3/2010/08/worldmapper-hiv.png?resize=624%2C307 624w" sizes="(max-width: 300px) 100vw, 300px" data-recalc-dims="1" /></a></td>
+<td><a href="https://i2.wp.com/keithmiyake.info{{ site.baseurl }}/geh101/wp-content/uploads/sites/3/2010/08/worldmapper-milspend.png"><img class="alignnone size-medium wp-image-74" title="worldmapper-milspend" src="https://i2.wp.com/keithmiyake.info{{ site.baseurl }}/geh101/wp-content/uploads/sites/3/2010/08/worldmapper-milspend.png?resize=300%2C147" alt="Military Spending" srcset="https://i2.wp.com/keithmiyake.info{{ site.baseurl }}/geh101/wp-content/uploads/sites/3/2010/08/worldmapper-milspend.png?w=1024 1024w, https://i2.wp.com/keithmiyake.info{{ site.baseurl }}/geh101/wp-content/uploads/sites/3/2010/08/worldmapper-milspend.png?resize=300%2C147 300w, https://i2.wp.com/keithmiyake.info{{ site.baseurl }}/geh101/wp-content/uploads/sites/3/2010/08/worldmapper-milspend.png?resize=624%2C307 624w" sizes="(max-width: 300px) 100vw, 300px" data-recalc-dims="1" /></a></td>
 </tr>
 </tbody>
 </table>
@@ -88,8 +88,8 @@
 <li><a href="http://www.sasi.group.shef.ac.uk/worldmapper/display.php?selected=220">Carbon emissions</a> (proportion of total worldwide carbon emissions that were from each country)</li>
 </ol>
 ]]></content:encoded>
-			<wfw:commentRss>/geh101/2010/08/29/worldmapper-the-world-as-youve-never-seen-it-before/feed/</wfw:commentRss>
-		<slash:comments>0</slash:comments>
-	<post-id xmlns="com-wordpress:feed-additions:1">79</post-id>	</item>
-	</channel>
+      <wfw:commentRss>{{ site.baseurl }}/geh101/2010/08/29/worldmapper-the-world-as-youve-never-seen-it-before/feed/</wfw:commentRss>
+    <slash:comments>0</slash:comments>
+  <post-id xmlns="com-wordpress:feed-additions:1">79</post-id>  </item>
+  </channel>
 </rss>

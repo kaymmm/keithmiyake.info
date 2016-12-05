@@ -1,123 +1,123 @@
 <?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
-	xmlns:content="http://purl.org/rss/1.0/modules/content/"
-	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
-	xmlns:dc="http://purl.org/dc/elements/1.1/"
-	xmlns:atom="http://www.w3.org/2005/Atom"
-	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
-	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
-	>
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+  xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+  >
 
 <channel>
-	<title>Trevor O&#8217;Mara &#8211; Asians in the U.S.</title>
-	<atom:link href="/asam210/author/tomara/feed/" rel="self" type="application/rss+xml" />
-	<link>/asam210</link>
-	<description>Hunter College, Summer 2013</description>
-	<lastBuildDate>Wed, 26 Feb 2014 13:59:43 +0000</lastBuildDate>
-	<language>en-US</language>
-	<sy:updatePeriod>hourly</sy:updatePeriod>
-	<sy:updateFrequency>1</sy:updateFrequency>
-	
-<site xmlns="com-wordpress:feed-additions:1">53277463</site>	<item>
-		<title>Researcher: Asian American Studies</title>
-		<link>/asam210/2013/07/16/researcher-asian-american-studies/</link>
-		<comments>/asam210/2013/07/16/researcher-asian-american-studies/#respond</comments>
-		<pubDate>Tue, 16 Jul 2013 04:36:57 +0000</pubDate>
-		<dc:creator><![CDATA[Trevor O'Mara]]></dc:creator>
-				<category><![CDATA[Further Research]]></category>
+  <title>Trevor O&#8217;Mara &#8211; Asians in the U.S.</title>
+  <atom:link href="{{site.baseurl}}/asam210/author/tomara/feed/" rel="self" type="application/rss+xml" />
+  <link>/asam210</link>
+  <description>Hunter College, Summer 2013</description>
+  <lastBuildDate>Wed, 26 Feb 2014 13:59:43 +0000</lastBuildDate>
+  <language>en-US</language>
+  <sy:updatePeriod>hourly</sy:updatePeriod>
+  <sy:updateFrequency>1</sy:updateFrequency>
 
-		<guid isPermaLink="false">/asam210/?p=643</guid>
-		<description><![CDATA[My first link here is one of Karen Yamashita doing a reading from her I-Hotel. I always find it interesting to hear what has been written in the writer&#8217;s own voice: http://frontrow.bc.edu/program/yamashita/ This article here from Forbes (not something I usually read) presents an interesting notion that is relevant to the course. And that notion [&#8230;]]]></description>
-				<content:encoded><![CDATA[<p>My first link here is one of Karen Yamashita doing a reading from her I-Hotel. I always find it interesting to hear what has been written in the writer&#8217;s own voice:</p>
+<site xmlns="com-wordpress:feed-additions:1">53277463</site>  <item>
+    <title>Researcher: Asian American Studies</title>
+    <link>/asam210/2013/07/16/researcher-asian-american-studies/</link>
+    <comments>/asam210/2013/07/16/researcher-asian-american-studies/#respond</comments>
+    <pubDate>Tue, 16 Jul 2013 04:36:57 +0000</pubDate>
+    <dc:creator><![CDATA[Trevor O'Mara]]></dc:creator>
+        <category><![CDATA[Further Research]]></category>
+
+    <guid isPermaLink="false">/asam210/?p=643</guid>
+    <description><![CDATA[My first link here is one of Karen Yamashita doing a reading from her I-Hotel. I always find it interesting to hear what has been written in the writer&#8217;s own voice: http://frontrow.bc.edu/program/yamashita/ This article here from Forbes (not something I usually read) presents an interesting notion that is relevant to the course. And that notion [&#8230;]]]></description>
+        <content:encoded><![CDATA[<p>My first link here is one of Karen Yamashita doing a reading from her I-Hotel. I always find it interesting to hear what has been written in the writer&#8217;s own voice:</p>
 <p><a href="http://frontrow.bc.edu/program/yamashita/">http://frontrow.bc.edu/program/yamashita/</a></p>
 <p>This article here from Forbes (not something I usually read) presents an interesting notion that is relevant to the course. And that notion is that entrepreneurial immigrants weren&#8217;t particularly so in their homelands but decided to become so because the crappy treatment they felt they endured from their employers. It&#8217;s an interesting notion:</p>
 <p><a href="http://www.forbes.com/sites/meghancasserly/2013/07/15/is-america-stealing-entrepreneurs-immigration-and-the-small-business-dream/">http://www.forbes.com/sites/meghancasserly/2013/07/15/is-america-stealing-entrepreneurs-immigration-and-the-small-business-dream/</a></p>
 ]]></content:encoded>
-			<wfw:commentRss>/asam210/2013/07/16/researcher-asian-american-studies/feed/</wfw:commentRss>
-		<slash:comments>0</slash:comments>
-	<post-id xmlns="com-wordpress:feed-additions:1">643</post-id>	</item>
-		<item>
-		<title>Primary Reader: Transnational Labor &#038; Capital</title>
-		<link>/asam210/2013/07/03/primary-reader-transnational-labor-capital/</link>
-		<comments>/asam210/2013/07/03/primary-reader-transnational-labor-capital/#respond</comments>
-		<pubDate>Wed, 03 Jul 2013 05:55:11 +0000</pubDate>
-		<dc:creator><![CDATA[Trevor O'Mara]]></dc:creator>
-				<category><![CDATA[Primary Reader]]></category>
+      <wfw:commentRss>/asam210/2013/07/16/researcher-asian-american-studies/feed/</wfw:commentRss>
+    <slash:comments>0</slash:comments>
+  <post-id xmlns="com-wordpress:feed-additions:1">643</post-id> </item>
+    <item>
+    <title>Primary Reader: Transnational Labor &#038; Capital</title>
+    <link>/asam210/2013/07/03/primary-reader-transnational-labor-capital/</link>
+    <comments>/asam210/2013/07/03/primary-reader-transnational-labor-capital/#respond</comments>
+    <pubDate>Wed, 03 Jul 2013 05:55:11 +0000</pubDate>
+    <dc:creator><![CDATA[Trevor O'Mara]]></dc:creator>
+        <category><![CDATA[Primary Reader]]></category>
 
-		<guid isPermaLink="false">/asam210/?p=539</guid>
-		<description><![CDATA[Today&#8217;s readings deal with transnational laborers and relevant qualities of the world and its globalized economy that have facilitated their being so. The piece on the migrant Filipinas could hardly have painted a bleaker picture. My fellow primary reader below was able to find a &#8220;silver lining&#8221; in the piece. I found none: this is [&#8230;]]]></description>
-				<content:encoded><![CDATA[<p>Today&#8217;s readings deal with transnational laborers and relevant qualities of the world and its globalized economy that have facilitated their being so.</p>
+    <guid isPermaLink="false">/asam210/?p=539</guid>
+    <description><![CDATA[Today&#8217;s readings deal with transnational laborers and relevant qualities of the world and its globalized economy that have facilitated their being so. The piece on the migrant Filipinas could hardly have painted a bleaker picture. My fellow primary reader below was able to find a &#8220;silver lining&#8221; in the piece. I found none: this is [&#8230;]]]></description>
+        <content:encoded><![CDATA[<p>Today&#8217;s readings deal with transnational laborers and relevant qualities of the world and its globalized economy that have facilitated their being so.</p>
 <p>The piece on the migrant Filipinas could hardly have painted a bleaker picture. My fellow primary reader below was able to find a &#8220;silver lining&#8221; in the piece. I found none: this is horrible and it made me cry. The part that most fed my despondency was where the &#8220;middle-tier&#8221; migrant worker relished the thought of essentially exploiting the poorer women back home, just as she had been, and that that was what she was struggling for. What a damning indictment of the world order this is &#8212; heart breaking stuff.</p>
 <p>But there&#8217;s still more misery to discuss. Among the repercussions of this way things are, families are torn apart: mothers half a world away from their children &#8212; all causing untold emotional damage. It is so in the other piece as well about the Pakistani male migrant workers. There the men are torn away from their families. So, this globalization is tearing people apart &#8212; from themselves, their families, their home &#8212; the world over, causing massive social distortion. It&#8217;s pretty messy stuff.</p>
 <p>The Junaid piece is much more of a historical expose&#8217;, detailing how colonial practices are still informing the present, providing some nifty historical context. And there is much contemporary context, too. He talks about how the Pakistani government suppresses labor unions, which contributes to this male working class being in constant flux. The motives and context of the Pakistani government&#8217;s actions is something I&#8217;d like to know more about. There are many more sordid details of which to speak, of course; we&#8217;ll get to them in class.</p>
 ]]></content:encoded>
-			<wfw:commentRss>/asam210/2013/07/03/primary-reader-transnational-labor-capital/feed/</wfw:commentRss>
-		<slash:comments>0</slash:comments>
-	<post-id xmlns="com-wordpress:feed-additions:1">539</post-id>	</item>
-		<item>
-		<title>Researcher: The War on Terror</title>
-		<link>/asam210/2013/07/01/researcher-the-war-on-terror/</link>
-		<comments>/asam210/2013/07/01/researcher-the-war-on-terror/#respond</comments>
-		<pubDate>Mon, 01 Jul 2013 04:40:10 +0000</pubDate>
-		<dc:creator><![CDATA[Trevor O'Mara]]></dc:creator>
-				<category><![CDATA[Further Research]]></category>
+      <wfw:commentRss>/asam210/2013/07/03/primary-reader-transnational-labor-capital/feed/</wfw:commentRss>
+    <slash:comments>0</slash:comments>
+  <post-id xmlns="com-wordpress:feed-additions:1">539</post-id> </item>
+    <item>
+    <title>Researcher: The War on Terror</title>
+    <link>/asam210/2013/07/01/researcher-the-war-on-terror/</link>
+    <comments>/asam210/2013/07/01/researcher-the-war-on-terror/#respond</comments>
+    <pubDate>Mon, 01 Jul 2013 04:40:10 +0000</pubDate>
+    <dc:creator><![CDATA[Trevor O'Mara]]></dc:creator>
+        <category><![CDATA[Further Research]]></category>
 
-		<guid isPermaLink="false">/asam210/?p=516</guid>
-		<description><![CDATA[This first article I&#8217;m sharing aims to decry the unchecked power of the U.S. executive branch and the inherent hazards thereof. The primary evidence herein is the staggering mountain of corpses that the U.S. has left in the wake of its military misadventures, the implications of which are surely a vital lens through which one [&#8230;]]]></description>
-				<content:encoded><![CDATA[<p>This first article I&#8217;m sharing aims to decry the unchecked power of the U.S. executive branch and the inherent hazards thereof. The primary evidence herein is the staggering mountain of corpses that the U.S. has left in the wake of its military misadventures, the implications of which are surely a vital lens through which one must look in order to come to a more complete understanding of the whole terrorism thing.</p>
+    <guid isPermaLink="false">/asam210/?p=516</guid>
+    <description><![CDATA[This first article I&#8217;m sharing aims to decry the unchecked power of the U.S. executive branch and the inherent hazards thereof. The primary evidence herein is the staggering mountain of corpses that the U.S. has left in the wake of its military misadventures, the implications of which are surely a vital lens through which one [&#8230;]]]></description>
+        <content:encoded><![CDATA[<p>This first article I&#8217;m sharing aims to decry the unchecked power of the U.S. executive branch and the inherent hazards thereof. The primary evidence herein is the staggering mountain of corpses that the U.S. has left in the wake of its military misadventures, the implications of which are surely a vital lens through which one must look in order to come to a more complete understanding of the whole terrorism thing.</p>
 <p><a href="http://www.alternet.org/investigations/executive-branch-evil-and-lawless?page=0%2C2">http://www.alternet.org/investigations/executive-branch-evil-and-lawless?page=0%2C2</a></p>
 <p>The second article comes from The Economist. It covers a survey conducted by the Pew Research Centre of 38,000 Muslims in 39 countries. Among the survey&#8217;s questions are whether respondents  are in favor of Sharia law and whether they think those who leave Islam should be executed. Some countries perform better than others. In any event, the overall results are harrowing. It makes for great evidence for those who would like to wield a more well informed islamophobia.</p>
 <p><a href="http://www.economist.com/blogs/graphicdetail/2013/04/daily-chart-20">http://www.economist.com/blogs/graphicdetail/2013/04/daily-chart-20</a></p>
 ]]></content:encoded>
-			<wfw:commentRss>/asam210/2013/07/01/researcher-the-war-on-terror/feed/</wfw:commentRss>
-		<slash:comments>0</slash:comments>
-	<post-id xmlns="com-wordpress:feed-additions:1">516</post-id>	</item>
-		<item>
-		<title>Primary Reader: Pacific Wars</title>
-		<link>/asam210/2013/06/23/primary-reader-pacific-wars/</link>
-		<comments>/asam210/2013/06/23/primary-reader-pacific-wars/#comments</comments>
-		<pubDate>Sun, 23 Jun 2013 19:33:04 +0000</pubDate>
-		<dc:creator><![CDATA[Trevor O'Mara]]></dc:creator>
-				<category><![CDATA[Primary Reader]]></category>
+      <wfw:commentRss>/asam210/2013/07/01/researcher-the-war-on-terror/feed/</wfw:commentRss>
+    <slash:comments>0</slash:comments>
+  <post-id xmlns="com-wordpress:feed-additions:1">516</post-id> </item>
+    <item>
+    <title>Primary Reader: Pacific Wars</title>
+    <link>/asam210/2013/06/23/primary-reader-pacific-wars/</link>
+    <comments>/asam210/2013/06/23/primary-reader-pacific-wars/#comments</comments>
+    <pubDate>Sun, 23 Jun 2013 19:33:04 +0000</pubDate>
+    <dc:creator><![CDATA[Trevor O'Mara]]></dc:creator>
+        <category><![CDATA[Primary Reader]]></category>
 
-		<guid isPermaLink="false">/asam210/?p=438</guid>
-		<description><![CDATA[As one might have gleaned from the title of this post, today&#8217;s readings deal America&#8217;s involvement in the post WWII wars along the Pacific, but not directly. No, the two pieces don&#8217;t talk about the carnage on the ground; they talk about  how America&#8217;s strategic interests at the time facilitated a different kind of racial [&#8230;]]]></description>
-				<content:encoded><![CDATA[<p>As one might have gleaned from the title of this post, today&#8217;s readings deal America&#8217;s involvement in the post WWII wars along the Pacific, but not directly. No, the two pieces don&#8217;t talk about the carnage on the ground; they talk about  how America&#8217;s strategic interests at the time facilitated a different kind of racial formation for Asians that America would seek to propagate and the effects of all that had ensued upon Asian Americans&#8217; lives and people&#8217;s perception of them.</p>
+    <guid isPermaLink="false">/asam210/?p=438</guid>
+    <description><![CDATA[As one might have gleaned from the title of this post, today&#8217;s readings deal America&#8217;s involvement in the post WWII wars along the Pacific, but not directly. No, the two pieces don&#8217;t talk about the carnage on the ground; they talk about  how America&#8217;s strategic interests at the time facilitated a different kind of racial [&#8230;]]]></description>
+        <content:encoded><![CDATA[<p>As one might have gleaned from the title of this post, today&#8217;s readings deal America&#8217;s involvement in the post WWII wars along the Pacific, but not directly. No, the two pieces don&#8217;t talk about the carnage on the ground; they talk about  how America&#8217;s strategic interests at the time facilitated a different kind of racial formation for Asians that America would seek to propagate and the effects of all that had ensued upon Asian Americans&#8217; lives and people&#8217;s perception of them.</p>
 <p>Robert Lee&#8217;s piece <em>Cold War Construction of the Model Minority Myth</em> deals with the seeming effort to bolster people&#8217;s perception of Asians, in an effort to win the war against Communism. He digs up some stuff politicians were saying at the time to try and galvanize the forces of inclusivity, for the &#8220;race problem&#8221; had by then taken on a national security dimension. But the only evidence I&#8217;m finding in his piece for the genesis of the &#8220;model minority myth&#8221; is the portrayal of Japanese women in some films. It should come as no surprise that popular American films are prone to simplification, so I&#8217;d like to see some stronger evidence. That said, media portrayals can have a strong influence on what people carry around in their heads, but I&#8217;d still like to see a stronger causal relationship established.</p>
 <p>David Palumbo-Liu&#8217;s &#8220;War, the Homeland, and the Traces of Memory&#8221; delves more into this notion of &#8220;the politics  of space&#8221;, which deals with people&#8217;s placement psychically and physically in America, whatever that means, and how this spacial phenomenon informs ideology and stuff. He talk about the refugees of the Pacific wars and how they often get trapped in poverty and rely on public assistance, thus  not adhering to the model minority thing and garnering much hostility from other Americans in an economic downturn. He also analyzes some films, I guess, to illustrate some perceptions and whathaveyou.</p>
 ]]></content:encoded>
-			<wfw:commentRss>/asam210/2013/06/23/primary-reader-pacific-wars/feed/</wfw:commentRss>
-		<slash:comments>1</slash:comments>
-	<post-id xmlns="com-wordpress:feed-additions:1">438</post-id>	</item>
-		<item>
-		<title>Primary Reader: Discourses of Exclusion</title>
-		<link>/asam210/2013/06/12/primary-reader-discourses-of-exclusion/</link>
-		<comments>/asam210/2013/06/12/primary-reader-discourses-of-exclusion/#comments</comments>
-		<pubDate>Wed, 12 Jun 2013 15:41:34 +0000</pubDate>
-		<dc:creator><![CDATA[Trevor O'Mara]]></dc:creator>
-				<category><![CDATA[Primary Reader]]></category>
+      <wfw:commentRss>/asam210/2013/06/23/primary-reader-pacific-wars/feed/</wfw:commentRss>
+    <slash:comments>1</slash:comments>
+  <post-id xmlns="com-wordpress:feed-additions:1">438</post-id> </item>
+    <item>
+    <title>Primary Reader: Discourses of Exclusion</title>
+    <link>/asam210/2013/06/12/primary-reader-discourses-of-exclusion/</link>
+    <comments>/asam210/2013/06/12/primary-reader-discourses-of-exclusion/#comments</comments>
+    <pubDate>Wed, 12 Jun 2013 15:41:34 +0000</pubDate>
+    <dc:creator><![CDATA[Trevor O'Mara]]></dc:creator>
+        <category><![CDATA[Primary Reader]]></category>
 
-		<guid isPermaLink="false">/asam210/?p=315</guid>
-		<description><![CDATA[Today&#8217;s three reading assignments examine the travails of the Asian American experience from different, complementary angles, which is good, because we don&#8217;t want to keep reading the same thing over and again. These 3 readings contribute to our perception of how discourses can coalesce into disciplines, thus increasing our theoretical understanding. For example, readings with [&#8230;]]]></description>
-				<content:encoded><![CDATA[<p>Today&#8217;s three reading assignments examine the travails of the Asian American experience from different, complementary angles, which is good, because we don&#8217;t want to keep reading the same thing over and again. These 3 readings contribute to our perception of how discourses can coalesce into disciplines, thus increasing our theoretical understanding. For example, readings with which we&#8217;re already familiar are used in these new readings as building blocks upon which to construct this integrated discipline.</p>
+    <guid isPermaLink="false">/asam210/?p=315</guid>
+    <description><![CDATA[Today&#8217;s three reading assignments examine the travails of the Asian American experience from different, complementary angles, which is good, because we don&#8217;t want to keep reading the same thing over and again. These 3 readings contribute to our perception of how discourses can coalesce into disciplines, thus increasing our theoretical understanding. For example, readings with [&#8230;]]]></description>
+        <content:encoded><![CDATA[<p>Today&#8217;s three reading assignments examine the travails of the Asian American experience from different, complementary angles, which is good, because we don&#8217;t want to keep reading the same thing over and again. These 3 readings contribute to our perception of how discourses can coalesce into disciplines, thus increasing our theoretical understanding. For example, readings with which we&#8217;re already familiar are used in these new readings as building blocks upon which to construct this integrated discipline.</p>
 <p>Erika Lee&#8217;s &#8220;The Yellow Peril and Asian exclusion in the Americas&#8221; aims to form a more holistic view of Asian immigration to the whole of the Americas by revising understandings of transnationalism. She explores how attitudes in one place had a tendency of transcending borders and that there was a certain commonality to this &#8220;hemispheric&#8221; approach to Asian exclusion. This manifests  for instance in that many a Japanese was shipped off to America from Latin America for holding during WWII. She also delves into the history of the effects of the Chinese Exclusion Act beyond just its stated goal. What I mean is: how immigrants attempted to get around the Act by taking roundabout journeys to The US through Canada and Mexico; then, of course, there were official responses to that, too; also, how Chinese exclusion led to higher rates of immigration of other Asian groups. One very perplexing thing in this article was the author&#8217;s mentioning of Sikhs having been hired as police in Hong Kong; my response was thus, whaaaaaa?</p>
 <p>&#8220;The persistence of Yellow Peril Discourse&#8221; is written with the aim of examining Asiatic depictions in media. The writers explicate some films; there filmic analysis can be interesting, though I find their explication of The Fast and the Furious to be a reach. Films of this ilk are harmful to people who like good films, not just Asian Americans. Also they examine a quite heinous cartoon of the time, making clear the extent of the fear mongering.</p>
 <p>&#8220;Black Orientalism&#8221; is an interesting read, for it examines this dialectic between oppressed peoples in a society, the sometimes solidarity and seeming contradictions that arose from the relationship. Other nuances are explored, too, of course, such as the involvement of trade unions, those once bastions of the white middle class, and their opposition to immigration.</p>
 <p>&nbsp;</p>
 ]]></content:encoded>
-			<wfw:commentRss>/asam210/2013/06/12/primary-reader-discourses-of-exclusion/feed/</wfw:commentRss>
-		<slash:comments>3</slash:comments>
-	<post-id xmlns="com-wordpress:feed-additions:1">315</post-id>	</item>
-		<item>
-		<title>Researcher: Racial formation, the state, capital</title>
-		<link>/asam210/2013/06/10/researcher-racial-formation-the-state-capital/</link>
-		<comments>/asam210/2013/06/10/researcher-racial-formation-the-state-capital/#respond</comments>
-		<pubDate>Mon, 10 Jun 2013 04:36:24 +0000</pubDate>
-		<dc:creator><![CDATA[Trevor O'Mara]]></dc:creator>
-				<category><![CDATA[Further Research]]></category>
+      <wfw:commentRss>/asam210/2013/06/12/primary-reader-discourses-of-exclusion/feed/</wfw:commentRss>
+    <slash:comments>3</slash:comments>
+  <post-id xmlns="com-wordpress:feed-additions:1">315</post-id> </item>
+    <item>
+    <title>Researcher: Racial formation, the state, capital</title>
+    <link>/asam210/2013/06/10/researcher-racial-formation-the-state-capital/</link>
+    <comments>/asam210/2013/06/10/researcher-racial-formation-the-state-capital/#respond</comments>
+    <pubDate>Mon, 10 Jun 2013 04:36:24 +0000</pubDate>
+    <dc:creator><![CDATA[Trevor O'Mara]]></dc:creator>
+        <category><![CDATA[Further Research]]></category>
 
-		<guid isPermaLink="false">/asam210/?p=264</guid>
-		<description><![CDATA[In the piece Racial Formation, the question of the state&#8217;s role in providing special treatment for members of races who have faced institutional discrimination in the past is raised. &#8220;Neo-conservative&#8221; and &#8220;liberal&#8221; reactions to this dilemma are presented, which nicely sum up the two poles of the American debate: one which aims to propagate institutional [&#8230;]]]></description>
-				<content:encoded><![CDATA[<p>In the piece Racial Formation, the question of the state&#8217;s role in providing special treatment for members of races who have faced institutional discrimination in the past is raised. &#8220;Neo-conservative&#8221; and &#8220;liberal&#8221; reactions to this dilemma are presented, which nicely sum up the two poles of the American debate: one which aims to propagate institutional inequality and privilege in the guise of egalitarianism; and another that takes a history of discrimination into account in an attempt to right those historical wrongs.</p>
+    <guid isPermaLink="false">/asam210/?p=264</guid>
+    <description><![CDATA[In the piece Racial Formation, the question of the state&#8217;s role in providing special treatment for members of races who have faced institutional discrimination in the past is raised. &#8220;Neo-conservative&#8221; and &#8220;liberal&#8221; reactions to this dilemma are presented, which nicely sum up the two poles of the American debate: one which aims to propagate institutional [&#8230;]]]></description>
+        <content:encoded><![CDATA[<p>In the piece Racial Formation, the question of the state&#8217;s role in providing special treatment for members of races who have faced institutional discrimination in the past is raised. &#8220;Neo-conservative&#8221; and &#8220;liberal&#8221; reactions to this dilemma are presented, which nicely sum up the two poles of the American debate: one which aims to propagate institutional inequality and privilege in the guise of egalitarianism; and another that takes a history of discrimination into account in an attempt to right those historical wrongs.</p>
 <p>The position of this here article I&#8217;ve provided from The Economist doesn&#8217;t adhere to either of those poles exactly. I feel the American body politic is badly wanting in nuance, so here&#8217;s some nuance. The Economist espouses a more Classical Liberal alignment.</p>
 <p>This is the exposition &#8230; &lt;<a href="http://www.economist.com/news/leaders/21576662-governments-should-be-colour-blind-time-scrap-affirmative-action">http://www.economist.com/news/leaders/21576662-governments-should-be-colour-blind-time-scrap-affirmative-action</a>&gt;</p>
 <p>&#8230;to the larger article: <a href="http://www.economist.com/news/briefing/21576658-first-three-pieces-race-based-preferences-around-world-we-look-americas">http://www.economist.com/news/briefing/21576658-first-three-pieces-race-based-preferences-around-world-we-look-americas</a></p>
@@ -125,8 +125,8 @@
 <span id="more-264"></span></p>
 <p><a href="http://www.nytimes.com/2013/06/07/us/bob-fletcher-dies-at-101-saved-farms-of-interned-japanese-americans.html?smid=fb-nytimes&amp;WT.z_sma=US_BFD_20130607&amp;_r=0">http://www.nytimes.com/2013/06/07/us/bob-fletcher-dies-at-101-saved-farms-of-interned-japanese-americans.html?smid=fb-nytimes&amp;WT.z_sma=US_BFD_20130607&amp;_r=0</a></p>
 ]]></content:encoded>
-			<wfw:commentRss>/asam210/2013/06/10/researcher-racial-formation-the-state-capital/feed/</wfw:commentRss>
-		<slash:comments>0</slash:comments>
-	<post-id xmlns="com-wordpress:feed-additions:1">264</post-id>	</item>
-	</channel>
+      <wfw:commentRss>/asam210/2013/06/10/researcher-racial-formation-the-state-capital/feed/</wfw:commentRss>
+    <slash:comments>0</slash:comments>
+  <post-id xmlns="com-wordpress:feed-additions:1">264</post-id> </item>
+  </channel>
 </rss>

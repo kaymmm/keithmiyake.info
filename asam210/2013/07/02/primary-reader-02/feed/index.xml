@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
-	xmlns:content="http://purl.org/rss/1.0/modules/content/"
-	xmlns:dc="http://purl.org/dc/elements/1.1/"
-	xmlns:atom="http://www.w3.org/2005/Atom"
-	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
-	
-	>
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+
+  >
 <channel>
-	<title>Comments on: Primary Reader #02</title>
-	<atom:link href="/asam210/2013/07/02/primary-reader-02/feed/" rel="self" type="application/rss+xml" />
-	<link>/asam210/2013/07/02/primary-reader-02/</link>
-	<description>Hunter College, Summer 2013</description>
-	<lastBuildDate>Wed, 17 Sep 2014 07:41:32 +0000</lastBuildDate>
-	<sy:updatePeriod>hourly</sy:updatePeriod>
-	<sy:updateFrequency>1</sy:updateFrequency>
-	
-	<item>
-		<title>By: mbasnet</title>
-		<link>/asam210/2013/07/02/primary-reader-02/#comment-43</link>
-		<dc:creator><![CDATA[mbasnet]]></dc:creator>
-		<pubDate>Thu, 11 Jul 2013 15:52:53 +0000</pubDate>
-		<guid isPermaLink="false">/asam210/?p=533#comment-43</guid>
-		<description><![CDATA[The world around us has changed tremendously after 9/11. And no one can deny the fact how agonizing the event has been the people here in America and the rest of the world. Based on the 9/11 thousands of Muslims faced harsh and ill treatment as they became the major suspects for terrorism. As Rana stated the event resembled a moral panic among the Americans. And i agree how this resulted into violence and discrimination towards the Islamic.The Muslims since then has become the target group for terrorism. I was shocked how much Muslim American are discriminated and harassed for being who they are and how they are always associated with 9/11; especially when i saw a shirt that said &quot; I learned everything about Islam after 9/11&quot;.]]></description>
-		<content:encoded><![CDATA[<p>The world around us has changed tremendously after 9/11. And no one can deny the fact how agonizing the event has been the people here in America and the rest of the world. Based on the 9/11 thousands of Muslims faced harsh and ill treatment as they became the major suspects for terrorism. As Rana stated the event resembled a moral panic among the Americans. And i agree how this resulted into violence and discrimination towards the Islamic.The Muslims since then has become the target group for terrorism. I was shocked how much Muslim American are discriminated and harassed for being who they are and how they are always associated with 9/11; especially when i saw a shirt that said &#8221; I learned everything about Islam after 9/11&#8243;.</p>
+  <title>Comments on: Primary Reader #02</title>
+  <atom:link href="{{site.baseurl}}/asam210/2013/07/02/primary-reader-02/feed/" rel="self" type="application/rss+xml" />
+  <link>/asam210/2013/07/02/primary-reader-02/</link>
+  <description>Hunter College, Summer 2013</description>
+  <lastBuildDate>Wed, 17 Sep 2014 07:41:32 +0000</lastBuildDate>
+  <sy:updatePeriod>hourly</sy:updatePeriod>
+  <sy:updateFrequency>1</sy:updateFrequency>
+
+  <item>
+    <title>By: mbasnet</title>
+    <link>/asam210/2013/07/02/primary-reader-02/#comment-43</link>
+    <dc:creator><![CDATA[mbasnet]]></dc:creator>
+    <pubDate>Thu, 11 Jul 2013 15:52:53 +0000</pubDate>
+    <guid isPermaLink="false">/asam210/?p=533#comment-43</guid>
+    <description><![CDATA[The world around us has changed tremendously after 9/11. And no one can deny the fact how agonizing the event has been the people here in America and the rest of the world. Based on the 9/11 thousands of Muslims faced harsh and ill treatment as they became the major suspects for terrorism. As Rana stated the event resembled a moral panic among the Americans. And i agree how this resulted into violence and discrimination towards the Islamic.The Muslims since then has become the target group for terrorism. I was shocked how much Muslim American are discriminated and harassed for being who they are and how they are always associated with 9/11; especially when i saw a shirt that said &quot; I learned everything about Islam after 9/11&quot;.]]></description>
+    <content:encoded><![CDATA[<p>The world around us has changed tremendously after 9/11. And no one can deny the fact how agonizing the event has been the people here in America and the rest of the world. Based on the 9/11 thousands of Muslims faced harsh and ill treatment as they became the major suspects for terrorism. As Rana stated the event resembled a moral panic among the Americans. And i agree how this resulted into violence and discrimination towards the Islamic.The Muslims since then has become the target group for terrorism. I was shocked how much Muslim American are discriminated and harassed for being who they are and how they are always associated with 9/11; especially when i saw a shirt that said &#8221; I learned everything about Islam after 9/11&#8243;.</p>
 ]]></content:encoded>
-	</item>
+  </item>
 </channel>
 </rss>

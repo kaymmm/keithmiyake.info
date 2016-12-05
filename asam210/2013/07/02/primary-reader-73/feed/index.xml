@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
-	xmlns:content="http://purl.org/rss/1.0/modules/content/"
-	xmlns:dc="http://purl.org/dc/elements/1.1/"
-	xmlns:atom="http://www.w3.org/2005/Atom"
-	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
-	
-	>
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+
+  >
 <channel>
-	<title>Comments on: Primary Reader 7/3</title>
-	<atom:link href="/asam210/2013/07/02/primary-reader-73/feed/" rel="self" type="application/rss+xml" />
-	<link>/asam210/2013/07/02/primary-reader-73/</link>
-	<description>Hunter College, Summer 2013</description>
-	<lastBuildDate>Wed, 17 Sep 2014 07:41:32 +0000</lastBuildDate>
-	<sy:updatePeriod>hourly</sy:updatePeriod>
-	<sy:updateFrequency>1</sy:updateFrequency>
-	
-	<item>
-		<title>By: Kristina Szeto</title>
-		<link>/asam210/2013/07/02/primary-reader-73/#comment-49</link>
-		<dc:creator><![CDATA[Kristina Szeto]]></dc:creator>
-		<pubDate>Mon, 15 Jul 2013 08:30:39 +0000</pubDate>
-		<guid isPermaLink="false">/asam210/?p=532#comment-49</guid>
-		<description><![CDATA[Between Ryan and Trevor&#039;s summation of Parrenas&#039; article, there&#039;s a bit of a question I have coming up surrounding reproductive labor: Is it a consequence of socio-economic class stratification or is it more due to a cultural difference instead?
+  <title>Comments on: Primary Reader 7/3</title>
+  <atom:link href="{{site.baseurl}}/asam210/2013/07/02/primary-reader-73/feed/" rel="self" type="application/rss+xml" />
+  <link>/asam210/2013/07/02/primary-reader-73/</link>
+  <description>Hunter College, Summer 2013</description>
+  <lastBuildDate>Wed, 17 Sep 2014 07:41:32 +0000</lastBuildDate>
+  <sy:updatePeriod>hourly</sy:updatePeriod>
+  <sy:updateFrequency>1</sy:updateFrequency>
+
+  <item>
+    <title>By: Kristina Szeto</title>
+    <link>/asam210/2013/07/02/primary-reader-73/#comment-49</link>
+    <dc:creator><![CDATA[Kristina Szeto]]></dc:creator>
+    <pubDate>Mon, 15 Jul 2013 08:30:39 +0000</pubDate>
+    <guid isPermaLink="false">/asam210/?p=532#comment-49</guid>
+    <description><![CDATA[Between Ryan and Trevor&#039;s summation of Parrenas&#039; article, there&#039;s a bit of a question I have coming up surrounding reproductive labor: Is it a consequence of socio-economic class stratification or is it more due to a cultural difference instead?
 
 If it is a consequence of socio-economic class difference, then does race have an effect on whether reproductive labor is used in the household? If it is not due to socio-economic class differences and more due to cultural differences, then how does that affect the way we see reproductive labor?
 
@@ -29,40 +29,40 @@ I like to think that reproductive labor is a consequence of these various factor
 The second factor that affects reproductive labor is race. Reproductive labor tends to be minority women, but those who pay for reproductive labor tend to be rich white women/families. Going down the socio-economic ladder, the percentages shift with the type of reproductive labor: babysitters primarily used by middle-income white and American-assimilated minorities while support systems are used by those with low-income or those who value a support system as part of their culture, the third factor.
 
 Culture appears similar but is markedly different from race: while one may be of a particular race, they may be of a completely different culture. Many cultures emphasize familial bonds - it appears American culture values familial bonds with certain lifestyles or certain financial statuses (bringing us back to the first factor). When a family is considered rich, the expectations for the kind of lifestyle the members lead and have are dictated by the money they have. Likewise, culture tends to dictate the kind of reproductive labor one uses. As the culture adopted by the individual approaches American culture more and more, we can see more and more how they also adopt the standards American culture has for reproductive labor.]]></description>
-		<content:encoded><![CDATA[<p>Between Ryan and Trevor&#8217;s summation of Parrenas&#8217; article, there&#8217;s a bit of a question I have coming up surrounding reproductive labor: Is it a consequence of socio-economic class stratification or is it more due to a cultural difference instead?</p>
+    <content:encoded><![CDATA[<p>Between Ryan and Trevor&#8217;s summation of Parrenas&#8217; article, there&#8217;s a bit of a question I have coming up surrounding reproductive labor: Is it a consequence of socio-economic class stratification or is it more due to a cultural difference instead?</p>
 <p>If it is a consequence of socio-economic class difference, then does race have an effect on whether reproductive labor is used in the household? If it is not due to socio-economic class differences and more due to cultural differences, then how does that affect the way we see reproductive labor?</p>
 <p>I like to think that reproductive labor is a consequence of these various factors playing off each other, a push and pull interrelationship. The first factor being socio-economic status, we understand that wealthy people tend to take advantage of their wealth to foist the reproductive labor responsibility onto their hired help. But it isn&#8217;t only the wealthy who do so. Babysitters can also be considered reproductive labor, if only a pale comparison of such, and even those in the lower-income brackets use a different type of reproductive labor: their support system. Lower income families may not pay for the reproductive labor they use because they tend to turn towards their support system for these needs: usually family or close friends who do not mind doing the service for free.</p>
 <p>The second factor that affects reproductive labor is race. Reproductive labor tends to be minority women, but those who pay for reproductive labor tend to be rich white women/families. Going down the socio-economic ladder, the percentages shift with the type of reproductive labor: babysitters primarily used by middle-income white and American-assimilated minorities while support systems are used by those with low-income or those who value a support system as part of their culture, the third factor.</p>
 <p>Culture appears similar but is markedly different from race: while one may be of a particular race, they may be of a completely different culture. Many cultures emphasize familial bonds &#8211; it appears American culture values familial bonds with certain lifestyles or certain financial statuses (bringing us back to the first factor). When a family is considered rich, the expectations for the kind of lifestyle the members lead and have are dictated by the money they have. Likewise, culture tends to dictate the kind of reproductive labor one uses. As the culture adopted by the individual approaches American culture more and more, we can see more and more how they also adopt the standards American culture has for reproductive labor.</p>
 ]]></content:encoded>
-	</item>
-	<item>
-		<title>By: Akash Sharma</title>
-		<link>/asam210/2013/07/02/primary-reader-73/#comment-39</link>
-		<dc:creator><![CDATA[Akash Sharma]]></dc:creator>
-		<pubDate>Fri, 05 Jul 2013 21:44:10 +0000</pubDate>
-		<guid isPermaLink="false">/asam210/?p=532#comment-39</guid>
-		<description><![CDATA[I really liked when author and also Ryan stated a key point in this week&#039;s reading: “globalization has sparked the feminization of migrant labor.” This is very interesting to me as Globalisation and Migration are one of my favourite topics to discuss and read about. What we have seens in recent decades especially is rise in the migrantion of (domestic) workers from developing (third world) countries to the developed (first world) ones. The reasons behind such migration patters all link to the process of globalisation and what this process does to the effected region(s), and also on the residents of the nation. 
+  </item>
+  <item>
+    <title>By: Akash Sharma</title>
+    <link>/asam210/2013/07/02/primary-reader-73/#comment-39</link>
+    <dc:creator><![CDATA[Akash Sharma]]></dc:creator>
+    <pubDate>Fri, 05 Jul 2013 21:44:10 +0000</pubDate>
+    <guid isPermaLink="false">/asam210/?p=532#comment-39</guid>
+    <description><![CDATA[I really liked when author and also Ryan stated a key point in this week&#039;s reading: “globalization has sparked the feminization of migrant labor.” This is very interesting to me as Globalisation and Migration are one of my favourite topics to discuss and read about. What we have seens in recent decades especially is rise in the migrantion of (domestic) workers from developing (third world) countries to the developed (first world) ones. The reasons behind such migration patters all link to the process of globalisation and what this process does to the effected region(s), and also on the residents of the nation.
 
 This rise in migration, specifically in migration of middle-class women is very crucial. What&#039;s interesting is this has also lead  to a concept of &quot;Feminisation of Poverty&quot; discussed in &#039;Recurrent Gender Patterns&#039;.]]></description>
-		<content:encoded><![CDATA[<p>I really liked when author and also Ryan stated a key point in this week&#8217;s reading: “globalization has sparked the feminization of migrant labor.” This is very interesting to me as Globalisation and Migration are one of my favourite topics to discuss and read about. What we have seens in recent decades especially is rise in the migrantion of (domestic) workers from developing (third world) countries to the developed (first world) ones. The reasons behind such migration patters all link to the process of globalisation and what this process does to the effected region(s), and also on the residents of the nation. </p>
+    <content:encoded><![CDATA[<p>I really liked when author and also Ryan stated a key point in this week&#8217;s reading: “globalization has sparked the feminization of migrant labor.” This is very interesting to me as Globalisation and Migration are one of my favourite topics to discuss and read about. What we have seens in recent decades especially is rise in the migrantion of (domestic) workers from developing (third world) countries to the developed (first world) ones. The reasons behind such migration patters all link to the process of globalisation and what this process does to the effected region(s), and also on the residents of the nation. </p>
 <p>This rise in migration, specifically in migration of middle-class women is very crucial. What&#8217;s interesting is this has also lead  to a concept of &#8220;Feminisation of Poverty&#8221; discussed in &#8216;Recurrent Gender Patterns&#8217;.</p>
 ]]></content:encoded>
-	</item>
-	<item>
-		<title>By: Siyu (Lucy) Liu</title>
-		<link>/asam210/2013/07/02/primary-reader-73/#comment-36</link>
-		<dc:creator><![CDATA[Siyu (Lucy) Liu]]></dc:creator>
-		<pubDate>Thu, 04 Jul 2013 03:56:45 +0000</pubDate>
-		<guid isPermaLink="false">/asam210/?p=532#comment-36</guid>
-		<description><![CDATA[I think Ryan covered alot of great and key points to both articles.
+  </item>
+  <item>
+    <title>By: Siyu (Lucy) Liu</title>
+    <link>/asam210/2013/07/02/primary-reader-73/#comment-36</link>
+    <dc:creator><![CDATA[Siyu (Lucy) Liu]]></dc:creator>
+    <pubDate>Thu, 04 Jul 2013 03:56:45 +0000</pubDate>
+    <guid isPermaLink="false">/asam210/?p=532#comment-36</guid>
+    <description><![CDATA[I think Ryan covered alot of great and key points to both articles.
 
 For Parrenas&#039; article, she argues that &quot;reproduction activities, especially as they have been increasingly commodified, have to be situated in the context of this singular market economy. &quot; (569). She says there are ties between areas in terms of reproduction activities and that relates to what we discussed in class with the Iphone example, having to built it, alot of different countries contribute their parts. I also found the concept of conflicting class mobility interesting because she said migrant Filipinas usually experience an increase or decrease in class status in domestic labor. (574).
  For Junaid Rana&#039;s piece, I think he talks about the Pakistani state which did labor recruiting through out 1990s and deployed migrants through government policies. (116).  It has also continued to battle against trade unions. (114). And pursued international migration strategies which rely on minimal regulation based on theory of market self correction. (115).]]></description>
-		<content:encoded><![CDATA[<p>I think Ryan covered alot of great and key points to both articles.</p>
+    <content:encoded><![CDATA[<p>I think Ryan covered alot of great and key points to both articles.</p>
 <p>For Parrenas&#8217; article, she argues that &#8220;reproduction activities, especially as they have been increasingly commodified, have to be situated in the context of this singular market economy. &#8221; (569). She says there are ties between areas in terms of reproduction activities and that relates to what we discussed in class with the Iphone example, having to built it, alot of different countries contribute their parts. I also found the concept of conflicting class mobility interesting because she said migrant Filipinas usually experience an increase or decrease in class status in domestic labor. (574).<br />
  For Junaid Rana&#8217;s piece, I think he talks about the Pakistani state which did labor recruiting through out 1990s and deployed migrants through government policies. (116).  It has also continued to battle against trade unions. (114). And pursued international migration strategies which rely on minimal regulation based on theory of market self correction. (115).</p>
 ]]></content:encoded>
-	</item>
+  </item>
 </channel>
 </rss>

@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
-	xmlns:content="http://purl.org/rss/1.0/modules/content/"
-	xmlns:dc="http://purl.org/dc/elements/1.1/"
-	xmlns:atom="http://www.w3.org/2005/Atom"
-	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
-	
-	>
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+
+  >
 <channel>
-	<title>Comments on: Primary Reader: Pacific Wars</title>
-	<atom:link href="/asam210/2013/06/23/primary-reader-pacific-wars/feed/" rel="self" type="application/rss+xml" />
-	<link>/asam210/2013/06/23/primary-reader-pacific-wars/</link>
-	<description>Hunter College, Summer 2013</description>
-	<lastBuildDate>Wed, 17 Sep 2014 07:41:32 +0000</lastBuildDate>
-	<sy:updatePeriod>hourly</sy:updatePeriod>
-	<sy:updateFrequency>1</sy:updateFrequency>
-	
-	<item>
-		<title>By: Siyu (Lucy) Liu</title>
-		<link>/asam210/2013/06/23/primary-reader-pacific-wars/#comment-25</link>
-		<dc:creator><![CDATA[Siyu (Lucy) Liu]]></dc:creator>
-		<pubDate>Tue, 25 Jun 2013 03:32:52 +0000</pubDate>
-		<guid isPermaLink="false">/asam210/?p=438#comment-25</guid>
-		<description><![CDATA[To add on to what Trevor said about Robert Lee&#039;s piece on model minority, he argues that the construction of the model minority was based on the political silence of Asian America due to their cultural trait of self reliance and family cohesion. 
+  <title>Comments on: Primary Reader: Pacific Wars</title>
+  <atom:link href="{{site.baseurl}}/asam210/2013/06/23/primary-reader-pacific-wars/feed/" rel="self" type="application/rss+xml" />
+  <link>/asam210/2013/06/23/primary-reader-pacific-wars/</link>
+  <description>Hunter College, Summer 2013</description>
+  <lastBuildDate>Wed, 17 Sep 2014 07:41:32 +0000</lastBuildDate>
+  <sy:updatePeriod>hourly</sy:updatePeriod>
+  <sy:updateFrequency>1</sy:updateFrequency>
+
+  <item>
+    <title>By: Siyu (Lucy) Liu</title>
+    <link>/asam210/2013/06/23/primary-reader-pacific-wars/#comment-25</link>
+    <dc:creator><![CDATA[Siyu (Lucy) Liu]]></dc:creator>
+    <pubDate>Tue, 25 Jun 2013 03:32:52 +0000</pubDate>
+    <guid isPermaLink="false">/asam210/?p=438#comment-25</guid>
+    <description><![CDATA[To add on to what Trevor said about Robert Lee&#039;s piece on model minority, he argues that the construction of the model minority was based on the political silence of Asian America due to their cultural trait of self reliance and family cohesion.
 And the main argument of the contradiction between the continuing reproduction of racial difference and the process of ethnic assimilation.
 
 I guess in Liu&#039;s piece, he argues that the American space has to be secured; America has ceased to be the same historically idealized and rationalized space. (223).
 I think the film of Japanese War Bride was a great example, even though &quot;Jim&#039;s marriage to Tae represents a step outside these counterposed American alternatives, and a move toward a liberal utopian vision (229), the film &quot;reconciles the difference between Japan and America by its persistent equation of Asia with America via their shared symbolic space- the pacific&quot; (232). There is still a distance between Tae and Jim due to the differences of  their ethnic backgrounds and the constant question of how Tae looks in America.]]></description>
-		<content:encoded><![CDATA[<p>To add on to what Trevor said about Robert Lee&#8217;s piece on model minority, he argues that the construction of the model minority was based on the political silence of Asian America due to their cultural trait of self reliance and family cohesion.<br />
+    <content:encoded><![CDATA[<p>To add on to what Trevor said about Robert Lee&#8217;s piece on model minority, he argues that the construction of the model minority was based on the political silence of Asian America due to their cultural trait of self reliance and family cohesion.<br />
 And the main argument of the contradiction between the continuing reproduction of racial difference and the process of ethnic assimilation.</p>
 <p>I guess in Liu&#8217;s piece, he argues that the American space has to be secured; America has ceased to be the same historically idealized and rationalized space. (223).<br />
 I think the film of Japanese War Bride was a great example, even though &#8220;Jim&#8217;s marriage to Tae represents a step outside these counterposed American alternatives, and a move toward a liberal utopian vision (229), the film &#8220;reconciles the difference between Japan and America by its persistent equation of Asia with America via their shared symbolic space- the pacific&#8221; (232). There is still a distance between Tae and Jim due to the differences of  their ethnic backgrounds and the constant question of how Tae looks in America.</p>
 ]]></content:encoded>
-	</item>
+  </item>
 </channel>
 </rss>

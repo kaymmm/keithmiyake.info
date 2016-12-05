@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
-	xmlns:content="http://purl.org/rss/1.0/modules/content/"
-	xmlns:dc="http://purl.org/dc/elements/1.1/"
-	xmlns:atom="http://www.w3.org/2005/Atom"
-	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
-	
-	>
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+
+  >
 <channel>
-	<title>Comments on: Primary Reader</title>
-	<atom:link href="/asam210/2013/06/30/primary-reader/feed/" rel="self" type="application/rss+xml" />
-	<link>/asam210/2013/06/30/primary-reader/</link>
-	<description>Hunter College, Summer 2013</description>
-	<lastBuildDate>Wed, 17 Sep 2014 07:41:32 +0000</lastBuildDate>
-	<sy:updatePeriod>hourly</sy:updatePeriod>
-	<sy:updateFrequency>1</sy:updateFrequency>
-	
-	<item>
-		<title>By: Linda He</title>
-		<link>/asam210/2013/06/30/primary-reader/#comment-38</link>
-		<dc:creator><![CDATA[Linda He]]></dc:creator>
-		<pubDate>Fri, 05 Jul 2013 16:26:51 +0000</pubDate>
-		<guid isPermaLink="false">/asam210/?p=511#comment-38</guid>
-		<description><![CDATA[When I think about “The War on Terror,” I think of prison camps such as the ones at Guantanamo Bay. In Junaid Rana’s “Racial Panic, Islamic Peril, and Terror,” she writes “the rapid escalation of racial violence that followed 9/11 normalized an atmosphere of racial terror whose logic was later demonstrated through the explicit use of gender-based violence and sexual humiliation in the torture abuse scandal at Abu Ghraib prison”(50).
+  <title>Comments on: Primary Reader</title>
+  <atom:link href="{{site.baseurl}}/asam210/2013/06/30/primary-reader/feed/" rel="self" type="application/rss+xml" />
+  <link>/asam210/2013/06/30/primary-reader/</link>
+  <description>Hunter College, Summer 2013</description>
+  <lastBuildDate>Wed, 17 Sep 2014 07:41:32 +0000</lastBuildDate>
+  <sy:updatePeriod>hourly</sy:updatePeriod>
+  <sy:updateFrequency>1</sy:updateFrequency>
+
+  <item>
+    <title>By: Linda He</title>
+    <link>/asam210/2013/06/30/primary-reader/#comment-38</link>
+    <dc:creator><![CDATA[Linda He]]></dc:creator>
+    <pubDate>Fri, 05 Jul 2013 16:26:51 +0000</pubDate>
+    <guid isPermaLink="false">/asam210/?p=511#comment-38</guid>
+    <description><![CDATA[When I think about “The War on Terror,” I think of prison camps such as the ones at Guantanamo Bay. In Junaid Rana’s “Racial Panic, Islamic Peril, and Terror,” she writes “the rapid escalation of racial violence that followed 9/11 normalized an atmosphere of racial terror whose logic was later demonstrated through the explicit use of gender-based violence and sexual humiliation in the torture abuse scandal at Abu Ghraib prison”(50).
 
 This was a recent news article I found concerning updates on the camp and whether it would be closed down: http://ncronline.org/news/peace-justice/guantanamo-bay-prison-poses-moral-dilemma-white-house.
 
@@ -33,7 +33,7 @@ This article details Japanese Americans as another racial group that was targete
 I think this article is refreshing because there are not many texts I have read about an American citizen helping out the Japanese Americans that have been interned. Rather the rhetoric is about American citizens and official sharing some sort of resentment for Asian Americans and their fear of “Yellow Peril.” “Yellow Peril” refers to a lot of media, but to read about someone who has saved Japanese Americans as dictated in the article is really heroic.
 
 How has the United States targeted other racial groups in the past, and what can be done? Are the methods cruel in cases such as prison camps, and what can be done? How can we allow American citizens of diverse backgrounds feel like they are part of this country and embracing what is &quot;citizenship.&quot;]]></description>
-		<content:encoded><![CDATA[<p>When I think about “The War on Terror,” I think of prison camps such as the ones at Guantanamo Bay. In Junaid Rana’s “Racial Panic, Islamic Peril, and Terror,” she writes “the rapid escalation of racial violence that followed 9/11 normalized an atmosphere of racial terror whose logic was later demonstrated through the explicit use of gender-based violence and sexual humiliation in the torture abuse scandal at Abu Ghraib prison”(50).</p>
+    <content:encoded><![CDATA[<p>When I think about “The War on Terror,” I think of prison camps such as the ones at Guantanamo Bay. In Junaid Rana’s “Racial Panic, Islamic Peril, and Terror,” she writes “the rapid escalation of racial violence that followed 9/11 normalized an atmosphere of racial terror whose logic was later demonstrated through the explicit use of gender-based violence and sexual humiliation in the torture abuse scandal at Abu Ghraib prison”(50).</p>
 <p>This was a recent news article I found concerning updates on the camp and whether it would be closed down: <a href="http://ncronline.org/news/peace-justice/guantanamo-bay-prison-poses-moral-dilemma-white-house" rel="nofollow">http://ncronline.org/news/peace-justice/guantanamo-bay-prison-poses-moral-dilemma-white-house</a>.</p>
 <p>I think this article provides some insight to the turmoil of having these prison camps related to the War on Terror and the question of whether Guantanamo Bay would actually be closed. Guantanamo Bay is mentioned for its torture of its prisoners and although President Obama has pledged to close the camp, there still has not been an indication he may. I think this is important in understanding the “War on Terror” because these themes of torture are something that has always been prevalent in war. These themes are particularly prevalent in what some see as a racially targeted and politically motivated war.</p>
 <p>I also could understand the impact that 9/11 may have had on children that are Muslims because 9/11 happened in my youth as well. In Sunaina Maira’s “Youth Culture, Citizenship, and Globalization: South Asian Muslim Youth in the United States after September 11th,” she writes “Within six weeks of September 11, Congress passed the USA-PATRIOT Act of 2001 (which conveniently stands for United and Strengthening America by Providing Appropriate Tools Required to Intercept and Obstruct Terrorism Act) under considerable pressure from Attorney General John Ashcroft, who threatened Congress that ‘Those who scare peace-loving people each phantoms of lost liberties … only aid terrorists’”(333). The PATRIOT Act was a controversial act that many people seemed to think targeted Muslim and Arab citizens.</p>
@@ -41,6 +41,6 @@ How has the United States targeted other racial groups in the past, and what can
 <p>I think this article is refreshing because there are not many texts I have read about an American citizen helping out the Japanese Americans that have been interned. Rather the rhetoric is about American citizens and official sharing some sort of resentment for Asian Americans and their fear of “Yellow Peril.” “Yellow Peril” refers to a lot of media, but to read about someone who has saved Japanese Americans as dictated in the article is really heroic.</p>
 <p>How has the United States targeted other racial groups in the past, and what can be done? Are the methods cruel in cases such as prison camps, and what can be done? How can we allow American citizens of diverse backgrounds feel like they are part of this country and embracing what is &#8220;citizenship.&#8221;</p>
 ]]></content:encoded>
-	</item>
+  </item>
 </channel>
 </rss>

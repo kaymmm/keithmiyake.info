@@ -1,38 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
-	xmlns:content="http://purl.org/rss/1.0/modules/content/"
-	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
-	xmlns:dc="http://purl.org/dc/elements/1.1/"
-	xmlns:atom="http://www.w3.org/2005/Atom"
-	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
-	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
-	>
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+  xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+  >
 
 <channel>
-	<title>assignments &#8211; Intro to Geography</title>
-	<atom:link href="/geh101/tag/assignments-2/feed/" rel="self" type="application/rss+xml" />
-	<link>/geh101</link>
-	<description>Lehman College</description>
-	<lastBuildDate>Sat, 29 Nov 2014 17:03:44 +0000</lastBuildDate>
-	<language>en-US</language>
-	<sy:updatePeriod>hourly</sy:updatePeriod>
-	<sy:updateFrequency>1</sy:updateFrequency>
-	
-<site xmlns="com-wordpress:feed-additions:1">52642319</site>	<item>
-		<title>Term Paper Guidelines</title>
-		<link>/geh101/2011/01/31/term-paper/</link>
-		<pubDate>Mon, 31 Jan 2011 02:12:12 +0000</pubDate>
-		<dc:creator><![CDATA[Keith Miyake]]></dc:creator>
-				<category><![CDATA[Assignments]]></category>
-		<category><![CDATA[Lectures and Notes]]></category>
-		<category><![CDATA[assignments]]></category>
-		<category><![CDATA[Term Paper]]></category>
+  <title>assignments &#8211; Intro to Geography</title>
+  <atom:link href="{{ site.baseurl }}/geh101/tag/assignments-2/feed/" rel="self" type="application/rss+xml" />
+  <link>/geh101</link>
+  <description>Lehman College</description>
+  <lastBuildDate>Sat, 29 Nov 2014 17:03:44 +0000</lastBuildDate>
+  <language>en-US</language>
+  <sy:updatePeriod>hourly</sy:updatePeriod>
+  <sy:updateFrequency>1</sy:updateFrequency>
 
-		<guid isPermaLink="false">http://geh101.wordpress.com/?p=35</guid>
-		<description><![CDATA[A PDF of the Term Paper Guidelines and Grading Rubric can be downloaded here: Term Paper Guidelines Term Paper Rubric Description Each student will write a paper on a topic of his or her choosing. Students may work individually or in pairs. The content of the paper will be developed incrementally throughout the course through [&#8230;]]]></description>
-				<content:encoded><![CDATA[<p>A PDF of the Term Paper Guidelines and Grading Rubric can be downloaded here:</p>
+<site xmlns="com-wordpress:feed-additions:1">52642319</site>  <item>
+    <title>Term Paper Guidelines</title>
+    <link>{{ site.baseurl }}/geh101/2011/01/31/term-paper/</link>
+    <pubDate>Mon, 31 Jan 2011 02:12:12 +0000</pubDate>
+    <dc:creator><![CDATA[Keith Miyake]]></dc:creator>
+        <category><![CDATA[Assignments]]></category>
+    <category><![CDATA[Lectures and Notes]]></category>
+    <category><![CDATA[assignments]]></category>
+    <category><![CDATA[Term Paper]]></category>
+
+    <guid isPermaLink="false">http://geh101.wordpress.com/?p=35</guid>
+    <description><![CDATA[A PDF of the Term Paper Guidelines and Grading Rubric can be downloaded here: Term Paper Guidelines Term Paper Rubric Description Each student will write a paper on a topic of his or her choosing. Students may work individually or in pairs. The content of the paper will be developed incrementally throughout the course through [&#8230;]]]></description>
+        <content:encoded><![CDATA[<p>A PDF of the Term Paper Guidelines and Grading Rubric can be downloaded here:</p>
 <ul>
-<li><a href="/geh101/wp-content/uploads/sites/3/2011/02/term_paper_guidelines.pdf">Term Paper Guidelines</a></li>
-<li><a href="/geh101/wp-content/uploads/sites/3/2011/02/term-paper-rubric.pdf">Term Paper Rubric</a></li>
+<li><a href="{{ site.baseurl }}/geh101/wp-content/uploads/sites/3/2011/02/term_paper_guidelines.pdf">Term Paper Guidelines</a></li>
+<li><a href="{{ site.baseurl }}/geh101/wp-content/uploads/sites/3/2011/02/term-paper-rubric.pdf">Term Paper Rubric</a></li>
 </ul>
 <h2>Description</h2>
 <p><!-- p.p1 {margin: 0.0px 0.0px 12.0px 0.0px; font: 12.0px Times} span.s1 {letter-spacing: 0.0px} -->Each student will write a paper on a topic of his or her choosing. Students may work individually or in pairs. The content of the paper will be developed incrementally throughout the course through collaborative discussions during class. The purpose of this paper is to help students relate the geographical ways of thinking introduced in the course to topics of personal interest, and in doing so, develop research, writing, and critical analytical skills.</p>
@@ -51,12 +51,12 @@
 <p>Wikipedia is NOT a valid source. Most articles on Wikipedia include citations with references to their source information, which you may use.</p>
 <p>Websites used as sources should follow the guidelines discussed in class.</p>
 <h2>Assessment</h2>
-<p><!-- p.p1 {margin: 0.0px 0.0px 10.0px 0.0px; font: 12.0px Times} p.p2 {margin: 0.0px 0.0px 12.0px 0.0px; font: 12.0px Times} span.s1 {letter-spacing: 0.0px} -->Papers will be assessed based on geographic content and analysis as well as mechanics. Refer to the grading rubric for a breakdown of the grade, available as a PDF here: <a href="/geh101/wp-content/uploads/sites/3/2011/02/term-paper-rubric.pdf">Term Paper Rubric</a></p>
+<p><!-- p.p1 {margin: 0.0px 0.0px 10.0px 0.0px; font: 12.0px Times} p.p2 {margin: 0.0px 0.0px 12.0px 0.0px; font: 12.0px Times} span.s1 {letter-spacing: 0.0px} -->Papers will be assessed based on geographic content and analysis as well as mechanics. Refer to the grading rubric for a breakdown of the grade, available as a PDF here: <a href="{{ site.baseurl }}/geh101/wp-content/uploads/sites/3/2011/02/term-paper-rubric.pdf">Term Paper Rubric</a></p>
 <p>If you struggle with writing mechanics, it is highly recommended that you visit the Academic Support Center for Excellence, have a peer proof read your paper, or meet with me individually to work on making your paper more readable and comprehensible.</p>
 <h2>Dates</h2>
 <p><strong>March 21, 11:59pm: </strong>Brief outline and bibliography due via email<br />
 <strong>April 11, 11:59pm: </strong>Final term paper due via email</p>
 ]]></content:encoded>
-		<post-id xmlns="com-wordpress:feed-additions:1">35</post-id>	</item>
-	</channel>
+    <post-id xmlns="com-wordpress:feed-additions:1">35</post-id>  </item>
+  </channel>
 </rss>

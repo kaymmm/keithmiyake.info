@@ -1,37 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
-	xmlns:content="http://purl.org/rss/1.0/modules/content/"
-	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
-	xmlns:dc="http://purl.org/dc/elements/1.1/"
-	xmlns:atom="http://www.w3.org/2005/Atom"
-	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
-	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
-	>
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+  xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+  >
 
 <channel>
-	<title>GIS &#8211; Intro to Geography</title>
-	<atom:link href="/geh101/tag/gis/feed/" rel="self" type="application/rss+xml" />
-	<link>/geh101</link>
-	<description>Lehman College</description>
-	<lastBuildDate>Sat, 29 Nov 2014 17:03:44 +0000</lastBuildDate>
-	<language>en-US</language>
-	<sy:updatePeriod>hourly</sy:updatePeriod>
-	<sy:updateFrequency>1</sy:updateFrequency>
-	
-<site xmlns="com-wordpress:feed-additions:1">52642319</site>	<item>
-		<title>Summer Opportunity: Western Apache Ethnography and GIS Research Experience</title>
-		<link>/geh101/2011/02/28/summer-opportunity-western-apache-ethnography-and-gis-research-experience/</link>
-		<comments>/geh101/2011/02/28/summer-opportunity-western-apache-ethnography-and-gis-research-experience/#respond</comments>
-		<pubDate>Mon, 28 Feb 2011 18:44:16 +0000</pubDate>
-		<dc:creator><![CDATA[Keith Miyake]]></dc:creator>
-				<category><![CDATA[Resources]]></category>
-		<category><![CDATA[cultural geography]]></category>
-		<category><![CDATA[GIS]]></category>
-		<category><![CDATA[internship]]></category>
-		<category><![CDATA[summer opportunity]]></category>
+  <title>GIS &#8211; Intro to Geography</title>
+  <atom:link href="{{ site.baseurl }}/geh101/tag/gis/feed/" rel="self" type="application/rss+xml" />
+  <link>/geh101</link>
+  <description>Lehman College</description>
+  <lastBuildDate>Sat, 29 Nov 2014 17:03:44 +0000</lastBuildDate>
+  <language>en-US</language>
+  <sy:updatePeriod>hourly</sy:updatePeriod>
+  <sy:updateFrequency>1</sy:updateFrequency>
 
-		<guid isPermaLink="false">http://geh101.wordpress.com/?p=320</guid>
-		<description><![CDATA[Western Apache Ethnography and GIS Research Experience for Undergraduates The White Mountain Apache Tribe Heritage Program and the University of Arizona announce opportunities for student participation in the second season of the Western Apache Ethnography and GIS Research Experience for Undergraduates field school, a National Science Foundation-supported program, June 6-July 15, 2011. Students participating in this REU will [&#8230;]]]></description>
-				<content:encoded><![CDATA[<p>Western Apache Ethnography and GIS Research Experience for Undergraduates</p>
+<site xmlns="com-wordpress:feed-additions:1">52642319</site>  <item>
+    <title>Summer Opportunity: Western Apache Ethnography and GIS Research Experience</title>
+    <link>{{ site.baseurl }}/geh101/2011/02/28/summer-opportunity-western-apache-ethnography-and-gis-research-experience/</link>
+    <comments>{{ site.baseurl }}/geh101/2011/02/28/summer-opportunity-western-apache-ethnography-and-gis-research-experience/#respond</comments>
+    <pubDate>Mon, 28 Feb 2011 18:44:16 +0000</pubDate>
+    <dc:creator><![CDATA[Keith Miyake]]></dc:creator>
+        <category><![CDATA[Resources]]></category>
+    <category><![CDATA[cultural geography]]></category>
+    <category><![CDATA[GIS]]></category>
+    <category><![CDATA[internship]]></category>
+    <category><![CDATA[summer opportunity]]></category>
+
+    <guid isPermaLink="false">http://geh101.wordpress.com/?p=320</guid>
+    <description><![CDATA[Western Apache Ethnography and GIS Research Experience for Undergraduates The White Mountain Apache Tribe Heritage Program and the University of Arizona announce opportunities for student participation in the second season of the Western Apache Ethnography and GIS Research Experience for Undergraduates field school, a National Science Foundation-supported program, June 6-July 15, 2011. Students participating in this REU will [&#8230;]]]></description>
+        <content:encoded><![CDATA[<p>Western Apache Ethnography and GIS Research Experience for Undergraduates</p>
 <p>The White Mountain Apache Tribe Heritage Program and the University of Arizona announce opportunities for student participation in the second season of the Western Apache Ethnography and GIS Research Experience for Undergraduates field school, a National Science Foundation-supported program, June 6-July 15, 2011.</p>
 <p>Students participating in this REU will contribute to the creation of a Western Apache cultural and historical Atlas. Participants will learn field research techniques that will include:<br />
 • Creating research plans and documenting research efforts;<br />
@@ -46,8 +46,8 @@
 <p>A total of 8 students will be admitted to this program annually, 2010-2012.  Members of the Western Apache Nations (White Mountain Apache Tribe, San Carlos Apache Tribe, Tonto Apache Tribe, Camp Verde Yavapai-Apache Nation) will be given first consideration for this program, but other Native and non-Native students are encouraged to apply.  Applications received before March 18, 2011 will be given first consideration.  Applications will continue to be accepted until the program is full.</p>
 <p>For more information please contact REU Director Dr. Karl Hoerig at <a href="m&#x61;i&#108;&#x74;o&#58;&#x6b;h&#x6f;&#x65;r&#x69;g&#64;&#x66;o&#114;&#x74;a&#x70;&#x61;c&#x68;&#x65;a&#x72;i&#122;&#x6f;n&#97;&#x2e;o&#x72;&#x67;">&#x6b;&#x68;&#x6f;&#x65;&#114;&#105;g&#64;for&#x74;&#x61;&#x70;&#x61;&#x63;&#104;eariz&#x6f;&#x6e;&#x61;&#x2e;&#x6f;&#114;g</a>.  This announcement and application form also available online at <a href="http://anthropology.arizona.edu/content/summer_research_experience_undergraduates_ethnography_and_gis">http://anthropology.arizona.edu/content/summer_research_experience_undergraduates_ethnography_and_gis</a>.</p>
 ]]></content:encoded>
-			<wfw:commentRss>/geh101/2011/02/28/summer-opportunity-western-apache-ethnography-and-gis-research-experience/feed/</wfw:commentRss>
-		<slash:comments>0</slash:comments>
-	<post-id xmlns="com-wordpress:feed-additions:1">320</post-id>	</item>
-	</channel>
+      <wfw:commentRss>{{ site.baseurl }}/geh101/2011/02/28/summer-opportunity-western-apache-ethnography-and-gis-research-experience/feed/</wfw:commentRss>
+    <slash:comments>0</slash:comments>
+  <post-id xmlns="com-wordpress:feed-additions:1">320</post-id> </item>
+  </channel>
 </rss>

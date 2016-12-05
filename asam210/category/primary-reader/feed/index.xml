@@ -9,14 +9,14 @@
 
 <channel>
 	<title>Primary Reader &#8211; Asians in the U.S.</title>
-	<atom:link href="/asam210/category/primary-reader/feed/" rel="self" type="application/rss+xml" />
+	<atom:link href="{{site.baseurl}}/asam210/category/primary-reader/feed/" rel="self" type="application/rss+xml" />
 	<link>/asam210</link>
 	<description>Hunter College, Summer 2013</description>
 	<lastBuildDate>Wed, 26 Feb 2014 13:59:43 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>hourly</sy:updatePeriod>
 	<sy:updateFrequency>1</sy:updateFrequency>
-	
+
 <site xmlns="com-wordpress:feed-additions:1">53277463</site>	<item>
 		<title>Primary Reader on June 26th</title>
 		<link>/asam210/2013/07/24/primary-reader-on-june-26th/</link>

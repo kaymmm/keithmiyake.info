@@ -1,42 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
-	xmlns:content="http://purl.org/rss/1.0/modules/content/"
-	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
-	xmlns:dc="http://purl.org/dc/elements/1.1/"
-	xmlns:atom="http://www.w3.org/2005/Atom"
-	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
-	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
-	>
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+  xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+  >
 
 <channel>
-	<title>Citizenship &#8211; Asians in the U.S.</title>
-	<atom:link href="/asam210/tag/citizenship/feed/" rel="self" type="application/rss+xml" />
-	<link>/asam210</link>
-	<description>Hunter College, Summer 2013</description>
-	<lastBuildDate>Wed, 26 Feb 2014 13:59:43 +0000</lastBuildDate>
-	<language>en-US</language>
-	<sy:updatePeriod>hourly</sy:updatePeriod>
-	<sy:updateFrequency>1</sy:updateFrequency>
-	
-<site xmlns="com-wordpress:feed-additions:1">53277463</site>	<item>
-		<title>Researcher for 6/19</title>
-		<link>/asam210/2013/06/19/409/</link>
-		<comments>/asam210/2013/06/19/409/#respond</comments>
-		<pubDate>Wed, 19 Jun 2013 04:17:45 +0000</pubDate>
-		<dc:creator><![CDATA[Ryan McNeil]]></dc:creator>
-				<category><![CDATA[Further Research]]></category>
-		<category><![CDATA[Citizenship]]></category>
-		<category><![CDATA[Leti Volpp]]></category>
-		<category><![CDATA[Lisa Lowe]]></category>
+  <title>Citizenship &#8211; Asians in the U.S.</title>
+  <atom:link href="{{site.baseurl}}/asam210/tag/citizenship/feed/" rel="self" type="application/rss+xml" />
+  <link>/asam210</link>
+  <description>Hunter College, Summer 2013</description>
+  <lastBuildDate>Wed, 26 Feb 2014 13:59:43 +0000</lastBuildDate>
+  <language>en-US</language>
+  <sy:updatePeriod>hourly</sy:updatePeriod>
+  <sy:updateFrequency>1</sy:updateFrequency>
 
-		<guid isPermaLink="false">/asam210/?p=409</guid>
-		<description><![CDATA[http://www.cis.org/1965ImmigrationAct-MassImmigration Like many of the analyses I could find online, the above defends the Immigration Act of 1965, discussed extensively in the Lowe piece.  I thought this one was worth posting because it contains several quotes from American politicians, illustrating the controversy that surrounded the bill.  While the Lowe piece gives the opinion of one [&#8230;]]]></description>
-				<content:encoded><![CDATA[<p><a href="http://www.cis.org/1965ImmigrationAct-MassImmigration">http://www.cis.org/1965ImmigrationAct-MassImmigration</a><br />
+<site xmlns="com-wordpress:feed-additions:1">53277463</site>  <item>
+    <title>Researcher for 6/19</title>
+    <link>/asam210/2013/06/19/409/</link>
+    <comments>/asam210/2013/06/19/409/#respond</comments>
+    <pubDate>Wed, 19 Jun 2013 04:17:45 +0000</pubDate>
+    <dc:creator><![CDATA[Ryan McNeil]]></dc:creator>
+        <category><![CDATA[Further Research]]></category>
+    <category><![CDATA[Citizenship]]></category>
+    <category><![CDATA[Leti Volpp]]></category>
+    <category><![CDATA[Lisa Lowe]]></category>
+
+    <guid isPermaLink="false">/asam210/?p=409</guid>
+    <description><![CDATA[http://www.cis.org/1965ImmigrationAct-MassImmigration Like many of the analyses I could find online, the above defends the Immigration Act of 1965, discussed extensively in the Lowe piece.  I thought this one was worth posting because it contains several quotes from American politicians, illustrating the controversy that surrounded the bill.  While the Lowe piece gives the opinion of one [&#8230;]]]></description>
+        <content:encoded><![CDATA[<p><a href="http://www.cis.org/1965ImmigrationAct-MassImmigration">http://www.cis.org/1965ImmigrationAct-MassImmigration</a><br />
 Like many of the analyses I could find online, the above defends the Immigration Act of 1965, discussed extensively in the Lowe piece.  I thought this one was worth posting because it contains several quotes from American politicians, illustrating the controversy that surrounded the bill.  While the Lowe piece gives the opinion of one (very informed) writer, the above link allows us to see how many people within the setting of the bill&#8217;s passing reacted to it, and gives us some statistics to back up Lowe&#8217;s information. It&#8217;s worth pointing out that this bill was considered the result of immigration policy related to the general liberalization of American politics during the 60s.</p>
 <p><a href="http://plato.stanford.edu/entries/citizenship/#1.1">http://plato.stanford.edu/entries/citizenship/#1.1</a><br />
 The above is a little lengthy, I only mean use section 1.1. I searched around for an interesting definition of citizenship and managed to find one that did so in more than terms of birthplace and naturalization.  This excerpt seemed relevant to the Volpp paper because it offers (to some extent) a scholarly and philosophical answer to the question of citizenship discussed in &#8220;&#8216;Obnoxious To Their Very Nature&#8217;: Asian Americans and Constitutional Citizenship.&#8221; This section is honest about the debate over how to define citizenship,  is straight forward in doing so, and doesn&#8217;t try to offer its own definition as absolute.  The psychological aspect of citizenship mentioned in the section reminds the reader that immigrants are not homogenous in their perceived &#8220;foreignness&#8221; and that citizenship does not necessarily have to involve complete identification with a new culture.</p>
 ]]></content:encoded>
-			<wfw:commentRss>/asam210/2013/06/19/409/feed/</wfw:commentRss>
-		<slash:comments>0</slash:comments>
-	<post-id xmlns="com-wordpress:feed-additions:1">409</post-id>	</item>
-	</channel>
+      <wfw:commentRss>/asam210/2013/06/19/409/feed/</wfw:commentRss>
+    <slash:comments>0</slash:comments>
+  <post-id xmlns="com-wordpress:feed-additions:1">409</post-id> </item>
+  </channel>
 </rss>

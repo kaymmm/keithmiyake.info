@@ -1,43 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
-	xmlns:content="http://purl.org/rss/1.0/modules/content/"
-	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
-	xmlns:dc="http://purl.org/dc/elements/1.1/"
-	xmlns:atom="http://www.w3.org/2005/Atom"
-	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
-	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
-	>
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+  xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+  >
 
 <channel>
-	<title>political economy &#8211; Intro to Geography</title>
-	<atom:link href="/geh101/tag/political-economy/feed/" rel="self" type="application/rss+xml" />
-	<link>/geh101</link>
-	<description>Lehman College</description>
-	<lastBuildDate>Sat, 29 Nov 2014 17:03:44 +0000</lastBuildDate>
-	<language>en-US</language>
-	<sy:updatePeriod>hourly</sy:updatePeriod>
-	<sy:updateFrequency>1</sy:updateFrequency>
-	
-<site xmlns="com-wordpress:feed-additions:1">52642319</site>	<item>
-		<title>Chapter 10 Class Notes &#8211; Economic Geography</title>
-		<link>/geh101/2011/05/02/chapter-10-economic-geography/</link>
-		<comments>/geh101/2011/05/02/chapter-10-economic-geography/#respond</comments>
-		<pubDate>Mon, 02 May 2011 17:05:43 +0000</pubDate>
-		<dc:creator><![CDATA[Keith Miyake]]></dc:creator>
-				<category><![CDATA[Lectures and Notes]]></category>
-		<category><![CDATA[capitalism]]></category>
-		<category><![CDATA[economic geography]]></category>
-		<category><![CDATA[geopolitics]]></category>
-		<category><![CDATA[historical materialism]]></category>
-		<category><![CDATA[lecture notes]]></category>
-		<category><![CDATA[political economy]]></category>
-		<category><![CDATA[socialism]]></category>
+  <title>political economy &#8211; Intro to Geography</title>
+  <atom:link href="{{ site.baseurl }}/geh101/tag/political-economy/feed/" rel="self" type="application/rss+xml" />
+  <link>/geh101</link>
+  <description>Lehman College</description>
+  <lastBuildDate>Sat, 29 Nov 2014 17:03:44 +0000</lastBuildDate>
+  <language>en-US</language>
+  <sy:updatePeriod>hourly</sy:updatePeriod>
+  <sy:updateFrequency>1</sy:updateFrequency>
 
-		<guid isPermaLink="false">http://geh101.wordpress.com/?p=228</guid>
-		<description><![CDATA[The PDF of the lecture notes for Chapter 10 in the Getis textbook, is available here: <a href="http://geh101.files.wordpress.com/2011/09/ch10-economic_geography.pdf">Chapter 10 - economic geography</a>]]></description>
-				<content:encoded><![CDATA[<p>The PDF of the lecture notes for Chapter 10 in the Getis textbook, is available here: <a href="/geh101/wp-content/uploads/sites/3/2011/09/ch10-economic_geography.pdf">Chapter 10 &#8211; economic geography</a></p>
+<site xmlns="com-wordpress:feed-additions:1">52642319</site>  <item>
+    <title>Chapter 10 Class Notes &#8211; Economic Geography</title>
+    <link>{{ site.baseurl }}/geh101/2011/05/02/chapter-10-economic-geography/</link>
+    <comments>{{ site.baseurl }}/geh101/2011/05/02/chapter-10-economic-geography/#respond</comments>
+    <pubDate>Mon, 02 May 2011 17:05:43 +0000</pubDate>
+    <dc:creator><![CDATA[Keith Miyake]]></dc:creator>
+        <category><![CDATA[Lectures and Notes]]></category>
+    <category><![CDATA[capitalism]]></category>
+    <category><![CDATA[economic geography]]></category>
+    <category><![CDATA[geopolitics]]></category>
+    <category><![CDATA[historical materialism]]></category>
+    <category><![CDATA[lecture notes]]></category>
+    <category><![CDATA[political economy]]></category>
+    <category><![CDATA[socialism]]></category>
+
+    <guid isPermaLink="false">http://geh101.wordpress.com/?p=228</guid>
+    <description><![CDATA[The PDF of the lecture notes for Chapter 10 in the Getis textbook, is available here: <a href="http://geh101.files.wordpress.com/2011/09/ch10-economic_geography.pdf">Chapter 10 - economic geography</a>]]></description>
+        <content:encoded><![CDATA[<p>The PDF of the lecture notes for Chapter 10 in the Getis textbook, is available here: <a href="{{ site.baseurl }}/geh101/wp-content/uploads/sites/3/2011/09/ch10-economic_geography.pdf">Chapter 10 &#8211; economic geography</a></p>
 ]]></content:encoded>
-			<wfw:commentRss>/geh101/2011/05/02/chapter-10-economic-geography/feed/</wfw:commentRss>
-		<slash:comments>0</slash:comments>
-	<post-id xmlns="com-wordpress:feed-additions:1">228</post-id>	</item>
-	</channel>
+      <wfw:commentRss>{{ site.baseurl }}/geh101/2011/05/02/chapter-10-economic-geography/feed/</wfw:commentRss>
+    <slash:comments>0</slash:comments>
+  <post-id xmlns="com-wordpress:feed-additions:1">228</post-id> </item>
+  </channel>
 </rss>

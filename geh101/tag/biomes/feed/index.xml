@@ -1,40 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
-	xmlns:content="http://purl.org/rss/1.0/modules/content/"
-	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
-	xmlns:dc="http://purl.org/dc/elements/1.1/"
-	xmlns:atom="http://www.w3.org/2005/Atom"
-	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
-	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
-	>
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+  xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+  >
 
 <channel>
-	<title>biomes &#8211; Intro to Geography</title>
-	<atom:link href="/geh101/tag/biomes/feed/" rel="self" type="application/rss+xml" />
-	<link>/geh101</link>
-	<description>Lehman College</description>
-	<lastBuildDate>Sat, 29 Nov 2014 17:03:44 +0000</lastBuildDate>
-	<language>en-US</language>
-	<sy:updatePeriod>hourly</sy:updatePeriod>
-	<sy:updateFrequency>1</sy:updateFrequency>
-	
-<site xmlns="com-wordpress:feed-additions:1">52642319</site>	<item>
-		<title>300 Years of Human Productions of Nature&#8230;Mapped!</title>
-		<link>/geh101/2010/08/29/300-years-of-human-productions-of-nature-mapped/</link>
-		<comments>/geh101/2010/08/29/300-years-of-human-productions-of-nature-mapped/#respond</comments>
-		<pubDate>Sun, 29 Aug 2010 03:52:29 +0000</pubDate>
-		<dc:creator><![CDATA[Keith Miyake]]></dc:creator>
-				<category><![CDATA[Maps]]></category>
-		<category><![CDATA[biomes]]></category>
-		<category><![CDATA[environment]]></category>
-		<category><![CDATA[maps]]></category>
+  <title>biomes &#8211; Intro to Geography</title>
+  <atom:link href="{{ site.baseurl }}/geh101/tag/biomes/feed/" rel="self" type="application/rss+xml" />
+  <link>/geh101</link>
+  <description>Lehman College</description>
+  <lastBuildDate>Sat, 29 Nov 2014 17:03:44 +0000</lastBuildDate>
+  <language>en-US</language>
+  <sy:updatePeriod>hourly</sy:updatePeriod>
+  <sy:updateFrequency>1</sy:updateFrequency>
 
-		<guid isPermaLink="false">/geh101/?p=68</guid>
-		<description><![CDATA[Ecologists Erle Ellis and Navin Ramankutty from the University of Maryland, Baltimore have created a set of biome maps, which show the diversity of biological land uses across the world, which reflect the changes caused by human productions of nature over the past 300 years. Check out the full article on Wired.com.]]></description>
-				<content:encoded><![CDATA[<img style="margin-left:auto;margin-right:auto" title="anthromesV2-1700-2000.jpg" src="https://i1.wp.com/keithmiyake.info/geh101/wp-content/uploads/sites/3/2010/08/anthromesv2-1700-2000.jpg?resize=670%2C470" border="0" alt="via wired.com" data-recalc-dims="1" />
+<site xmlns="com-wordpress:feed-additions:1">52642319</site>  <item>
+    <title>300 Years of Human Productions of Nature&#8230;Mapped!</title>
+    <link>{{ site.baseurl }}/geh101/2010/08/29/300-years-of-human-productions-of-nature-mapped/</link>
+    <comments>{{ site.baseurl }}/geh101/2010/08/29/300-years-of-human-productions-of-nature-mapped/#respond</comments>
+    <pubDate>Sun, 29 Aug 2010 03:52:29 +0000</pubDate>
+    <dc:creator><![CDATA[Keith Miyake]]></dc:creator>
+        <category><![CDATA[Maps]]></category>
+    <category><![CDATA[biomes]]></category>
+    <category><![CDATA[environment]]></category>
+    <category><![CDATA[maps]]></category>
+
+    <guid isPermaLink="false">{{ site.baseurl }}/geh101/?p=68</guid>
+    <description><![CDATA[Ecologists Erle Ellis and Navin Ramankutty from the University of Maryland, Baltimore have created a set of biome maps, which show the diversity of biological land uses across the world, which reflect the changes caused by human productions of nature over the past 300 years. Check out the full article on Wired.com.]]></description>
+        <content:encoded><![CDATA[<img style="margin-left:auto;margin-right:auto" title="anthromesV2-1700-2000.jpg" src="https://i1.wp.com/keithmiyake.info{{ site.baseurl }}/geh101/wp-content/uploads/sites/3/2010/08/anthromesv2-1700-2000.jpg?resize=670%2C470" border="0" alt="via wired.com" data-recalc-dims="1" />
 <p>Ecologists Erle Ellis and Navin Ramankutty from the University of Maryland, Baltimore have created a set of biome maps, which show the diversity of biological land uses across the world, which reflect the changes caused by human productions of nature over the past 300 years. Check out the <a href="http://www.wired.com/wiredscience/2010/08/new-anthrome-maps/">full article on Wired.com</a>.</p>
 ]]></content:encoded>
-			<wfw:commentRss>/geh101/2010/08/29/300-years-of-human-productions-of-nature-mapped/feed/</wfw:commentRss>
-		<slash:comments>0</slash:comments>
-	<post-id xmlns="com-wordpress:feed-additions:1">68</post-id>	</item>
-	</channel>
+      <wfw:commentRss>{{ site.baseurl }}/geh101/2010/08/29/300-years-of-human-productions-of-nature-mapped/feed/</wfw:commentRss>
+    <slash:comments>0</slash:comments>
+  <post-id xmlns="com-wordpress:feed-additions:1">68</post-id>  </item>
+  </channel>
 </rss>

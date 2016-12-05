@@ -13,7 +13,7 @@ before_install:
   -in sshkey.enc -out sshkey -d
 script:
 - bundle exec jekyll build --destination ${OUTDIR}${BASEURL}
-- bundle exec htmlproofer _site/ --allow-hash-href --check-html --url-ignore scholar.google.com --file-ignore /asam210/,/geh101/ --disable-external
+- bundle exec htmlproofer _site/ --allow-hash-href --check-html --url-ignore scholar.google.com --disable-external
 after_success:
 - git clone https://github.com/${GITHUB_REPO}
 - cd $(basename ${GITHUB_REPO})

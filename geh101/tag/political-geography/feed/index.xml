@@ -1,93 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
-	xmlns:content="http://purl.org/rss/1.0/modules/content/"
-	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
-	xmlns:dc="http://purl.org/dc/elements/1.1/"
-	xmlns:atom="http://www.w3.org/2005/Atom"
-	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
-	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
-	>
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+  xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+  >
 
 <channel>
-	<title>political geography &#8211; Intro to Geography</title>
-	<atom:link href="/geh101/tag/political-geography/feed/" rel="self" type="application/rss+xml" />
-	<link>/geh101</link>
-	<description>Lehman College</description>
-	<lastBuildDate>Sat, 29 Nov 2014 17:03:44 +0000</lastBuildDate>
-	<language>en-US</language>
-	<sy:updatePeriod>hourly</sy:updatePeriod>
-	<sy:updateFrequency>1</sy:updateFrequency>
-	
-<site xmlns="com-wordpress:feed-additions:1">52642319</site>	<item>
-		<title>Chapter 9 Class Notes &#8211; Political Geography</title>
-		<link>/geh101/2011/04/12/ch9-political-geography/</link>
-		<comments>/geh101/2011/04/12/ch9-political-geography/#respond</comments>
-		<pubDate>Tue, 12 Apr 2011 17:00:39 +0000</pubDate>
-		<dc:creator><![CDATA[Keith Miyake]]></dc:creator>
-				<category><![CDATA[Lectures and Notes]]></category>
-		<category><![CDATA[lecture notes]]></category>
-		<category><![CDATA[political geography]]></category>
+  <title>political geography &#8211; Intro to Geography</title>
+  <atom:link href="{{ site.baseurl }}/geh101/tag/political-geography/feed/" rel="self" type="application/rss+xml" />
+  <link>/geh101</link>
+  <description>Lehman College</description>
+  <lastBuildDate>Sat, 29 Nov 2014 17:03:44 +0000</lastBuildDate>
+  <language>en-US</language>
+  <sy:updatePeriod>hourly</sy:updatePeriod>
+  <sy:updateFrequency>1</sy:updateFrequency>
 
-		<guid isPermaLink="false">http://geh101.wordpress.com/?p=225</guid>
-		<description><![CDATA[The PDF of the week 9 lecture notes is available here: <a href="http://geh101.files.wordpress.com/2011/09/ch9-political_geography.pdf">Week 9 - Political Geography</a>]]></description>
-				<content:encoded><![CDATA[<p>The PDF of the Chapter 9 lecture notes is available here: <a href="/geh101/wp-content/uploads/sites/3/2011/09/ch9-political_geography.pdf">Chapter 9-political geography</a></p>
+<site xmlns="com-wordpress:feed-additions:1">52642319</site>  <item>
+    <title>Chapter 9 Class Notes &#8211; Political Geography</title>
+    <link>{{ site.baseurl }}/geh101/2011/04/12/ch9-political-geography/</link>
+    <comments>{{ site.baseurl }}/geh101/2011/04/12/ch9-political-geography/#respond</comments>
+    <pubDate>Tue, 12 Apr 2011 17:00:39 +0000</pubDate>
+    <dc:creator><![CDATA[Keith Miyake]]></dc:creator>
+        <category><![CDATA[Lectures and Notes]]></category>
+    <category><![CDATA[lecture notes]]></category>
+    <category><![CDATA[political geography]]></category>
+
+    <guid isPermaLink="false">http://geh101.wordpress.com/?p=225</guid>
+    <description><![CDATA[The PDF of the week 9 lecture notes is available here: <a href="http://geh101.files.wordpress.com/2011/09/ch9-political_geography.pdf">Week 9 - Political Geography</a>]]></description>
+        <content:encoded><![CDATA[<p>The PDF of the Chapter 9 lecture notes is available here: <a href="{{ site.baseurl }}/geh101/wp-content/uploads/sites/3/2011/09/ch9-political_geography.pdf">Chapter 9-political geography</a></p>
 <p>The quiz questions can be found on the last page of the notes.</p>
 ]]></content:encoded>
-			<wfw:commentRss>/geh101/2011/04/12/ch9-political-geography/feed/</wfw:commentRss>
-		<slash:comments>0</slash:comments>
-	<post-id xmlns="com-wordpress:feed-additions:1">225</post-id>	</item>
-		<item>
-		<title>Week 5 Class Notes – The Geography of Natural Resources</title>
-		<link>/geh101/2011/02/28/week-5-class-notes-the-geography-of-natural-resources/</link>
-		<comments>/geh101/2011/02/28/week-5-class-notes-the-geography-of-natural-resources/#respond</comments>
-		<pubDate>Mon, 28 Feb 2011 17:38:57 +0000</pubDate>
-		<dc:creator><![CDATA[Keith Miyake]]></dc:creator>
-				<category><![CDATA[Lectures and Notes]]></category>
-		<category><![CDATA[agriculture]]></category>
-		<category><![CDATA[climate change]]></category>
-		<category><![CDATA[energy]]></category>
-		<category><![CDATA[land use]]></category>
-		<category><![CDATA[lecture notes]]></category>
-		<category><![CDATA[minerals]]></category>
-		<category><![CDATA[natural resources]]></category>
-		<category><![CDATA[notes]]></category>
-		<category><![CDATA[oil]]></category>
-		<category><![CDATA[political geography]]></category>
-		<category><![CDATA[scarcity]]></category>
-		<category><![CDATA[sustainability]]></category>
-		<category><![CDATA[uneven development]]></category>
-		<category><![CDATA[water]]></category>
+      <wfw:commentRss>{{ site.baseurl }}/geh101/2011/04/12/ch9-political-geography/feed/</wfw:commentRss>
+    <slash:comments>0</slash:comments>
+  <post-id xmlns="com-wordpress:feed-additions:1">225</post-id> </item>
+    <item>
+    <title>Week 5 Class Notes – The Geography of Natural Resources</title>
+    <link>{{ site.baseurl }}/geh101/2011/02/28/week-5-class-notes-the-geography-of-natural-resources/</link>
+    <comments>{{ site.baseurl }}/geh101/2011/02/28/week-5-class-notes-the-geography-of-natural-resources/#respond</comments>
+    <pubDate>Mon, 28 Feb 2011 17:38:57 +0000</pubDate>
+    <dc:creator><![CDATA[Keith Miyake]]></dc:creator>
+        <category><![CDATA[Lectures and Notes]]></category>
+    <category><![CDATA[agriculture]]></category>
+    <category><![CDATA[climate change]]></category>
+    <category><![CDATA[energy]]></category>
+    <category><![CDATA[land use]]></category>
+    <category><![CDATA[lecture notes]]></category>
+    <category><![CDATA[minerals]]></category>
+    <category><![CDATA[natural resources]]></category>
+    <category><![CDATA[notes]]></category>
+    <category><![CDATA[oil]]></category>
+    <category><![CDATA[political geography]]></category>
+    <category><![CDATA[scarcity]]></category>
+    <category><![CDATA[sustainability]]></category>
+    <category><![CDATA[uneven development]]></category>
+    <category><![CDATA[water]]></category>
 
-		<guid isPermaLink="false">http://geh101.wordpress.com/?p=177</guid>
-		<description><![CDATA[The class presentation for week 5 can be downloaded here: <a href="http://geh101.files.wordpress.com/2011/02/week5-natural_resources.pdf">Week 5 - Natural Resources</a>]]></description>
-				<content:encoded><![CDATA[<p>The class presentation for week 5 can be downloaded here: <a href="/geh101/wp-content/uploads/sites/3/2011/09/ch5-natural_resources.pdf">Week 5 &#8211; Natural Resources</a></p>
+    <guid isPermaLink="false">http://geh101.wordpress.com/?p=177</guid>
+    <description><![CDATA[The class presentation for week 5 can be downloaded here: <a href="http://geh101.files.wordpress.com/2011/02/week5-natural_resources.pdf">Week 5 - Natural Resources</a>]]></description>
+        <content:encoded><![CDATA[<p>The class presentation for week 5 can be downloaded here: <a href="{{ site.baseurl }}/geh101/wp-content/uploads/sites/3/2011/09/ch5-natural_resources.pdf">Week 5 &#8211; Natural Resources</a></p>
 ]]></content:encoded>
-			<wfw:commentRss>/geh101/2011/02/28/week-5-class-notes-the-geography-of-natural-resources/feed/</wfw:commentRss>
-		<slash:comments>0</slash:comments>
-	<post-id xmlns="com-wordpress:feed-additions:1">177</post-id>	</item>
-		<item>
-		<title>Geopolitics through Maps</title>
-		<link>/geh101/2010/09/08/geopolitics-through-maps/</link>
-		<comments>/geh101/2010/09/08/geopolitics-through-maps/#respond</comments>
-		<pubDate>Wed, 08 Sep 2010 17:39:37 +0000</pubDate>
-		<dc:creator><![CDATA[Keith Miyake]]></dc:creator>
-				<category><![CDATA[Maps]]></category>
-		<category><![CDATA[Resources]]></category>
-		<category><![CDATA[geopolitics]]></category>
-		<category><![CDATA[maps]]></category>
-		<category><![CDATA[physical geography]]></category>
-		<category><![CDATA[political geography]]></category>
+      <wfw:commentRss>{{ site.baseurl }}/geh101/2011/02/28/week-5-class-notes-the-geography-of-natural-resources/feed/</wfw:commentRss>
+    <slash:comments>0</slash:comments>
+  <post-id xmlns="com-wordpress:feed-additions:1">177</post-id> </item>
+    <item>
+    <title>Geopolitics through Maps</title>
+    <link>{{ site.baseurl }}/geh101/2010/09/08/geopolitics-through-maps/</link>
+    <comments>{{ site.baseurl }}/geh101/2010/09/08/geopolitics-through-maps/#respond</comments>
+    <pubDate>Wed, 08 Sep 2010 17:39:37 +0000</pubDate>
+    <dc:creator><![CDATA[Keith Miyake]]></dc:creator>
+        <category><![CDATA[Maps]]></category>
+    <category><![CDATA[Resources]]></category>
+    <category><![CDATA[geopolitics]]></category>
+    <category><![CDATA[maps]]></category>
+    <category><![CDATA[physical geography]]></category>
+    <category><![CDATA[political geography]]></category>
 
-		<guid isPermaLink="false">http://geh101.wordpress.com/?p=96</guid>
-		<description><![CDATA[Geopolitics is the politics of international relations, particularly those influenced by geographical factors. A quick look at a map might lead to questions about the relationships between nations in terms of their proximity and possible trade. But maps can also provide much deeper insights into the geopolitical histories of nation states if the establishment of [&#8230;]]]></description>
-				<content:encoded><![CDATA[<p>Geopolitics is the politics of international relations, particularly those influenced by geographical factors. A quick look at a map might lead to questions about the relationships between nations in terms of their proximity and possible trade. But maps can also provide much deeper insights into the geopolitical histories of nation states if the establishment of borders is considered.</p>
+    <guid isPermaLink="false">http://geh101.wordpress.com/?p=96</guid>
+    <description><![CDATA[Geopolitics is the politics of international relations, particularly those influenced by geographical factors. A quick look at a map might lead to questions about the relationships between nations in terms of their proximity and possible trade. But maps can also provide much deeper insights into the geopolitical histories of nation states if the establishment of [&#8230;]]]></description>
+        <content:encoded><![CDATA[<p>Geopolitics is the politics of international relations, particularly those influenced by geographical factors. A quick look at a map might lead to questions about the relationships between nations in terms of their proximity and possible trade. But maps can also provide much deeper insights into the geopolitical histories of nation states if the establishment of borders is considered.</p>
 <div style="width: 291px" class="wp-caption alignright"><a href="https://i1.wp.com/commons.wikimedia.org/wiki/File:Spain_topo.png"><img class=" " title="Spain Topo Map" src="https://i1.wp.com/upload.wikimedia.org/wikipedia/commons/thumb/d/de/Spain_topo.png/696px-Spain_topo.png?resize=281%2C241" alt="Topo map of Spain" data-recalc-dims="1" /></a><p class="wp-caption-text">Source: wikimedia commons http://commons.wikimedia.org/wiki/File:Spain_topo.png</p></div>
 <p>For example, consider the border between France and Spain:</p>
 <p>The jagged shape of the border implies that it was likely established along a naturally occurring physical geologic feature, in this case, the border follows the crest of the <a href="http://en.wikipedia.org/wiki/Pyrenees" target="_blank">Pyrenees Mountains</a>.</p>
 <p>What sorts of implications might other types of borders indicate? Straight borders? Borders with a hitch (like that between Spain and Portugal)? Borders that create long sections of land jutting between other countries? Borders that place one nation partially or entirely inside of another country? etc&#8230;</p>
 <p>These and other geopolitical border situations are explored in greater detail <a href="http://www.pagef30.com/2009/08/understanding-countries-through-maps.html" target="_blank">here</a>, with some great explanatory maps.</p>
 ]]></content:encoded>
-			<wfw:commentRss>/geh101/2010/09/08/geopolitics-through-maps/feed/</wfw:commentRss>
-		<slash:comments>0</slash:comments>
-	<post-id xmlns="com-wordpress:feed-additions:1">96</post-id>	</item>
-	</channel>
+      <wfw:commentRss>{{ site.baseurl }}/geh101/2010/09/08/geopolitics-through-maps/feed/</wfw:commentRss>
+    <slash:comments>0</slash:comments>
+  <post-id xmlns="com-wordpress:feed-additions:1">96</post-id>  </item>
+  </channel>
 </rss>
