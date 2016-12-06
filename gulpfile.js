@@ -49,9 +49,9 @@ var htmlProoferParams = [
   dirs.dest,
   '--allow-hash-href',
   '--check-html',
-  // '--disable-external',
+  '--disable-external',
   // '--file-ignore', '/asam210/,/geh101/',
-  '--url-ignore','scholar.google.com',
+  // '--url-ignore','scholar.google.com',
 ];
 
 gulp.task('clean:assets', function () {
