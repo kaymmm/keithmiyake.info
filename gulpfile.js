@@ -108,14 +108,14 @@ gulp.task('clean', function () {
 });
 
 gulp.task('images', ['clean:images'], function () {
-  return gulp.src([dirs.img + '/**'])
+  return gulp.src([dirs.img + '/**/*'])
     .pipe($.plumber({
       handleError: function (err) {
         // console.log(err);
         this.emit('end');
       }
     }))
-    .pipe($.newer(dirs.imgc + '/**'))
+    .pipe($.newer(dirs.imgc + '/**/*'))
     .pipe($.imagemin({
       progressive: true,
       svgoPlugins: [
