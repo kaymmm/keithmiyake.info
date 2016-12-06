@@ -144,6 +144,7 @@ keep_files:
   - assets/js/
   - assets/css/
   - assets/img/
+  - assets/img/icons/
   - assets/media/
   # - asam210/
   # - geh101/
