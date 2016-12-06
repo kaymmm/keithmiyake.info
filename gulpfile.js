@@ -28,14 +28,14 @@ try {
 var url = 'localhost';
 var port = '3000';
 var output = '_site';
-var baseurl = (typeof config.baseurl != "undefined") ? config.baseurl : '';
+var baseurl = (config.baseurl !== null) ? config.baseurl : '';
 var dirs = {
   js: 'assets/js',
   sass: '_sass',
   css: 'assets/css',
   img: 'assets/img_src',
   imgc: 'assets/img',
-  dest: output + baseurl,
+  dest: (baseurl !== '') ? output + baseurl : output,
 };
 
 var isProduction = argv.prod;
@@ -49,8 +49,8 @@ var htmlProoferParams = [
   dirs.dest,
   '--allow-hash-href',
   '--check-html',
-  '--disable-external',
-  '--file-ignore', '/asam210/,/geh101/',
+  // '--disable-external',
+  // '--file-ignore', '/asam210/,/geh101/',
   '--url-ignore','scholar.google.com',
 ];
 
@@ -135,7 +135,9 @@ gulp.task('jekyll', ['clean:jekyll'], function (done) {
     var jekyllCmd = jekyll;
     var jekyllParams = ['build'];
     jekyllParams.push('--destination', dirs.dest);
-    jekyllParams.push('--baseurl',baseurl);
+    if (baseurl !== "") {
+      jekyllParams.push('--baseurl',baseurl);
+    }
     if (!isProduction) {
       jekyllParams.push('--drafts');
     }
