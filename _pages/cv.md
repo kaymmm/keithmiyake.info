@@ -21,7 +21,7 @@ Chancellor's Postdoctoral Fellow, University of California, Davis
 646-484-9881 • [{{ site.author.email }}](mailto:{{site.author.email}}) • [https://keithmiyake.info](https://keithmiyake.info)
 {:.cv-intro}
 
-*Updated August 2016* • [Download CV in PDF format]({{ '/assets/media/miyake-cv.pdf' | prepend: site.baseurl }})
+*Updated February 2017* • [Download CV in PDF format]({{ '/assets/media/miyake-cv.pdf' | prepend: site.baseurl }})
 {:.cv-intro}
 
 # Education
@@ -111,7 +111,7 @@ The Graduate Center, CUNY Advanced Research Collaborative Knickerbocker Award
 2013
 {:.cv-date}
 
-$3,000. Funding for archival research in American Studies.
+\$3,000. Funding for archival research in American Studies.
 {:.cv-body}
 
 
@@ -121,7 +121,7 @@ The Graduate Center, CUNY Advanced Research Collaborative Summer Research Grant
 2012
 {:.cv-date}
 
-$5,000. Research and travel grant to participate in the Seminar in Experimental Critical Theory.
+\$5,000. Research and travel grant to participate in the Seminar in Experimental Critical Theory.
 {:.cv-body}
 
 
@@ -210,6 +210,18 @@ Individual Working Paper Session. Association for Asian American Studies (AAAS) 
 
 ## Invited Lectures
 {:.cv-heading}
+
+“Police, Pollution, and Prisons: Environmental Justice and the Racial Environmental
+State”
+{:.cv-title}
+
+2016
+{:.cv-date}
+
+Colloquium Speaker, Environmental Studies Program, University of California, Santa Cruz,
+Santa Cruz, CA
+{:.cv-body}
+
 
 “When the Environmentalists joined the Abolitionists: Race, environmental policy, and social change”
 {:.cv-title}
@@ -429,7 +441,7 @@ Courses: Algebra 1 and Geometry
 # Professional Work Experience
 {:.cv-heading}
 
-Digital Fellow
+GC Digital Fellow
 {:.cv-title}
 
 2013 - 2016
