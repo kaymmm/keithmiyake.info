@@ -188,9 +188,10 @@ gulp.task('lint:scripts', function () {
       this.emit('end');
     }
   }))
-  .pipe($.eslint())
-  .pipe($.eslint.formatEach())
-  .pipe($.eslint.failOnError());
+  // .pipe($.eslint())
+  // .pipe($.eslint.formatEach())
+  // .pipe($.eslint.format())
+  // .pipe($.eslint.failAfterError());
 });
 
 // 'gulp lint:styles' -- check your SASS for formatting errors
