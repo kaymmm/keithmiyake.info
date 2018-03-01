@@ -13,13 +13,14 @@ var autoprefixer = require('autoprefixer');
 var mqpacker = require('css-mqpacker');
 var csswring = require('csswring');
 var del = require('del');
-var browserSync = require('browser-sync');
+var browserSync = require('browser-sync').create();
 var commandExists = require('command-exists');
 var yaml = require('js-yaml');
 var fs = require('fs-extra');
 
+var config;
 try {
-  var config = yaml.safeLoad(fs.readFileSync('_config.yml','utf-8'));
+  config = yaml.safeLoad(fs.readFileSync('_config.yml','utf-8'));
 } catch (e) {
   console.log('ERROR: Could not load your jekyll _config.yml');
   console.log(e);
@@ -171,7 +172,7 @@ gulp.task('jekyll:incremental', function () {
   gulp.start('jekyll')
   .on('end', function () {
     console.log('end');
-    browserSync.reload();
+    browserSync.reload;
   });
 });
 
@@ -369,8 +370,8 @@ var browserSyncConfig = {
   open: 'local',
   browser: [
     // 'safari',
-    // 'firefox',
-    'google chrome'
+    'firefox',
+    // 'google-chrome'
   ],
   host: url,
   injectChanges: true,
@@ -385,7 +386,7 @@ var browserSyncConfig = {
 };
 
 gulp.task('serve', function () {
-  browserSync(browserSyncConfig);
+  browserSync.init(browserSyncConfig);
 
   // Jekyll
   gulp.watch([
@@ -404,9 +405,7 @@ gulp.task('serve', function () {
     readDelay: 150
   }, function (event) {
     console.log('File ' + event.path + ' was ' + event.type);
-    gulp.start([
-      'jekyll:incremental'
-    ]);
+    gulp.start(['jekyll:incremental']);
   });
 
   // Assets

@@ -68,7 +68,7 @@ wp_enqueue_style( 'bootstrap-css' );
 
 Your functions.php should look something like this:
 
-<a href="http://keithmiyake.info/wp-content/uploads/2013/11/functions.php_—_my-bootstrap-theme.png"><img src="{{ site.baseurl }}/assets/img/functions.php_&#8212;_my-bootstrap-theme.png" alt="functions.php_—_my-bootstrap-theme" class="aligncenter size-full wp-image-214" /></a>
+<a href="http://keithmiyake.info/wp-content/uploads/2013/11/my-bootstrap-theme.png"><img src="{{ site.baseurl }}/assets/img/my-bootstrap-theme.png" alt="my-bootstrap-theme" class="aligncenter size-full wp-image-214" /></a>
 
 This first line tells WordPress to register a new script, which we are going to call "bootstrap-js". It also tells WordPress where to look for the script file (in this case, in the theme folder [get_template_directory_uri()], and then inside the bootstrap folder's "js" folder, there is a file called "bootstrap.min.js". The last three parameters tell WordPress that this script depends on the jquery javascript library, that the version of the script that we’re loading is version 3.0.1 (which helps it with caching), and that the script should be added in the footer of the page, which helps to speed up the page loading in a browser.
 
