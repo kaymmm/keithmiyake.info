@@ -249,7 +249,7 @@ gulp.task('scripts', ['clean:scripts'], function () {
     }))
     .pipe($.if(!isProduction, $.sourcemaps.init()))
     .pipe($.concat('main.min.js'))
-    .pipe($.if(isProduction, $.uglify({preserveComments: 'some'})))
+    .pipe($.if(isProduction, $.minify({preserveComments: 'some'})))
     .pipe($.if(!isProduction, $.sourcemaps.write('.')))
     // .pipe($.if(isProduction, $.gzip({append: false})))
     .pipe(gulp.dest(dirs.js))
@@ -271,7 +271,7 @@ gulp.task('scripts:vendor', ['clean:vendorscripts'], function () {
     .pipe($.sourcemaps.init())
     .pipe($.concat('vendor.js'))
     .pipe($.rename({suffix: '.min'}))
-    .pipe($.if(isProduction, $.if('*.js', $.uglify({preserveComments: 'some'}))))
+    .pipe($.if(isProduction, $.if('*.js', $.minify({preserveComments: 'some'}))))
     .pipe($.if(!isProduction, $.sourcemaps.write('.')))
     .pipe($.if(isProduction, gulp.dest(dirs.js)))
     // .pipe($.if(isProduction, $.if('*.js', $.gzip({append: true}))))
@@ -393,20 +393,16 @@ gulp.task('serve', function () {
     '_config.yml',
     '**/*.{md,markdown,html}',
     '_data/*.{json,yml}',
+    '_includes/*',
+    '_layouts/*',
     '!' + dirs.dest + '/**',
     '!' + dirs.sass + '/**',
     '!' + dirs.img + '/**',
     '!' + dirs.imgc + '/**',
     '!' + dirs.css + '/**',
     '!node_modules/**'
-  ], {
-    interval: 500,
-    name: 'jekyll',
-    readDelay: 150
-  }, function (event) {
-    console.log('File ' + event.path + ' was ' + event.type);
-    gulp.start(['jekyll:incremental']);
-  });
+  ], { interval: 500, name: 'jekyll', readDelay: 150
+  }, ['jekyll:incremental', browserSync.reload]);
 
   // Assets
   gulp.watch([dirs.js + '/main.js'], {interval: 500}, ['lint:scripts','scripts', browserSync.reload]);
