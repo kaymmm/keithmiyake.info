@@ -1,9 +1,20 @@
+
+ul {
+  display: inline-block;
+}
+
 .cv {
+  @include clearfix;
+  animation: intro .3s both;
+  animation-delay: .25s;
+  margin-bottom: 2em;
+  text-indent: none;
+
   .page {
     // @include breakpoint($large) {
-      @include span(full);
-      @include prefix(0 of 12);
-      @include suffix(0 of 12);
+    @include span(full);
+    @include prefix(0 of 12);
+    @include suffix(0 of 12);
     // }
 
     .page__inner-wrap {
@@ -16,7 +27,7 @@
       }
     }
   }
-  
+
   .body-toc {
     @include span(9 of 12 first);
   }
@@ -25,28 +36,19 @@
     @include span(3 of 12 last);
     @include clearfix;
   }
-}
-
-.cv {
-  @include clearfix;
-  animation: intro .3s both;
-  animation-delay: .25s;
-  margin-bottom: 2em;
-  text-indent: none;
-
 
   &-body,
   &-date,
   &-title {
     font-size: $type-size-2;
 
-    &+p+p {
-      margin-top: 0;
-      text-indent: 0;
-    }
-
     @include breakpoint($small) {
       font-size: $type-size-1;
+    }
+
+    +p+p {
+      margin-top: 0;
+      text-indent: 0;
     }
   }
 
@@ -70,6 +72,10 @@
     @include span(10 of 12 first);
   }
 
+  &-list {
+    display: list-item;
+    list-style: disc inside none;
+  }
 }
 
 p,
