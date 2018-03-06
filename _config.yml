@@ -16,7 +16,8 @@ baseurl                  :
 repository               : "kaymmm/keithmiyake.info"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
-words_per_minute         : 200
+# words_per_minute         : 200
+theme                    : minimal-mistakes-jekyll
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
   disqus:
@@ -168,9 +169,14 @@ kramdown:
   auto_ids: true
   footnote_nr: 1
   entity_output: as_char
-  toc_levels: 1..6
+  toc_levels: 1..2
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
+
+# Custom js files
+head_scripts:
+  - "assets/js/main.min.js"
+  - "assets/js/custom.js"
 
 # Sass/SCSS
 sass:
@@ -195,7 +201,7 @@ timezone: America/Los_Angeles # http://en.wikipedia.org/wiki/List_of_tz_database
 
 
 # Plugins
-gems:
+plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist

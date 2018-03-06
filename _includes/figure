@@ -4,7 +4,7 @@
       {% if include.url contains "://" %}
         "{{ include.url }}"
       {% else %}
-        "{{ include.url | prepend: site.baseurl }}"
+        "{{ include.url | prepend: absolute_url }}"
       {% endif %}
       {% if include.alt %}title="{{ include.title }}"{% endif %}
     >
@@ -13,7 +13,7 @@
     {% if include.image_path contains "://" %}
       "{{ include.image_path }}"
     {% else %}
-      "{{ include.image_path | prepend: site.baseurl }}"
+      "{{ include.image_path | absolute_url }}"
     {% endif %}
     alt="{% if include.alt %}{{ include.alt }}{% endif %}">
   {% if include.url %}

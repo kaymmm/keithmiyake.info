@@ -1,0 +1,27 @@
+// Custom Variables
+@import 'custom_variables';
+
+// Susy - grid mixins
+// $susy: (
+//   columns: 12,
+//   gutters: 1 / 4,
+//   math: fluid,
+//   output: float,
+//   gutter-position: after,
+//   container: $large,
+//   global-box-sizing: border-box,
+// );
+
+// Minimal Mistakes imports
+@import 'minimal-mistakes/skins/default'; // skin
+@import 'minimal-mistakes'; // main partials
+
+@import 'cv';
+
+
+.no-indent {
+  text-indent: 0;
+}
+
+// @import 'vendor/susy/susy';
+

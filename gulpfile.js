@@ -67,14 +67,14 @@ gulp.task('clean:assets', function () {
 });
 gulp.task('clean:styles', function () {
   return del([
-    dirs.dest + '/' + dirs.css + '/main.min.css',
-    dirs.css + '/main.min.css'
+    dirs.dest + '/' + dirs.css + '/custom.css',
+    dirs.css + '/custom.css'
   ]);
 });
 gulp.task('clean:vendorstyles', function () {
   return del([
-    dirs.dest + '/' + dirs.css + '/vendor.min.css',
-    dirs.css + '/vendor.min.css'
+    dirs.dest + '/' + dirs.css + '/vendor.css',
+    dirs.css + '/vendor.css'
   ]);
 });
 gulp.task('clean:scripts', function () {
@@ -141,6 +141,8 @@ gulp.task('jekyll', ['clean:jekyll'], function (done) {
     }
     if (!isProduction) {
       jekyllParams.push('--drafts');
+      jekyllParams.push('--config');
+      jekyllParams.push('_config.yml,_config.dev.yml');
     }
     if (jekyllInc) {
       jekyllParams.push('--incremental');
@@ -197,12 +199,9 @@ gulp.task('lint:scripts', function () {
 
 // 'gulp lint:styles' -- check your SASS for formatting errors
 gulp.task('lint:styles', function () {
-  gulp.src([
-    dirs.css + '/main.scss'
-  ])
+  gulp.src([dirs.sass + '/custom.scss', dirs.css + '/main.scss'])
   .pipe($.plumber({
-    handleError: function (err) {
-      // console.log(err);
+    handleError: function () {
       this.emit('end');
     }
   }))
@@ -281,10 +280,9 @@ gulp.task('scripts:vendor', ['clean:vendorscripts'], function () {
 });
 
 gulp.task('styles', ['clean:styles'], function () {
-  return gulp.src(dirs.css + '/main.scss')
+  return gulp.src([dirs.sass + '/custom.scss', dirs.css + '/main.scss'])
     .pipe($.plumber({
-      handleError: function (err) {
-        // console.log(err);
+      handleError: function () {
         this.emit('end');
       }
     }))
@@ -305,7 +303,7 @@ gulp.task('styles', ['clean:styles'], function () {
       mqpacker,
       csswring
     ]))
-    .pipe($.rename({suffix: '.min'}))
+    // .pipe($.rename({suffix: '.min'}))
     .pipe($.if(!isProduction, $.sourcemaps.write('.')))
     // .pipe($.if(isProduction, $.gzip({append: false})))
     .pipe(gulp.dest(dirs.css))
@@ -327,7 +325,7 @@ gulp.task('styles:vendor', ['clean:vendorstyles'], function () {
     }
   }))
   .pipe($.if(!isProduction, $.sourcemaps.init()))
-  .pipe($.concat('vendor.min.css'))
+  .pipe($.concat('vendor.css'))
   .pipe($.postcss([
     autoprefixer({browsers: 'last 1 version'}),
     mqpacker,
@@ -391,6 +389,7 @@ gulp.task('serve', function () {
   // Jekyll
   gulp.watch([
     '_config.yml',
+    '_config.dev.yml',
     '**/*.{md,markdown,html}',
     '_data/*.{json,yml}',
     '_includes/*',
@@ -407,7 +406,7 @@ gulp.task('serve', function () {
   // Assets
   gulp.watch([dirs.js + '/main.js'], {interval: 500}, ['lint:scripts','scripts', browserSync.reload]);
   gulp.watch([dirs.js + '/vendor/**/*.js'], {interval: 500}, ['scripts:vendor', browserSync.reload]);
-  gulp.watch([dirs.sass + '/**/*.s+(a|c)ss', dirs.css + '/main.scss'], {interval: 500}, ['lint:styles','styles', browserSync.reload]);
+  gulp.watch([dirs.sass + '/**/*.s+(a|c)ss', dirs.css + '/main.scss', dirs.sass + '/custom.scss'], {interval: 500}, ['lint:styles','styles', browserSync.reload]);
   gulp.watch([dirs.img + '/**/*'], {interval: 500}, ['images', browserSync.reload]);
 });
 
