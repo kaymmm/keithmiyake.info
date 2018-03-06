@@ -1,17 +1,20 @@
 ---
 layout: single
-title: Curriculum Vitae for Keith K. Miyake
+title: Curriculum Vitae
 type: page
 permalink: /cv/
 classes:
   - cv
+toc: true
+toc_label: Sections
+toc_icon: address-card
 ---
 
 {::options parse_block_html="true" /}
 
-{% include toc icon="v-card" title="Sections" %}
-
 <div class="body-toc">
+
+# Keith K. Miyake
 
 __Chancellor's Postdoctoral Fellow, University of California, Davis__
 {:.cv-intro}

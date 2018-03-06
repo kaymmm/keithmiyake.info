@@ -26,10 +26,10 @@
 
   .page__content h2 {
     @include clearfix;
-    background-color: $gray;
+    background-color: $primary-color;
     border-top-left-radius: $border-radius;
     border-top-right-radius: $border-radius;
-    color: $lighter-gray;
+    color: #fff;
     float: left;
     margin: 2em -.2em .5em;
     padding: .1em .2em;
@@ -49,6 +49,10 @@
   .body-toc {
     float: left;
     margin-left: 0;
+
+    ul {
+      float: left;
+    }
   }
 
   .cv-intro {
@@ -76,28 +80,5 @@
     width: span(10 of 12);
   }
 
-  ul {
-    float: left;
-  }
 }
 
-
-
-// p,
-// p+p {
-//   &.cv {
-//     // margin-top: -$indent-var;
-//     @include clearfix;
-//     margin-bottom: 1em;
-//     padding-left: $indent-var;
-//     text-indent: 0;
-//     width: span(12 of 12);
-//
-//     &-date,
-//     &-intro,
-//     &-title {
-//       margin: .5em 0;
-//       text-indent: 0;
-//     }
-//   }
-// }
