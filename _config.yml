@@ -174,9 +174,10 @@ kramdown:
   enable_coderay: false
 
 # Custom js files
-head_scripts:
+footer_scripts:
   - /assets/js/main.min.js
   - /assets/js/custom.js
+  - https://use.fontawesome.com/releases/v5.0.6/js/all.js
 
 # Sass/SCSS
 sass:
