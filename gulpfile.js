@@ -61,7 +61,7 @@ gulp.task('clean:assets', function () {
     '!' + dirs.js + '/vendor',
     dirs.css + '/*.map',
     dirs.css + '/*.css',
-    '!' + dirs.css + '/vendor',
+    // '!' + dirs.css + '/vendor',
     dirs.imgc + '/**/*/',
   ]);
 });
@@ -71,12 +71,12 @@ gulp.task('clean:styles', function () {
     dirs.css + '/custom.css'
   ]);
 });
-gulp.task('clean:vendorstyles', function () {
-  return del([
-    dirs.dest + '/' + dirs.css + '/vendor.css',
-    dirs.css + '/vendor.css'
-  ]);
-});
+// gulp.task('clean:vendorstyles', function () {
+//   return del([
+//     dirs.dest + '/' + dirs.css + '/vendor.css',
+//     dirs.css + '/vendor.css'
+//   ]);
+// });
 gulp.task('clean:scripts', function () {
   return del([
     dirs.dest + '/' + dirs.js + '/main.min.js',
@@ -305,38 +305,38 @@ gulp.task('styles', ['clean:styles'], function () {
     ]))
     // .pipe($.rename({suffix: '.min'}))
     .pipe($.if(!isProduction, $.sourcemaps.write('.')))
-    // .pipe($.if(isProduction, $.gzip({append: false})))
+    .pipe($.if(isProduction, $.gzip({append: false})))
     .pipe(gulp.dest(dirs.css))
     .pipe(gulp.dest(dirs.dest + '/' + dirs.css))
     .pipe($.if(!isProduction, browserSync.stream()));
 });
 
-gulp.task('styles:vendor', ['clean:vendorstyles'], function () {
-  return gulp.src([
-    // 'bower_components/animate.css/animate.min.css',
-    // 'bower_components/bootstrap/dist/css/bootstrap.min.css',
-    // 'bower_components/font-awesome/css/font-awesome.min.css',
-    // 'bower_components/font-mfizz/css/font-mfizz.css'
-  ])
-  .pipe($.plumber({
-    handleError: function (err) {
-      // console.log(err);
-      this.emit('end');
-    }
-  }))
-  .pipe($.if(!isProduction, $.sourcemaps.init()))
-  .pipe($.concat('vendor.css'))
-  .pipe($.postcss([
-    autoprefixer({browsers: 'last 1 version'}),
-    mqpacker,
-    csswring
-  ]))
-  .pipe($.if(!isProduction, $.sourcemaps.write('.')))
-  // .pipe($.if(isProduction, $.if('*.min.css', $.gzip({append: false}))))
-  .pipe(gulp.dest(dirs.css))
-  .pipe(gulp.dest(dirs.dest + '/' + dirs.css))
-  .pipe($.if(!isProduction, browserSync.stream()));
-});
+// gulp.task('styles:vendor', ['clean:vendorstyles'], function () {
+//   return gulp.src([
+//     // 'bower_components/animate.css/animate.min.css',
+//     // 'bower_components/bootstrap/dist/css/bootstrap.min.css',
+//     // 'bower_components/font-awesome/css/font-awesome.min.css',
+//     // 'bower_components/font-mfizz/css/font-mfizz.css'
+//   ])
+//   .pipe($.plumber({
+//     handleError: function (err) {
+//       // console.log(err);
+//       this.emit('end');
+//     }
+//   }))
+//   .pipe($.if(!isProduction, $.sourcemaps.init()))
+//   .pipe($.concat('vendor.css'))
+//   .pipe($.postcss([
+//     autoprefixer({browsers: 'last 1 version'}),
+//     mqpacker,
+//     csswring
+//   ]))
+//   .pipe($.if(!isProduction, $.sourcemaps.write('.')))
+//   // .pipe($.if(isProduction, $.if('*.min.css', $.gzip({append: false}))))
+//   .pipe(gulp.dest(dirs.css))
+//   .pipe(gulp.dest(dirs.dest + '/' + dirs.css))
+//   .pipe($.if(!isProduction, browserSync.stream()));
+// });
 
 // 'gulp assets' -- cleans out your assets and rebuilds them
 // 'gulp assets --prod' -- cleans out your assets and rebuilds them with

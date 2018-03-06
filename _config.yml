@@ -175,8 +175,8 @@ kramdown:
 
 # Custom js files
 head_scripts:
-  - "assets/js/main.min.js"
-  - "assets/js/custom.js"
+  - /assets/js/main.min.js
+  - /assets/js/custom.js
 
 # Sass/SCSS
 sass:
