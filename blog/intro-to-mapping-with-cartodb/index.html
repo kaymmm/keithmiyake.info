@@ -1,0 +1,751 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.10.0 by Michael Rose
+  Copyright 2013-2018 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE.txt
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Intro to Mapping with CartoDB - Keith K. Miyake</title>
+<meta name="description" content="CartoDB is a web-based open source mapping platform. Using the 2014 NYPD Stop, Question, and Frisk dataset, this tutorial teaches the mapping basics in CartoDB by importing data, applying different visualizations, using filters, and creating data interactivity.">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en">
+<meta property="og:site_name" content="Keith K. Miyake">
+<meta property="og:title" content="Intro to Mapping with CartoDB">
+<meta property="og:url" content="https://keithmiyake.info/blog/intro-to-mapping-with-cartodb/">
+
+
+  <meta property="og:description" content="CartoDB is a web-based open source mapping platform. Using the 2014 NYPD Stop, Question, and Frisk dataset, this tutorial teaches the mapping basics in CartoDB by importing data, applying different visualizations, using filters, and creating data interactivity.">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2015-04-07T00:00:00-07:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="https://keithmiyake.info/blog/intro-to-mapping-with-cartodb/">
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Person",
+      "name": "Keith K. Miyake",
+      "url": "https://keithmiyake.info",
+      "sameAs": null
+    }
+  </script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="https://keithmiyake.info/feed.xml" type="application/atom+xml" rel="alternate" title="Keith K. Miyake Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="https://keithmiyake.info/assets/css/main.css">
+
+<!--[if lte IE 9]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+    <!-- start custom head snippets -->
+<meta http-equiv="cleartype" content="on">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/img/icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="/assets/img/icons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/assets/img/icons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="/assets/img/icons/manifest.json">
+<link rel="mask-icon" href="/assets/img/icons/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="/assets/img/icons/favicon.ico">
+<meta name="msapplication-config" content="/assets/img/icons/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    <div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <a class="site-title" href="https://keithmiyake.info/">Keith K. Miyake</a>
+        <ul class="visible-links">
+          
+            
+            <li class="masthead__menu-item">
+              <a href="https://keithmiyake.info/about/" >About</a>
+            </li>
+          
+            
+            <li class="masthead__menu-item">
+              <a href="https://keithmiyake.info/cv/" >CV</a>
+            </li>
+          
+            
+            <li class="masthead__menu-item">
+              <a href="https://keithmiyake.info/research/" >Research</a>
+            </li>
+          
+            
+            <li class="masthead__menu-item">
+              <a href="https://keithmiyake.info/teaching/" >Teaching</a>
+            </li>
+          
+            
+            <li class="masthead__menu-item">
+              <a href="https://keithmiyake.info/blog/" >Blog</a>
+            </li>
+          
+            
+            <li class="masthead__menu-item">
+              <a href="https://keithmiyake.info/contact/" >Contact</a>
+            </li>
+          
+        </ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle Menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="http://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+
+      
+        <img src="https://keithmiyake.info/assets/img/headshot.jpg" alt="Keith K. Miyake" itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name">Keith K. Miyake</h3>
+    
+    
+      <p class="author__bio" itemprop="description">
+        UC Davis Chancellor's Postdoctoral Fellow
+      </p>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+
+      
+
+      
+        <li>
+          <a href="mailto:spammy@mcspammerson">
+            <meta itemprop="email" content="spammy@mcspammerson" />
+            <i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i> Email
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+        <li>
+          <a href="https://github.com/kaymmm" itemprop="sameAs">
+            <i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Intro to Mapping with CartoDB">
+    <meta itemprop="description" content="CartoDB is a web-based open source mapping platform. Using the 2014 NYPD Stop, Question, and Frisk dataset, this tutorial teaches the mapping basics in CartoDB by importing data, applying different visualizations, using filters, and creating data interactivity.">
+    <meta itemprop="datePublished" content="April 07, 2015">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          
+            <div class="page__hero">
+              <img class="page__hero-image " alt="2014 NYPD Stop and Frisk Data" src="/assets/img/cartodb_final_map2-1024x474.png" />
+              
+                <span class="page__hero-caption">2014 NYPD Stop and Frisk Data visualized using CartoDB
+</span>
+              
+            </div>
+          
+          <h1 class="page__title" itemprop="headline">Intro to Mapping with CartoDB
+</h1>
+
+          
+            <p class="page__meta"><i class="fas fa-calendar" aria-hidden="true"></i> <time datetime="2015-04-07 00:00:00 -0700">April 07, 2015</time>
+            
+              • <i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  11 minute read
+
+            
+            </p>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <h2 id="why-cartodb">Why CartoDB</h2>
+
+<p>About a year ago, I posted a <a href="/blog/digital%20humanities/geography/learning-to-map-with-arcgis-storymaps/">brief tutorial on ESIR’s StoryMaps</a>, a lightweight ArcGIS web mapping platform. This time around, I want to share a similar tutorial on the CartoDB platform. Whereas StoryMaps is a very minimal mapping platform designed to let users craft a narrative around a simple dataset, CartoDB provides a more robust set of mapping tools to display multiple datasets, increase customizability, and in general, do more with your data.</p>
+
+<p>I first started playing with CartoDB earlier this year while working on a project aimed at visualizing the impacts of the CUNY Grad Center across NY and the world. You can view one of the maps for this project, created by Steve Romalewski: <a href="http://cunycur.cartodb.com/viz/0b68cdca-5f18-11e4-a91d-0e853d047bba/embed_map">Where Are GC Students Teaching</a>.</p>
+
+<p>CartoDB is a web-based open source mapping platform, which can be installed on your own server, or used as a cloud-based mapping service through <a href="http://cartodb.com" target="_blank">CartoDB.com</a>. CartoDB.com offers different price tiers, including a free tier for lightweight mapping with small datasets.</p>
+
+<p>For this tutorial, we will be using the free tier service to create a really simple map that will teach you the basics of importing data, applying different visualizations, using filters, and creating data interactivity.</p>
+
+<h2 id="tutorial-data">Tutorial Data</h2>
+
+<p>GIS data and mappable datasets are widely available across the web. If you are dealing with New York, one great resource is the NYC Department of City Planning <a href="http://www.nyc.gov/html/dcp/html/bytes/applbyte.shtml">Bytes of the Big Apple</a> website, which contains downloadable datasets related to administrative and planning boundaries. If you want to incorporate US Census Data, the easiest way to get recent data is by using the <a href="https://www.census.gov/geo/maps-data/data/tiger-data.html">TIGER datasets</a>, although they aren’t available for every geography and time period. In this tutorial, we will be using a dataset that I pulled from the <a href="http://www.nyc.gov/html/nypd/html/analysis_and_planning/stop_question_and_frisk_report.shtml">NYPD Stop, Question and Frisk (aka Stop and Frisk) database</a>.</p>
+
+<p>To simplify the data import process, I created a slightly modified dataset based on the 2014 SQF data by converting the geocoordinates embedded in the files (based on the NY-Long Island state plane system) to a format that CartoDB natively understands (for details on this process, see <a href="#fn-item1" name="fn-return1">note 1</a> below). Download the dataset here: <a href="https://drive.google.com/file/d/0B_QdbjO9T1dQVHRfUEttaXY0b00/view?usp=sharing">2014 NYPD Stop Question Frisk Database</a>.</p>
+
+<p>Most datasets will have metadata associated with them. This data is no different. You can download the metadata descriptors for this dataset here: <a href="http://www.nyc.gov/html/nypd/downloads/excel/analysis_and_planning/2013_sqf_file_spec.xlsx">NYPD Stop Question Frisk Database File specifications</a>. The first sheet in the file specification spreadsheet describes each column in the dataset. The second sheet contains the database code values used within each column (e.g., Y=Yes, N=No).</p>
+
+<h2 id="getting-started">Getting Started</h2>
+
+<h3 id="create-a-cartodbcom-account">Create a CartoDB.com Account</h3>
+
+<p>The first thing you will need to do is to <a href="https://cartodb.com/signup">create an account on CartoDB.com</a>.</p>
+
+<p>Once you’ve verified your account, log in and you should be taken to your personal CartoDB dashboard, where you can watch their snazzy screencast showing you how to get started. Below the video is a place to import your first dataset, which is where we begin with the next step.</p>
+
+<h3 id="import-data">Import Data</h3>
+
+<p>Once you’re logged in to CartoDB.com, click the “Create your first table” button near the bottom of the page and select the .zip file containing the NYPD SQF data that you just downloaded.</p>
+
+<h2 id="explore-cartodb">Explore CartoDB</h2>
+
+<h3 id="play-with-the-data">Play with the Data</h3>
+
+<p>The best way to learn CartoDB is by playing around and seeing what you can do! Click on the “MAP VIEW” tab at the top of the page to visualize the data.</p>
+
+<figure class="">
+  
+  <img src="https://keithmiyake.info/assets/img/cartodb_load_data.png" alt="Load data into CartoDB" />
+  
+  
+    <figcaption>Load data into CartoDB
+</figcaption>
+  
+</figure>
+
+<p>Click the “Wizards” button on the toolbar along the right edge of the screen (the paintbrush). Try out the different types of maps, play with the options, select different columns to display, etc. Refer to the metadata file specifications linked above to gain a better understanding of what each data column represents and what the codes mean (the second tab in the spreadsheet).</p>
+
+<h3 id="change-the-visualization">Change the Visualization</h3>
+
+<p>Now that you’ve explored the data a bit, let’s set the visualization so that we’re on the same page. Select “Heatmap” from the visualization wizard. In marker size, select “6”, opacity “0.5”, not animated, and resolution “2”. These settings give a nice balance between data resolution while maintaining a meaningful heatmap effect.</p>
+
+<figure class="">
+  
+  <img src="https://keithmiyake.info/assets/img/cartodb_heatmap.png" alt="Heat map in CartoDB" />
+  
+  
+    <figcaption>Heat map in CartoDB
+</figcaption>
+  
+</figure>
+
+<h3 id="filter-the-data">Filter the Data</h3>
+
+<p>With large datasets, it’s often helpful to filter the data so that you get a more precise understanding of different phenomena. In CartoDB, you have two options. You can filter data using SQL queries (the SQL button on the toolbar), or the more basic filter tool (the “filters” button at the bottom of the toolbar).</p>
+
+<p>Click the “filters” button. In the dropdown menu, select the “arstmade” (Was an arrest made?) column. This will display a card that allows you to turn on or off datapoints corresponding to different values. If you uncheck the “Y” value, the map only displays SQFs where the person was NOT arrested (only “N” values are displayed). Notice that a huge majority of the SQFs resulted in no arrest.</p>
+
+<p>Next, click the “+” button below the first filter to add a second filter column. Select “forceuse” (reason for the use of force) for the second filter. Uncheck the “null” values (no reason given, we’ll assume this means no force was used; see <a href="#fn-item2" name="fn-return2">note 2</a> below). There should only be a fraction of the original points left. But it’s a bit interesting that there are still quite a few incidents where force was used, yet no arrest was made. Also notice how a lot of those seem to be clustered around the central parts of the Bronx…</p>
+
+<figure class="">
+  
+  <img src="https://keithmiyake.info/assets/img/cartodb_filtered.png" alt="Filtered data" />
+  
+  
+    <figcaption>Filter the data to change what is displayed on the map
+</figcaption>
+  
+</figure>
+
+<h3 id="make-the-map-interactive">Make the Map Interactive</h3>
+
+<p>Next we will add info windows to the data that pop up when you hover the mouse over a datapoint or click on it. First, we need to change the map type to one that shows discrete data points. Go back to the wizard tab, select “Category”, then set the following options: Column=”detailCM” (suspected crime code); Marker fill=5, 0.4; Marker stroke=0,1; “Y”/”N”=colors of your choice.</p>
+
+<p>Next, go to the “infowindow” tool item, then click the “Hover” tab. Pick one or more columns to display when the mouse hovers over a data point. I chose “crimesusp”, “contrabn”, “arstmade”. Now move your mouse over a data point on the map and it should display a window with the selected items. You can do the same for the “Click” tab, except those will display when the data point is clicked. Hover is good for quick data, while click is more appropriate for detailed information. I added “forceuse”, “explnstp”, and “frisked” columns for the click window. In both the “Hover” and “Click” tabs, you can rearrange the displayed items by dragging them up and down the list.</p>
+
+<h3 id="add-a-legend-and-publish">Add a Legend and Publish</h3>
+
+<p>The next thing we will do is add a legend to the map so that people viewing it know what the map symbols represent. Click on the “legends” tool item, then select “custom” from the drop-down menu. This will allow us to customize the category names since the default crime codes aren’t very reader-friendly. Referring back to the metadata spreadsheet, we can fill in descriptors for each of the top crime codes reported as justification for the SQF incidents. For example, “20” is the code for “CPW”, or criminal posession of a weapon, which is the top reason for SQFs. Click on the “20” in the first row and change the text to something human-readable, like “Criminal Posession of a Weapon”. Do the same for the rest of the items.</p>
+
+<p>Finally, click on the “Visualize” button at the top of the page. This gets it ready to be published. You should see a new “Options” button in the bottom left corner, where you can turn on or off various features such as the search box and title element. There are also buttons along the top of the map that let you add elements such as text boxes or annotations, and preview what your map will look like when viewed on a mobile device.</p>
+
+<p>Now that your map is pretty, it’s ready to share! You can use the “Share” button in the upper right corner to generate a link to send, or you can embed the map within another website by using the embed code. Note that the embed uses iframes, which can’t be used on some WordPress sites for security reasons, but in these cases, I suggest using a static image of the map and linking that to the CartoDB page for your map (like I’ve done below).</p>
+
+<figure class="">
+  
+    <a href="http://kmiyake.cartodb.com/viz/84af5300-dd96-11e4-b736-0e853d047bba/public_map" title="">
+  
+  <img src="https://keithmiyake.info/assets/img/cartodb_final_map.png" alt="Click the map to explore the sample data visualization" />
+  
+    </a>
+  
+  
+    <figcaption>Click on the map to explore the sample data visualization.
+</figcaption>
+  
+</figure>
+
+<h2 id="next-steps">Next Steps</h2>
+
+<p>Now that you’ve created your first CartoDB map, there are plenty of other things you can do with it, such as adding additional data layers to your existing map, or duplicating the map and highlighting different aspects of the data using the other map types. If you are familiar with SQL, you can also use the SQL tool to do some basic data manipulation, perform joins, and do some basic calculations and analyses with your data sets. CartoDB also allows you to fine-tune customize the appearance of your maps using a special version of CSS with selectors that link to your data, however I will leave it to you to play with this on your own.</p>
+
+<p>You can also do things like geocoding in CartoDB, which allows you to convert street addresses into points on a map, but the free account limits the number of items you are allowed to process. You could, however, geocode data in another program like Google’s Fusion Tables or QGIS, then import it into CartoDB for the visualization.</p>
+
+<p>While CartoDB is a great tool for visualizing data, it’s not really meant to be a fully featured GIS system. When you are ready to move on to more advanced GIS techniques like buffering, intersects, raster analysis, or spatial statistics, I suggest checking out the open source QGIS package.</p>
+
+<h2 id="notes">Notes</h2>
+
+<h3 name="fn-item1" id="note-1--converting-the-nypds-stop-and-frisk-data-to-a-format-usable-in-cartodb">Note 1 <a href="#fn-return1">↩</a>: Converting the NYPD’s stop-and-frisk data to a format usable in CartoDB</h3>
+
+<p>I used the free and open source QGIS package to import the raw CSV data from the NYPD website. Start by opening the Layer &gt; Add Layer &gt; Add Delimited Text Layer… Menu. Browse for your downlaoded data. You might need to unzip the datafile before selecting it in QGIS. Next, select the x- and y-coordinate fields from the dropdown menus (see screenshot); in the case of the SQF dataset, these are “xcoord” and “ycoord”, respectively.</p>
+
+<figure class="">
+  
+  <img src="https://keithmiyake.info/assets/img/cartodb_qgis_load_data.png" alt="Load the data in QGIS" />
+  
+  
+    <figcaption>Load the data in QGIS
+</figcaption>
+  
+</figure>
+
+<p>Click “OK”, then close the warning box (this is because a bunch of data doesn’t have x-y coordinates associated with them). Then you will need to select the coordinate system that corresponds to your data. In this case, it appeared that the x- and y-coordinates were in the state plane system, so I made a guess that they used the New York-Long Island State Plane system (“NAD_1983_StatePlane_New_York_Long_Island_FIPS_3014_Feet”).</p>
+
+<p>Finally, right-click the newly imported layer, select Save As…, select “ESRI Shapefile” or CSV or any other format compatible with CartoDB, click “Browse” to give your file a name and location, then click “OK”. If you save it as an ESRI Shapefile, you’ll need to add all of the files (.dbf, .prj, .qpj, .shp, .shx) to a single .zip file. If you’re on OS X, just select them all in a finder window, right-click, and select “Compress 5 items”. The resulting Archive.zip is the file you will upload to CartoDB.</p>
+
+<h3 name="fn-item2" id="note-2--use-of-force-and-using-sql-queries">Note 2 <a href="#fn-return2">↩</a>: Use of force and Using SQL Queries</h3>
+
+<p>In the section where I explain applying filters, I used the “forceuse” column as a proxy for determining whether or not force was used in a particular stop. The dataset actually has several columns that indicate whether or not force was used, but the filter tool built into CartoDB doesn’t really allow us to capture all of the incidents where force was applied using those columns.</p>
+
+<p>The problem is that the filter tool always applies an “AND” operator between multiple filters, and not an “OR”. We want to see all the incidents where force was used, which means the use of physical force-hands, OR physical force-weapon drawn, OR physical force-etc. For these types of filters, we need to use the SQL query tool, which allows much finer-grained control over which data gets included in the active dataset.</p>
+
+<p>Click on the “SQL” toolbar item. Where says “Custom SQL query”, replace the existing text with this code snippet:</p>
+
+<pre><code class="language-SQL">SELECT * FROM table_2014_sqf_1983_sp_nyli WHERE
+  (pf_hands IN ('1','Y') OR
+  pf_wall IN ('1','Y') OR
+  pf_grnd IN ('1','Y') OR
+  pf_drwep IN ('1','Y') OR
+  pf_ptwep IN ('1','Y') OR
+  pf_baton IN ('1','Y') OR
+  pf_hcuff IN ('1','Y') OR
+  pf_pepsp IN ('1','Y') OR
+  pf_other IN ('1','Y')) AND
+  forceuse is null
+</code></pre>
+
+<p>When you click “Apply query”, you should see a much smaller dataset. These are the incidents where physical force was reported (the pf_hands, pf_wall, pf_etc. columns), but where the justification (forceuse column) was not reported. Notice they’re almost all clustered in a subset of precints in the Bronx, Flatbush, and East Harlem?</p>
+
+<p>If you change the last part of that query, the <code class="highlighter-rouge">and forceuse is null</code> portion, to instead read <code class="highlighter-rouge">or forceuse is not null</code>, you will have a dataset with all of the incidents where the use of physical force was reported, including those instances where no justification was given.</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="https://keithmiyake.info/blog/tags/#digital-humanities" class="page__taxonomy-item" rel="tag">digital humanities</a><span class="sep">, </span>
+    
+      
+      
+      <a href="https://keithmiyake.info/blog/tags/#mapping" class="page__taxonomy-item" rel="tag">mapping</a>
+    
+    </span>
+  </p>
+
+
+
+
+        
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2015-04-07T00:00:00-07:00">April 07, 2015</time></p>
+        
+      </footer>
+
+      
+
+      
+  <nav class="pagination">
+    
+      <a href="https://keithmiyake.info/blog/digital%20humanities/command-line-workshop-tutorial/" class="pagination--pager" title="Command Line Workshop (tutorial)
+">Previous</a>
+    
+    
+      <a href="#" class="pagination--pager disabled">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You May Also Enjoy</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://keithmiyake.info/blog/digital%20humanities/command-line-workshop-tutorial/" rel="permalink">Command Line Workshop (tutorial)
+</a>
+      
+    </h2>
+    <p class="page__meta"><i class="far fa-calendar" aria-hidden="true"></i> <time datetime="2014-11-18 15:45:50 -0800">November 18, 2014</time>
+    
+      • <i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  3 minute read
+
+    
+    </p>
+
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/img/Terminal_003.png" alt="C-3PO thinks it is improper not to learn the terminal." />
+      </div>
+    
+      <p class="archive__item-excerpt archive__item-has-featured" itemprop="description">The tutorial bits from a workshop I led on using the command line while I was a GC Digital Fellow. Don’t be scared, give it a try!
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://keithmiyake.info/blog/digital%20humanities/dh-strangelove-or-how-i-learned-to-stop-worrying-and-love-the-digital-humanities/" rel="permalink">DH Strangelove or: How I Learned to Stop Worrying and Love the Digital Humanities
+</a>
+      
+    </h2>
+    <p class="page__meta"><i class="far fa-calendar" aria-hidden="true"></i> <time datetime="2014-10-15 10:37:27 -0700">October 15, 2014</time>
+    
+      • <i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  6 minute read
+
+    
+    </p>
+
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/img/dh-strangelove.jpg" alt="How I Learned to Stop Worrying..." />
+      </div>
+    
+      <p class="archive__item-excerpt archive__item-has-featured" itemprop="description">I set out to provide a short review of several different aspects of the digital humanities from a non-digital humanist perspective, with the mindset or culture of DH being just the beginning.
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://keithmiyake.info/blog/digital%20humanities/geography/learning-to-map-with-arcgis-storymaps/" rel="permalink">Learning to Map with ArcGIS StoryMaps
+</a>
+      
+    </h2>
+    <p class="page__meta"><i class="far fa-calendar" aria-hidden="true"></i> <time datetime="2014-03-18 19:43:33 -0700">March 18, 2014</time>
+    
+      • <i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  6 minute read
+
+    
+    </p>
+
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/img/swipespyglass4.jpg" alt="A Swipe map made using ESRI StoryMaps." />
+      </div>
+    
+      <p class="archive__item-excerpt archive__item-has-featured" itemprop="description">Maps are extremely versatile tools for communicating ideas and information. Creating maps can be challenging, but this tutorial will introduce one tool that simplifies the process of making several types of maps in order to tell your stories.
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://keithmiyake.info/blog/digital%20humanities/psa-backup-your-data-now/" rel="permalink">PSA: Backup Your Data Now
+</a>
+      
+    </h2>
+    <p class="page__meta"><i class="far fa-calendar" aria-hidden="true"></i> <time datetime="2014-03-04 10:00:08 -0800">March 04, 2014</time>
+    
+      • <i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  6 minute read
+
+    
+    </p>
+
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/img/rip_data.jpg" alt="RIP Data, credit John 'K' via Flickr" />
+      </div>
+    
+      <p class="archive__item-excerpt archive__item-has-featured" itemprop="description">Why you (yes, you) need to rethink your data backup. We all hate it, most of us don’t do it well enough, and when it’s too late we give up and cry. Don’t let that happen to you. Here’s how.
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow text-center">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+    
+    
+    
+      <li><a href="https://github.com/kaymmm"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+    
+    
+    
+    <li><a href="https://keithmiyake.info/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright text-center">
+  <p><a href="https://www.fsf.org"><img src="https://static.fsf.org/nosvn/associate/crm/1476104.png" alt="Proud member of the Free Software Foundation" /></a></p>
+  <p><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</p>
+  <p>Built with <i class="fa fa-heart" aria-hidden="true"></i> by Keith K. Miyake. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</p>
+  <p> &copy; 2018 Keith K. Miyake.</p>
+</div>
+
+      </footer>
+    </div>
+
+    
+  
+    
+    <script src="https://keithmiyake.info/assets/js/main.min.js"></script>
+  
+    
+    <script src="https://keithmiyake.info/assets/js/custom.js"></script>
+  
+    
+    <script src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  
+
+
+
+
+
+
+
+
+  </body>
+</html>

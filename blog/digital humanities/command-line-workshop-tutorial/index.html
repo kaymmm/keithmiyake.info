@@ -1,0 +1,782 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.10.0 by Michael Rose
+  Copyright 2013-2018 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE.txt
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Command Line Workshop (tutorial) - Keith K. Miyake</title>
+<meta name="description" content="The tutorial bits from a workshop I led on using the command line while I was a GC Digital Fellow. Don’t be scared, give it a try!">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en">
+<meta property="og:site_name" content="Keith K. Miyake">
+<meta property="og:title" content="Command Line Workshop (tutorial)">
+<meta property="og:url" content="https://keithmiyake.info/blog/digital%20humanities/command-line-workshop-tutorial/">
+
+
+  <meta property="og:description" content="The tutorial bits from a workshop I led on using the command line while I was a GC Digital Fellow. Don’t be scared, give it a try!">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2014-11-18T15:45:50-08:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="https://keithmiyake.info/blog/digital%20humanities/command-line-workshop-tutorial/">
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Person",
+      "name": "Keith K. Miyake",
+      "url": "https://keithmiyake.info",
+      "sameAs": null
+    }
+  </script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="https://keithmiyake.info/feed.xml" type="application/atom+xml" rel="alternate" title="Keith K. Miyake Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="https://keithmiyake.info/assets/css/main.css">
+
+<!--[if lte IE 9]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+    <!-- start custom head snippets -->
+<meta http-equiv="cleartype" content="on">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/img/icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="/assets/img/icons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/assets/img/icons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="/assets/img/icons/manifest.json">
+<link rel="mask-icon" href="/assets/img/icons/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="/assets/img/icons/favicon.ico">
+<meta name="msapplication-config" content="/assets/img/icons/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    <div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <a class="site-title" href="https://keithmiyake.info/">Keith K. Miyake</a>
+        <ul class="visible-links">
+          
+            
+            <li class="masthead__menu-item">
+              <a href="https://keithmiyake.info/about/" >About</a>
+            </li>
+          
+            
+            <li class="masthead__menu-item">
+              <a href="https://keithmiyake.info/cv/" >CV</a>
+            </li>
+          
+            
+            <li class="masthead__menu-item">
+              <a href="https://keithmiyake.info/research/" >Research</a>
+            </li>
+          
+            
+            <li class="masthead__menu-item">
+              <a href="https://keithmiyake.info/teaching/" >Teaching</a>
+            </li>
+          
+            
+            <li class="masthead__menu-item">
+              <a href="https://keithmiyake.info/blog/" >Blog</a>
+            </li>
+          
+            
+            <li class="masthead__menu-item">
+              <a href="https://keithmiyake.info/contact/" >Contact</a>
+            </li>
+          
+        </ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle Menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="http://schema.org/Person">
+
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name"></h3>
+    
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+
+      
+
+      
+        <li>
+          <a href="mailto:keith.miyake@gmail.com">
+            <meta itemprop="email" content="keith.miyake@gmail.com" />
+            <i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i> Email
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Command Line Workshop (tutorial)">
+    <meta itemprop="description" content="The tutorial bits from a workshop I led on using the command line while I was a GC Digital Fellow. Don’t be scared, give it a try!">
+    <meta itemprop="datePublished" content="November 18, 2014">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          
+            <div class="page__hero">
+              <img class="page__hero-image " alt="C-3PO thinks it is improper not to learn the terminal." src="/assets/img/Terminal_003.png" />
+              
+                <span class="page__hero-caption">R2-D2 thinks you should learn to use the terminal.
+</span>
+              
+            </div>
+          
+          <h1 class="page__title" itemprop="headline">Command Line Workshop (tutorial)
+</h1>
+
+          
+            <p class="page__meta"><i class="fas fa-calendar" aria-hidden="true"></i> <time datetime="2014-11-18 15:45:50 -0800">November 18, 2014</time>
+            
+              • <i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  3 minute read
+
+            
+            </p>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <h2 id="intro">Intro</h2>
+
+<p>I recently gave a workshop on using the command line (a.k.a., terminal, command prompt, shell, etc.) at the Graduate Center as part of my Digital Fellow responsibilities. For the sake of sharing, I’m reposting the tutorial/walkthrough that guided the workshop. It’s really basic and pretty sparse, but the resources linked at the bottom provide lots of additional content to help you or your students get started using the *NIX/BSD/CygWin/busybox command line. Note: everything listed should work with most shells, although iirc, the “apropos” command isn’t included in busybox and “man” probably won’t have much useful documentation.</p>
+
+<h2 id="command-line-walkthrough">Command Line Walkthrough</h2>
+
+<ol>
+  <li>
+    <p>Setup</p>
+
+    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code> ./setup.sh
+ <span class="nb">cd</span> ~
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Structure of a command</p>
+
+    <p><code class="highlighter-rouge">grep -r capital etext/*</code></p>
+
+    <p><code class="highlighter-rouge">command</code>, <code class="highlighter-rouge">flags/options</code>, <code class="highlighter-rouge">arguments</code></p>
+
+    <p><code class="highlighter-rouge">*</code> (asterisk) is a <em>wildcard</em>, meaning match everything in the etext directory. <code class="highlighter-rouge">/</code> slashes are used to separate directories: <code class="highlighter-rouge">/home/keith/projects/etext</code> might be the full path (location) of the etext folder, which is within the projects folder, which itself is in the keith folder within the home folder located at the root of my drive (filesystem).</p>
+  </li>
+  <li>
+    <p>White spaces in commands</p>
+
+    <p>White spaces separate arguments and options, use quotes to include spaces in things like filenames</p>
+
+    <p><code class="highlighter-rouge">grep -r "they were" etext/*</code></p>
+  </li>
+  <li>
+    <p>The file system, files, folders, user folder</p>
+
+    <p>Common commands: <code class="highlighter-rouge">pwd</code>, <code class="highlighter-rouge">ls</code>, <code class="highlighter-rouge">cd</code>, <code class="highlighter-rouge">mkdir</code>, <code class="highlighter-rouge">touch</code>, <code class="highlighter-rouge">rmdir</code>, <code class="highlighter-rouge">rm</code>, <code class="highlighter-rouge">cp</code>, <code class="highlighter-rouge">mv</code></p>
+    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="nb">pwd  
+ ls  
+ ls</span> <span class="nt">-l</span>  
+ <span class="nb">cd </span>mydir  
+ <span class="nb">cd</span> ~  
+ <span class="nb">mkdir </span>mynewdir  
+ <span class="nb">mkdir</span> <span class="nt">-p</span> mynewdir/mysubdir/mysubsub/subx3  
+ <span class="nb">touch </span>goodbye.txt  
+ <span class="nb">rmdir </span>mynewdir/mysubdir/mysubsub/subx3  
+ <span class="nb">rm </span>goodbye.txt  
+ <span class="nb">rm</span> <span class="nt">-r</span> mynewdir  
+ <span class="nb">cp </span>hello.txt mydir/hello_copy.txt  
+ <span class="nb">mv </span>mydir/hello_copy.txt ./
+ <span class="nb">mv </span>hello_copy.txt hello_goodbye.txt
+</code></pre></div>    </div>
+
+    <p>Use <code class="highlighter-rouge">mv</code> to rename a file (move a file to a new file with a different name)</p>
+  </li>
+  <li>
+    <p>Working with files: cat, less</p>
+
+    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="nb">cat </span>hello.txt  
+ <span class="nb">cat </span>aesopa10.txt  
+ less aesopa10.txt
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Pipes and redirection</p>
+
+    <p><code class="highlighter-rouge">|</code> pipes take the output from one command and sends it as an argument of the second one</p>
+
+    <p><code class="highlighter-rouge">&gt;</code> (redirect), <code class="highlighter-rouge">&gt;&gt;</code> (append) sends output as the input to the file/stream</p>
+
+    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="nb">echo</span> <span class="s2">"hello world."</span> <span class="o">&gt;</span> hello.txt <span class="c"># output "hello world." into a new text file, hello.txt</span>
+ <span class="nb">cat </span>aesopa10.txt | less <span class="c"># read the aesopa10.txt file and send the output to the less program</span>
+ <span class="nb">grep</span> <span class="nt">-r</span> they etext/<span class="k">*</span> <span class="o">&gt;</span> them.txt <span class="c"># search for 'they' and output results to them.txt</span>
+ <span class="nb">cat</span> <span class="o">&gt;&gt;</span> them.txt <span class="c"># enter text to be appended to the end of them.txt</span>
+</code></pre></div>    </div>
+
+    <p><em>Use ctrl-d to finish entering text</em></p>
+  </li>
+  <li>
+    <p>Finding stuff: grep, find</p>
+
+    <p>files: <code class="highlighter-rouge">find . -name "*.txt" -print</code></p>
+
+    <p>The <code class="highlighter-rouge">.</code> (dot) indicates the current directory. <code class="highlighter-rouge">..</code> (two dots) indicate the directory above the current directory (use <code class="highlighter-rouge">pwd</code> if you forget what directory you’re in).</p>
+
+    <p>text:</p>
+
+    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="nb">grep</span> <span class="nt">-r</span> race ./<span class="k">*</span>  
+ <span class="nb">grep</span> <span class="nt">-r</span> <span class="s2">" race"</span> ./<span class="k">*</span>
+</code></pre></div>    </div>
+
+    <p>case insensitive: <code class="highlighter-rouge">grep -ir german ./*</code></p>
+
+    <p>wildcards: <code class="highlighter-rouge">grep -ir "fr.nc[eh]" ./*</code></p>
+  </li>
+  <li>
+    <p>Getting help: man, apropos, –help</p>
+
+    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code> man <span class="nb">grep  
+ </span>apropos find  
+ <span class="nb">grep</span> <span class="nt">--help</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Autocompletion, bash history</p>
+
+    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="nb">cat </span>ae&lt;tab&gt; <span class="c"># --&gt; [cat aesopa10.txt]</span>
+ &lt;up&gt; <span class="c"># --&gt; scroll through previous commands</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Exit</p>
+
+    <p><code class="highlighter-rouge">exit</code></p>
+  </li>
+</ol>
+
+<h2 id="additional-stuff">Additional Stuff</h2>
+
+<ol>
+  <li>
+    <p>Keyboard shortcuts</p>
+
+    <p>See: <a href="http://en.wikipedia.org/wiki/Bash_%28Unix_shell%29#Keyboard_shortcuts">Wikipedia Bash Keyboard Shortcuts</a></p>
+
+    <ul>
+      <li>ctrl-c: kill the currently running command/program</li>
+      <li>ctrl-d: exit the current program</li>
+      <li>ctrl-z: pause and return to the command line (<code class="highlighter-rouge">%n</code> to resume the <em>n<sup>th</sup></em> paused command, e.g., <code class="highlighter-rouge">%1</code> for the first paused command, etc.)</li>
+      <li>ctrl-a: jump to the beginning of a line</li>
+      <li>ctrl-e: jump to the end of a line</li>
+      <li>ctrl-b: move back one character</li>
+      <li>ctrl-f: move forward one character</li>
+      <li>ctrl-w: delete a word backwards</li>
+      <li>up/down/ctrl-p/ctrl-n: previous/next command</li>
+      <li>tab: autocomplete</li>
+      <li>ctrl-l: clear the display</li>
+    </ul>
+  </li>
+  <li>
+    <p>Installing command line programs:</p>
+
+    <ul>
+      <li>Debian Linux (Mint, Ubuntu, etc.): <a href="https://help.ubuntu.com/community/AptGet/Howto">apt</a></li>
+      <li>Red Hat/Fedora Linux: <a href="http://yum.baseurl.org/">yum</a></li>
+      <li>Arch/Manjaro Linux: <a href="https://www.archlinux.org/pacman/">pacman</a></li>
+      <li>
+        <p>OS X: <a href="http://brew.sh/">homebrew</a></p>
+
+        <p>First have to run <code class="highlighter-rouge">xcode-select --install</code></p>
+      </li>
+      <li>
+        <p>Windows: <a href="https://chocolatey.org/">Chocolatey</a></p>
+
+        <p>Requires: <a href="https://www.cygwin.com/">cygwin</a> or <a href="https://msdn.microsoft.com/en-us/commandline/wsl/install_guide">Ubuntu subsystem on Windows 10</a></p>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>Other topics to look into: users, groups, permissions, linking, processes, shell scripts, loops…</p>
+  </li>
+  <li>
+    <p>Google is your friend!!!</p>
+  </li>
+</ol>
+
+<h2 id="additional-resources">Additional Resources</h2>
+
+<ul>
+  <li><a href="http://cli.learncodethehardway.org/book/">http://cli.learncodethehardway.org/book/</a></li>
+  <li><a href="http://www.davidbaumgold.com/tutorials/command-line/">http://www.davidbaumgold.com/tutorials/command-line/</a></li>
+  <li><a href="http://learnpythonthehardway.org/book/appendixa.html">http://learnpythonthehardway.org/book/appendixa.html</a></li>
+  <li><a href="http://ryanstutorials.net/linuxtutorial/commandline.php">http://ryanstutorials.net/linuxtutorial/commandline.php</a></li>
+</ul>
+
+<h2 id="advanced-resources">Advanced Resources</h2>
+
+<ul>
+  <li><a href="http://ohmyz.sh/">http://ohmyz.sh/</a></li>
+  <li><a href="https://github.com/revans/bash-it">https://github.com/revans/bash-it</a></li>
+  <li><a href="http://zachholman.com/2010/08/dotfiles-are-meant-to-be-forked/">http://zachholman.com/2010/08/dotfiles-are-meant-to-be-forked/</a></li>
+  <li><a href="http://dotfiles.github.io/">http://dotfiles.github.io/</a></li>
+</ul>
+
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="https://keithmiyake.info/blog/tags/#command-line" class="page__taxonomy-item" rel="tag">command line</a><span class="sep">, </span>
+    
+      
+      
+      <a href="https://keithmiyake.info/blog/tags/#digital-humanities" class="page__taxonomy-item" rel="tag">digital humanities</a><span class="sep">, </span>
+    
+      
+      
+      <a href="https://keithmiyake.info/blog/tags/#tutorial" class="page__taxonomy-item" rel="tag">tutorial</a><span class="sep">, </span>
+    
+      
+      
+      <a href="https://keithmiyake.info/blog/tags/#workshop" class="page__taxonomy-item" rel="tag">workshop</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="https://keithmiyake.info/blog/categories/#digital-humanities" class="page__taxonomy-item" rel="tag">Digital Humanities</a>
+    
+    </span>
+  </p>
+
+
+        
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2014-11-18T15:45:50-08:00">November 18, 2014</time></p>
+        
+      </footer>
+
+      
+
+      
+  <nav class="pagination">
+    
+      <a href="https://keithmiyake.info/blog/digital%20humanities/dh-strangelove-or-how-i-learned-to-stop-worrying-and-love-the-digital-humanities/" class="pagination--pager" title="DH Strangelove or: How I Learned to Stop Worrying and Love the Digital Humanities
+">Previous</a>
+    
+    
+      <a href="https://keithmiyake.info/blog/intro-to-mapping-with-cartodb/" class="pagination--pager" title="Intro to Mapping with CartoDB
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You May Also Enjoy</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://keithmiyake.info/blog/intro-to-mapping-with-cartodb/" rel="permalink">Intro to Mapping with CartoDB
+</a>
+      
+    </h2>
+    <p class="page__meta"><i class="far fa-calendar" aria-hidden="true"></i> <time datetime="2015-04-07 00:00:00 -0700">April 07, 2015</time>
+    
+      • <i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  11 minute read
+
+    
+    </p>
+
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/img/cartodb_final_map2-1024x474.png" alt="2014 NYPD Stop and Frisk Data" />
+      </div>
+    
+      <p class="archive__item-excerpt archive__item-has-featured" itemprop="description">CartoDB is a web-based open source mapping platform. Using the 2014 NYPD Stop, Question, and Frisk dataset, this tutorial teaches the mapping basics in CartoDB by importing data, applying different visualizations, using filters, and creating data interactivity.
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://keithmiyake.info/blog/digital%20humanities/dh-strangelove-or-how-i-learned-to-stop-worrying-and-love-the-digital-humanities/" rel="permalink">DH Strangelove or: How I Learned to Stop Worrying and Love the Digital Humanities
+</a>
+      
+    </h2>
+    <p class="page__meta"><i class="far fa-calendar" aria-hidden="true"></i> <time datetime="2014-10-15 10:37:27 -0700">October 15, 2014</time>
+    
+      • <i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  6 minute read
+
+    
+    </p>
+
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/img/dh-strangelove.jpg" alt="How I Learned to Stop Worrying..." />
+      </div>
+    
+      <p class="archive__item-excerpt archive__item-has-featured" itemprop="description">I set out to provide a short review of several different aspects of the digital humanities from a non-digital humanist perspective, with the mindset or culture of DH being just the beginning.
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://keithmiyake.info/blog/digital%20humanities/geography/learning-to-map-with-arcgis-storymaps/" rel="permalink">Learning to Map with ArcGIS StoryMaps
+</a>
+      
+    </h2>
+    <p class="page__meta"><i class="far fa-calendar" aria-hidden="true"></i> <time datetime="2014-03-18 19:43:33 -0700">March 18, 2014</time>
+    
+      • <i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  6 minute read
+
+    
+    </p>
+
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/img/swipespyglass4.jpg" alt="A Swipe map made using ESRI StoryMaps." />
+      </div>
+    
+      <p class="archive__item-excerpt archive__item-has-featured" itemprop="description">Maps are extremely versatile tools for communicating ideas and information. Creating maps can be challenging, but this tutorial will introduce one tool that simplifies the process of making several types of maps in order to tell your stories.
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://keithmiyake.info/blog/digital%20humanities/psa-backup-your-data-now/" rel="permalink">PSA: Backup Your Data Now
+</a>
+      
+    </h2>
+    <p class="page__meta"><i class="far fa-calendar" aria-hidden="true"></i> <time datetime="2014-03-04 10:00:08 -0800">March 04, 2014</time>
+    
+      • <i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  6 minute read
+
+    
+    </p>
+
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/img/rip_data.jpg" alt="RIP Data, credit John 'K' via Flickr" />
+      </div>
+    
+      <p class="archive__item-excerpt archive__item-has-featured" itemprop="description">Why you (yes, you) need to rethink your data backup. We all hate it, most of us don’t do it well enough, and when it’s too late we give up and cry. Don’t let that happen to you. Here’s how.
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow text-center">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+    
+    
+    
+      <li><a href="https://github.com/kaymmm"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+    
+    
+    
+    <li><a href="https://keithmiyake.info/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright text-center">
+  <p><a href="https://www.fsf.org"><img src="https://static.fsf.org/nosvn/associate/crm/1476104.png" alt="Proud member of the Free Software Foundation" /></a></p>
+  <p><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</p>
+  <p>Built with <i class="fa fa-heart" aria-hidden="true"></i> by Keith K. Miyake. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</p>
+  <p> &copy; 2018 Keith K. Miyake.</p>
+</div>
+
+      </footer>
+    </div>
+
+    
+  
+    
+    <script src="https://keithmiyake.info/assets/js/main.min.js"></script>
+  
+    
+    <script src="https://keithmiyake.info/assets/js/custom.js"></script>
+  
+    
+    <script src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  
+
+
+
+
+
+
+
+
+  </body>
+</html>

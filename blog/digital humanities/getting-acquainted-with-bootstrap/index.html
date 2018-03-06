@@ -1,0 +1,708 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.10.0 by Michael Rose
+  Copyright 2013-2018 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE.txt
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Learn Bootstrap Part 1: Getting Acquainted with Bootstrap - Keith K. Miyake</title>
+<meta name="description" content="This is the first in a series of posts that will serve as a mini-course in using the Bootstrap web framework to eventually build a custom WordPress theme.">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en">
+<meta property="og:site_name" content="Keith K. Miyake">
+<meta property="og:title" content="Learn Bootstrap Part 1: Getting Acquainted with Bootstrap">
+<meta property="og:url" content="https://keithmiyake.info/blog/digital%20humanities/getting-acquainted-with-bootstrap/">
+
+
+  <meta property="og:description" content="This is the first in a series of posts that will serve as a mini-course in using the Bootstrap web framework to eventually build a custom WordPress theme.">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2013-11-03T16:02:08-08:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="https://keithmiyake.info/blog/digital%20humanities/getting-acquainted-with-bootstrap/">
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Person",
+      "name": "Keith K. Miyake",
+      "url": "https://keithmiyake.info",
+      "sameAs": null
+    }
+  </script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="https://keithmiyake.info/feed.xml" type="application/atom+xml" rel="alternate" title="Keith K. Miyake Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="https://keithmiyake.info/assets/css/main.css">
+
+<!--[if lte IE 9]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+    <!-- start custom head snippets -->
+<meta http-equiv="cleartype" content="on">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/img/icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="/assets/img/icons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/assets/img/icons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="/assets/img/icons/manifest.json">
+<link rel="mask-icon" href="/assets/img/icons/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="/assets/img/icons/favicon.ico">
+<meta name="msapplication-config" content="/assets/img/icons/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    <div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <a class="site-title" href="https://keithmiyake.info/">Keith K. Miyake</a>
+        <ul class="visible-links">
+          
+            
+            <li class="masthead__menu-item">
+              <a href="https://keithmiyake.info/about/" >About</a>
+            </li>
+          
+            
+            <li class="masthead__menu-item">
+              <a href="https://keithmiyake.info/cv/" >CV</a>
+            </li>
+          
+            
+            <li class="masthead__menu-item">
+              <a href="https://keithmiyake.info/research/" >Research</a>
+            </li>
+          
+            
+            <li class="masthead__menu-item">
+              <a href="https://keithmiyake.info/teaching/" >Teaching</a>
+            </li>
+          
+            
+            <li class="masthead__menu-item">
+              <a href="https://keithmiyake.info/blog/" >Blog</a>
+            </li>
+          
+            
+            <li class="masthead__menu-item">
+              <a href="https://keithmiyake.info/contact/" >Contact</a>
+            </li>
+          
+        </ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle Menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="http://schema.org/Person">
+
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name"></h3>
+    
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+
+      
+
+      
+        <li>
+          <a href="mailto:keith.miyake@gmail.com">
+            <meta itemprop="email" content="keith.miyake@gmail.com" />
+            <i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i> Email
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Learn Bootstrap Part 1: Getting Acquainted with Bootstrap">
+    <meta itemprop="description" content="This is the first in a series of posts that will serve as a mini-course in using the Bootstrap web framework to eventually build a custom WordPress theme.">
+    <meta itemprop="datePublished" content="November 03, 2013">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          
+            <div class="page__hero">
+              <img class="page__hero-image " alt="Menu navigation styled with Bootstrap" src="/assets/img/Bootply_-_The_Bootstrap_Playground.png" />
+              
+                <span class="page__hero-caption">A navigation box written in HTML and styled using Bootstrap
+</span>
+              
+            </div>
+          
+          <h1 class="page__title" itemprop="headline">Learn Bootstrap Part 1: Getting Acquainted with Bootstrap
+</h1>
+
+          
+            <p class="page__meta"><i class="fas fa-calendar" aria-hidden="true"></i> <time datetime="2013-11-03 16:02:08 -0800">November 03, 2013</time>
+            
+              • <i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  7 minute read
+
+            
+            </p>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <p>This is the first in a series of posts that will serve as a mini-course in using the <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a> web framework to eventually build a custom WordPress theme.</p>
+
+<h1 id="what-is-bootstrap">What is Bootstrap?</h1>
+
+<p>Bootstrap is an open-source project to create flexible design and layout components for the web. It is basically a bunch of predefined styles that anyone can slap onto their website to make things look neat and uniform. By including the CSS and Javascript for Bootstrap on a web page, a bunch of components are made available such as buttons, lists, boxes, and menus. Most of these components only require a basic knowledge of HTML to incorporate into a page.</p>
+
+<h4 id="example">Example:</h4>
+
+<p>This is what the exact same code snippet looks like in a browser with and without the inclusion of Bootstrap’s styles.</p>
+
+<figure class="half ">
+  
+    
+      <a href="https://keithmiyake.info/assets/img/Bootply_-_The_Bootstrap_Playground-300x145.png" title="Links styled with Bootstrap">
+        <img src="https://keithmiyake.info/assets/img/Bootply_-_The_Bootstrap_Playground-300x145.png" alt="Links styled with Bootstrap" />
+      </a>
+    
+  
+    
+      <a href="https://keithmiyake.info/assets/img/test.html_.png" title="Links without Bootstrap styles">
+        <img src="https://keithmiyake.info/assets/img/test.html_.png" alt="Links without Bootstrap" />
+      </a>
+    
+  
+  
+    <figcaption>This is the same code, unstyled on the left, styled with Bootstrap on the right
+</figcaption>
+  
+</figure>
+
+<p>Here’s the HTML for this example:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-6"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel panel-primary"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel-heading"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"panel-title"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"glyphicon glyphicon-bookmark"</span><span class="nt">&gt;&lt;/span&gt;</span> Quick Shortcuts
+          <span class="nt">&lt;/h3&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel-body"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-xs-6 col-md-6"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"btn btn-danger btn-lg"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"glyphicon glyphicon-list-alt"</span><span class="nt">&gt;&lt;/span&gt;</span> <span class="nt">&lt;br</span> <span class="nt">/&gt;</span>Apps<span class="nt">&lt;/a&gt;</span>
+              <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"btn btn-warning btn-lg"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"glyphicon glyphicon-bookmark"</span><span class="nt">&gt;&lt;/span&gt;</span> <span class="nt">&lt;br</span> <span class="nt">/&gt;</span>Bookmarks<span class="nt">&lt;/a&gt;</span>
+              <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"btn btn-primary btn-lg"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"glyphicon glyphicon-signal"</span><span class="nt">&gt;&lt;/span&gt;</span> <span class="nt">&lt;br</span> <span class="nt">/&gt;</span>Reports<span class="nt">&lt;/a&gt;</span>
+              <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"btn btn-primary btn-lg"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"glyphicon glyphicon-comment"</span><span class="nt">&gt;&lt;/span&gt;</span> <span class="nt">&lt;br</span> <span class="nt">/&gt;</span>Comments<span class="nt">&lt;/a&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-xs-6 col-md-6"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"btn btn-success btn-lg"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"glyphicon glyphicon-user"</span><span class="nt">&gt;&lt;/span&gt;</span> <span class="nt">&lt;br</span> <span class="nt">/&gt;</span>Users<span class="nt">&lt;/a&gt;</span>
+              <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"btn btn-info btn-lg"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"glyphicon glyphicon-file"</span><span class="nt">&gt;&lt;/span&gt;</span> <span class="nt">&lt;br</span> <span class="nt">/&gt;</span>Notes<span class="nt">&lt;/a&gt;</span>
+              <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"btn btn-primary btn-lg"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"glyphicon glyphicon-picture"</span><span class="nt">&gt;&lt;/span&gt;</span> <span class="nt">&lt;br</span> <span class="nt">/&gt;</span>Photos<span class="nt">&lt;/a&gt;</span>
+              <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"btn btn-primary btn-lg"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"glyphicon glyphicon-tag"</span><span class="nt">&gt;&lt;/span&gt;</span> <span class="nt">&lt;br</span> <span class="nt">/&gt;</span>Tags<span class="nt">&lt;/a&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"http://www.jquery2dotnet.com/"</span> <span class="na">class=</span><span class="s">"btn btn-success btn-lg btn-block"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"glyphicon glyphicon-globe"</span><span class="nt">&gt;&lt;/span&gt;</span> Website<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div></div>
+
+<p>As you can see, there is a pretty dramatic difference between the list of links without styling and the Bootstrap themed links. The magic of Bootstrap rests in its use of CSS styling to modify the placement and appearance of web elements with minimal additional HTML coding.</p>
+
+<p>This first lesson will introduce some of the basics of Bootstrap. It starts with browsing through some websites that use Bootstrap to give a sense of what Bootstrap components look like. Then it moves on to cut-and-paste coding to begin laying out a static page using Bootstrap components, with the goal of getting something that vaguely resembles someone else’s Bootstrap page layout.</p>
+
+<h2 id="step-1-check-out-bootstrap-in-action">Step 1: Check out Bootstrap in Action</h2>
+
+<p>A good way to learn how to use a new tool like Bootstrap is by seeing it in action and then trying to imitate what you see.</p>
+
+<p>Since this course is designed to not do anything for you, but rather to guide you through the learning process, I’m only providing a few links to pages containing galleries of sites that employ Bootstrap. Check out the galleries and find a few examples that you find most attractive.</p>
+
+<p>Try to focus on layout, colors, typography, and to a lesser degree, site structure. Don’t worry about things like graphics or content since those are things you will plug in once you are finished. You probably won’t find a site that contains all of the design elements in a single place, so pick a few sites, each with aspects that you find appealing.</p>
+
+<ul>
+  <li><a href="http://www.pinterest.com/search/?q=Bootstrap">Pintrest posts tagged #Bootstrap</a></li>
+  <li><a href="http://expo.getbootstrap.com/">The official bootstrap “expo”</a></li>
+  <li><a href="http://lovebootstrap.com">LoveBootstrap</a></li>
+</ul>
+
+<h2 id="step-2-find-some-bootstrap-templates">Step 2: Find Some Bootstrap Templates</h2>
+
+<p>Once you have some sense of the design elements you want to include in your end product, the next step is to look for a base template that might serve as a good starting point.</p>
+
+<p>Head over to <a href="http://startbootstrap.com/all-templates">StartBootstrap</a> and see if you can find any templates that have a similar overall layout to what you found appealing in the first step. Download the template to your computer and unzip it. There should be one or more HTML files in the base folder, depending on which template you downloaded, and a couple of additional folders containing CSS and javascript (.js) files, as well as any img the template requires, such as images. Try loading the various HTML files in a browser. The page should just work. If things don’t look right, and you tried loading the page in a couple of different browsers, don’t worry about it, and just continue to the next step, but keep those HTML and CSS files handy because you’ll use them again in the next couple steps.</p>
+
+<h2 id="step-3-play-with-bootstrap">Step 3: Play with Bootstrap!</h2>
+
+<p>Now that you have a base template, it’s time to get our feet wet with some HTML coding. Don’t worry too much if you don’t really understand HTML, we’re not going to be doing any major editing yet. For now we’re just going to use copy-paste-coding, meaning that all you need to do is to copy-paste code snippets from one place to another. But a getting a basic understanding of the structure of an HTML document might be useful if everything just looks Greek to you.</p>
+
+<p>The goal of this step is to start putting together Bootstrap components to make your template look more like the demo pages you found in the first step. This means taking the different templates you found, cutting-and-pasting chunks of code, and modifying your base template until it is a fairly decent representation of the demo site you found.*</p>
+
+<blockquote>
+  <p><em>Note:</em> the demo site you found might have used a bunch of trickery to do cool things like making tumblr-esque blocks fit together like a mosaic, or to animate things, or make wallpapers do funky scrolling things. Don’t worry about those things for now. Just try to get the components to look roughly similar. The trickery will have to wait until later…</p>
+</blockquote>
+
+<p>You have three options here, and I suggest trying all three to see which works best for you, but eventually you’ll end up using the first option so might as well get comfortable with it sooner than later. The first option is to use a text or HTML editor and edit the raw HTML from your template files and preview your changes in a browser. The second is to use a web-based tool to “playground” your code snippets and view them in almost real-time. The third is to use a web-based graphical interface for laying out Bootstrap components.</p>
+
+<p>For the first option, I recommend using a text editor such as TextMate (OS X), Sublime Text (OS X and Windows), Notepad++ (Windows), or whatever happens to be your personal preference if you’re on Linux (since if you’re using it I assume you already have an allegiance to either vim or emacs…esc:q!). When you make changes, save the file and reload your browser. Simple as that. When things don’t look quite right or as you had hoped, right click on in your browser on the thing that doesn’t look quite right, and clink on “inspect element” or whatever is your browser’s equivalent (try Google if you’re not sure). Check out the code snippet for that component and make sure that it’s in the right place relative to other the other components on the page (the components should be highlighted on the page as you scroll over the code chunks). This debugging tool is going to be your friend over the next several lessons, so get comfortable using it.</p>
+
+<p>For the second option, go to <a href="http://bootply.com">The Bootstrap Playground</a>. It’s a site that allows you to test out Bootstrap code in your browser and see view the results in almost real-time. Start a new “playground” and try loading some of the templates and community-contributed code snippets. See if you can figure out what the code snippets do. Try loading the html from the template you downloaded in the previous step. Can you get it to load properly? You might need to include some additional CSS or javascript to get things to look and function correctly. Bootply is still a little rough around the edges, so it’s not a big deal if things don’t work out or you are totally confused by it.</p>
+
+<p>The third option is to use a visual layout editor. I recommend checking out <a href="https://divshot.com/blog/product-updates/divshot-1-0-visual-front-end-development-for-bootstrap/">Divshot</a>. They have a free plan (still requires registering) that should be plenty for this mini-course. Try it out and definitely check out their very thorough tutorial. <a href="https://www.easel.io/demo">Easel.io</a> is also very slick and works well, and like divshot, they have a free plan, but theirs only lets you save up to 3 pages.</p>
+
+<p>You might also check out <a href="http://www.pingendo.com/">Pingendo</a>, which is a free visual editor that runs on Windows or OS X, but is still very rough around the edges and isn’t very drag-and-drop friendly. There is also <a href="http://www.layoutit.com/">LayoutIt</a> which seems like it works decently, but I haven’t spent enough time playing with it to know how well it works compared to divshot or easel.io.</p>
+
+<h2 id="next-steps">Next steps…</h2>
+
+<p>If you’ve made it this far, you’re well on your way to using Bootstrap. You should now have one or more HTML pages (along with CSS and some javascript) that lets you display something roughly resembling the demo page you found in the first step, or at least that contains features of that demo page. Keep a list of those things that you weren’t able to reproduce because we’ll try to figure out how to make them work in upcoming lessons.</p>
+
+<p>For now, save your work and take a well deserved break.</p>
+
+<p>If you got stuck along the way, remember, Google is your friend when you’re learning something new. See if you can google your way to the next step, or post a comment here and hopefully I (or some other kind soul) will be able to help you.</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="https://keithmiyake.info/blog/tags/#bootstrap" class="page__taxonomy-item" rel="tag">bootstrap</a><span class="sep">, </span>
+    
+      
+      
+      <a href="https://keithmiyake.info/blog/tags/#wordpress" class="page__taxonomy-item" rel="tag">wordpress</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="https://keithmiyake.info/blog/categories/#digital-humanities" class="page__taxonomy-item" rel="tag">Digital Humanities</a>
+    
+    </span>
+  </p>
+
+
+        
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2013-11-03T16:02:08-08:00">November 03, 2013</time></p>
+        
+      </footer>
+
+      
+
+      
+  <nav class="pagination">
+    
+      <a href="https://keithmiyake.info/blog/digital%20humanities/all-that-is-digital-melts-into-code/" class="pagination--pager" title="All That is Digital Melts into Code
+">Previous</a>
+    
+    
+      <a href="https://keithmiyake.info/blog/digital%20humanities/learn-bootstrap-part-2-adding-bootstrap-to-wordpress/" class="pagination--pager" title="Learn Bootstrap Part 2: Adding Bootstrap to WordPress
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You May Also Enjoy</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://keithmiyake.info/blog/intro-to-mapping-with-cartodb/" rel="permalink">Intro to Mapping with CartoDB
+</a>
+      
+    </h2>
+    <p class="page__meta"><i class="far fa-calendar" aria-hidden="true"></i> <time datetime="2015-04-07 00:00:00 -0700">April 07, 2015</time>
+    
+      • <i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  11 minute read
+
+    
+    </p>
+
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/img/cartodb_final_map2-1024x474.png" alt="2014 NYPD Stop and Frisk Data" />
+      </div>
+    
+      <p class="archive__item-excerpt archive__item-has-featured" itemprop="description">CartoDB is a web-based open source mapping platform. Using the 2014 NYPD Stop, Question, and Frisk dataset, this tutorial teaches the mapping basics in CartoDB by importing data, applying different visualizations, using filters, and creating data interactivity.
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://keithmiyake.info/blog/digital%20humanities/command-line-workshop-tutorial/" rel="permalink">Command Line Workshop (tutorial)
+</a>
+      
+    </h2>
+    <p class="page__meta"><i class="far fa-calendar" aria-hidden="true"></i> <time datetime="2014-11-18 15:45:50 -0800">November 18, 2014</time>
+    
+      • <i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  3 minute read
+
+    
+    </p>
+
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/img/Terminal_003.png" alt="C-3PO thinks it is improper not to learn the terminal." />
+      </div>
+    
+      <p class="archive__item-excerpt archive__item-has-featured" itemprop="description">The tutorial bits from a workshop I led on using the command line while I was a GC Digital Fellow. Don’t be scared, give it a try!
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://keithmiyake.info/blog/digital%20humanities/dh-strangelove-or-how-i-learned-to-stop-worrying-and-love-the-digital-humanities/" rel="permalink">DH Strangelove or: How I Learned to Stop Worrying and Love the Digital Humanities
+</a>
+      
+    </h2>
+    <p class="page__meta"><i class="far fa-calendar" aria-hidden="true"></i> <time datetime="2014-10-15 10:37:27 -0700">October 15, 2014</time>
+    
+      • <i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  6 minute read
+
+    
+    </p>
+
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/img/dh-strangelove.jpg" alt="How I Learned to Stop Worrying..." />
+      </div>
+    
+      <p class="archive__item-excerpt archive__item-has-featured" itemprop="description">I set out to provide a short review of several different aspects of the digital humanities from a non-digital humanist perspective, with the mindset or culture of DH being just the beginning.
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://keithmiyake.info/blog/digital%20humanities/geography/learning-to-map-with-arcgis-storymaps/" rel="permalink">Learning to Map with ArcGIS StoryMaps
+</a>
+      
+    </h2>
+    <p class="page__meta"><i class="far fa-calendar" aria-hidden="true"></i> <time datetime="2014-03-18 19:43:33 -0700">March 18, 2014</time>
+    
+      • <i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  6 minute read
+
+    
+    </p>
+
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/img/swipespyglass4.jpg" alt="A Swipe map made using ESRI StoryMaps." />
+      </div>
+    
+      <p class="archive__item-excerpt archive__item-has-featured" itemprop="description">Maps are extremely versatile tools for communicating ideas and information. Creating maps can be challenging, but this tutorial will introduce one tool that simplifies the process of making several types of maps in order to tell your stories.
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow text-center">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+    
+    
+    
+      <li><a href="https://github.com/kaymmm"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+    
+    
+    
+    <li><a href="https://keithmiyake.info/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright text-center">
+  <p><a href="https://www.fsf.org"><img src="https://static.fsf.org/nosvn/associate/crm/1476104.png" alt="Proud member of the Free Software Foundation" /></a></p>
+  <p><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</p>
+  <p>Built with <i class="fa fa-heart" aria-hidden="true"></i> by Keith K. Miyake. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</p>
+  <p> &copy; 2018 Keith K. Miyake.</p>
+</div>
+
+      </footer>
+    </div>
+
+    
+  
+    
+    <script src="https://keithmiyake.info/assets/js/main.min.js"></script>
+  
+    
+    <script src="https://keithmiyake.info/assets/js/custom.js"></script>
+  
+    
+    <script src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  
+
+
+
+
+
+
+
+
+  </body>
+</html>

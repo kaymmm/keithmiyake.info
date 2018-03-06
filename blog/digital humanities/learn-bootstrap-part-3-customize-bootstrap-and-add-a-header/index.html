@@ -1,0 +1,864 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.10.0 by Michael Rose
+  Copyright 2013-2018 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE.txt
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Learn Bootstrap Part 3: Customize Bootstrap and Add a Header - Keith K. Miyake</title>
+<meta name="description" content="For this lesson, we will generate our own customized version of Bootstrap with modified colors, styles, etc., add it to our WordPress theme, and then incorporate Bootstrap into the site’s header.">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en">
+<meta property="og:site_name" content="Keith K. Miyake">
+<meta property="og:title" content="Learn Bootstrap Part 3: Customize Bootstrap and Add a Header">
+<meta property="og:url" content="https://keithmiyake.info/blog/digital%20humanities/learn-bootstrap-part-3-customize-bootstrap-and-add-a-header/">
+
+
+  <meta property="og:description" content="For this lesson, we will generate our own customized version of Bootstrap with modified colors, styles, etc., add it to our WordPress theme, and then incorporate Bootstrap into the site’s header.">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2013-12-02T00:33:08-08:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="https://keithmiyake.info/blog/digital%20humanities/learn-bootstrap-part-3-customize-bootstrap-and-add-a-header/">
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Person",
+      "name": "Keith K. Miyake",
+      "url": "https://keithmiyake.info",
+      "sameAs": null
+    }
+  </script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="https://keithmiyake.info/feed.xml" type="application/atom+xml" rel="alternate" title="Keith K. Miyake Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="https://keithmiyake.info/assets/css/main.css">
+
+<!--[if lte IE 9]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+    <!-- start custom head snippets -->
+<meta http-equiv="cleartype" content="on">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/img/icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="/assets/img/icons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/assets/img/icons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="/assets/img/icons/manifest.json">
+<link rel="mask-icon" href="/assets/img/icons/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="/assets/img/icons/favicon.ico">
+<meta name="msapplication-config" content="/assets/img/icons/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    <div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <a class="site-title" href="https://keithmiyake.info/">Keith K. Miyake</a>
+        <ul class="visible-links">
+          
+            
+            <li class="masthead__menu-item">
+              <a href="https://keithmiyake.info/about/" >About</a>
+            </li>
+          
+            
+            <li class="masthead__menu-item">
+              <a href="https://keithmiyake.info/cv/" >CV</a>
+            </li>
+          
+            
+            <li class="masthead__menu-item">
+              <a href="https://keithmiyake.info/research/" >Research</a>
+            </li>
+          
+            
+            <li class="masthead__menu-item">
+              <a href="https://keithmiyake.info/teaching/" >Teaching</a>
+            </li>
+          
+            
+            <li class="masthead__menu-item">
+              <a href="https://keithmiyake.info/blog/" >Blog</a>
+            </li>
+          
+            
+            <li class="masthead__menu-item">
+              <a href="https://keithmiyake.info/contact/" >Contact</a>
+            </li>
+          
+        </ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle Menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="http://schema.org/Person">
+
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name"></h3>
+    
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+
+      
+
+      
+        <li>
+          <a href="mailto:keith.miyake@gmail.com">
+            <meta itemprop="email" content="keith.miyake@gmail.com" />
+            <i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i> Email
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Learn Bootstrap Part 3: Customize Bootstrap and Add a Header">
+    <meta itemprop="description" content="For this lesson, we will generate our own customized version of Bootstrap with modified colors, styles, etc., add it to our WordPress theme, and then incorporate Bootstrap into the site’s header.">
+    <meta itemprop="datePublished" content="December 02, 2013">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          
+            <div class="page__hero">
+              <img class="page__hero-image " alt="Bootstrap styled website" src="/assets/img/Theme_Test_Site___my_bootstrap_theme_demo_site.png" />
+              
+                <span class="page__hero-caption">Sample WordPress site styled with Bootstrap.
+</span>
+              
+            </div>
+          
+          <h1 class="page__title" itemprop="headline">Learn Bootstrap Part 3: Customize Bootstrap and Add a Header
+</h1>
+
+          
+            <p class="page__meta"><i class="fas fa-calendar" aria-hidden="true"></i> <time datetime="2013-12-02 00:33:08 -0800">December 02, 2013</time>
+            
+              • <i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  10 minute read
+
+            
+            </p>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <p>This is the third in a series of lessons on using the Bootstrap web framework to develop a WordPress theme.</p>
+
+<p>In the <a href="/blog/digital%20humanities/getting-acquainted-with-bootstrap/">first lesson</a>, we started to get a feel for what Bootstrap looks like in a web browser and began to think about using Bootstrap code snippets to lay out a website.</p>
+
+<p>In the <a href="/blog/digital%20humanities/learn-bootstrap-part-2-adding-bootstrap-to-wordpress/">second lesson</a>, we incorporated the Bootstrap framework into a basic WordPress theme template and added some Bootstrap components to the WordPress site.</p>
+
+<p>For this lesson, we will generate our own customized version of Bootstrap with modified colors, styles, etc., add it to our WordPress theme, and then incorporate Bootstrap into the site’s header.</p>
+
+<h2 id="customizing-bootstrap">Customizing Bootstrap</h2>
+
+<p>One of the neat things about Bootstrap is that its CSS styles are generated from compiled <a href="http://lesscss.org/">LESS</a> code. What this means is that it uses variables to store information such as a color palette, relative font sizes and styles, and spacing rules. When you make a change to a single variable definition, that change will be propagated throughout the Bootstrap CSS automatically. So if you don’t like the default shade of blue that Bootstrap ships with, you can choose a different shade of blue and then everything that was the original blue will now be styled with your new shade of blue.</p>
+
+<figure class="half ">
+  
+    
+      <a href="https://keithmiyake.info/assets/img/Bootply.com_-_Bootstrap_preview-2.png">
+        <img src="https://keithmiyake.info/assets/img/Bootply.com_-_Bootstrap_preview-2.png" alt="Standard Bootstrap styling" />
+      </a>
+    
+  
+    
+      <a href="https://keithmiyake.info/assets/img/PaintStrap_-_Generate_Bootstrap_themes_using_the_color_scheme-3.png">
+        <img src="https://keithmiyake.info/assets/img/PaintStrap_-_Generate_Bootstrap_themes_using_the_color_scheme-3.png" alt="Customized Bootstrap styling" />
+      </a>
+    
+  
+  
+    <figcaption>Standard and customized Bootstrap themes applied to the same HTML code
+</figcaption>
+  
+</figure>
+
+<p>There are a number of ways to generate a custom build of Bootstrap. We’ll cover a few of them.</p>
+
+<ul>
+  <li>The official Bootstrap website has a <a href="http://getbootstrap.com/customize/">built-in customization page</a> where you can manually set all of the different variables before downloading the Bootstrap package.</li>
+  <li><a href="http://pikock.github.io/bootstrap-magic/index.html">Bootstrap Magic</a> is a graphical/WYSIWYG version of the official Bootstrap customizer. It lets you preview your customizations as you edit them. Highly recommended. When you finish customizing, you can download the .css file, put it into your WordPress theme folder and change the <code class="highlighter-rouge">wp_enqueue_style()</code> to point to your custom Bootstrap CSS instead of the default one (refer back to the previous lesson in this series if you aren’t sure about how to do this). The other thing you can do—this is a little more involved—is to download the “.less” file that is generated, place it in your Bootstrap “less” directory, and either rename it “variables.less” or modify bootstrap.less to include your customized magic-variables.less file instead of the default variables.less. The specifics of this process are beyond this lesson, but you can find plenty of assistance on Google.</li>
+  <li><a href="http://paintstrap.com/">Paintstrap</a> is a less-involved tool that generates Bootstrap variables/CSS files for you based on a color palette you find or generate on <a href="http://www.colourlovers.com/">ColourLovers</a> or <a href="http://kuler.adobe.com/">Adobe kuler</a>. While very straightforward, Paintstrap’s only really useful for customizing your color scheme, but doesn’t help with the rest of your customizations like fonts, spacing, etc. What you can do, however, is to download the variables.less file that it generates and import it into Bootstrap Magic to finish your customization.</li>
+  <li><a href="http://bootswatch.com/">Bootswatch</a> has complete themes that you can download, with customizations throughout the Bootstrap interface system. If you’re looking for something slightly different from the default Bootstrap look with minimum fuss, this is definitely the place to start looking.</li>
+</ul>
+
+<p>Once you have used one of the above tools to generate either a custom Bootstrap CSS or LESS file, you’ll want to make sure that you are using this custom version in your WordPress theme instead of the default version of bootstrap.css.</p>
+
+<p>If you used methods 1, 2, or 4 above, the only thing you need to do is to copy the generated CSS file into your WordPress theme directory. Replace the default bootstrap.css file at:</p>
+
+<p><code class="highlighter-rouge">[theme directory]/bootstrap/bootstrap.css</code></p>
+
+<p>with the one you generated, renaming it if needed.</p>
+
+<p>If you used method 3 above, or method 2 and you downloaded the .less variables file, you can place the variables.less file into the LESS directory within your Bootstrap directory. You will then need to use a program such as <a href="http://koala-app.com/">Koala</a> or <a href="http://incident57.com/less/">LESS.app</a> to convert the LESS files into CSS code. I won’t go through all of the details of this process, but basically, you set the LESS directory as the input directory in whichever program you use, then set the CSS directory as the output directory. Make sure that your variables.less file is included in the bootstrap.less file (you’ll need to open it in a text editor to check), and then run bootstrap.less through the LESS compiler to generate a custom bootstrap.css file.</p>
+
+<p>Finally, you might also consider using one of the WP-LESS WordPress plugins (directions <a href="http://www.noeltock.com/web-design/wordpress/using-less-with-wordpress/">here</a> or an alternative version in the WP plugin repository <a href="http://wordpress.org/plugins/wp-less/">here</a>) that allow you to directly include your LESS files in your WordPress theme like you would CSS files. The great thing about doing things this way is that you can add options to your theme that modify your LESS styles (see the first linked above).</p>
+
+<p>Now that you have your own customized version of Bootstrap integrated into your WordPress theme, the last thing we’ll cover is integrating Bootstrap into your WordPress theme header.</p>
+
+<h2 id="bootstrapping-the-wordpress-header">Bootstrapping The WordPress Header</h2>
+
+<p>Starting with the base theme we modified in the <a href="/blog/digital%20humanities/learn-bootstrap-part-2-adding-bootstrap-to-wordpress/">last lesson</a>, we will be modifying the header.php file to incorporate the Bootstrap <a href="http://getbootstrap.com/components/#navbar">navbar component</a>, which will generate something that looks like this:</p>
+
+<figure class="">
+  
+  <img src="https://keithmiyake.info/assets/img/Theme_Test_Site___my_bootstrap_theme_demo_site.png" alt="The finished demonstration site themed with Bootstrap." />
+  
+  
+    <figcaption>The finished demonstration site themed with Bootstrap.
+</figcaption>
+  
+</figure>
+
+<p><strong>Step 1:</strong> Open “header.php” in your text editor. Notice the bit around line 24 that says:</p>
+
+<p><code class="highlighter-rouge">&lt;header id="masthead" class="site-header" role="banner"&gt;</code></p>
+
+<p>We’re going to start our edits right below that. But first, delete lines 25-34, which contain the original header that we’re about to replace.</p>
+
+<p><strong>Step 2:</strong> Copy-paste the following chunk of code at line 25, right below the “header” tag (this code is taken directly from the example on the Bootstrap website):</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navbar navbar-default"</span> <span class="na">role=</span><span class="s">"navigation"</span><span class="nt">&gt;</span>
+  <span class="c">&lt;!-- Brand and toggle get grouped for better mobile display --&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navbar-header"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"navbar-toggle"</span> <span class="na">data-toggle=</span><span class="s">"collapse"</span> <span class="na">data-target=</span><span class="s">"#bs-example-navbar-collapse-1"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Toggle navigation<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-bar"</span><span class="nt">&gt;&lt;/span&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-bar"</span><span class="nt">&gt;&lt;/span&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-bar"</span><span class="nt">&gt;&lt;/span&gt;</span>
+    <span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"navbar-brand"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Brand<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+
+  <span class="c">&lt;!-- Collect the nav links, forms, and other content for toggling --&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"collapse navbar-collapse"</span> <span class="na">id=</span><span class="s">"bs-example-navbar-collapse-1"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav navbar-nav"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"active"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Link<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Link<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"dropdown"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"dropdown-toggle"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span><span class="nt">&gt;</span>Dropdown <span class="nt">&lt;b</span> <span class="na">class=</span><span class="s">"caret"</span><span class="nt">&gt;&lt;/b&gt;&lt;/a&gt;</span>
+        <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"dropdown-menu"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Action<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+          <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Another action<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+          <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Something else here<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+          <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"divider"</span><span class="nt">&gt;&lt;/li&gt;</span>
+          <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Separated link<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+          <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"divider"</span><span class="nt">&gt;&lt;/li&gt;</span>
+          <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>One more separated link<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+        <span class="nt">&lt;/ul&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+    <span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"navbar-form navbar-left"</span> <span class="na">role=</span><span class="s">"search"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">placeholder=</span><span class="s">"Search"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">class=</span><span class="s">"btn btn-default"</span><span class="nt">&gt;</span>Submit<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;/form&gt;</span>
+    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav navbar-nav navbar-right"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Link<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"dropdown"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"dropdown-toggle"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span><span class="nt">&gt;</span>Dropdown <span class="nt">&lt;b</span> <span class="na">class=</span><span class="s">"caret"</span><span class="nt">&gt;&lt;/b&gt;&lt;/a&gt;</span>
+        <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"dropdown-menu"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Action<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+          <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Another action<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+          <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Something else here<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+          <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"divider"</span><span class="nt">&gt;&lt;/li&gt;</span>
+          <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Separated link<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+        <span class="nt">&lt;/ul&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+  <span class="nt">&lt;/div&gt;</span><span class="c">&lt;!-- /.navbar-collapse --&gt;</span>
+<span class="nt">&lt;/nav&gt;</span>
+</code></pre></div></div>
+
+<p><strong>Step 3:</strong> Edit the first line where it says:</p>
+
+<p><code class="highlighter-rouge">&lt;nav class="navbar navbar-default" role="navigation"&gt;</code></p>
+
+<p>Add the class “navbar-fixed-top” (I also suggest trying “navbar-static-top” instead of “navbar-fixed-top” to see how they differ). You should end up with a line that looks like:</p>
+
+<p><code class="highlighter-rouge">&lt;nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="top: 28px;"&gt;</code></p>
+
+<p>The “navbar-fixed-top” class styles the navbar so that it sticks to the top of the page, while the little bit that says <code class="highlighter-rouge">top: 28px</code> moves it down just enough so that it is not covered by the WordPress top bar thing. If you use the “static” navbar instead, you’ll notice that it scrolls with the page instead of remaining visible as you scroll. If you prefer the static navbar, you will want to remove the <code class="highlighter-rouge">style="top: 28px"</code> bit.</p>
+
+<p><strong>Step 4:</strong> Save the file and load your theme in a browser (refer to the <a href="/blog/digital%20humanities/learn-bootstrap-part-2-adding-bootstrap-to-wordpress/">previous lesson</a> if you’re unsure about this). You should see a generic looking navigation bar at the top of the page, and when you scroll it should “stick” to the top:</p>
+
+<figure class="">
+  
+  <img src="https://keithmiyake.info/assets/img/Theme_Test_Site___my_bootstrap_theme_demo_site2.png" alt="Sticky navigation on the new theme." />
+  
+  
+    <figcaption>Sticky navigation on the new theme.
+</figcaption>
+  
+</figure>
+
+<p>If you’re not seeing this, double check that your theme is correctly including the bootstrap.css file. You should also check to see if the page contains errors that might be preventing something from working. You can do this using the developer tools built in to most browsers (Google is your friend in this…).</p>
+
+<p><strong>Step 5:</strong> Edit the line that says:</p>
+
+<p><code class="highlighter-rouge">&lt;a class="navbar-brand" href="#"&gt;Brand&lt;/a&gt;</code></p>
+
+<p>Replace “Brand” with</p>
+
+<p><code class="highlighter-rouge"><span class="cp">&lt;?php</span> <span class="nx">bloginfo</span><span class="p">(</span> <span class="s1">'name'</span> <span class="p">);</span> <span class="cp">?&gt;</span></code></p>
+
+<p>Replace the “#” with</p>
+
+<p><code class="highlighter-rouge"><span class="cp">&lt;?php</span> <span class="k">echo</span> <span class="nx">esc_url</span><span class="p">(</span> <span class="nx">home_url</span><span class="p">(</span> <span class="s1">'/'</span> <span class="p">)</span> <span class="p">);</span> <span class="cp">?&gt;</span></code></p>
+
+<p>You should end up with a line that looks like:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"navbar-brand"</span> <span class="na">href=</span><span class="s">"</span><span class="cp">&lt;?php</span> <span class="k">echo</span> <span class="nx">esc_url</span><span class="p">(</span> <span class="nx">home_url</span><span class="p">(</span> <span class="s1">'/'</span> <span class="p">)</span> <span class="p">);</span> <span class="cp">?&gt;</span><span class="s">"</span><span class="nt">&gt;</span><span class="cp">&lt;?php</span> <span class="nx">bloginfo</span><span class="p">(</span> <span class="s1">'name'</span> <span class="p">);</span> <span class="cp">?&gt;</span><span class="nt">&lt;/a&gt;</span>
+</code></pre></div></div>
+
+<p>What this does is call the WordPress function “bloginfo(‘name’)”, which displays the title of your blog, in this case, within the navbar. It also uses the “home_url()” function to link the blog name to the homepage URL.</p>
+
+<p>We’re now well on our way to a working header navigation bar, but the next step of adding the WordPress menus will take a few additional steps…</p>
+
+<h2 id="add-wordpress-menus-to-the-bootstrap-navbar">Add WordPress Menus to The Bootstrap Navbar</h2>
+
+<p><strong>Step 1:</strong> WordPress uses a system called a “navwalker” to generate its menus. In order to get the menus to work with the Bootstrap navbar, we need to add a custom navwalker that will override the built in WordPress system. There are several ready-to-use navwalkers on Github that are compatible with Bootstrap 3.0, but we’re going to use the version developed by Github user twittem <a href="https://github.com/twittem/wp-bootstrap-navwalker">here</a>. There are some other forks of this navwalker with additional functionality, such as <a href="https://github.com/mharis/wp-bootstrap-navwalker">this one that supports multi-level dropdown menus</a> and <a href="https://github.com/yazdi/wp-bootstrap-navwalker">this one that adds the blog description</a> to the navbar.</p>
+
+<p>Download the wp-bootstrap-navwalker zip from one of the above Github repositories, unzip it, and copy “wp_bootstrap_navwalker.php” to your theme directory.</p>
+
+<p><strong>Step 2:</strong> Edit your “functions.php” file to include wp_bootstrap_navwalker.php by adding the following lines:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Register Custom Navigation Walker</span>
+<span class="k">require_once</span><span class="p">(</span><span class="s1">'wp_bootstrap_navwalker.php'</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p><strong>Step 3:</strong> Edit “header.php” to use the new navwalker instead of the default navigation links.</p>
+
+<p>Delete everything between the navbar comments:</p>
+
+<p><code class="highlighter-rouge">&lt;!-- Collect the nav links, forms, and other content for toggling --&gt;</code></p>
+
+<p>and</p>
+
+<p><code class="highlighter-rouge">&lt;!-- /.navbar-collapse --&gt;</code>.</p>
+
+<p>In its place, copy-paste the following:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- Collect the nav links, forms, and other content for toggling --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"collapse navbar-collapse"</span> <span class="na">id=</span><span class="s">"bs-example-navbar-collapse-1"</span><span class="nt">&gt;</span>
+  <span class="cp">&lt;?php wp_nav_menu( array(
+      'menu'              ?&gt;</span> 'primary',
+      'theme_location'    =&gt; 'primary',
+      'depth'             =&gt; 2,
+      'menu_class'        =&gt; 'nav navbar-nav',
+      'fallback_cb'       =&gt; 'wp_bootstrap_navwalker::fallback',
+      'walker'            =&gt; new wp_bootstrap_navwalker())
+    );
+  ?&gt;
+<span class="nt">&lt;/div&gt;</span>
+<span class="c">&lt;!-- /.navbar-collapse --&gt;</span>
+</code></pre></div></div>
+
+<p>What this does is create a new navigation menu using the built-in WordPress function “wp_nav_menu()”, which in turn calls the wp_bootstrap_navwalker function that we just added in the previous step. The options that are being passed to “wp_nav_menu()” are described in the <a href="http://codex.wordpress.org/Function_Reference/wp_nav_menu">WordPress codex</a>, so check that out for more information.</p>
+
+<p><strong>Step 4:</strong> Test it out. When you load your WordPress site in a browser, you should see the navbar at the top, with the blog title on the left and either your primary navigation menu or “Add a menu” displayed if you haven’t set the menu yet. In the latter case, set up a menu by clicking the link. Be sure to check the box at the bottom of the menu customization area to display the menu in the Primary menu area.</p>
+
+<p>If everything went as planned, you should see something like this:</p>
+
+<figure class="">
+  
+  <img src="https://keithmiyake.info/assets/img/Theme_Test_Site___my_bootstrap_theme_demo_site2.png" alt="Simple header nav" />
+  
+  
+    <figcaption>Simple header navigation menu
+</figcaption>
+  
+</figure>
+
+<p><strong>Step 5:</strong> You can optionally add a search form to the navigation menu by adding the following code right before the closing <code class="highlighter-rouge">&lt;/div&gt;</code> tag in the previous step:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;form</span> <span class="na">id=</span><span class="s">"searchform"</span> <span class="na">class=</span><span class="s">"navbar-form navbar-right"</span> <span class="na">method=</span><span class="s">"get"</span> <span class="na">action=</span><span class="s">"&lt;?php bloginfo('home'); ?&gt;/"</span> <span class="na">role=</span><span class="s">"search"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">name=</span><span class="s">"s"</span> <span class="na">id=</span><span class="s">"s"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">placeholder=</span><span class="s">"Search"</span> <span class="na">value=</span><span class="s">"&lt;?php echo wp_specialchars($s, 1); ?&gt;"</span> <span class="nt">/&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">class=</span><span class="s">"btn btn-default"</span><span class="nt">&gt;</span>Submit<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;/form&gt;</span>
+</code></pre></div></div>
+
+<p>If everything went as planned, you should see a navbar menu like the one shown at the beginning of this section.</p>
+
+<p>Note that when you resize the browser window to make it really narrow, the menu, including the search form, should disappear into a little button that you can click to display the menu again. Neat, right? That’s the magic of Bootstrap.</p>
+
+<h2 id="next-steps">Next Steps</h2>
+
+<p>This covers the basics of getting Bootstrap integrated into your WordPress theme. There are a ton of things that you can do from here to continue adding Bootstrap components throughout the rest of the theme. For example, you could create a contact form, login dialog, photo galleries, carousels, etc., all using components that are built-in to Bootstrap. Be sure to check out the official <a href="http://getbootstrap.com/components">Bootstrap documentation</a> for a complete list of components, CSS, and javascript/jQuery that you can use throughout your WordPress theme.</p>
+
+<p>A good next step is to use Bootstrap to modify your theme’s “footer.php” to make a page footer to match the header navbar we put together in this lesson.</p>
+
+<p>You also probably want to add some Bootstrap classes to all of the page/content templates, including index.php, page.php, content.php, archive.php, sidebar.php, single.php, and search.php. In order to Bootstrap your page layout, you want to first modify page.php since that is the default base template. You can use various numbers of columns to set the layout of the main content area and sidebars. All of this is beyond the scope of this brief set of lessons, but there are plenty of resources on the web to help you along. Here are a few:</p>
+
+<ul>
+  <li><a href="http://bootstraphero.com/the-big-badass-list-of-twitter-bootstrap-resources">http://bootstraphero.com/the-big-badass-list-of-twitter-bootstrap-resources</a></li>
+  <li><a href="http://tutorialzine.com/2013/07/50-must-have-plugins-for-extending-twitter-bootstrap/">http://tutorialzine.com/2013/07/50-must-have-plugins-for-extending-twitter-bootstrap/</a></li>
+  <li><a href="http://bootsnipp.com/resources">http://bootsnipp.com/resources</a></li>
+  <li><a href="http://wordpress.org/plugins/easy-bootstrap-shortcodes/">http://wordpress.org/plugins/easy-bootstrap-shortcodes/</a></li>
+  <li><a href="http://wordpress.org/plugins/bootstrap-shortcodes/">http://wordpress.org/plugins/bootstrap-shortcodes/</a></li>
+  <li><a href="http://www.hongkiat.com/blog/twitter-bootstrap/">http://www.hongkiat.com/blog/twitter-bootstrap/</a></li>
+</ul>
+
+<p>That’s it for now. If you have questions or thoughts on this series of lessons, don’t hesitate to leave a comment.</p>
+
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="https://keithmiyake.info/blog/tags/#bootstrap" class="page__taxonomy-item" rel="tag">bootstrap</a><span class="sep">, </span>
+    
+      
+      
+      <a href="https://keithmiyake.info/blog/tags/#digital-humanities" class="page__taxonomy-item" rel="tag">digital humanities</a><span class="sep">, </span>
+    
+      
+      
+      <a href="https://keithmiyake.info/blog/tags/#less" class="page__taxonomy-item" rel="tag">LESS</a><span class="sep">, </span>
+    
+      
+      
+      <a href="https://keithmiyake.info/blog/tags/#wordpress" class="page__taxonomy-item" rel="tag">wordpress</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="https://keithmiyake.info/blog/categories/#digital-humanities" class="page__taxonomy-item" rel="tag">Digital Humanities</a>
+    
+    </span>
+  </p>
+
+
+        
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2013-12-02T00:33:08-08:00">December 02, 2013</time></p>
+        
+      </footer>
+
+      
+
+      
+  <nav class="pagination">
+    
+      <a href="https://keithmiyake.info/blog/digital%20humanities/getting-started-with-git-and-github/" class="pagination--pager" title="Getting Started with Git and GitHub
+">Previous</a>
+    
+    
+      <a href="https://keithmiyake.info/blog/digital%20humanities/psa-backup-your-data-now/" class="pagination--pager" title="PSA: Backup Your Data Now
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You May Also Enjoy</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://keithmiyake.info/blog/intro-to-mapping-with-cartodb/" rel="permalink">Intro to Mapping with CartoDB
+</a>
+      
+    </h2>
+    <p class="page__meta"><i class="far fa-calendar" aria-hidden="true"></i> <time datetime="2015-04-07 00:00:00 -0700">April 07, 2015</time>
+    
+      • <i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  11 minute read
+
+    
+    </p>
+
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/img/cartodb_final_map2-1024x474.png" alt="2014 NYPD Stop and Frisk Data" />
+      </div>
+    
+      <p class="archive__item-excerpt archive__item-has-featured" itemprop="description">CartoDB is a web-based open source mapping platform. Using the 2014 NYPD Stop, Question, and Frisk dataset, this tutorial teaches the mapping basics in CartoDB by importing data, applying different visualizations, using filters, and creating data interactivity.
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://keithmiyake.info/blog/digital%20humanities/command-line-workshop-tutorial/" rel="permalink">Command Line Workshop (tutorial)
+</a>
+      
+    </h2>
+    <p class="page__meta"><i class="far fa-calendar" aria-hidden="true"></i> <time datetime="2014-11-18 15:45:50 -0800">November 18, 2014</time>
+    
+      • <i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  3 minute read
+
+    
+    </p>
+
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/img/Terminal_003.png" alt="C-3PO thinks it is improper not to learn the terminal." />
+      </div>
+    
+      <p class="archive__item-excerpt archive__item-has-featured" itemprop="description">The tutorial bits from a workshop I led on using the command line while I was a GC Digital Fellow. Don’t be scared, give it a try!
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://keithmiyake.info/blog/digital%20humanities/dh-strangelove-or-how-i-learned-to-stop-worrying-and-love-the-digital-humanities/" rel="permalink">DH Strangelove or: How I Learned to Stop Worrying and Love the Digital Humanities
+</a>
+      
+    </h2>
+    <p class="page__meta"><i class="far fa-calendar" aria-hidden="true"></i> <time datetime="2014-10-15 10:37:27 -0700">October 15, 2014</time>
+    
+      • <i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  6 minute read
+
+    
+    </p>
+
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/img/dh-strangelove.jpg" alt="How I Learned to Stop Worrying..." />
+      </div>
+    
+      <p class="archive__item-excerpt archive__item-has-featured" itemprop="description">I set out to provide a short review of several different aspects of the digital humanities from a non-digital humanist perspective, with the mindset or culture of DH being just the beginning.
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://keithmiyake.info/blog/digital%20humanities/geography/learning-to-map-with-arcgis-storymaps/" rel="permalink">Learning to Map with ArcGIS StoryMaps
+</a>
+      
+    </h2>
+    <p class="page__meta"><i class="far fa-calendar" aria-hidden="true"></i> <time datetime="2014-03-18 19:43:33 -0700">March 18, 2014</time>
+    
+      • <i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  6 minute read
+
+    
+    </p>
+
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/img/swipespyglass4.jpg" alt="A Swipe map made using ESRI StoryMaps." />
+      </div>
+    
+      <p class="archive__item-excerpt archive__item-has-featured" itemprop="description">Maps are extremely versatile tools for communicating ideas and information. Creating maps can be challenging, but this tutorial will introduce one tool that simplifies the process of making several types of maps in order to tell your stories.
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow text-center">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+    
+    
+    
+      <li><a href="https://github.com/kaymmm"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+    
+    
+    
+    <li><a href="https://keithmiyake.info/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright text-center">
+  <p><a href="https://www.fsf.org"><img src="https://static.fsf.org/nosvn/associate/crm/1476104.png" alt="Proud member of the Free Software Foundation" /></a></p>
+  <p><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</p>
+  <p>Built with <i class="fa fa-heart" aria-hidden="true"></i> by Keith K. Miyake. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</p>
+  <p> &copy; 2018 Keith K. Miyake.</p>
+</div>
+
+      </footer>
+    </div>
+
+    
+  
+    
+    <script src="https://keithmiyake.info/assets/js/main.min.js"></script>
+  
+    
+    <script src="https://keithmiyake.info/assets/js/custom.js"></script>
+  
+    
+    <script src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  
+
+
+
+
+
+
+
+
+  </body>
+</html>

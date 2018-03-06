@@ -1,0 +1,1025 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="https://keithmiyake.info/feed.xml" rel="self" type="application/atom+xml" /><link href="https://keithmiyake.info/" rel="alternate" type="text/html" /><updated>2018-03-05T18:16:18-08:00</updated><id>https://keithmiyake.info/</id><title type="html">Keith K. Miyake</title><subtitle>UC Davis Chancellor's Postdoctoral Fellow</subtitle><author><name>Keith K. Miyake</name><email>spammy@mcspammerson</email></author><entry><title type="html">Intro to Mapping with CartoDB</title><link href="https://keithmiyake.info/blog/intro-to-mapping-with-cartodb/" rel="alternate" type="text/html" title="Intro to Mapping with CartoDB" /><published>2015-04-07T00:00:00-07:00</published><updated>2015-04-07T00:00:00-07:00</updated><id>https://keithmiyake.info/blog/intro-to-mapping-with-cartodb</id><content type="html" xml:base="https://keithmiyake.info/blog/intro-to-mapping-with-cartodb/">&lt;h2 id=&quot;why-cartodb&quot;&gt;Why CartoDB&lt;/h2&gt;
+
+&lt;p&gt;About a year ago, I posted a &lt;a href=&quot;/blog/digital%20humanities/geography/learning-to-map-with-arcgis-storymaps/&quot;&gt;brief tutorial on ESIR’s StoryMaps&lt;/a&gt;, a lightweight ArcGIS web mapping platform. This time around, I want to share a similar tutorial on the CartoDB platform. Whereas StoryMaps is a very minimal mapping platform designed to let users craft a narrative around a simple dataset, CartoDB provides a more robust set of mapping tools to display multiple datasets, increase customizability, and in general, do more with your data.&lt;/p&gt;
+
+&lt;p&gt;I first started playing with CartoDB earlier this year while working on a project aimed at visualizing the impacts of the CUNY Grad Center across NY and the world. You can view one of the maps for this project, created by Steve Romalewski: &lt;a href=&quot;http://cunycur.cartodb.com/viz/0b68cdca-5f18-11e4-a91d-0e853d047bba/embed_map&quot;&gt;Where Are GC Students Teaching&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;CartoDB is a web-based open source mapping platform, which can be installed on your own server, or used as a cloud-based mapping service through &lt;a href=&quot;http://cartodb.com&quot; target=&quot;_blank&quot;&gt;CartoDB.com&lt;/a&gt;. CartoDB.com offers different price tiers, including a free tier for lightweight mapping with small datasets.&lt;/p&gt;
+
+&lt;p&gt;For this tutorial, we will be using the free tier service to create a really simple map that will teach you the basics of importing data, applying different visualizations, using filters, and creating data interactivity.&lt;/p&gt;
+
+&lt;h2 id=&quot;tutorial-data&quot;&gt;Tutorial Data&lt;/h2&gt;
+
+&lt;p&gt;GIS data and mappable datasets are widely available across the web. If you are dealing with New York, one great resource is the NYC Department of City Planning &lt;a href=&quot;http://www.nyc.gov/html/dcp/html/bytes/applbyte.shtml&quot;&gt;Bytes of the Big Apple&lt;/a&gt; website, which contains downloadable datasets related to administrative and planning boundaries. If you want to incorporate US Census Data, the easiest way to get recent data is by using the &lt;a href=&quot;https://www.census.gov/geo/maps-data/data/tiger-data.html&quot;&gt;TIGER datasets&lt;/a&gt;, although they aren’t available for every geography and time period. In this tutorial, we will be using a dataset that I pulled from the &lt;a href=&quot;http://www.nyc.gov/html/nypd/html/analysis_and_planning/stop_question_and_frisk_report.shtml&quot;&gt;NYPD Stop, Question and Frisk (aka Stop and Frisk) database&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;To simplify the data import process, I created a slightly modified dataset based on the 2014 SQF data by converting the geocoordinates embedded in the files (based on the NY-Long Island state plane system) to a format that CartoDB natively understands (for details on this process, see &lt;a href=&quot;#fn-item1&quot; name=&quot;fn-return1&quot;&gt;note 1&lt;/a&gt; below). Download the dataset here: &lt;a href=&quot;https://drive.google.com/file/d/0B_QdbjO9T1dQVHRfUEttaXY0b00/view?usp=sharing&quot;&gt;2014 NYPD Stop Question Frisk Database&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Most datasets will have metadata associated with them. This data is no different. You can download the metadata descriptors for this dataset here: &lt;a href=&quot;http://www.nyc.gov/html/nypd/downloads/excel/analysis_and_planning/2013_sqf_file_spec.xlsx&quot;&gt;NYPD Stop Question Frisk Database File specifications&lt;/a&gt;. The first sheet in the file specification spreadsheet describes each column in the dataset. The second sheet contains the database code values used within each column (e.g., Y=Yes, N=No).&lt;/p&gt;
+
+&lt;h2 id=&quot;getting-started&quot;&gt;Getting Started&lt;/h2&gt;
+
+&lt;h3 id=&quot;create-a-cartodbcom-account&quot;&gt;Create a CartoDB.com Account&lt;/h3&gt;
+
+&lt;p&gt;The first thing you will need to do is to &lt;a href=&quot;https://cartodb.com/signup&quot;&gt;create an account on CartoDB.com&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Once you’ve verified your account, log in and you should be taken to your personal CartoDB dashboard, where you can watch their snazzy screencast showing you how to get started. Below the video is a place to import your first dataset, which is where we begin with the next step.&lt;/p&gt;
+
+&lt;h3 id=&quot;import-data&quot;&gt;Import Data&lt;/h3&gt;
+
+&lt;p&gt;Once you’re logged in to CartoDB.com, click the “Create your first table” button near the bottom of the page and select the .zip file containing the NYPD SQF data that you just downloaded.&lt;/p&gt;
+
+&lt;h2 id=&quot;explore-cartodb&quot;&gt;Explore CartoDB&lt;/h2&gt;
+
+&lt;h3 id=&quot;play-with-the-data&quot;&gt;Play with the Data&lt;/h3&gt;
+
+&lt;p&gt;The best way to learn CartoDB is by playing around and seeing what you can do! Click on the “MAP VIEW” tab at the top of the page to visualize the data.&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  
+  &lt;img src=&quot;https://keithmiyake.info/assets/img/cartodb_load_data.png&quot; alt=&quot;Load data into CartoDB&quot; /&gt;
+  
+  
+    &lt;figcaption&gt;Load data into CartoDB
+&lt;/figcaption&gt;
+  
+&lt;/figure&gt;
+
+&lt;p&gt;Click the “Wizards” button on the toolbar along the right edge of the screen (the paintbrush). Try out the different types of maps, play with the options, select different columns to display, etc. Refer to the metadata file specifications linked above to gain a better understanding of what each data column represents and what the codes mean (the second tab in the spreadsheet).&lt;/p&gt;
+
+&lt;h3 id=&quot;change-the-visualization&quot;&gt;Change the Visualization&lt;/h3&gt;
+
+&lt;p&gt;Now that you’ve explored the data a bit, let’s set the visualization so that we’re on the same page. Select “Heatmap” from the visualization wizard. In marker size, select “6”, opacity “0.5”, not animated, and resolution “2”. These settings give a nice balance between data resolution while maintaining a meaningful heatmap effect.&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  
+  &lt;img src=&quot;https://keithmiyake.info/assets/img/cartodb_heatmap.png&quot; alt=&quot;Heat map in CartoDB&quot; /&gt;
+  
+  
+    &lt;figcaption&gt;Heat map in CartoDB
+&lt;/figcaption&gt;
+  
+&lt;/figure&gt;
+
+&lt;h3 id=&quot;filter-the-data&quot;&gt;Filter the Data&lt;/h3&gt;
+
+&lt;p&gt;With large datasets, it’s often helpful to filter the data so that you get a more precise understanding of different phenomena. In CartoDB, you have two options. You can filter data using SQL queries (the SQL button on the toolbar), or the more basic filter tool (the “filters” button at the bottom of the toolbar).&lt;/p&gt;
+
+&lt;p&gt;Click the “filters” button. In the dropdown menu, select the “arstmade” (Was an arrest made?) column. This will display a card that allows you to turn on or off datapoints corresponding to different values. If you uncheck the “Y” value, the map only displays SQFs where the person was NOT arrested (only “N” values are displayed). Notice that a huge majority of the SQFs resulted in no arrest.&lt;/p&gt;
+
+&lt;p&gt;Next, click the “+” button below the first filter to add a second filter column. Select “forceuse” (reason for the use of force) for the second filter. Uncheck the “null” values (no reason given, we’ll assume this means no force was used; see &lt;a href=&quot;#fn-item2&quot; name=&quot;fn-return2&quot;&gt;note 2&lt;/a&gt; below). There should only be a fraction of the original points left. But it’s a bit interesting that there are still quite a few incidents where force was used, yet no arrest was made. Also notice how a lot of those seem to be clustered around the central parts of the Bronx…&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  
+  &lt;img src=&quot;https://keithmiyake.info/assets/img/cartodb_filtered.png&quot; alt=&quot;Filtered data&quot; /&gt;
+  
+  
+    &lt;figcaption&gt;Filter the data to change what is displayed on the map
+&lt;/figcaption&gt;
+  
+&lt;/figure&gt;
+
+&lt;h3 id=&quot;make-the-map-interactive&quot;&gt;Make the Map Interactive&lt;/h3&gt;
+
+&lt;p&gt;Next we will add info windows to the data that pop up when you hover the mouse over a datapoint or click on it. First, we need to change the map type to one that shows discrete data points. Go back to the wizard tab, select “Category”, then set the following options: Column=”detailCM” (suspected crime code); Marker fill=5, 0.4; Marker stroke=0,1; “Y”/”N”=colors of your choice.&lt;/p&gt;
+
+&lt;p&gt;Next, go to the “infowindow” tool item, then click the “Hover” tab. Pick one or more columns to display when the mouse hovers over a data point. I chose “crimesusp”, “contrabn”, “arstmade”. Now move your mouse over a data point on the map and it should display a window with the selected items. You can do the same for the “Click” tab, except those will display when the data point is clicked. Hover is good for quick data, while click is more appropriate for detailed information. I added “forceuse”, “explnstp”, and “frisked” columns for the click window. In both the “Hover” and “Click” tabs, you can rearrange the displayed items by dragging them up and down the list.&lt;/p&gt;
+
+&lt;h3 id=&quot;add-a-legend-and-publish&quot;&gt;Add a Legend and Publish&lt;/h3&gt;
+
+&lt;p&gt;The next thing we will do is add a legend to the map so that people viewing it know what the map symbols represent. Click on the “legends” tool item, then select “custom” from the drop-down menu. This will allow us to customize the category names since the default crime codes aren’t very reader-friendly. Referring back to the metadata spreadsheet, we can fill in descriptors for each of the top crime codes reported as justification for the SQF incidents. For example, “20” is the code for “CPW”, or criminal posession of a weapon, which is the top reason for SQFs. Click on the “20” in the first row and change the text to something human-readable, like “Criminal Posession of a Weapon”. Do the same for the rest of the items.&lt;/p&gt;
+
+&lt;p&gt;Finally, click on the “Visualize” button at the top of the page. This gets it ready to be published. You should see a new “Options” button in the bottom left corner, where you can turn on or off various features such as the search box and title element. There are also buttons along the top of the map that let you add elements such as text boxes or annotations, and preview what your map will look like when viewed on a mobile device.&lt;/p&gt;
+
+&lt;p&gt;Now that your map is pretty, it’s ready to share! You can use the “Share” button in the upper right corner to generate a link to send, or you can embed the map within another website by using the embed code. Note that the embed uses iframes, which can’t be used on some WordPress sites for security reasons, but in these cases, I suggest using a static image of the map and linking that to the CartoDB page for your map (like I’ve done below).&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  
+    &lt;a href=&quot;http://kmiyake.cartodb.com/viz/84af5300-dd96-11e4-b736-0e853d047bba/public_map&quot; title=&quot;&quot;&gt;
+  
+  &lt;img src=&quot;https://keithmiyake.info/assets/img/cartodb_final_map.png&quot; alt=&quot;Click the map to explore the sample data visualization&quot; /&gt;
+  
+    &lt;/a&gt;
+  
+  
+    &lt;figcaption&gt;Click on the map to explore the sample data visualization.
+&lt;/figcaption&gt;
+  
+&lt;/figure&gt;
+
+&lt;h2 id=&quot;next-steps&quot;&gt;Next Steps&lt;/h2&gt;
+
+&lt;p&gt;Now that you’ve created your first CartoDB map, there are plenty of other things you can do with it, such as adding additional data layers to your existing map, or duplicating the map and highlighting different aspects of the data using the other map types. If you are familiar with SQL, you can also use the SQL tool to do some basic data manipulation, perform joins, and do some basic calculations and analyses with your data sets. CartoDB also allows you to fine-tune customize the appearance of your maps using a special version of CSS with selectors that link to your data, however I will leave it to you to play with this on your own.&lt;/p&gt;
+
+&lt;p&gt;You can also do things like geocoding in CartoDB, which allows you to convert street addresses into points on a map, but the free account limits the number of items you are allowed to process. You could, however, geocode data in another program like Google’s Fusion Tables or QGIS, then import it into CartoDB for the visualization.&lt;/p&gt;
+
+&lt;p&gt;While CartoDB is a great tool for visualizing data, it’s not really meant to be a fully featured GIS system. When you are ready to move on to more advanced GIS techniques like buffering, intersects, raster analysis, or spatial statistics, I suggest checking out the open source QGIS package.&lt;/p&gt;
+
+&lt;h2 id=&quot;notes&quot;&gt;Notes&lt;/h2&gt;
+
+&lt;h3 name=&quot;fn-item1&quot; id=&quot;note-1--converting-the-nypds-stop-and-frisk-data-to-a-format-usable-in-cartodb&quot;&gt;Note 1 &lt;a href=&quot;#fn-return1&quot;&gt;↩&lt;/a&gt;: Converting the NYPD’s stop-and-frisk data to a format usable in CartoDB&lt;/h3&gt;
+
+&lt;p&gt;I used the free and open source QGIS package to import the raw CSV data from the NYPD website. Start by opening the Layer &amp;gt; Add Layer &amp;gt; Add Delimited Text Layer… Menu. Browse for your downlaoded data. You might need to unzip the datafile before selecting it in QGIS. Next, select the x- and y-coordinate fields from the dropdown menus (see screenshot); in the case of the SQF dataset, these are “xcoord” and “ycoord”, respectively.&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  
+  &lt;img src=&quot;https://keithmiyake.info/assets/img/cartodb_qgis_load_data.png&quot; alt=&quot;Load the data in QGIS&quot; /&gt;
+  
+  
+    &lt;figcaption&gt;Load the data in QGIS
+&lt;/figcaption&gt;
+  
+&lt;/figure&gt;
+
+&lt;p&gt;Click “OK”, then close the warning box (this is because a bunch of data doesn’t have x-y coordinates associated with them). Then you will need to select the coordinate system that corresponds to your data. In this case, it appeared that the x- and y-coordinates were in the state plane system, so I made a guess that they used the New York-Long Island State Plane system (“NAD_1983_StatePlane_New_York_Long_Island_FIPS_3014_Feet”).&lt;/p&gt;
+
+&lt;p&gt;Finally, right-click the newly imported layer, select Save As…, select “ESRI Shapefile” or CSV or any other format compatible with CartoDB, click “Browse” to give your file a name and location, then click “OK”. If you save it as an ESRI Shapefile, you’ll need to add all of the files (.dbf, .prj, .qpj, .shp, .shx) to a single .zip file. If you’re on OS X, just select them all in a finder window, right-click, and select “Compress 5 items”. The resulting Archive.zip is the file you will upload to CartoDB.&lt;/p&gt;
+
+&lt;h3 name=&quot;fn-item2&quot; id=&quot;note-2--use-of-force-and-using-sql-queries&quot;&gt;Note 2 &lt;a href=&quot;#fn-return2&quot;&gt;↩&lt;/a&gt;: Use of force and Using SQL Queries&lt;/h3&gt;
+
+&lt;p&gt;In the section where I explain applying filters, I used the “forceuse” column as a proxy for determining whether or not force was used in a particular stop. The dataset actually has several columns that indicate whether or not force was used, but the filter tool built into CartoDB doesn’t really allow us to capture all of the incidents where force was applied using those columns.&lt;/p&gt;
+
+&lt;p&gt;The problem is that the filter tool always applies an “AND” operator between multiple filters, and not an “OR”. We want to see all the incidents where force was used, which means the use of physical force-hands, OR physical force-weapon drawn, OR physical force-etc. For these types of filters, we need to use the SQL query tool, which allows much finer-grained control over which data gets included in the active dataset.&lt;/p&gt;
+
+&lt;p&gt;Click on the “SQL” toolbar item. Where says “Custom SQL query”, replace the existing text with this code snippet:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-SQL&quot;&gt;SELECT * FROM table_2014_sqf_1983_sp_nyli WHERE
+  (pf_hands IN ('1','Y') OR
+  pf_wall IN ('1','Y') OR
+  pf_grnd IN ('1','Y') OR
+  pf_drwep IN ('1','Y') OR
+  pf_ptwep IN ('1','Y') OR
+  pf_baton IN ('1','Y') OR
+  pf_hcuff IN ('1','Y') OR
+  pf_pepsp IN ('1','Y') OR
+  pf_other IN ('1','Y')) AND
+  forceuse is null
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;When you click “Apply query”, you should see a much smaller dataset. These are the incidents where physical force was reported (the pf_hands, pf_wall, pf_etc. columns), but where the justification (forceuse column) was not reported. Notice they’re almost all clustered in a subset of precints in the Bronx, Flatbush, and East Harlem?&lt;/p&gt;
+
+&lt;p&gt;If you change the last part of that query, the &lt;code class=&quot;highlighter-rouge&quot;&gt;and forceuse is null&lt;/code&gt; portion, to instead read &lt;code class=&quot;highlighter-rouge&quot;&gt;or forceuse is not null&lt;/code&gt;, you will have a dataset with all of the incidents where the use of physical force was reported, including those instances where no justification was given.&lt;/p&gt;</content><author><name>Keith K. Miyake</name><email>spammy@mcspammerson</email></author><category term="mapping" /><category term="digital humanities" /><summary type="html">CartoDB is a web-based open source mapping platform. Using the 2014 NYPD Stop, Question, and Frisk dataset, this tutorial teaches the mapping basics in CartoDB by importing data, applying different visualizations, using filters, and creating data interactivity.</summary></entry><entry><title type="html">Command Line Workshop (tutorial)</title><link href="https://keithmiyake.info/blog/digital%20humanities/command-line-workshop-tutorial/" rel="alternate" type="text/html" title="Command Line Workshop (tutorial)" /><published>2014-11-18T15:45:50-08:00</published><updated>2014-11-18T15:45:50-08:00</updated><id>https://keithmiyake.info/blog/digital%20humanities/command-line-workshop-tutorial</id><content type="html" xml:base="https://keithmiyake.info/blog/digital%20humanities/command-line-workshop-tutorial/">&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;/h2&gt;
+
+&lt;p&gt;I recently gave a workshop on using the command line (a.k.a., terminal, command prompt, shell, etc.) at the Graduate Center as part of my Digital Fellow responsibilities. For the sake of sharing, I’m reposting the tutorial/walkthrough that guided the workshop. It’s really basic and pretty sparse, but the resources linked at the bottom provide lots of additional content to help you or your students get started using the *NIX/BSD/CygWin/busybox command line. Note: everything listed should work with most shells, although iirc, the “apropos” command isn’t included in busybox and “man” probably won’t have much useful documentation.&lt;/p&gt;
+
+&lt;h2 id=&quot;command-line-walkthrough&quot;&gt;Command Line Walkthrough&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Setup&lt;/p&gt;
+
+    &lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; ./setup.sh
+ &lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; ~
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Structure of a command&lt;/p&gt;
+
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;grep -r capital etext/*&lt;/code&gt;&lt;/p&gt;
+
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;command&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;flags/options&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;arguments&lt;/code&gt;&lt;/p&gt;
+
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;*&lt;/code&gt; (asterisk) is a &lt;em&gt;wildcard&lt;/em&gt;, meaning match everything in the etext directory. &lt;code class=&quot;highlighter-rouge&quot;&gt;/&lt;/code&gt; slashes are used to separate directories: &lt;code class=&quot;highlighter-rouge&quot;&gt;/home/keith/projects/etext&lt;/code&gt; might be the full path (location) of the etext folder, which is within the projects folder, which itself is in the keith folder within the home folder located at the root of my drive (filesystem).&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;White spaces in commands&lt;/p&gt;
+
+    &lt;p&gt;White spaces separate arguments and options, use quotes to include spaces in things like filenames&lt;/p&gt;
+
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;grep -r &quot;they were&quot; etext/*&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;The file system, files, folders, user folder&lt;/p&gt;
+
+    &lt;p&gt;Common commands: &lt;code class=&quot;highlighter-rouge&quot;&gt;pwd&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;ls&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;cd&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;mkdir&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;touch&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;rmdir&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;rm&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;cp&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;mv&lt;/code&gt;&lt;/p&gt;
+    &lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;nb&quot;&gt;pwd  
+ ls  
+ ls&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-l&lt;/span&gt;  
+ &lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;mydir  
+ &lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; ~  
+ &lt;span class=&quot;nb&quot;&gt;mkdir &lt;/span&gt;mynewdir  
+ &lt;span class=&quot;nb&quot;&gt;mkdir&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-p&lt;/span&gt; mynewdir/mysubdir/mysubsub/subx3  
+ &lt;span class=&quot;nb&quot;&gt;touch &lt;/span&gt;goodbye.txt  
+ &lt;span class=&quot;nb&quot;&gt;rmdir &lt;/span&gt;mynewdir/mysubdir/mysubsub/subx3  
+ &lt;span class=&quot;nb&quot;&gt;rm &lt;/span&gt;goodbye.txt  
+ &lt;span class=&quot;nb&quot;&gt;rm&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-r&lt;/span&gt; mynewdir  
+ &lt;span class=&quot;nb&quot;&gt;cp &lt;/span&gt;hello.txt mydir/hello_copy.txt  
+ &lt;span class=&quot;nb&quot;&gt;mv &lt;/span&gt;mydir/hello_copy.txt ./
+ &lt;span class=&quot;nb&quot;&gt;mv &lt;/span&gt;hello_copy.txt hello_goodbye.txt
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+
+    &lt;p&gt;Use &lt;code class=&quot;highlighter-rouge&quot;&gt;mv&lt;/code&gt; to rename a file (move a file to a new file with a different name)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Working with files: cat, less&lt;/p&gt;
+
+    &lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;nb&quot;&gt;cat &lt;/span&gt;hello.txt  
+ &lt;span class=&quot;nb&quot;&gt;cat &lt;/span&gt;aesopa10.txt  
+ less aesopa10.txt
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Pipes and redirection&lt;/p&gt;
+
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;|&lt;/code&gt; pipes take the output from one command and sends it as an argument of the second one&lt;/p&gt;
+
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;gt;&lt;/code&gt; (redirect), &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;gt;&amp;gt;&lt;/code&gt; (append) sends output as the input to the file/stream&lt;/p&gt;
+
+    &lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;hello world.&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; hello.txt &lt;span class=&quot;c&quot;&gt;# output &quot;hello world.&quot; into a new text file, hello.txt&lt;/span&gt;
+ &lt;span class=&quot;nb&quot;&gt;cat &lt;/span&gt;aesopa10.txt | less &lt;span class=&quot;c&quot;&gt;# read the aesopa10.txt file and send the output to the less program&lt;/span&gt;
+ &lt;span class=&quot;nb&quot;&gt;grep&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-r&lt;/span&gt; they etext/&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; them.txt &lt;span class=&quot;c&quot;&gt;# search for 'they' and output results to them.txt&lt;/span&gt;
+ &lt;span class=&quot;nb&quot;&gt;cat&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt; them.txt &lt;span class=&quot;c&quot;&gt;# enter text to be appended to the end of them.txt&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+
+    &lt;p&gt;&lt;em&gt;Use ctrl-d to finish entering text&lt;/em&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Finding stuff: grep, find&lt;/p&gt;
+
+    &lt;p&gt;files: &lt;code class=&quot;highlighter-rouge&quot;&gt;find . -name &quot;*.txt&quot; -print&lt;/code&gt;&lt;/p&gt;
+
+    &lt;p&gt;The &lt;code class=&quot;highlighter-rouge&quot;&gt;.&lt;/code&gt; (dot) indicates the current directory. &lt;code class=&quot;highlighter-rouge&quot;&gt;..&lt;/code&gt; (two dots) indicate the directory above the current directory (use &lt;code class=&quot;highlighter-rouge&quot;&gt;pwd&lt;/code&gt; if you forget what directory you’re in).&lt;/p&gt;
+
+    &lt;p&gt;text:&lt;/p&gt;
+
+    &lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;nb&quot;&gt;grep&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-r&lt;/span&gt; race ./&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;  
+ &lt;span class=&quot;nb&quot;&gt;grep&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-r&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot; race&quot;&lt;/span&gt; ./&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+
+    &lt;p&gt;case insensitive: &lt;code class=&quot;highlighter-rouge&quot;&gt;grep -ir german ./*&lt;/code&gt;&lt;/p&gt;
+
+    &lt;p&gt;wildcards: &lt;code class=&quot;highlighter-rouge&quot;&gt;grep -ir &quot;fr.nc[eh]&quot; ./*&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Getting help: man, apropos, –help&lt;/p&gt;
+
+    &lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; man &lt;span class=&quot;nb&quot;&gt;grep  
+ &lt;/span&gt;apropos find  
+ &lt;span class=&quot;nb&quot;&gt;grep&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--help&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Autocompletion, bash history&lt;/p&gt;
+
+    &lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;nb&quot;&gt;cat &lt;/span&gt;ae&amp;lt;tab&amp;gt; &lt;span class=&quot;c&quot;&gt;# --&amp;gt; [cat aesopa10.txt]&lt;/span&gt;
+ &amp;lt;up&amp;gt; &lt;span class=&quot;c&quot;&gt;# --&amp;gt; scroll through previous commands&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Exit&lt;/p&gt;
+
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;exit&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;additional-stuff&quot;&gt;Additional Stuff&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Keyboard shortcuts&lt;/p&gt;
+
+    &lt;p&gt;See: &lt;a href=&quot;http://en.wikipedia.org/wiki/Bash_%28Unix_shell%29#Keyboard_shortcuts&quot;&gt;Wikipedia Bash Keyboard Shortcuts&lt;/a&gt;&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;ctrl-c: kill the currently running command/program&lt;/li&gt;
+      &lt;li&gt;ctrl-d: exit the current program&lt;/li&gt;
+      &lt;li&gt;ctrl-z: pause and return to the command line (&lt;code class=&quot;highlighter-rouge&quot;&gt;%n&lt;/code&gt; to resume the &lt;em&gt;n&lt;sup&gt;th&lt;/sup&gt;&lt;/em&gt; paused command, e.g., &lt;code class=&quot;highlighter-rouge&quot;&gt;%1&lt;/code&gt; for the first paused command, etc.)&lt;/li&gt;
+      &lt;li&gt;ctrl-a: jump to the beginning of a line&lt;/li&gt;
+      &lt;li&gt;ctrl-e: jump to the end of a line&lt;/li&gt;
+      &lt;li&gt;ctrl-b: move back one character&lt;/li&gt;
+      &lt;li&gt;ctrl-f: move forward one character&lt;/li&gt;
+      &lt;li&gt;ctrl-w: delete a word backwards&lt;/li&gt;
+      &lt;li&gt;up/down/ctrl-p/ctrl-n: previous/next command&lt;/li&gt;
+      &lt;li&gt;tab: autocomplete&lt;/li&gt;
+      &lt;li&gt;ctrl-l: clear the display&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Installing command line programs:&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;Debian Linux (Mint, Ubuntu, etc.): &lt;a href=&quot;https://help.ubuntu.com/community/AptGet/Howto&quot;&gt;apt&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;Red Hat/Fedora Linux: &lt;a href=&quot;http://yum.baseurl.org/&quot;&gt;yum&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;Arch/Manjaro Linux: &lt;a href=&quot;https://www.archlinux.org/pacman/&quot;&gt;pacman&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;OS X: &lt;a href=&quot;http://brew.sh/&quot;&gt;homebrew&lt;/a&gt;&lt;/p&gt;
+
+        &lt;p&gt;First have to run &lt;code class=&quot;highlighter-rouge&quot;&gt;xcode-select --install&lt;/code&gt;&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;Windows: &lt;a href=&quot;https://chocolatey.org/&quot;&gt;Chocolatey&lt;/a&gt;&lt;/p&gt;
+
+        &lt;p&gt;Requires: &lt;a href=&quot;https://www.cygwin.com/&quot;&gt;cygwin&lt;/a&gt; or &lt;a href=&quot;https://msdn.microsoft.com/en-us/commandline/wsl/install_guide&quot;&gt;Ubuntu subsystem on Windows 10&lt;/a&gt;&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Other topics to look into: users, groups, permissions, linking, processes, shell scripts, loops…&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Google is your friend!!!&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;additional-resources&quot;&gt;Additional Resources&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://cli.learncodethehardway.org/book/&quot;&gt;http://cli.learncodethehardway.org/book/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.davidbaumgold.com/tutorials/command-line/&quot;&gt;http://www.davidbaumgold.com/tutorials/command-line/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://learnpythonthehardway.org/book/appendixa.html&quot;&gt;http://learnpythonthehardway.org/book/appendixa.html&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://ryanstutorials.net/linuxtutorial/commandline.php&quot;&gt;http://ryanstutorials.net/linuxtutorial/commandline.php&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;advanced-resources&quot;&gt;Advanced Resources&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://ohmyz.sh/&quot;&gt;http://ohmyz.sh/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/revans/bash-it&quot;&gt;https://github.com/revans/bash-it&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://zachholman.com/2010/08/dotfiles-are-meant-to-be-forked/&quot;&gt;http://zachholman.com/2010/08/dotfiles-are-meant-to-be-forked/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://dotfiles.github.io/&quot;&gt;http://dotfiles.github.io/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>{&quot;login&quot;=&gt;&quot;kmiyake&quot;, &quot;email&quot;=&gt;&quot;keith.miyake@gmail.com&quot;, &quot;display_name&quot;=&gt;&quot;Keith Miyake&quot;, &quot;first_name&quot;=&gt;&quot;Keith&quot;, &quot;last_name&quot;=&gt;&quot;Miyake&quot;}</name><email>keith.miyake@gmail.com</email></author><category term="command line" /><category term="digital humanities" /><category term="tutorial" /><category term="workshop" /><summary type="html">The tutorial bits from a workshop I led on using the command line while I was a GC Digital Fellow. Don't be scared, give it a try!</summary></entry><entry><title type="html">DH Strangelove or: How I Learned to Stop Worrying and Love the Digital Humanities</title><link href="https://keithmiyake.info/blog/digital%20humanities/dh-strangelove-or-how-i-learned-to-stop-worrying-and-love-the-digital-humanities/" rel="alternate" type="text/html" title="DH Strangelove or: How I Learned to Stop Worrying and Love the Digital Humanities" /><published>2014-10-15T10:37:27-07:00</published><updated>2014-10-15T10:37:27-07:00</updated><id>https://keithmiyake.info/blog/digital%20humanities/dh-strangelove-or-how-i-learned-to-stop-worrying-and-love-the-digital-humanities</id><content type="html" xml:base="https://keithmiyake.info/blog/digital%20humanities/dh-strangelove-or-how-i-learned-to-stop-worrying-and-love-the-digital-humanities/">&lt;p&gt;Disclaimer: I’m not trying to equate the Digital Humanities with Weapons of Mass Destruction. Just in case I needed to clarify my Kubrick reference…&lt;/p&gt;
+
+&lt;p&gt;The start of a new academic (and fellowship) year prompts some introspection to establish goals and objectives for the year to come. Since I was new to the world of digital humanities (DH) when I began my tenure as a Digital Fellow last year, I spent a fair amount of time figuring out what DH is and how it fit into my life as a scholar. Now that I have a better sense of the field, theory, tools, and practices of DH, it seems like an opportune moment to briefly meditate on my understandings of DH from the perspective of a “non-digital humanist,” both to hone my goals for the current fellowship year, as well as for the sake of other non-digital humanists who find themselves curious about the digital humanities.&lt;/p&gt;
+
+&lt;p&gt;My use of the term “non-digital humanist” requires some explanation, lest I imply that I don’t use, do, or believe in the digital humanities. By non-digital humanist, I mean that at present, and unlike many (most?) of my Digital Fellow colleagues, my scholarship does not pertain to, nor does it incorporate, DH methods or theory (without getting into the debates about what constitutes either). Even though there are questions I could be asking in my research that would fit nicely with DH methods, I’ve made the conscious decision not to pursue that path. But by the same logic, there are questions I could be asking in my research that would fit nicely with ethnographic or quantitative social science methods, and which would doubtlessly provide meaningful results, but at the present, I’m neither an ethnographer nor a quantitative social scientist, putting aside completely the debates about the boundaries between the social sciences and humanities. And yet, as a social scientist I have those tools available to me, just as I have the tools of DH available to me for when the inspiration strikes to set off on a project for which those tools, methods, questions, etc. are more relevant. And this understanding is at the heart of what I’m trying to get at.&lt;/p&gt;
+
+&lt;p&gt;Debates about who “counts” as a digital humanist are probably as old as institutional funding for DH scholarship. This post isn’t an intervention into that debate (http://dhdebates.gc.cuny.edu/debates/), although be sure to check out my note about it at the bottom of this post. Depending on who’s asked, there’s a strong case that I fit the label of “digital humanist” since I’ve been involved in projects that utilize digital technologies in the making, coding, and broad audience sharing of humanities and humanistic social science scholarship. But that’s not really my jam. And I assume that for many other scholars who keep hearing chatter about (and countless CFPs, jobs, and funding opportunities for) The Digital Humanities, but aren’t really familiar with it, “convinced” by it, or actively engaging it, the label non-digital humanist is probably appropriate. I fit into this camp of non-digital humanists, and this post is some initial thoughts about the digital humanities for, and by, a non-digital humanist.&lt;/p&gt;
+
+&lt;p&gt;One of the easiest ways to jump in to the digital humanities, which in some ways is also the hardest, is by tapping into the mindset behind much of the digital humanities community. I’m referring specifically to ideas about open access, collaboration, sharing, making, playing, and failure. As we all know, academia, in the form of the “edu-factory”, has a tendency to instill a culture of isolation, perfectionism, and counter-constructive criticism. Many scholars critical of the siloing of knowledge within the academy already engage in practices to combat these tendencies, such as interdisciplinary collaboration, mentoring, colloquia, trade unionism, and horizontalism. But let’s face it, the doctorate-tenure-promotion pipeline (labyrinth?) works against this type of scholarship at every turn.&lt;/p&gt;
+
+&lt;p&gt;Taking seriously the push from within DH communities to promote those DH mindset ideas mentioned above is certainly another way to reinforce the push back against the ivory tower. Many non-digital humanists probably already engage in practices and are invested in some of the ideals promoted from within this “DH mindset.” So it’s probably worthwhile for non-digital humanists with an interest in these sorts of ideals to further familiarize themselves with some of the low-risk DH practices such as allowing open access to scholarship through the use of easily redistributable digital mediums, or “tinkering” with data or new tools without fear of failure. Keeping an eye on emerging practices that fit within this DH mindset and a willingness to try some of them out has been one of the most accessible and digestible ways to get into DH for myself and those with whom I’ve worked over the past year.&lt;/p&gt;
+
+&lt;p&gt;One of the challenges for me in embracing the whole DH mindset has been collaboration. At times, and depending on the task, I am great at collaborating, from planning to communicating to execution to evaluation. But in many situations, I’m absolutely horrible at it, especially when I think it’s easier and quicker to just do it myself. In a previous life as an engineer, I had to delegate work and manage personnel, then review and sign off on the job. As a graduate student, almost all of my writing and research is either done independently or in a small research group where everyone has their specific jobs and areas of specialization. It has been far from a smooth transition back from isolated scholar to team member—or at the very least, Digital Fellow who’s not afraid to ask others to (meaningfully) collaborate on a project. So this year, one of the things I want to work on as a Digital Fellow is figuring out ways to effectively work with others on projects where we communicate regularly (instead of emails once every few weeks) and where tasks get delegated or divvied in such a way that we have a sense that we’re building it together and can share ownership over the process. In a way, this is simply project management. But in an environment where we are all on an academic’s schedule with writing, researching, or coursework as our priority, project management is a whole different beast—a digital humanities beast.&lt;/p&gt;
+
+&lt;p&gt;When I initially began drafting this post, I set out to provide a short review of several different aspects of the digital humanities from a non-digital humanist perspective, with the mindset or culture of DH being just the beginning. There will be more to follow, including, I suspect, the ways and means of DH tools and DH praxis. Hopefully these posts help demystify the digital humanities and help others have the same realization that I’ve had over the past year, that there’s a tremendous benefit to any scholar (whether within or without the academy) in engaging with the digital humanities. And ultimately, regardless of our research focus, methods, or skills (e.g., coding), many of us “non-digital humanists” are, actually, already digital humanists in that we align ourselves in small—or maybe even large—ways with what DH boosters have been cheering for all along, even if we don’t think of what we do as the digital humanities.&lt;/p&gt;
+
+&lt;p&gt;This brings me to my final point: injecting myself into the debate about the digital humanist label, even though I lied in the third paragraph above and said I wasn’t trying to intervene. There are certainly arguments for why maintaining labels and establishing boundaries around the digital humanities is important, but I’m pretty sure most of those involve institutional structures, funding, hiring, and promotion. These are not trivial matters that are simply dismissible as bureaucratic cruft. They &lt;em&gt;are&lt;/em&gt; about policing disciplinary structures—the multiple meanings of the term academic &lt;em&gt;discipline&lt;/em&gt; are not coincidental. But for polemical and pedagogical purposes, encouraging non-digital humanists to see themselves as already engaged in the digital humanities is an important maneuver. It is like telling someone to keep an open mind about their scholarship; to take risks; to play. And isn’t that what we all keep saying the digital humanities is supposed to be about?&lt;/p&gt;</content><author><name>{&quot;login&quot;=&gt;&quot;kmiyake&quot;, &quot;email&quot;=&gt;&quot;keith.miyake@gmail.com&quot;, &quot;display_name&quot;=&gt;&quot;Keith Miyake&quot;, &quot;first_name&quot;=&gt;&quot;Keith&quot;, &quot;last_name&quot;=&gt;&quot;Miyake&quot;}</name><email>keith.miyake@gmail.com</email></author><category term="academia" /><category term="digital humanities" /><category term="maker culture" /><summary type="html">I set out to provide a short review of several different aspects of the digital humanities from a non-digital humanist perspective, with the mindset or culture of DH being just the beginning.</summary></entry><entry><title type="html">Learning to Map with ArcGIS StoryMaps</title><link href="https://keithmiyake.info/blog/digital%20humanities/geography/learning-to-map-with-arcgis-storymaps/" rel="alternate" type="text/html" title="Learning to Map with ArcGIS StoryMaps" /><published>2014-03-18T19:43:33-07:00</published><updated>2014-03-18T19:43:33-07:00</updated><id>https://keithmiyake.info/blog/digital%20humanities/geography/learning-to-map-with-arcgis-storymaps</id><content type="html" xml:base="https://keithmiyake.info/blog/digital%20humanities/geography/learning-to-map-with-arcgis-storymaps/">&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+
+&lt;p&gt;Maps are extremely versatile tools for communicating ideas and information. Creating maps can be challenging, but this tutorial will introduce one tool that simplifies the process of making several types of maps in order to tell your stories.&lt;/p&gt;
+
+&lt;p&gt;The tool is called StoryMaps, and it was created by ESRI, the company behind one of the most widely used commercial Geographic Information Systems software tools, ArcGIS. StoryMaps allows users to create maps in order to tell a story around spatialized data, such as photographs, videos, or social information based around specific places.&lt;/p&gt;
+
+&lt;p&gt;There are tons of existing examples of StoryMaps that you can check out on the application’s website. They have a &lt;a href=&quot;http://storymaps.arcgis.com/en/gallery/#s=0&amp;amp;n=30&amp;amp;d=1&amp;quot;&quot;&gt;searchable gallery&lt;/a&gt; as well as &lt;a href=&quot;http://storymaps.arcgis.com/en/collections/&quot;&gt;curated collections&lt;/a&gt; based on predefined categories. One example of what you can do with StoryMaps, which I chose in honor of the recently deceased Harold Ramis, and since I’m currently in New York City, is this particularly fun StoryMap of locations used in the movie Ghostbusters, &lt;a href=&quot;http://www.arcgis.com/apps/MapTour/index.html?appid=011d4c84b7054b6c84feca055bfe2b34&amp;amp;webmap=026c931104694eb4be7452c368baebc3&quot;&gt;Something Strange in the Neighborhood&lt;/a&gt;.&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  
+    &lt;a href=&quot;http://www.arcgis.com/apps/MapTour/index.html?appid=011d4c84b7054b6c84feca055bfe2b34&amp;amp;webmap=026c931104694eb4be7452c368baebc3&quot; title=&quot;&quot;&gt;
+  
+  &lt;img src=&quot;https://keithmiyake.info/assets/img/Ghostbusters__Something_Strange_In_Your_Neighborhood-1024x533.png&quot; alt=&quot;Ghostbusters: Something Strange in Your Neighborhood&quot; /&gt;
+  
+    &lt;/a&gt;
+  
+  
+    &lt;figcaption&gt;There’s something strange in your neighborhood: a StoryMap tour of the Ghostbusters movie via filming locations in Manhattan
+&lt;/figcaption&gt;
+  
+&lt;/figure&gt;
+
+&lt;p&gt;StoryMaps offers several different types of map templates that you can use to tell your own stories, but they roughly fall into two broad categories: point maps and thematic maps. Point maps contain a series of specific locations (e.g., addresses, map coordinates, point markers, etc.), which can be ordered or unordered, and are usually used to point out where specific things are located. Thematic maps contain data about places that are not necessarily tied to specific points on a map (although they can include those as well) but rather, present generalized information about large areas, such as population density within a zip code, or satellite imagery taken in a specific year and light spectrum.&lt;/p&gt;
+
+&lt;p&gt;For both of these categories, StoryMaps offers a variety of ways to present the information based on the story you are trying to tell. For example, timelines or tours might use a sequential series of points, whereas a story about urban change over time might use a thematic map with a “slider” that lets viewers seamlessly compare two different thematic maps side by side (you have to &lt;a href=&quot;http://story.maps.arcgis.com/apps/StorytellingSwipe/index.html?appid=8c6e1f525c3e4bc7b387028de565df94&amp;amp;webmap=ad6def10d6634e25b8f5a0bc8c6a3a8e&quot;&gt;see&lt;/a&gt; it to get it).&lt;/p&gt;
+
+&lt;h2 id=&quot;getting-started&quot;&gt;Getting Started&lt;/h2&gt;
+
+&lt;p&gt;There are pretty well documented tutorials on using the various types of StoryMaps on the ESRI website. What I aim to do here is to help explain what the different options are for creating and displaying your StoryMaps so that you know where to look for help on the ESRI site.&lt;/p&gt;
+
+&lt;h3 id=&quot;step-1-explore&quot;&gt;Step 1: Explore&lt;/h3&gt;
+
+&lt;p&gt;The first thing you should do, if you haven’t already, is to explore some of the StoryMaps on the ESRI website in their &lt;a href=&quot;http://storymaps.arcgis.com/en/gallery/#s=0&amp;amp;n=30&amp;amp;d=1&quot;&gt;searchable gallery&lt;/a&gt; and &lt;a href=&quot;http://storymaps.arcgis.com/en/collections/&quot;&gt;curated collections&lt;/a&gt;. This will give you a sense of what’s possible and the different ways of conveying different types of stories and communicating different sorts of ideas.&lt;/p&gt;
+
+&lt;h3 id=&quot;step-2-gather-data&quot;&gt;Step 2: Gather Data&lt;/h3&gt;
+
+&lt;p&gt;Once you have a sense of the story you want to tell, the next step is to figure out what data you need in order to tell that story.&lt;/p&gt;
+
+&lt;p&gt;If you want to tell a story about a collection of points, this might include photographs, videos, news clippings, or simply informational text about specific places.&lt;/p&gt;
+
+&lt;p&gt;If your story is one involving one or more themed maps, you want to figure out if maps containing your data already exist. You can &lt;a href=&quot;http://www.arcgis.com/home/gallery.html&quot;&gt;search the ArcGIS Online website&lt;/a&gt; to see if someone else has already created a map appropriate to your story. Or you can create your own basemaps using the ArcGIS online tools or desktop application (although these methods are beyond the scope of this guide).&lt;/p&gt;
+
+&lt;p&gt;To help you build your data collections, you might consider using the &lt;a href=&quot;http://www.esri.com/software/arcgis/smartphones/collector-app&quot;&gt;ESRI Collector&lt;/a&gt; smartphone application, which lets you capture all sorts of data (pictures, video, routes, etc.) along with geospatial information such as where the picture was taken, so that you can build up your StoryMaps data automatically. I’m not trying to turn this into a full blown ad for ESRI tools, but it’s actually a pretty nifty application that integrates easily with their map making software.&lt;/p&gt;
+
+&lt;h3 id=&quot;step-3-decide-on-a-map-type-application&quot;&gt;Step 3: Decide on a Map Type (Application)&lt;/h3&gt;
+
+&lt;p&gt;If you looked around the StoryMaps gallery, you noticed that there are several different types of maps that you can build. Each of these particular applications of the StoryMaps platform has a slightly different process for building your map, and might have different constraints on how you actually get the map displayed for people to view. Specifically, there are tools on the StoryMaps website that allow you to build and host &lt;a href=&quot;http://www.arcgis.com/apps/MapTour/?fromScratch&quot;&gt;map tours&lt;/a&gt;, &lt;a href=&quot;http://www.arcgis.com/apps/StorytellingSwipe/?fromScratch&amp;amp;layout=swipe&quot;&gt;“swipe” maps&lt;/a&gt;, and &lt;a href=&quot;http://www.arcgis.com/apps/StorytellingSwipe/?fromScratch&amp;amp;layout=spyglass&quot;&gt;“spyglass” maps&lt;/a&gt;, but to create other types of maps you will need to manually edit data files and host them on an external server.&lt;/p&gt;
+
+&lt;h4 id=&quot;storymaps-hosted-maps&quot;&gt;StoryMaps Hosted Maps&lt;/h4&gt;
+
+&lt;p&gt;StoryMaps hosted maps can be built in a matter of minutes with online tools. These maps can be viewed on the StoryMaps website without any further setup. The downside is that you are extremely limited in the types of maps you can create. The big big big upside is that they are super easy to set up.&lt;/p&gt;
+
+&lt;h4 id=&quot;self-hosted-maps&quot;&gt;Self-Hosted Maps&lt;/h4&gt;
+
+&lt;p&gt;Self-hosted maps are self-contained “web applications” consisting of database files, or the data; and application files, or the stuff that tells a browser how to display the map. The big upsides here is there is a ton of flexibility to customize your maps to display your data in whatever fashion you want. You can use one of the provided templates as a scaffolding upon which you can add functionality, pizzaz, and flair. You can also use the templates as ready-to-go maps that only require you to add your data and maybe to change a couple of other options to give it your own titles, descriptions, colors, etc. The big downside is that there is a slight learning curve to get started, and an even steeper one to major customizations. It also requires a minimal knowledge of web hosting and, of course, access to a web server.&lt;/p&gt;
+
+&lt;h3 id=&quot;step-4-play&quot;&gt;Step 4: Play&lt;/h3&gt;
+
+&lt;p&gt;Try all of the different StoryMaps builder tools. Play around with other people’s maps hosted on the StoryMaps website. See what works for you, what is confusing, and what is downright silly. Then use this knowledge to help you create a more effective map. If the purpose of a StoryMap is to communicate ideas, then one of the most important considerations should be how to communicate those ideas clearly. Maybe you’ll stumble onto a map that uses one of the StoryMap applications in a way that you hadn’t considered. Maybe your story is really best told through some variable that doesn’t necessarily fit into maps, but that is still communicable through spatialized data. Don’t be afraid to start over when your first map seems awkward or clunky. As long as you keep your underlying data, creating a new map shouldn’t be too difficult.&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;StoryMaps provides a variety of options for creating your own maps. They offer a pretty big step up in functionality over some other tools such as custom Google Maps, and are better suited to communicating a range of ideas than Google Maps, which are more appropriate for the simple display of points or areas on a map. Getting started using StoryMaps is easy if you already have an idea in mind—you just need to start gathering data and can immediately begin mapping using one of the StoryMaps builder tools.&lt;/p&gt;
+
+&lt;p&gt;Alternatively, if you just like the idea of creating your own maps (maybe you recently came across the &lt;a href=&quot;http://countercartographies.wordpress.com/&quot;&gt;counter cartographies collective&lt;/a&gt;?), but aren’t quite sure what you want to map, browsing the StoryMaps galleries might give you some inspiration. With your idea and some data, all that remains is building the map. I encourage everyone to try playing with the map builder tools. It’s free and really simple to get started. But if you are down for the challenge, I strongly encourage you to also try developing your own web application using one of the &lt;a href=&quot;http://storymaps.arcgis.com/en/app-list/&quot;&gt;StoryMaps templates&lt;/a&gt; since they offer a great deal of additional flexibility in how you tell the geographic stories that are meaningful (or simply useful) to you.&lt;/p&gt;</content><author><name>{&quot;login&quot;=&gt;&quot;kmiyake&quot;, &quot;email&quot;=&gt;&quot;keith.miyake@gmail.com&quot;, &quot;display_name&quot;=&gt;&quot;Keith Miyake&quot;, &quot;first_name&quot;=&gt;&quot;Keith&quot;, &quot;last_name&quot;=&gt;&quot;Miyake&quot;}</name><email>keith.miyake@gmail.com</email></author><category term="arcgis" /><category term="mapping" /><summary type="html">Maps are extremely versatile tools for communicating ideas and information. Creating maps can be challenging, but this tutorial will introduce one tool that simplifies the process of making several types of maps in order to tell your stories.</summary></entry><entry><title type="html">PSA: Backup Your Data Now</title><link href="https://keithmiyake.info/blog/digital%20humanities/psa-backup-your-data-now/" rel="alternate" type="text/html" title="PSA: Backup Your Data Now" /><published>2014-03-04T10:00:08-08:00</published><updated>2014-03-04T10:00:08-08:00</updated><id>https://keithmiyake.info/blog/digital%20humanities/psa-backup-your-data-now</id><content type="html" xml:base="https://keithmiyake.info/blog/digital%20humanities/psa-backup-your-data-now/">&lt;p&gt;&lt;strong&gt;Backup.&lt;/strong&gt; It’s one of those anxiety provoking dirty words. We all want to feel happily ignorant that the possibility of losing our precious data could actually happen to us. And this is despite the fact that most everyone has lost some sort of irreplaceable data at some point in their digital lives. Most of us have, at some point, made an effort to set up a data backup system. Probably one involving an external hard drive that we picked up on sale a few years ago. Probably after losing some data and telling ourselves, “Never Again.” But fewer of us actually keep up with our backup ambitions.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;In this post, I will tell you why you need to be more proactive with data backups and provide some tips to help you set up a better backup plan.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;the-motivation&quot;&gt;The Motivation&lt;/h2&gt;
+
+&lt;p&gt;My friend recently had their backpack stolen while they were at an academic conference. Inside the backpack was their laptop and tons (and TONS) of handwritten field notes, ideas, song lyrics, etc. In other words, not just digital data, but irreplaceable analog data as well. This friend had been using an external hard drive for backups for quite a while, as well as cloud storage for most of their working documents. When it came time to assess the extent of the loss, they realized that the hard drive backups hadn’t been saving new data for a couple of months and a lot of data like pictures, music, scanned field notes, etc. weren’t synced to their cloud storage. Cue the tummy turning feeling you get when you realize the situation is FUBAR.&lt;/p&gt;
+
+&lt;p&gt;This is too important to ignore, particularly since for many of us, our digital information is our lives. If I lost all my dissertation research, I’m pretty sure that I’d drop out of grad school and become an off-the-grid hermit.&lt;/p&gt;
+
+&lt;h2 id=&quot;point-1-its-really-easy-to-get-lazy-or-complacent-about-ensuring-that-backups-are-up-to-date-and-fully-functional&quot;&gt;Point 1: It’s really easy to get lazy or complacent about ensuring that backups are up-to-date and fully functional.&lt;/h2&gt;
+
+&lt;p&gt;If you are using an external hard drive to backup your data, check it right now. Make sure that your documents:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;can be opened and aren’t already corrupted;&lt;/li&gt;
+  &lt;li&gt;are up to date and your backup schedule is still active;&lt;/li&gt;
+  &lt;li&gt;if it’s a bootable recovery (e.g., Carbon Copy Cloner, SuperDuper!; Arconis and Time Machine do almost this), that it actually boots your system;&lt;/li&gt;
+  &lt;li&gt;that everything you care about is actually included in the backup (e.g., secondary hard drives, other user accounts).&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;point-2-all-mechanical-hard-drives-fail-guaranteed&quot;&gt;Point 2: All mechanical hard drives fail. Guaranteed.&lt;/h2&gt;
+
+&lt;p&gt;If any of your hard drives (internal or backup) is more than 2 years old, think about buying a replacement. If it’s more than 3 years old, replace it now. Before it fails. Some hard drives with minimal use will last 5 or more years, but that is the exception, not the norm. Backup hard drives seem to always fail (or are discovered to be failing) at the exact same time as your internal hard drive. If you happen to have a solid state drive in your computer (like the one in MacBook Airs), you are less prone to hard drive failure, and probably won’t need to replace your drive during the computer’s lifetime.&lt;/p&gt;
+
+&lt;h2 id=&quot;point-3-rain-clouds-and-thunderstorms&quot;&gt;Point 3: Rain clouds and thunderstorms&lt;/h2&gt;
+
+&lt;p&gt;Great, you’re taking advantage of cheap cloud storage to maintain copies of your documents remotely. If you’re using Dropbox, then what about all the stuff outside of your Dropbox folder? If you are using a free plan on any of the popular cloud storage services, what happens when you run out of space? Do you have old copies of working files (oops, I accidentally saved a different version over the original but want the original back! Dropbox saves 30 days of history [or more forever if you pay more], but not all services do this)?&lt;/p&gt;
+
+&lt;p&gt;These are just some of the most obvious limitations of entrusting the cloud with your backup plan. So what do you do? Do you upgrade your account so that you can store everything in the cloud? Should you run free accounts on 10 different cloud storage services simultaneously to eke out like 50GB of space?&lt;/p&gt;
+
+&lt;p&gt;My suggestion is to think of cloud storage as your “sync-everywhere” storage, and not as a backup solution. If you need more than a few gigabytes of sync-everywhere storage, then upgrade. If you want to backup your data, then use something else because the cost to use cloud storage as backup is usually really expensive and far less effective than cloud-based backup solutions…&lt;/p&gt;
+
+&lt;h2 id=&quot;point-4-the-other-cloudoffisite-backups&quot;&gt;Point 4: The Other Cloud/Offisite Backups&lt;/h2&gt;
+
+&lt;p&gt;Digital information loss was hardly the worst impact of Hurricane Sandy. But the flooding certainly brings up a good point about backups. External hard drives simply aren’t sufficient. If something happens to your external drive, such as fire or flood damage, it’s pretty much useless. There is a good reason most companies have been using offsite tape backups of their servers for decades. Luckily, you don’t have to rely on a huge tape backup system.&lt;/p&gt;
+
+&lt;p&gt;There are numerous web-based backup services that help you maintain offsite backups of all of your data for really cheap. For instance, CrashPlan has an unlimited family plan for about $150/yr that lets you backup 10(!) computers, so you, your bestie, your grandma, and your roommate can each backup 2 computers without ever worrying about the gigs and gigs of cat pictures your grandma’s been hoarding. Think of it this way: an external hard drive dedicated to backup is going to cost a couple hundred dollars, especially if you are backing up your other external hard drive containing all of your pictures, music, and home vids. Online backup might let you replace one or two of those hard drives for about the same price.&lt;/p&gt;
+
+&lt;h2 id=&quot;point-5-the-game-plan-rule-of-3&quot;&gt;Point 5, the Game Plan: Rule of 3&lt;/h2&gt;
+
+&lt;p&gt;The general rule of digital data is that if there is something you don’t want to risk losing, keep 3 copies. That way, if something happens to one of them, and your primary backup conveniently stops working, the you still have a third place to turn to.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The first copy is your primary storage device (wherever it is currently stored).&lt;/li&gt;
+  &lt;li&gt;The second might be an external hard drive, USB memory stick, or cloud storage.&lt;/li&gt;
+  &lt;li&gt;The third should be offsite. This could be a tape backup, an external drive you keep in your office, or a cloud backup service if that’s not #2. An added bonus is for this third copy to have multiple versions of files saved (file history), or to be slightly older than your day-to-day copies so that you don’t have to worry about overwriting a file or forgetting to paste that last paragraph back in after you cut it.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;bonus-round-analog-data&quot;&gt;Bonus Round: Analog Data&lt;/h2&gt;
+
+&lt;p&gt;So in my friend’s situation described above, the biggest loss wasn’t the laptop or the data on it. It was all of the handwritten notes and other analog data. So what do we do about that, besides use a tablet or something like that to take digital notes?&lt;/p&gt;
+
+&lt;p&gt;My first suggestion is to be religious about scanning or taking pictures of important hard copy documents. If you have a smartphone or tablet, there are countless programs to help with the process of digitizing paper documents. Just do it! Water damage, theft, leaving it on the subway—not as big of an issue if you have a backup.&lt;/p&gt;
+
+&lt;p&gt;My second suggestion—and this is totally untested and kind of gimmicky—is to check out the &lt;a href=&quot;https://www.evernote.com/market/feature/moleskine-family&quot;&gt;Evernote Moleskines&lt;/a&gt;. It’s basically the same as digitizing your documents using a camera, but it has added functionality for users of Evernote by helping you to convert things to searchable text, automatically adding tags, and +3 hipster-/geekster-ness points.&lt;/p&gt;</content><author><name>{&quot;login&quot;=&gt;&quot;kmiyake&quot;, &quot;email&quot;=&gt;&quot;keith.miyake@gmail.com&quot;, &quot;display_name&quot;=&gt;&quot;Keith Miyake&quot;, &quot;first_name&quot;=&gt;&quot;Keith&quot;, &quot;last_name&quot;=&gt;&quot;Miyake&quot;}</name><email>keith.miyake@gmail.com</email></author><category term="data" /><summary type="html">Why you (yes, __you__) need to rethink your data backup. We all hate it, most of us don't do it well enough, and when it's too late we give up and cry. Don't let that happen to you. Here's how.</summary></entry><entry><title type="html">Learn Bootstrap Part 3: Customize Bootstrap and Add a Header</title><link href="https://keithmiyake.info/blog/digital%20humanities/learn-bootstrap-part-3-customize-bootstrap-and-add-a-header/" rel="alternate" type="text/html" title="Learn Bootstrap Part 3: Customize Bootstrap and Add a Header" /><published>2013-12-02T00:33:08-08:00</published><updated>2013-12-02T00:33:08-08:00</updated><id>https://keithmiyake.info/blog/digital%20humanities/learn-bootstrap-part-3-customize-bootstrap-and-add-a-header</id><content type="html" xml:base="https://keithmiyake.info/blog/digital%20humanities/learn-bootstrap-part-3-customize-bootstrap-and-add-a-header/">&lt;p&gt;This is the third in a series of lessons on using the Bootstrap web framework to develop a WordPress theme.&lt;/p&gt;
+
+&lt;p&gt;In the &lt;a href=&quot;/blog/digital%20humanities/getting-acquainted-with-bootstrap/&quot;&gt;first lesson&lt;/a&gt;, we started to get a feel for what Bootstrap looks like in a web browser and began to think about using Bootstrap code snippets to lay out a website.&lt;/p&gt;
+
+&lt;p&gt;In the &lt;a href=&quot;/blog/digital%20humanities/learn-bootstrap-part-2-adding-bootstrap-to-wordpress/&quot;&gt;second lesson&lt;/a&gt;, we incorporated the Bootstrap framework into a basic WordPress theme template and added some Bootstrap components to the WordPress site.&lt;/p&gt;
+
+&lt;p&gt;For this lesson, we will generate our own customized version of Bootstrap with modified colors, styles, etc., add it to our WordPress theme, and then incorporate Bootstrap into the site’s header.&lt;/p&gt;
+
+&lt;h2 id=&quot;customizing-bootstrap&quot;&gt;Customizing Bootstrap&lt;/h2&gt;
+
+&lt;p&gt;One of the neat things about Bootstrap is that its CSS styles are generated from compiled &lt;a href=&quot;http://lesscss.org/&quot;&gt;LESS&lt;/a&gt; code. What this means is that it uses variables to store information such as a color palette, relative font sizes and styles, and spacing rules. When you make a change to a single variable definition, that change will be propagated throughout the Bootstrap CSS automatically. So if you don’t like the default shade of blue that Bootstrap ships with, you can choose a different shade of blue and then everything that was the original blue will now be styled with your new shade of blue.&lt;/p&gt;
+
+&lt;figure class=&quot;half &quot;&gt;
+  
+    
+      &lt;a href=&quot;https://keithmiyake.info/assets/img/Bootply.com_-_Bootstrap_preview-2.png&quot;&gt;
+        &lt;img src=&quot;https://keithmiyake.info/assets/img/Bootply.com_-_Bootstrap_preview-2.png&quot; alt=&quot;Standard Bootstrap styling&quot; /&gt;
+      &lt;/a&gt;
+    
+  
+    
+      &lt;a href=&quot;https://keithmiyake.info/assets/img/PaintStrap_-_Generate_Bootstrap_themes_using_the_color_scheme-3.png&quot;&gt;
+        &lt;img src=&quot;https://keithmiyake.info/assets/img/PaintStrap_-_Generate_Bootstrap_themes_using_the_color_scheme-3.png&quot; alt=&quot;Customized Bootstrap styling&quot; /&gt;
+      &lt;/a&gt;
+    
+  
+  
+    &lt;figcaption&gt;Standard and customized Bootstrap themes applied to the same HTML code
+&lt;/figcaption&gt;
+  
+&lt;/figure&gt;
+
+&lt;p&gt;There are a number of ways to generate a custom build of Bootstrap. We’ll cover a few of them.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The official Bootstrap website has a &lt;a href=&quot;http://getbootstrap.com/customize/&quot;&gt;built-in customization page&lt;/a&gt; where you can manually set all of the different variables before downloading the Bootstrap package.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://pikock.github.io/bootstrap-magic/index.html&quot;&gt;Bootstrap Magic&lt;/a&gt; is a graphical/WYSIWYG version of the official Bootstrap customizer. It lets you preview your customizations as you edit them. Highly recommended. When you finish customizing, you can download the .css file, put it into your WordPress theme folder and change the &lt;code class=&quot;highlighter-rouge&quot;&gt;wp_enqueue_style()&lt;/code&gt; to point to your custom Bootstrap CSS instead of the default one (refer back to the previous lesson in this series if you aren’t sure about how to do this). The other thing you can do—this is a little more involved—is to download the “.less” file that is generated, place it in your Bootstrap “less” directory, and either rename it “variables.less” or modify bootstrap.less to include your customized magic-variables.less file instead of the default variables.less. The specifics of this process are beyond this lesson, but you can find plenty of assistance on Google.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://paintstrap.com/&quot;&gt;Paintstrap&lt;/a&gt; is a less-involved tool that generates Bootstrap variables/CSS files for you based on a color palette you find or generate on &lt;a href=&quot;http://www.colourlovers.com/&quot;&gt;ColourLovers&lt;/a&gt; or &lt;a href=&quot;http://kuler.adobe.com/&quot;&gt;Adobe kuler&lt;/a&gt;. While very straightforward, Paintstrap’s only really useful for customizing your color scheme, but doesn’t help with the rest of your customizations like fonts, spacing, etc. What you can do, however, is to download the variables.less file that it generates and import it into Bootstrap Magic to finish your customization.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://bootswatch.com/&quot;&gt;Bootswatch&lt;/a&gt; has complete themes that you can download, with customizations throughout the Bootstrap interface system. If you’re looking for something slightly different from the default Bootstrap look with minimum fuss, this is definitely the place to start looking.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Once you have used one of the above tools to generate either a custom Bootstrap CSS or LESS file, you’ll want to make sure that you are using this custom version in your WordPress theme instead of the default version of bootstrap.css.&lt;/p&gt;
+
+&lt;p&gt;If you used methods 1, 2, or 4 above, the only thing you need to do is to copy the generated CSS file into your WordPress theme directory. Replace the default bootstrap.css file at:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;[theme directory]/bootstrap/bootstrap.css&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;with the one you generated, renaming it if needed.&lt;/p&gt;
+
+&lt;p&gt;If you used method 3 above, or method 2 and you downloaded the .less variables file, you can place the variables.less file into the LESS directory within your Bootstrap directory. You will then need to use a program such as &lt;a href=&quot;http://koala-app.com/&quot;&gt;Koala&lt;/a&gt; or &lt;a href=&quot;http://incident57.com/less/&quot;&gt;LESS.app&lt;/a&gt; to convert the LESS files into CSS code. I won’t go through all of the details of this process, but basically, you set the LESS directory as the input directory in whichever program you use, then set the CSS directory as the output directory. Make sure that your variables.less file is included in the bootstrap.less file (you’ll need to open it in a text editor to check), and then run bootstrap.less through the LESS compiler to generate a custom bootstrap.css file.&lt;/p&gt;
+
+&lt;p&gt;Finally, you might also consider using one of the WP-LESS WordPress plugins (directions &lt;a href=&quot;http://www.noeltock.com/web-design/wordpress/using-less-with-wordpress/&quot;&gt;here&lt;/a&gt; or an alternative version in the WP plugin repository &lt;a href=&quot;http://wordpress.org/plugins/wp-less/&quot;&gt;here&lt;/a&gt;) that allow you to directly include your LESS files in your WordPress theme like you would CSS files. The great thing about doing things this way is that you can add options to your theme that modify your LESS styles (see the first linked above).&lt;/p&gt;
+
+&lt;p&gt;Now that you have your own customized version of Bootstrap integrated into your WordPress theme, the last thing we’ll cover is integrating Bootstrap into your WordPress theme header.&lt;/p&gt;
+
+&lt;h2 id=&quot;bootstrapping-the-wordpress-header&quot;&gt;Bootstrapping The WordPress Header&lt;/h2&gt;
+
+&lt;p&gt;Starting with the base theme we modified in the &lt;a href=&quot;/blog/digital%20humanities/learn-bootstrap-part-2-adding-bootstrap-to-wordpress/&quot;&gt;last lesson&lt;/a&gt;, we will be modifying the header.php file to incorporate the Bootstrap &lt;a href=&quot;http://getbootstrap.com/components/#navbar&quot;&gt;navbar component&lt;/a&gt;, which will generate something that looks like this:&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  
+  &lt;img src=&quot;https://keithmiyake.info/assets/img/Theme_Test_Site___my_bootstrap_theme_demo_site.png&quot; alt=&quot;The finished demonstration site themed with Bootstrap.&quot; /&gt;
+  
+  
+    &lt;figcaption&gt;The finished demonstration site themed with Bootstrap.
+&lt;/figcaption&gt;
+  
+&lt;/figure&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 1:&lt;/strong&gt; Open “header.php” in your text editor. Notice the bit around line 24 that says:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;header id=&quot;masthead&quot; class=&quot;site-header&quot; role=&quot;banner&quot;&amp;gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;We’re going to start our edits right below that. But first, delete lines 25-34, which contain the original header that we’re about to replace.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 2:&lt;/strong&gt; Copy-paste the following chunk of code at line 25, right below the “header” tag (this code is taken directly from the example on the Bootstrap website):&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;nav&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;navbar navbar-default&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;role=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;navigation&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Brand and toggle get grouped for better mobile display --&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;navbar-header&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;button&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;button&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;navbar-toggle&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;data-toggle=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;collapse&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;data-target=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;#bs-example-navbar-collapse-1&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;span&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;sr-only&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Toggle navigation&lt;span class=&quot;nt&quot;&gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;span&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;icon-bar&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;span&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;icon-bar&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;span&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;icon-bar&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/button&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;navbar-brand&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;#&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Brand&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+
+  &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Collect the nav links, forms, and other content for toggling --&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;collapse navbar-collapse&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;bs-example-navbar-collapse-1&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;ul&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;nav navbar-nav&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;active&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;#&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Link&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;#&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Link&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;dropdown&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;#&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;dropdown-toggle&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;data-toggle=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;dropdown&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Dropdown &lt;span class=&quot;nt&quot;&gt;&amp;lt;b&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;caret&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/b&amp;gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;ul&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;dropdown-menu&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+          &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;#&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Action&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+          &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;#&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Another action&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+          &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;#&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Something else here&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+          &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;divider&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+          &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;#&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Separated link&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+          &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;divider&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+          &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;#&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;One more separated link&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;form&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;navbar-form navbar-left&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;role=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;search&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;form-group&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;input&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;text&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;form-control&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;placeholder=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Search&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;button&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;submit&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;btn btn-default&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Submit&lt;span class=&quot;nt&quot;&gt;&amp;lt;/button&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/form&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;ul&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;nav navbar-nav navbar-right&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;#&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Link&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;dropdown&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;#&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;dropdown-toggle&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;data-toggle=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;dropdown&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Dropdown &lt;span class=&quot;nt&quot;&gt;&amp;lt;b&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;caret&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/b&amp;gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;ul&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;dropdown-menu&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+          &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;#&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Action&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+          &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;#&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Another action&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+          &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;#&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Something else here&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+          &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;divider&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+          &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;#&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Separated link&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- /.navbar-collapse --&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/nav&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 3:&lt;/strong&gt; Edit the first line where it says:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;nav class=&quot;navbar navbar-default&quot; role=&quot;navigation&quot;&amp;gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Add the class “navbar-fixed-top” (I also suggest trying “navbar-static-top” instead of “navbar-fixed-top” to see how they differ). You should end up with a line that looks like:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;nav class=&quot;navbar navbar-default navbar-fixed-top&quot; role=&quot;navigation&quot; style=&quot;top: 28px;&quot;&amp;gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;The “navbar-fixed-top” class styles the navbar so that it sticks to the top of the page, while the little bit that says &lt;code class=&quot;highlighter-rouge&quot;&gt;top: 28px&lt;/code&gt; moves it down just enough so that it is not covered by the WordPress top bar thing. If you use the “static” navbar instead, you’ll notice that it scrolls with the page instead of remaining visible as you scroll. If you prefer the static navbar, you will want to remove the &lt;code class=&quot;highlighter-rouge&quot;&gt;style=&quot;top: 28px&quot;&lt;/code&gt; bit.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 4:&lt;/strong&gt; Save the file and load your theme in a browser (refer to the &lt;a href=&quot;/blog/digital%20humanities/learn-bootstrap-part-2-adding-bootstrap-to-wordpress/&quot;&gt;previous lesson&lt;/a&gt; if you’re unsure about this). You should see a generic looking navigation bar at the top of the page, and when you scroll it should “stick” to the top:&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  
+  &lt;img src=&quot;https://keithmiyake.info/assets/img/Theme_Test_Site___my_bootstrap_theme_demo_site2.png&quot; alt=&quot;Sticky navigation on the new theme.&quot; /&gt;
+  
+  
+    &lt;figcaption&gt;Sticky navigation on the new theme.
+&lt;/figcaption&gt;
+  
+&lt;/figure&gt;
+
+&lt;p&gt;If you’re not seeing this, double check that your theme is correctly including the bootstrap.css file. You should also check to see if the page contains errors that might be preventing something from working. You can do this using the developer tools built in to most browsers (Google is your friend in this…).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 5:&lt;/strong&gt; Edit the line that says:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&amp;gt;Brand&amp;lt;/a&amp;gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Replace “Brand” with&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;bloginfo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'name'&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;?&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Replace the “#” with&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;esc_url&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;home_url&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'/'&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;?&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;You should end up with a line that looks like:&lt;/p&gt;
+
+&lt;div class=&quot;language-php highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;navbar-brand&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;esc_url&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;home_url&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'/'&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;?&amp;gt;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;bloginfo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'name'&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;?&amp;gt;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;What this does is call the WordPress function “bloginfo(‘name’)”, which displays the title of your blog, in this case, within the navbar. It also uses the “home_url()” function to link the blog name to the homepage URL.&lt;/p&gt;
+
+&lt;p&gt;We’re now well on our way to a working header navigation bar, but the next step of adding the WordPress menus will take a few additional steps…&lt;/p&gt;
+
+&lt;h2 id=&quot;add-wordpress-menus-to-the-bootstrap-navbar&quot;&gt;Add WordPress Menus to The Bootstrap Navbar&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 1:&lt;/strong&gt; WordPress uses a system called a “navwalker” to generate its menus. In order to get the menus to work with the Bootstrap navbar, we need to add a custom navwalker that will override the built in WordPress system. There are several ready-to-use navwalkers on Github that are compatible with Bootstrap 3.0, but we’re going to use the version developed by Github user twittem &lt;a href=&quot;https://github.com/twittem/wp-bootstrap-navwalker&quot;&gt;here&lt;/a&gt;. There are some other forks of this navwalker with additional functionality, such as &lt;a href=&quot;https://github.com/mharis/wp-bootstrap-navwalker&quot;&gt;this one that supports multi-level dropdown menus&lt;/a&gt; and &lt;a href=&quot;https://github.com/yazdi/wp-bootstrap-navwalker&quot;&gt;this one that adds the blog description&lt;/a&gt; to the navbar.&lt;/p&gt;
+
+&lt;p&gt;Download the wp-bootstrap-navwalker zip from one of the above Github repositories, unzip it, and copy “wp_bootstrap_navwalker.php” to your theme directory.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 2:&lt;/strong&gt; Edit your “functions.php” file to include wp_bootstrap_navwalker.php by adding the following lines:&lt;/p&gt;
+
+&lt;div class=&quot;language-php highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// Register Custom Navigation Walker&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;require_once&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'wp_bootstrap_navwalker.php'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 3:&lt;/strong&gt; Edit “header.php” to use the new navwalker instead of the default navigation links.&lt;/p&gt;
+
+&lt;p&gt;Delete everything between the navbar comments:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;!-- Collect the nav links, forms, and other content for toggling --&amp;gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;and&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;!-- /.navbar-collapse --&amp;gt;&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;In its place, copy-paste the following:&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Collect the nav links, forms, and other content for toggling --&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;collapse navbar-collapse&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;bs-example-navbar-collapse-1&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;cp&quot;&gt;&amp;lt;?php wp_nav_menu( array(
+      'menu'              ?&amp;gt;&lt;/span&gt; 'primary',
+      'theme_location'    =&amp;gt; 'primary',
+      'depth'             =&amp;gt; 2,
+      'menu_class'        =&amp;gt; 'nav navbar-nav',
+      'fallback_cb'       =&amp;gt; 'wp_bootstrap_navwalker::fallback',
+      'walker'            =&amp;gt; new wp_bootstrap_navwalker())
+    );
+  ?&amp;gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- /.navbar-collapse --&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;What this does is create a new navigation menu using the built-in WordPress function “wp_nav_menu()”, which in turn calls the wp_bootstrap_navwalker function that we just added in the previous step. The options that are being passed to “wp_nav_menu()” are described in the &lt;a href=&quot;http://codex.wordpress.org/Function_Reference/wp_nav_menu&quot;&gt;WordPress codex&lt;/a&gt;, so check that out for more information.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 4:&lt;/strong&gt; Test it out. When you load your WordPress site in a browser, you should see the navbar at the top, with the blog title on the left and either your primary navigation menu or “Add a menu” displayed if you haven’t set the menu yet. In the latter case, set up a menu by clicking the link. Be sure to check the box at the bottom of the menu customization area to display the menu in the Primary menu area.&lt;/p&gt;
+
+&lt;p&gt;If everything went as planned, you should see something like this:&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  
+  &lt;img src=&quot;https://keithmiyake.info/assets/img/Theme_Test_Site___my_bootstrap_theme_demo_site2.png&quot; alt=&quot;Simple header nav&quot; /&gt;
+  
+  
+    &lt;figcaption&gt;Simple header navigation menu
+&lt;/figcaption&gt;
+  
+&lt;/figure&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 5:&lt;/strong&gt; You can optionally add a search form to the navigation menu by adding the following code right before the closing &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;/div&amp;gt;&lt;/code&gt; tag in the previous step:&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;form&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;searchform&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;navbar-form navbar-right&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;method=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;get&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;action=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&amp;lt;?php bloginfo('home'); ?&amp;gt;/&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;role=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;search&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;form-group&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;input&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;text&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;s&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;s&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;form-control&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;placeholder=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Search&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;value=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&amp;lt;?php echo wp_specialchars($s, 1); ?&amp;gt;&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;button&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;submit&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;btn btn-default&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Submit&lt;span class=&quot;nt&quot;&gt;&amp;lt;/button&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/form&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;If everything went as planned, you should see a navbar menu like the one shown at the beginning of this section.&lt;/p&gt;
+
+&lt;p&gt;Note that when you resize the browser window to make it really narrow, the menu, including the search form, should disappear into a little button that you can click to display the menu again. Neat, right? That’s the magic of Bootstrap.&lt;/p&gt;
+
+&lt;h2 id=&quot;next-steps&quot;&gt;Next Steps&lt;/h2&gt;
+
+&lt;p&gt;This covers the basics of getting Bootstrap integrated into your WordPress theme. There are a ton of things that you can do from here to continue adding Bootstrap components throughout the rest of the theme. For example, you could create a contact form, login dialog, photo galleries, carousels, etc., all using components that are built-in to Bootstrap. Be sure to check out the official &lt;a href=&quot;http://getbootstrap.com/components&quot;&gt;Bootstrap documentation&lt;/a&gt; for a complete list of components, CSS, and javascript/jQuery that you can use throughout your WordPress theme.&lt;/p&gt;
+
+&lt;p&gt;A good next step is to use Bootstrap to modify your theme’s “footer.php” to make a page footer to match the header navbar we put together in this lesson.&lt;/p&gt;
+
+&lt;p&gt;You also probably want to add some Bootstrap classes to all of the page/content templates, including index.php, page.php, content.php, archive.php, sidebar.php, single.php, and search.php. In order to Bootstrap your page layout, you want to first modify page.php since that is the default base template. You can use various numbers of columns to set the layout of the main content area and sidebars. All of this is beyond the scope of this brief set of lessons, but there are plenty of resources on the web to help you along. Here are a few:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://bootstraphero.com/the-big-badass-list-of-twitter-bootstrap-resources&quot;&gt;http://bootstraphero.com/the-big-badass-list-of-twitter-bootstrap-resources&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://tutorialzine.com/2013/07/50-must-have-plugins-for-extending-twitter-bootstrap/&quot;&gt;http://tutorialzine.com/2013/07/50-must-have-plugins-for-extending-twitter-bootstrap/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://bootsnipp.com/resources&quot;&gt;http://bootsnipp.com/resources&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://wordpress.org/plugins/easy-bootstrap-shortcodes/&quot;&gt;http://wordpress.org/plugins/easy-bootstrap-shortcodes/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://wordpress.org/plugins/bootstrap-shortcodes/&quot;&gt;http://wordpress.org/plugins/bootstrap-shortcodes/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.hongkiat.com/blog/twitter-bootstrap/&quot;&gt;http://www.hongkiat.com/blog/twitter-bootstrap/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;That’s it for now. If you have questions or thoughts on this series of lessons, don’t hesitate to leave a comment.&lt;/p&gt;</content><author><name>{&quot;login&quot;=&gt;&quot;kmiyake&quot;, &quot;email&quot;=&gt;&quot;keith.miyake@gmail.com&quot;, &quot;display_name&quot;=&gt;&quot;Keith Miyake&quot;, &quot;first_name&quot;=&gt;&quot;Keith&quot;, &quot;last_name&quot;=&gt;&quot;Miyake&quot;}</name><email>keith.miyake@gmail.com</email></author><category term="bootstrap" /><category term="digital humanities" /><category term="LESS" /><category term="wordpress" /><summary type="html">For this lesson, we will generate our own customized version of Bootstrap with modified colors, styles, etc., add it to our WordPress theme, and then incorporate Bootstrap into the site's header.</summary></entry><entry><title type="html">Getting Started with Git and GitHub</title><link href="https://keithmiyake.info/blog/digital%20humanities/getting-started-with-git-and-github/" rel="alternate" type="text/html" title="Getting Started with Git and GitHub" /><published>2013-11-19T09:00:43-08:00</published><updated>2013-11-19T09:00:43-08:00</updated><id>https://keithmiyake.info/blog/digital%20humanities/getting-started-with-git-and-github</id><content type="html" xml:base="https://keithmiyake.info/blog/digital%20humanities/getting-started-with-git-and-github/">&lt;p&gt;One of my responsibilities as a &lt;a href=&quot;http://digitalfellows.commons.gc.cuny.edu&quot;&gt;CUNY Digital Fellow&lt;/a&gt; is to lead workshops for the GC community on various topics related to the Digital Humanities. Previously, I worked with Erin Glass to run a workshop on data management tools (check out the &lt;a href=&quot;http://commons.gc.cuny.edu/wiki/index.php/Data_Management_Tools&quot;&gt;wiki&lt;/a&gt; we created for the workshop) and one on reference management software (specifically Zotero and Mendeley).&lt;/p&gt;
+
+&lt;p&gt;Today I will be leading a workshop on Git and GitHub (really, though, it’s focused on GitHub). The target audience is non-programmers. And while I’ve been using GitHub for a while and am fairly comfortable with basic operations, my skill level is limited by the quality of stackexchange posts and the little I’ve read of the git-scm documentation/book. So this will be an interesting experience.&lt;/p&gt;
+
+&lt;p&gt;In any case, since I put together a set of slides to use during the workshop, I wanted to post them to share. I was originally going to put them together in HTML using the awesome &lt;a href=&quot;http://lab.hakim.se/reveal-js/&quot;&gt;reveal.js&lt;/a&gt;, and maybe I still will in the future, but for now a PDF will have to suffice.&lt;/p&gt;
+
+&lt;p&gt;View my basic &lt;a href=&quot;/assets/media/git_and_github.pdf&quot;&gt;Guide to Git and GitHub for Non-Programmers&lt;/a&gt; Workshop Slides.&lt;/p&gt;</content><author><name>{&quot;login&quot;=&gt;&quot;kmiyake&quot;, &quot;email&quot;=&gt;&quot;keith.miyake@gmail.com&quot;, &quot;display_name&quot;=&gt;&quot;Keith Miyake&quot;, &quot;first_name&quot;=&gt;&quot;Keith&quot;, &quot;last_name&quot;=&gt;&quot;Miyake&quot;}</name><email>keith.miyake@gmail.com</email></author><category term="digital fellows" /><category term="digital humanities" /><category term="github" /><summary type="html">Part of a tutorial on using GitHub for version control that accompanies a workshop I led as a [GC Digital Fellow](https://digitalfellows.commons.gc.cuny.edu).</summary></entry><entry><title type="html">Learn Bootstrap Part 2: Adding Bootstrap to WordPress</title><link href="https://keithmiyake.info/blog/digital%20humanities/learn-bootstrap-part-2-adding-bootstrap-to-wordpress/" rel="alternate" type="text/html" title="Learn Bootstrap Part 2: Adding Bootstrap to WordPress" /><published>2013-11-17T22:59:44-08:00</published><updated>2013-11-17T22:59:44-08:00</updated><id>https://keithmiyake.info/blog/digital%20humanities/learn-bootstrap-part-2-adding-bootstrap-to-wordpress</id><content type="html" xml:base="https://keithmiyake.info/blog/digital%20humanities/learn-bootstrap-part-2-adding-bootstrap-to-wordpress/">&lt;p&gt;This post is the second in a series of lessons on using the Bootstrap web framework to develop a WordPress theme.&lt;/p&gt;
+
+&lt;p&gt;In the &lt;a href=&quot;/blog/digital%20humanities/getting-acquainted-with-bootstrap/&quot;&gt;previous lesson&lt;/a&gt; we started to get a feel for what Bootstrap looks like in a web browser and began to think about using Bootstrap code snippets to lay out a website.&lt;/p&gt;
+
+&lt;p&gt;In this lesson, we will take the first step toward incorporating Bootstrap into WordPress.&lt;/p&gt;
+
+&lt;h2 id=&quot;before-getting-started&quot;&gt;Before Getting Started&lt;/h2&gt;
+
+&lt;p&gt;The first thing you need is a working instance of WordPress that you can freely play around on without breaking a live website.&lt;/p&gt;
+
+&lt;p&gt;There are lots of guides on the web that show you how to run a local installation of WordPress to develop your website and themes. I won’t cover this in detail. My only suggestion is that you check out &lt;a href=&quot;http://www.ampps.com/&quot;&gt;AMPPS&lt;/a&gt;, made by the people who created Softaculous. AMPPS is a free application that lets you run a local webserver with PHP, Apache, and MySQL, sort of like MAMP/XAMPP/WAMP, but with the added functionality of Softaculous built in. This means that setting up WordPress is as simple as running an installation script in your browser. Easy peasy.&lt;/p&gt;
+
+&lt;p&gt;The second thing you need is a blank WordPress theme to work with. If you have an existing theme, you can try using that as your base, but I recommend &lt;a href=&quot;http://underscores.me/&quot;&gt;_s&lt;/a&gt; (pronounced “underscores”), which is made by the people behind wordpress.com. All you have to do to use _s is enter a theme name on the website, click “Generate,” and then unzip the downloaded archive to your WordPress wp-content/themes directory.&lt;/p&gt;
+
+&lt;p&gt;The last thing you will do is make sure that your test site is loading your new theme correctly. In the WordPress Dashboard, select your theme in Appearance &amp;gt; Themes. If you visit your site now, it should look totally barren, but this will soon change.&lt;/p&gt;
+
+&lt;h2 id=&quot;bootstrap-your-new-theme&quot;&gt;Bootstrap Your New Theme&lt;/h2&gt;
+
+&lt;p&gt;The next step is to add Bootstrap to your new blank WordPress theme. There are several ways to do this, but the easiest is to download the ready-to-use Bootstrap package from &lt;a href=&quot;http://getbootstrap.com/&quot;&gt;getbootstrap.com&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;After you unzip the package, you should have a folder called “dist”. Move the “dist” folder into your new theme’s folder, and optionally, rename the folder something like “bootstrap” to make it easier to remember what’s in it.&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  
+  &lt;img src=&quot;https://keithmiyake.info/assets/img/Users_kmiyake_Dropbox_9_MAMP_htdocs_wordpress-commons_wp-content_themes.png&quot; alt=&quot;Organize your theme files&quot; /&gt;
+  
+  
+    &lt;figcaption&gt;Move the _s generated folder to your WordPress themes folder and optionally rename it ‘bootstrap.’
+&lt;/figcaption&gt;
+  
+&lt;/figure&gt;
+
+&lt;p&gt;Next we need to modify your theme’s “functions.php” file to get WordPress to load the Bootstrap files when someone views your site. To do this, open the “functions.php” file in your favorite text editor. Scroll down to around line 77, where there should be a line something like this (except where your theme name appears instead of “my_bootstrap_theme”):&lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;function my_bootstrap_theme_scripts() {&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Below this line are a few function calls to include the default CSS and Javascript files that come with the _s template. We are going to add a few more lines of code below these to include Bootstrap’s CSS and Javascript files. So around line 83, add the following:&lt;/p&gt;
+
+&lt;div class=&quot;language-php highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;wp_register_script&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'bootstrap-js'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;get_template_directory_uri&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'/bootstrap/js/bootstrap.min.js'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'jquery'&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'3.0.1'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+&lt;span class=&quot;nx&quot;&gt;wp_register_style&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'bootstrap-css'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;get_template_directory_uri&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'/bootstrap/css/bootstrap.min.css'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(),&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'3.0.1'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'all'&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+&lt;span class=&quot;nx&quot;&gt;wp_enqueue_script&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'bootstrap-js'&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+&lt;span class=&quot;nx&quot;&gt;wp_enqueue_style&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'bootstrap-css'&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Your functions.php should look something like this:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://keithmiyake.info/wp-content/uploads/2013/11/my-bootstrap-theme.png&quot;&gt;&lt;img src=&quot;/assets/img/my-bootstrap-theme.png&quot; alt=&quot;my-bootstrap-theme&quot; class=&quot;aligncenter size-full wp-image-214&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;This first line tells WordPress to register a new script, which we are going to call “bootstrap-js”. It also tells WordPress where to look for the script file (in this case, in the theme folder [get_template_directory_uri()], and then inside the bootstrap folder’s “js” folder, there is a file called “bootstrap.min.js”. The last three parameters tell WordPress that this script depends on the jquery javascript library, that the version of the script that we’re loading is version 3.0.1 (which helps it with caching), and that the script should be added in the footer of the page, which helps to speed up the page loading in a browser.&lt;/p&gt;
+
+&lt;p&gt;The second line is almost the same as the first, except it’s loading the Bootstrap CSS file and telling WordPress that this stylesheet should be used for ‘all’ media types (print, screen, etc.).&lt;/p&gt;
+
+&lt;p&gt;The last two lines tell WordPress to actually include the scripts on the page (whereas before they were only “registered”, but not loaded). We could have done this slightly differently by skipping the “wp_register_script” calls altogether, but this way is slightly better practice in case we later decide that we only want to load Bootstrap sometimes.&lt;/p&gt;
+
+&lt;p&gt;Before we save and close the functions.php file, we’re going to add one more line of code. Below the “add_action(…” which should now be around line 99, add the following:&lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;remove_filter ('the_content', 'wpautop');&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;This line will prevent WordPress from automatically inserting HTML line breaks in your posts. If you don’t do this, some of the Bootstrap snippets that we are going to add will probably not display correctly.&lt;/p&gt;
+
+&lt;p&gt;Finally, save the functions.php file. Your theme is now ready to use Bootstrap!&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Note&lt;/em&gt;: If/when you start adding additional CSS, for example, from one of the &lt;a href=&quot;http://startbootstrap.com&quot;&gt;startbootstrap.com&lt;/a&gt; templates, you can either add it to a new CSS file or append it to the style.css file that comes with the theme template. If you choose the former, simply add an additional set of ‘wp_register_style()’ and ‘wp_enqueue_style()’ calls to your new CSS file. In my case, I created a new file, “mytheme.css” and included it with the code:&lt;/p&gt;
+
+&lt;div class=&quot;language-php highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;wp_register_style&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'mytheme-css'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;get_template_directory_uri&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'/mytheme.css'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(),&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'0.0.1'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'all'&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+&lt;span class=&quot;nx&quot;&gt;wp_enqueue_style&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'mytheme-css'&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;test-your-bootstrapped-theme&quot;&gt;Test Your Bootstrapped Theme&lt;/h2&gt;
+
+&lt;p&gt;Now that you have a theme that includes Bootstrap’s base files, you can very easily test it out by creating a page that includes Bootstrap components.&lt;/p&gt;
+
+&lt;p&gt;On your test WordPress site, create a new post or edit the default “Sample Post”. In the content area, click the “text” tab to edit the raw HTML for your page’s content.&lt;/p&gt;
+
+&lt;p&gt;Now go to &lt;a href=&quot;http://bootsnipp.com/snippets/featured/crowdfunding-grid-bs-3&quot;&gt;http://bootsnipp.com/snippets/featured/crowdfunding-grid-bs-3&lt;/a&gt; and click on the “HTML” button. Copy the code and paste it into a new WordPress post on your test site.&lt;/p&gt;
+
+&lt;p&gt;Hit “Publish” and then view the post.&lt;/p&gt;
+
+&lt;p&gt;If everything went as planned, your post should look something like this:&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  
+  &lt;img src=&quot;https://keithmiyake.info/assets/img/test_post___Theme_Test_Site.png&quot; alt=&quot;Bootstrap snippet from bootsnipp.com within WordPress&quot; /&gt;
+  
+  
+    &lt;figcaption&gt;Bootstrap snippet from bootsnipp.com within WordPress
+&lt;/figcaption&gt;
+  
+&lt;/figure&gt;
+
+&lt;p&gt;Congratulations! You now have a working custom WordPress theme that implements the Bootstrap framework.&lt;/p&gt;
+
+&lt;h2 id=&quot;next-steps&quot;&gt;Next Steps&lt;/h2&gt;
+
+&lt;p&gt;Now that you’ve included Bootstrap in your WordPress theme, you can do a number of things.&lt;/p&gt;
+
+&lt;p&gt;As a next step, you can play around with Bootstrap by adding new pages or posts containing snippets from bootsnipp.com or entire templates from startbootstrap.com. If you do the latter, be sure that you add any additional CSS to your custom CSS files or create new CSS files and include them like we did previously. Also, when using templates from startbootstrap.com, you should only include the content between the &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;body&amp;gt;&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;/body&amp;gt;&lt;/code&gt; tags since the code before that it is already being added by WordPress.&lt;/p&gt;
+
+&lt;p&gt;If you are feeling ambitious, you can start editing the theme’s template files such as header.php, footer.php, index.php, and content.php to incorporate Bootstrap components into your theme. One of the subsequent lessons will cover further integration of Bootstrap into your WordPress theme, but it doesn’t hurt to start playing with the theme files now.&lt;/p&gt;</content><author><name>{&quot;login&quot;=&gt;&quot;kmiyake&quot;, &quot;email&quot;=&gt;&quot;keith.miyake@gmail.com&quot;, &quot;display_name&quot;=&gt;&quot;Keith Miyake&quot;, &quot;first_name&quot;=&gt;&quot;Keith&quot;, &quot;last_name&quot;=&gt;&quot;Miyake&quot;}</name><email>keith.miyake@gmail.com</email></author><category term="bootstrap" /><category term="wordpress" /><summary type="html">This post is the second in a series of lessons on using the Bootstrap web framework to develop a WordPress theme.</summary></entry><entry><title type="html">Learn Bootstrap Part 1: Getting Acquainted with Bootstrap</title><link href="https://keithmiyake.info/blog/digital%20humanities/getting-acquainted-with-bootstrap/" rel="alternate" type="text/html" title="Learn Bootstrap Part 1: Getting Acquainted with Bootstrap" /><published>2013-11-03T16:02:08-08:00</published><updated>2013-11-03T16:02:08-08:00</updated><id>https://keithmiyake.info/blog/digital%20humanities/getting-acquainted-with-bootstrap</id><content type="html" xml:base="https://keithmiyake.info/blog/digital%20humanities/getting-acquainted-with-bootstrap/">&lt;p&gt;This is the first in a series of posts that will serve as a mini-course in using the &lt;a href=&quot;http://getbootstrap.com/&quot; target=&quot;_blank&quot;&gt;Bootstrap&lt;/a&gt; web framework to eventually build a custom WordPress theme.&lt;/p&gt;
+
+&lt;h1 id=&quot;what-is-bootstrap&quot;&gt;What is Bootstrap?&lt;/h1&gt;
+
+&lt;p&gt;Bootstrap is an open-source project to create flexible design and layout components for the web. It is basically a bunch of predefined styles that anyone can slap onto their website to make things look neat and uniform. By including the CSS and Javascript for Bootstrap on a web page, a bunch of components are made available such as buttons, lists, boxes, and menus. Most of these components only require a basic knowledge of HTML to incorporate into a page.&lt;/p&gt;
+
+&lt;h4 id=&quot;example&quot;&gt;Example:&lt;/h4&gt;
+
+&lt;p&gt;This is what the exact same code snippet looks like in a browser with and without the inclusion of Bootstrap’s styles.&lt;/p&gt;
+
+&lt;figure class=&quot;half &quot;&gt;
+  
+    
+      &lt;a href=&quot;https://keithmiyake.info/assets/img/Bootply_-_The_Bootstrap_Playground-300x145.png&quot; title=&quot;Links styled with Bootstrap&quot;&gt;
+        &lt;img src=&quot;https://keithmiyake.info/assets/img/Bootply_-_The_Bootstrap_Playground-300x145.png&quot; alt=&quot;Links styled with Bootstrap&quot; /&gt;
+      &lt;/a&gt;
+    
+  
+    
+      &lt;a href=&quot;https://keithmiyake.info/assets/img/test.html_.png&quot; title=&quot;Links without Bootstrap styles&quot;&gt;
+        &lt;img src=&quot;https://keithmiyake.info/assets/img/test.html_.png&quot; alt=&quot;Links without Bootstrap&quot; /&gt;
+      &lt;/a&gt;
+    
+  
+  
+    &lt;figcaption&gt;This is the same code, unstyled on the left, styled with Bootstrap on the right
+&lt;/figcaption&gt;
+  
+&lt;/figure&gt;
+
+&lt;p&gt;Here’s the HTML for this example:&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;container&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;row&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;col-md-6&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;panel panel-primary&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;panel-heading&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+          &lt;span class=&quot;nt&quot;&gt;&amp;lt;h3&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;panel-title&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;span&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;glyphicon glyphicon-bookmark&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/span&amp;gt;&lt;/span&gt; Quick Shortcuts
+          &lt;span class=&quot;nt&quot;&gt;&amp;lt;/h3&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;panel-body&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+          &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;row&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;col-xs-6 col-md-6&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+              &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;#&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;btn btn-danger btn-lg&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;role=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;button&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;span&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;glyphicon glyphicon-list-alt&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/span&amp;gt;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;&amp;lt;br&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;Apps&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+              &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;#&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;btn btn-warning btn-lg&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;role=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;button&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;span&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;glyphicon glyphicon-bookmark&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/span&amp;gt;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;&amp;lt;br&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;Bookmarks&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+              &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;#&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;btn btn-primary btn-lg&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;role=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;button&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;span&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;glyphicon glyphicon-signal&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/span&amp;gt;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;&amp;lt;br&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;Reports&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+              &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;#&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;btn btn-primary btn-lg&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;role=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;button&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;span&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;glyphicon glyphicon-comment&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/span&amp;gt;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;&amp;lt;br&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;Comments&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;col-xs-6 col-md-6&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+              &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;#&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;btn btn-success btn-lg&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;role=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;button&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;span&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;glyphicon glyphicon-user&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/span&amp;gt;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;&amp;lt;br&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;Users&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+              &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;#&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;btn btn-info btn-lg&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;role=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;button&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;span&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;glyphicon glyphicon-file&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/span&amp;gt;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;&amp;lt;br&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;Notes&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+              &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;#&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;btn btn-primary btn-lg&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;role=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;button&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;span&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;glyphicon glyphicon-picture&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/span&amp;gt;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;&amp;lt;br&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;Photos&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+              &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;#&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;btn btn-primary btn-lg&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;role=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;button&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;span&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;glyphicon glyphicon-tag&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/span&amp;gt;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;&amp;lt;br&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;Tags&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+          &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+          &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;http://www.jquery2dotnet.com/&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;btn btn-success btn-lg btn-block&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;role=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;button&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;span&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;glyphicon glyphicon-globe&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/span&amp;gt;&lt;/span&gt; Website&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;As you can see, there is a pretty dramatic difference between the list of links without styling and the Bootstrap themed links. The magic of Bootstrap rests in its use of CSS styling to modify the placement and appearance of web elements with minimal additional HTML coding.&lt;/p&gt;
+
+&lt;p&gt;This first lesson will introduce some of the basics of Bootstrap. It starts with browsing through some websites that use Bootstrap to give a sense of what Bootstrap components look like. Then it moves on to cut-and-paste coding to begin laying out a static page using Bootstrap components, with the goal of getting something that vaguely resembles someone else’s Bootstrap page layout.&lt;/p&gt;
+
+&lt;h2 id=&quot;step-1-check-out-bootstrap-in-action&quot;&gt;Step 1: Check out Bootstrap in Action&lt;/h2&gt;
+
+&lt;p&gt;A good way to learn how to use a new tool like Bootstrap is by seeing it in action and then trying to imitate what you see.&lt;/p&gt;
+
+&lt;p&gt;Since this course is designed to not do anything for you, but rather to guide you through the learning process, I’m only providing a few links to pages containing galleries of sites that employ Bootstrap. Check out the galleries and find a few examples that you find most attractive.&lt;/p&gt;
+
+&lt;p&gt;Try to focus on layout, colors, typography, and to a lesser degree, site structure. Don’t worry about things like graphics or content since those are things you will plug in once you are finished. You probably won’t find a site that contains all of the design elements in a single place, so pick a few sites, each with aspects that you find appealing.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.pinterest.com/search/?q=Bootstrap&quot;&gt;Pintrest posts tagged #Bootstrap&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://expo.getbootstrap.com/&quot;&gt;The official bootstrap “expo”&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://lovebootstrap.com&quot;&gt;LoveBootstrap&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;step-2-find-some-bootstrap-templates&quot;&gt;Step 2: Find Some Bootstrap Templates&lt;/h2&gt;
+
+&lt;p&gt;Once you have some sense of the design elements you want to include in your end product, the next step is to look for a base template that might serve as a good starting point.&lt;/p&gt;
+
+&lt;p&gt;Head over to &lt;a href=&quot;http://startbootstrap.com/all-templates&quot;&gt;StartBootstrap&lt;/a&gt; and see if you can find any templates that have a similar overall layout to what you found appealing in the first step. Download the template to your computer and unzip it. There should be one or more HTML files in the base folder, depending on which template you downloaded, and a couple of additional folders containing CSS and javascript (.js) files, as well as any img the template requires, such as images. Try loading the various HTML files in a browser. The page should just work. If things don’t look right, and you tried loading the page in a couple of different browsers, don’t worry about it, and just continue to the next step, but keep those HTML and CSS files handy because you’ll use them again in the next couple steps.&lt;/p&gt;
+
+&lt;h2 id=&quot;step-3-play-with-bootstrap&quot;&gt;Step 3: Play with Bootstrap!&lt;/h2&gt;
+
+&lt;p&gt;Now that you have a base template, it’s time to get our feet wet with some HTML coding. Don’t worry too much if you don’t really understand HTML, we’re not going to be doing any major editing yet. For now we’re just going to use copy-paste-coding, meaning that all you need to do is to copy-paste code snippets from one place to another. But a getting a basic understanding of the structure of an HTML document might be useful if everything just looks Greek to you.&lt;/p&gt;
+
+&lt;p&gt;The goal of this step is to start putting together Bootstrap components to make your template look more like the demo pages you found in the first step. This means taking the different templates you found, cutting-and-pasting chunks of code, and modifying your base template until it is a fairly decent representation of the demo site you found.*&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;em&gt;Note:&lt;/em&gt; the demo site you found might have used a bunch of trickery to do cool things like making tumblr-esque blocks fit together like a mosaic, or to animate things, or make wallpapers do funky scrolling things. Don’t worry about those things for now. Just try to get the components to look roughly similar. The trickery will have to wait until later…&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;You have three options here, and I suggest trying all three to see which works best for you, but eventually you’ll end up using the first option so might as well get comfortable with it sooner than later. The first option is to use a text or HTML editor and edit the raw HTML from your template files and preview your changes in a browser. The second is to use a web-based tool to “playground” your code snippets and view them in almost real-time. The third is to use a web-based graphical interface for laying out Bootstrap components.&lt;/p&gt;
+
+&lt;p&gt;For the first option, I recommend using a text editor such as TextMate (OS X), Sublime Text (OS X and Windows), Notepad++ (Windows), or whatever happens to be your personal preference if you’re on Linux (since if you’re using it I assume you already have an allegiance to either vim or emacs…esc:q!). When you make changes, save the file and reload your browser. Simple as that. When things don’t look quite right or as you had hoped, right click on in your browser on the thing that doesn’t look quite right, and clink on “inspect element” or whatever is your browser’s equivalent (try Google if you’re not sure). Check out the code snippet for that component and make sure that it’s in the right place relative to other the other components on the page (the components should be highlighted on the page as you scroll over the code chunks). This debugging tool is going to be your friend over the next several lessons, so get comfortable using it.&lt;/p&gt;
+
+&lt;p&gt;For the second option, go to &lt;a href=&quot;http://bootply.com&quot;&gt;The Bootstrap Playground&lt;/a&gt;. It’s a site that allows you to test out Bootstrap code in your browser and see view the results in almost real-time. Start a new “playground” and try loading some of the templates and community-contributed code snippets. See if you can figure out what the code snippets do. Try loading the html from the template you downloaded in the previous step. Can you get it to load properly? You might need to include some additional CSS or javascript to get things to look and function correctly. Bootply is still a little rough around the edges, so it’s not a big deal if things don’t work out or you are totally confused by it.&lt;/p&gt;
+
+&lt;p&gt;The third option is to use a visual layout editor. I recommend checking out &lt;a href=&quot;https://divshot.com/blog/product-updates/divshot-1-0-visual-front-end-development-for-bootstrap/&quot;&gt;Divshot&lt;/a&gt;. They have a free plan (still requires registering) that should be plenty for this mini-course. Try it out and definitely check out their very thorough tutorial. &lt;a href=&quot;https://www.easel.io/demo&quot;&gt;Easel.io&lt;/a&gt; is also very slick and works well, and like divshot, they have a free plan, but theirs only lets you save up to 3 pages.&lt;/p&gt;
+
+&lt;p&gt;You might also check out &lt;a href=&quot;http://www.pingendo.com/&quot;&gt;Pingendo&lt;/a&gt;, which is a free visual editor that runs on Windows or OS X, but is still very rough around the edges and isn’t very drag-and-drop friendly. There is also &lt;a href=&quot;http://www.layoutit.com/&quot;&gt;LayoutIt&lt;/a&gt; which seems like it works decently, but I haven’t spent enough time playing with it to know how well it works compared to divshot or easel.io.&lt;/p&gt;
+
+&lt;h2 id=&quot;next-steps&quot;&gt;Next steps…&lt;/h2&gt;
+
+&lt;p&gt;If you’ve made it this far, you’re well on your way to using Bootstrap. You should now have one or more HTML pages (along with CSS and some javascript) that lets you display something roughly resembling the demo page you found in the first step, or at least that contains features of that demo page. Keep a list of those things that you weren’t able to reproduce because we’ll try to figure out how to make them work in upcoming lessons.&lt;/p&gt;
+
+&lt;p&gt;For now, save your work and take a well deserved break.&lt;/p&gt;
+
+&lt;p&gt;If you got stuck along the way, remember, Google is your friend when you’re learning something new. See if you can google your way to the next step, or post a comment here and hopefully I (or some other kind soul) will be able to help you.&lt;/p&gt;</content><author><name>{&quot;login&quot;=&gt;&quot;kmiyake&quot;, &quot;email&quot;=&gt;&quot;keith.miyake@gmail.com&quot;, &quot;display_name&quot;=&gt;&quot;Keith Miyake&quot;, &quot;first_name&quot;=&gt;&quot;Keith&quot;, &quot;last_name&quot;=&gt;&quot;Miyake&quot;}</name><email>keith.miyake@gmail.com</email></author><category term="bootstrap" /><category term="wordpress" /><summary type="html">This is the first in a series of posts that will serve as a mini-course in using the [Bootstrap](http://getbootstrap.com/){:target=&quot;_blank&quot;} web framework to eventually build a custom WordPress theme.</summary></entry><entry><title type="html">All That is Digital Melts into Code</title><link href="https://keithmiyake.info/blog/digital%20humanities/all-that-is-digital-melts-into-code/" rel="alternate" type="text/html" title="All That is Digital Melts into Code" /><published>2013-10-22T08:15:55-07:00</published><updated>2013-10-22T08:15:55-07:00</updated><id>https://keithmiyake.info/blog/digital%20humanities/all-that-is-digital-melts-into-code</id><content type="html" xml:base="https://keithmiyake.info/blog/digital%20humanities/all-that-is-digital-melts-into-code/">&lt;p&gt;One of the &lt;a href=&quot;http://miriamposner.com/blog/some-things-to-think-about-before-you-exhort-everyone-to-code/&quot;&gt;longstanding&lt;/a&gt; &lt;a href=&quot;http://aaronknoll.commons.gc.cuny.edu/on-technology/on-coding-in-the-digital-humanities/&quot;&gt;debates&lt;/a&gt; &lt;a href=&quot;http://www.leeannghajar.com/i-code-you-code-we-code-why-code/&quot;&gt;within&lt;/a&gt; the &lt;a href=&quot;http://cac.ophony.org/2012/02/06/the-academic-call-to-code-and-the-networked-self/&quot;&gt;world&lt;/a&gt; of &lt;a href=&quot;http://www.hastac.org/blogs/cathy-davidson/2011/10/31/what-are-4-rs-essential-21st-century-learning&quot;&gt;Digital&lt;/a&gt; &lt;a href=&quot;http://www.jamesgottlieb.com/2012/03/coding-and-digital-humanities/&quot;&gt;Humanities&lt;/a&gt; is the question of “coding.” I’m going to take a different approach—rather than insert myself into that particular debate, I want to explore the much more basic question, “What does it mean to ‘code’?” I figure that since so many people entering DH seem to be concerned with the general assertion that one ought to, in some way, learn how to ‘code’, that it is perhaps even more important that people fully grasp what is meant by the term so that they can figure out what exactly it is that they are trying to learn. My general argument is that this thing called “code” is far too obfuscated to be the lynchpin of any debates.&lt;/p&gt;
+
+&lt;p&gt;Borrowing from the recently passed Marshall Berman, I observe that “all that is digital (humanities) melts into code.” For those modernists whose will to transform the world and society through massive infrastructural undertakings (think &lt;a href=&quot;http://www.robertcaro.com/the-books/the-power-broker/&quot;&gt;Robert Moses&lt;/a&gt; and &lt;a href=&quot;http://www.temple.edu/tempress/titles/2252_reg_print.html&quot;&gt;New York&lt;/a&gt;) a utopic vision of change is often confronted by “a terror of disorientation and disintegration, of life falling apart,” consumed by “the thrill and the dread of a world in which ‘all that is solid melts into air’”[&lt;a href=&quot;#fn1&quot; id=&quot;ret1&quot;&gt;1&lt;/a&gt;].&lt;/p&gt;
+
+&lt;p&gt;Similarly, the world of DH is one in which lofty dreams and visions of the digital transforming the social are frequently confronted by the challenges of coding, the limitations of the real (i.e., the social), and the contradictions, perhaps fallacies, of modernity and modernization. This analogy lends caution to DH undertakings ignorant of the realities of implementation. But the second, more literal interpretation, is that all that is within the world of DH is somehow collapsed onto the aether or morass of “coding”. Meaning that despite the realities of coding and implementation of DH projects, there is an assumed teleological link between project and coding. Without going into counterexamples of where this link breaks down, allow me to instead provide a brief clarification of the concept of ‘coding’ that I think underlies some of this confusion.&lt;/p&gt;
+
+&lt;h2 id=&quot;abstracting-coding-to-reach-a-working-definition&quot;&gt;Abstracting “Coding” To Reach A Working Definition&lt;/h2&gt;
+
+&lt;p&gt;At its most general level, to “code” is to put together abstract informational “input” in some form for the computer to decode, act on, and then produce output. To stretch this logic to an extreme level of abstraction, the series of mouse clicks and movements that allow you to open a web browser might be thought of as a very high-level form of coding. The “coder” produces inputs (mouse clicks and movements) that the computer decodes (what is the active window? what is the icon under the mouse pointer? how many times and how quickly was the mouse button pushed? etc.) resulting in new output (the web browser opens because the “coder” “double clicked” on the “location” associated with executing the web browser application). The language in this extreme instance is “Windows 7 Explorer” or “Mac OS X Finder”.&lt;/p&gt;
+
+&lt;p&gt;At the other end of the “coding” spectrum might be the task of designing the hardware and low-level software that interpret binary or assembly “code” into things like operations (addition, multiplication), conditional statements (if &lt;em&gt;x&lt;/em&gt; is true then execute this chunk of code, otherwise go to the next chunk of code), loops (repeat this &lt;em&gt;n&lt;/em&gt; times), and storage (save this chunk of information here and then retrieve that other chunk of information over there). Most of the stuff people think of when they hear the term “code” is somewhere in between these extremes.&lt;/p&gt;
+
+&lt;p&gt;The reason for casting such a wide net around the concept of “coding” is that getting a computer to do what you want is always, to some extent, about coding information into binary logic operations to generate new output from a given input. Obviously there are numerous layers of abstraction between high level coding such as mouse movements or HTML and computer processors. But by understanding all interactions with computers in terms of this process of coding, I want to emphasize that all of the work done with computers can be (overly) reduced to a process of “coding”, and that there are different “languages” associated with every computer program.&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  
+  &lt;img src=&quot;https://keithmiyake.info/assets/img/real_programmers.png&quot; alt=&quot;Real programmers set the universal constants at the start such that the universe evolves to contain the disk with the data they want.&quot; /&gt;
+  
+  
+    &lt;figcaption&gt;Image via xkcd.org
+&lt;/figcaption&gt;
+  
+&lt;/figure&gt;
+
+&lt;h2 id=&quot;coding-taxonomy&quot;&gt;Coding Taxonomy&lt;/h2&gt;
+
+&lt;p&gt;From this extremely broad understanding of coding, we can think of different categories of coding, from the highest level abstraction to the lowest hardware level bleep-blooping with digital circuits:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Coding as interacting with computer operating systems and graphical end-user applications. Input from the mouse/trackpad, keypresses, and operating system provided interfaces&lt;/li&gt;
+  &lt;li&gt;Coding as using or interacting with programs that employ parametric commands. For example, using the terminal/command line/shell; &lt;a href=&quot;http://www.googleguide.com/advanced_operators_reference.html&quot;&gt;advanced Google searching&lt;/a&gt;; command-based applications like Mathematica, Excel formulas, AutoCAD, etc. Input uses specific text- or symbol-based commands and requires some knowledge of the syntax and command structure.&lt;/li&gt;
+  &lt;li&gt;Coding in a &lt;a href=&quot;http://en.wikipedia.org/wiki/Markup_language&quot;&gt;markup language&lt;/a&gt;. Examples include HTML, XML, markdown, LaTeX, Postscript, etc. “Commands” consist of tags that allow for things like complex formatting and layout of text and graphics.&lt;/li&gt;
+  &lt;li&gt;Coding as writing interpreted scripts. Examples include shell scripts, Applescript, Automator, .bat executables, etc.; Python, Javascript, BASIC, etc.; Matlab/Octave, ArcGIS scripting, etc. “Code” snippets are scripts that consist of a series of commands, often including functions, conditionals, loops, and different data types. The scripts require a separate program (the interpreter) to execute them.&lt;/li&gt;
+  &lt;li&gt;Coding as programming applications using interpreted or compiled languages. Examples include web applications in Ruby, PHP, perl/cgi, Java, ASP, etc.; interpreted and bytecode-compiled languages like Python, Java, .Net, etc.; and compiled languages like C, Haskell, Lisp, Fortran, etc. Coding requires knowledge of the language syntax and usually more in-depth understandings of things like complex data types and objects, functions, classes, compiling/Make systems, and debugging.&lt;/li&gt;
+  &lt;li&gt;Coding as writing hardware interfaces in assembly or compiled languages. Hardware-specific coding for developing lower level tools and drivers to interface with input/output devices. Also used for developing firmware, BIOS software, etc.&lt;/li&gt;
+  &lt;li&gt;Coding as hardware design. “Coding” consists of designing electrical components to implement assembly commands (input) and “executing” those commands in terms of digital signals, and producing new sets of commands or output to other hardware components.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This is one possible taxonomy of different types of coding based on my own experience and knowledge of how different types of inputs are encoded, or translated, for a computer to interpret, transform, act upon, and produce outputs. There are plenty of exceptions and absences within this basic taxonomy, but hopefully this schematic demonstrates the really broad range of things that might fall into various categories of coding.&lt;/p&gt;
+
+&lt;p&gt;Critics will probably take issue with the first couple of items because there is little or no discernible “code” being generated. My contention is that at a heuristical level, there are too many continuities in working within these different categories to dismiss some of them, and also too many differences between those things traditionally considered coding (e.g., markup vs. compiled languages) to limit the categories.&lt;/p&gt;
+
+&lt;h2 id=&quot;a-semi-concrete-example&quot;&gt;A Semi-Concrete Example&lt;/h2&gt;
+
+&lt;p&gt;To take an example from DH, let’s say that I want to analyze and visually display information related to NYPD stop-question-and-frisk. Assuming I already have a &lt;a href=&quot;http://www.nyc.gov/html/nypd/html/analysis_and_planning/stop_question_and_frisk_report.shtml&quot;&gt;handful&lt;/a&gt; of &lt;a href=&quot;http://www.nyclu.org/content/stop-and-frisk-data&quot;&gt;datasets&lt;/a&gt;, my next step might be to figure out what tools will help me to sort through the data, create maps, perform geospatial statistics, etc. If you are familiar with statistical analysis or ethnographic research, you might already be thinking that one of the first steps before doing any of this is “coding” the data so that you can meaningfully use the qualitative components of these data with quantitative methods. For those unfamiliar, this might include assigning numerical categories to racial classifications, assigning geographical shapes to precinct numbers, or developing weighted values for increasing degrees of force used during stop-question-and-frisk incidents.&lt;/p&gt;
+
+&lt;p&gt;This form of coding is essentially the same as other forms of “digital” coding. There is the need to translate informational input into some other form of information that is meaningful to the tool used in the next step of analysis, such as statistical algorithm. Once the data is coded, it can be given as input to my statistical program to produce output based on statistical algorithms.&lt;/p&gt;
+
+&lt;p&gt;If the statistical algorithms in the example above produce meaningful output, then that output can be used as the input to the next step, say visualization, and the coding process begins again. If the results from the statistical analysis were not sufficient for some reason, the algorithms or data might need to be adjusted. In this case, the adjusting is another layer of coding, requiring a related but probably more advanced skill set. That is to say, using regression analysis doesn’t require a deep understanding of the statistical theory behind it. But to tweak specific variables or to modify the regression algorithm requires a slightly deeper or much deeper understanding of statistical theory, respectively. Similarly, using a statistics program to run the regressions for you only requires knowledge of how to enter data and run commands. But tweaking the data to work better within the program, or getting it to use an alternate algorithm instead of the built in regression options both require a deeper understanding of how the program works and subsequently, how to get it to do something not already available.&lt;/p&gt;
+
+&lt;p&gt;This deeper understanding doesn’t require learning an entirely new skill set, it just requires the application of existing skills (using the program’s basic commands and functionality) in more complex ways. In coding terms, this is like moving from an elementary school level of basic language comprehension to being able to converse or write in the new language. Just being able to use the program is like knowing enough key phrases in another language to get around and survive in a foreign country. Learning to converse or compose in that language means you have new possibilities for engaging with people and ideas.&lt;/p&gt;
+
+&lt;p&gt;Taking this analogy with language further, the ways in which we interact with different computer programs or programming languages is a lot like our interactions with languages with similar etymological backgrounds. If one speaks English, they are likely to be able to figure out words or learn more quickly other Latin or Germanic based languages. In coding terms, if one can interact with a program based on Apple’s user interface components, they can probably figure out other programs designed with those same interface components. If one knows basic HTML, then understanding any XML or markup-based code is like learning a new dialect or expanding one’s vocabulary.&lt;/p&gt;
+
+&lt;p&gt;Returning to the previous example, the next step after statistical analysis might be to produce geospatial visualizations of the data and to use geospatial analysis to better understand the spatial relationships between data variables such as incident counts, racial characteristics, and clustering based on neighborhood income levels. Knowing how to plot data on a map is the most basic level of coding for this phase. It doesn’t require deep knowledge of GISc, let alone any spatial statistics or geographical theory. It also doesn’t require any “coding” knowledge other than how to use a simple mapping tool to convert database records into dots on a map. But if simply mapping points on a map isn’t sufficient to the objectives of the research project, then additional knowledge of goegraphical theory and how to use more complex GISc tools and methods opens up a range of different possibilities for analysis and presentation, as well as new sets of questions that can be asked and potentially answered.&lt;/p&gt;
+
+&lt;p&gt;So it’s not just the complexity of the programs or how one interacts/codes within them, but entirely new ways of working with, manipulating, and understanding data that are revealed by diving deeper into the intricacies of using and coding with a set of tools. And if the theory precedes the capabilities of the tools, then developing new tools to accomplish the desired tasks might be that big scary next step that the researcher or developers need to take on next.&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;This lengthy abstraction of the concept of “coding” serves multiple functions. First and foremost is to clear up some of the confusion surrounding the mystique of code. Second, I want to provide a framework for thinking about the diverse set of things that might fall under the umbrella of coding. Third, I want to emphasize that most of us are already engaging in various forms of coding without even realizing it, and thus, learning new languages and forms of coding might be approached the same way that we think about learning a new software package, a new version of Word, or even a new genre of reading.&lt;/p&gt;
+
+&lt;p&gt;Moving from one category of “coding” to another based on the taxonomy outlined above is almost always an involved learning process. And at some point, gaining an understanding of programming and computer science theory is necessary. But that doesn’t mean that the first thing one has to do to learn how to “code” is to dive head-first into theory or learning the syntax of a specific language.&lt;/p&gt;
+
+&lt;p&gt;Rather, thinking about coding as a continuum of skills, techniques, theories, and practices means that challenging oneself to learn a new set of tools specific to the types of research questions, interests, or novelties at hand is always about building a familiarity with new aspects of coding, interacting with data, and experiencing different theoretical approaches to computing. But the most important parts of learning how to code, like any other skill, are patience, practice, and lots of trial and error.&lt;/p&gt;
+
+&lt;p&gt;So next time the question comes up, “How do I learn to code?” or “Do I need to code to be a Digital Humanist?” it might be helpful to approach the question not from a position within existing DH debates, but rather from the perspective of what skills does the person possess and what categories of coding do they fall into, and what might be a logical next step for building out that repertoire?&lt;/p&gt;
+
+&lt;h2 id=&quot;notes&quot;&gt;Notes&lt;/h2&gt;
+
+&lt;p&gt;[&lt;a href=&quot;#ret1&quot; id=&quot;fn1&quot;&gt;1&lt;/a&gt;] Berman, Marshall. 1988 (1982). &lt;em&gt;All That Is Solid Melts into Air&lt;/em&gt;. New York: Penguin Books. pp 15.&lt;/p&gt;</content><author><name>{&quot;login&quot;=&gt;&quot;kmiyake&quot;, &quot;email&quot;=&gt;&quot;keith.miyake@gmail.com&quot;, &quot;display_name&quot;=&gt;&quot;Keith Miyake&quot;, &quot;first_name&quot;=&gt;&quot;Keith&quot;, &quot;last_name&quot;=&gt;&quot;Miyake&quot;}</name><email>keith.miyake@gmail.com</email></author><category term="coding" /><category term="digital humanities" /><category term="modernity" /><summary type="html">Is 'coding' an essential skill for Digital Humanists? I argue that it depends on how you define code and propose a taxonomy for different tasks that might be considered 'coding' to show that code is not something to be feared.</summary></entry></feed>
