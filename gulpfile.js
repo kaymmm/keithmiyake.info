@@ -58,7 +58,7 @@ var htmlProoferParams = [
 gulp.task('clean:assets', function () {
   return del([
     dirs.js + '/*.min.js',
-    '!' + dirs.js + '/vendor',
+    // '!' + dirs.js + '/vendor',
     dirs.css + '/*.map',
     dirs.css + '/*.css',
     // '!' + dirs.css + '/vendor',
@@ -83,12 +83,12 @@ gulp.task('clean:scripts', function () {
     dirs.js + '/main.min.js'
   ]);
 });
-gulp.task('clean:vendorscripts', function () {
-  return del([
-    dirs.dest + '/' + dirs.js + '/vendor.min.js',
-    dirs.js + '/vendor.min.js'
-  ]);
-});
+// gulp.task('clean:vendorscripts', function () {
+//   return del([
+//     dirs.dest + '/' + dirs.js + '/vendor.min.js',
+//     dirs.js + '/vendor.min.js'
+//   ]);
+// });
 gulp.task('clean:images', function () {
   return del([dirs.dest + '/' + dirs.imgc + '**/*']);
 });
@@ -250,35 +250,35 @@ gulp.task('scripts', ['clean:scripts'], function () {
     .pipe($.concat('main.min.js'))
     .pipe($.if(isProduction, $.minify({preserveComments: 'some'})))
     .pipe($.if(!isProduction, $.sourcemaps.write('.')))
-    // .pipe($.if(isProduction, $.gzip({append: false})))
+    // .pipe($.if(isProduction, $.gzip({append: true})))
     .pipe(gulp.dest(dirs.js))
     .pipe(gulp.dest(dirs.dest + '/' + dirs.js))
     .pipe($.if(!isProduction, browserSync.stream()));
 });
 
-gulp.task('scripts:vendor', ['clean:vendorscripts'], function () {
-  return gulp.src([
-    'node_modules/jquery/dist/jquery.min.js',
-    dirs.js + '/plugins/**/*.js'
-  ])
-    .pipe($.plumber({
-      handleError: function (err) {
-        // console.log(err);
-        this.emit('end');
-      }
-    }))
-    .pipe($.sourcemaps.init())
-    .pipe($.concat('vendor.js'))
-    .pipe($.rename({suffix: '.min'}))
-    .pipe($.if(isProduction, $.if('*.js', $.minify({preserveComments: 'some'}))))
-    .pipe($.if(!isProduction, $.sourcemaps.write('.')))
-    .pipe($.if(isProduction, gulp.dest(dirs.js)))
-    // .pipe($.if(isProduction, $.if('*.js', $.gzip({append: true}))))
-    .pipe(gulp.dest(dirs.js))
-    .pipe(gulp.dest(dirs.dest + '/' + dirs.js))
-    .pipe($.if(!isProduction, browserSync.stream()));
-});
-
+// gulp.task('scripts:vendor', ['clean:vendorscripts'], function () {
+//   return gulp.src([
+//     'node_modules/jquery/dist/jquery.min.js',
+//     dirs.js + '/plugins#<{(||)}>#*.js'
+//   ])
+//     .pipe($.plumber({
+//       handleError: function (err) {
+//         // console.log(err);
+//         this.emit('end');
+//       }
+//     }))
+//     .pipe($.sourcemaps.init())
+//     .pipe($.concat('vendor.js'))
+//     .pipe($.rename({suffix: '.min'}))
+//     .pipe($.if(isProduction, $.if('*.js', $.minify({preserveComments: 'some'}))))
+//     .pipe($.if(!isProduction, $.sourcemaps.write('.')))
+//     .pipe($.if(isProduction, gulp.dest(dirs.js)))
+//     // .pipe($.if(isProduction, $.if('*.js', $.gzip({append: true}))))
+//     .pipe(gulp.dest(dirs.js))
+//     .pipe(gulp.dest(dirs.dest + '/' + dirs.js))
+//     .pipe($.if(!isProduction, browserSync.stream()));
+// });
+//
 gulp.task('styles', ['clean:styles'], function () {
   return gulp.src([dirs.sass + '/custom.scss', dirs.css + '/main.scss'])
     .pipe($.plumber({
@@ -305,7 +305,7 @@ gulp.task('styles', ['clean:styles'], function () {
     ]))
     // .pipe($.rename({suffix: '.min'}))
     .pipe($.if(!isProduction, $.sourcemaps.write('.')))
-    .pipe($.if(isProduction, $.gzip({append: false})))
+    // .pipe($.if(isProduction, $.gzip({append: true})))
     .pipe(gulp.dest(dirs.css))
     .pipe(gulp.dest(dirs.dest + '/' + dirs.css))
     .pipe($.if(!isProduction, browserSync.stream()));
@@ -345,7 +345,7 @@ gulp.task('assets', [
   // 'styles:vendor',
   'lint:styles',
   'styles',
-  'scripts:vendor',
+  // 'scripts:vendor',
   'lint:scripts',
   'scripts',
   // 'fonts',
@@ -405,7 +405,7 @@ gulp.task('serve', function () {
 
   // Assets
   gulp.watch([dirs.js + '/main.js'], {interval: 500}, ['lint:scripts','scripts', browserSync.reload]);
-  gulp.watch([dirs.js + '/vendor/**/*.js'], {interval: 500}, ['scripts:vendor', browserSync.reload]);
+  // gulp.watch([dirs.js + '/vendor#<{(||)}>#*.js'], {interval: 500}, ['scripts:vendor', browserSync.reload]);
   gulp.watch([dirs.sass + '/**/*.s+(a|c)ss', dirs.css + '/main.scss', dirs.sass + '/custom.scss'], {interval: 500}, ['lint:styles','styles', browserSync.reload]);
   gulp.watch([dirs.img + '/**/*'], {interval: 500}, ['images', browserSync.reload]);
 });

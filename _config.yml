@@ -173,7 +173,9 @@ kramdown:
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
 
-# Custom js files
+# Custom scripts to be included
+header_scripts:
+  - /assets/css/custom.css
 footer_scripts:
   - /assets/js/main.min.js
   - /assets/js/custom.js
